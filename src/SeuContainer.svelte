@@ -10,11 +10,11 @@
 
 <style>
   .seu-container {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     flex: 1;
     flex-basis: auto;
-    box-sizing: border-box;
     min-width: 0;
   }
 

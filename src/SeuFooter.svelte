@@ -4,9 +4,9 @@
 
 <style>
   .seu-footer {
+    box-sizing: border-box;
     padding: 0 20px;
     flex-shrink: 0;
-    box-sizing: border-box;
   }
 </style>
 
