@@ -1,6 +1,6 @@
 <script>
   export let direction;
-  let isVertical;
+  let isVertical = false;
   $: if (direction === 'vertical') {
     isVertical = true;
   } else if (direction === 'horizontal') {

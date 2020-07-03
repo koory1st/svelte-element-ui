@@ -1,12 +1,12 @@
-import SeuContainerStory from './SeuContainer.storybook.svelte';
-import { withKnobs, select } from '@storybook/addon-knobs';
+import SeuContainerStory from './SeuContainer.storybook.svelte'
+import { withKnobs, select } from '@storybook/addon-knobs'
 
-export default { title: 'SeuContainer', decorators: [withKnobs] };
+export default { title: 'SeuContainer', decorators: [withKnobs] }
 
 const directionOptions = {
   vertical: 'vertical',
-  horizontal: 'horizontal',
-};
+  horizontal: 'horizontal'
+}
 
 export const seuContainer = () => ({
   Component: SeuContainerStory,
@@ -14,11 +14,11 @@ export const seuContainer = () => ({
     direction: select(
       'direction',
       {
-        vertical: 'vertical',
         horizontal: 'horizontal',
+        vertical: 'vertical'
       },
       '',
       'groupId-1'
-    ),
-  },
-});
+    )
+  }
+})

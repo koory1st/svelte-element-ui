@@ -3,13 +3,13 @@
 </script>
 
 <style>
-  .seu-header {
+  .seu-footer {
     padding: 0 20px;
-    box-sizing: border-box;
     flex-shrink: 0;
+    box-sizing: border-box;
   }
 </style>
 
-<header class="seu-header" style="height:{height}">
+<footer class="seu-footer" style="height:{height}">
   <slot />
-</header>
+</footer>
