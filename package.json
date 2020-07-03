@@ -1,17 +1,23 @@
 {
-  "name": "SvelteComponent",
+  "name": "svelte-element-ui",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "storybook": "start-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.4",
     "@rollup/plugin-node-resolve": "^6.0.0",
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/svelte": "^5.3.19",
+    "babel-loader": "^8.1.0",
     "rollup": "^1.20.0",
     "rollup-plugin-svelte": "^5.0.0",
-    "svelte": "^3.0.0"
+    "svelte": "^3.0.0",
+    "svelte-loader": "^2.13.6"
   },
   "keywords": [
     "svelte"
