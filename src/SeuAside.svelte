@@ -1,11 +1,13 @@
 <script>
-  export let width = '300px';
+  export let width = '300px'
 </script>
 
-<style>
-  .seu-aside {
-    box-sizing: border-box;
+<style type="text/scss">
+  @import 'mixins/mixins';
+
+  @include b(aside) {
     overflow: auto;
+    box-sizing: border-box;
     flex-shrink: 0;
   }
 </style>

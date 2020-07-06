@@ -1,11 +1,15 @@
-<style>
-  .seu-main {
-    box-sizing: border-box;
+<style type="text/scss">
+  @import 'mixins/mixins';
+  @import 'common/var';
+
+  @include b(main) {
+    // IE11 supports the <main> element partially https://caniuse.com/#search=main
     display: block;
     flex: 1;
     flex-basis: auto;
-    padding: 20px;
     overflow: auto;
+    box-sizing: border-box;
+    padding: $--main-padding;
   }
 </style>
 

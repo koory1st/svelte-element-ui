@@ -1,11 +1,14 @@
 <script>
-  export let height = '60px';
+  export let height = '60px'
 </script>
 
-<style>
-  .seu-footer {
+<style type="text/scss">
+  @import 'mixins/mixins';
+  @import 'common/var';
+
+  @include b(footer) {
+    padding: $--footer-padding;
     box-sizing: border-box;
-    padding: 0 20px;
     flex-shrink: 0;
   }
 </style>

@@ -1,11 +1,14 @@
 <script>
-  export let height = '60px';
+  export let height = '60px'
 </script>
 
-<style>
-  .seu-header {
+<style type="text/scss">
+  @import 'mixins/mixins';
+  @import 'common/var';
+
+  @include b(header) {
+    padding: $--header-padding;
     box-sizing: border-box;
-    padding: 0 20px;
     flex-shrink: 0;
   }
 </style>
