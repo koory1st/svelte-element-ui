@@ -24,6 +24,7 @@
     "dist"
   ],
   "dependencies": {
-    "svelte-preprocess": "^3.9.11"
+    "svelte-preprocess": "^3.9.11",
+    "svelte-styled-system": "0.0.5"
   }
 }
