@@ -1,5 +1,6 @@
 <script>
   import { styled, css, themeGet } from 'svelte-styled-system';
+  import { setContext } from 'svelte';
   export let gutter;
   export let type;
   export let justify = 'start';
@@ -7,8 +8,8 @@
   let style;
   let classJustify = justify !== 'start' ? `is-justify-${justify}` : false;
   let classAlign = align !== 'top' ? `is-align-${align}` : false;
-  let classType = type === 'flex' ? 'seu-row--flex' : false;
 
+  setContext('$_seu_row_gutter', gutter);
   let styles = '';
   $: {
     style = {};
@@ -17,16 +18,30 @@
       style.marginRight = style.marginLeft;
     }
   }
-  styles = css`
-    background-color: red;
-  `;
+  $: classString = getClassString`$$props`;
+
+  function getClassString() {
+    let rt = '';
+    rt += 'position: relative;';
+    rt += 'box-sizing: border-box;';
+    rt += type ? 'display: flex;' : '';
+    rt += getMarginLeftRight();
+
+    return css(rt);
+  }
+
+  function getMarginLeftRight() {
+    let rt = '';
+    if (!gutter) {
+      return '';
+    }
+
+    rt += `margin-left: -${gutter / 2}px;`;
+    rt += `margin-right: -${gutter / 2}px;`;
+    return rt;
+  }
 </script>
 
-<div
-  class="seu-row {styles}"
-  class:classJustify
-  class:classAlign
-  class:classType
-  style="marginLeft:{style.marginLeft} marginRight:{style.marginRight}">
-  <slot />
+<div class={classString} alignItems="center">
+  <slot {gutter} />
 </div>

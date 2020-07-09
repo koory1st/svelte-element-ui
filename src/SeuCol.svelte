@@ -1,73 +1,71 @@
 <script>
-  import { text } from 'svelte/internal'
+  import { text } from 'svelte/internal';
+  import { getContext } from 'svelte';
 
-  export let span = 24
-  export let offset
-  export let pull
-  export let push
-  export let gutter
-  export let xs
-  export let sm
-  export let md
-  export let lg
-  export let xl
+  export let span = 24;
+  export let offset;
+  export let pull;
+  export let push;
+  const gutter = getContext('$_seu_row_gutter');
+  export let xs;
+  export let sm;
+  export let md;
+  export let lg;
+  export let xl;
 
-  let sizeClass = getSizeClass({ xs: xs, sm: sm, md: md, lg: lg, xl: xl })
+  let sizeClass = getSizeClass({ xs: xs, sm: sm, md: md, lg: lg, xl: xl });
   let positionClass = getPositionClass({
     span: span,
     offset: offset,
     pull: pull,
-    push: push
-  })
+    push: push,
+  });
 
   function getSizeClass(sizeObj) {
-    let rt = ''
+    let rt = '';
     Object.keys(sizeObj).forEach(key => {
-      let value = sizeObj[key]
+      let value = sizeObj[key];
       if (!value) {
-        return
+        return;
       }
 
       if (rt) {
-        rt += ' '
+        rt += ' ';
       }
 
       if (typeof value === 'number' || typeof value === 'string') {
-        rt += `seu-col-${key}-${value}`
+        rt += `seu-col-${key}-${value}`;
       } else if (typeof value === 'object') {
-        let props = value
+        let props = value;
         Object.keys(props).forEach(prop => {
-          rt +=
-            prop !== 'span'
-              ? `seu-col-${key}-${prop}-${props[prop]}`
-              : `seu-col-${key}-${props[prop]}`
-        })
+          rt += prop !== 'span' ? `seu-col-${key}-${prop}-${props[prop]}` : `seu-col-${key}-${props[prop]}`;
+        });
       }
-    })
+    });
 
-    return rt
+    return rt;
   }
 
   function getPositionClass(positionObj) {
-    let rt = ''
+    let rt = '';
     Object.keys(positionObj).forEach(key => {
-      let value = positionObj[key]
+      let value = positionObj[key];
       if (!value) {
-        return
+        return;
       }
 
       if (rt) {
-        rt += ' '
+        rt += ' ';
       }
 
       if (key !== 'span') {
-        rt += `seu-col-${key}-${positionObj[key]}`
+        rt += `seu-col-${key}-${positionObj[key]}`;
       } else {
-        rt += `seu-col-${positionObj[key]}`
+        rt += `seu-col-${positionObj[key]}`;
       }
-    })
+    });
 
-    return rt
+    return rt;
   }
 </script>
 
