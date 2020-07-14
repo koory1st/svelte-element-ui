@@ -1,6 +1,7 @@
 <script>
-  import { css } from 'svelte-styled-system';
+  import { css, styled } from 'svelte-styled-system';
   import { getContext } from 'svelte';
+  import { theme } from './theme.js';
 
   export let span = 24;
   export let offset;
@@ -12,6 +13,22 @@
   export let md;
   export let lg;
   export let xl;
+
+  let scales = [xs, sm, md, lg, xl];
+
+  let width = (span / 24) * 100;
+  $: themeInner = {
+    ...$theme,
+    width: {
+      xs: `${xs ? (+xs / 24) * 100 : width}%`,
+      sm: `${sm ? (+xs / 24) * 100 : width}%`,
+      md: `${md ? (+md / 24) * 100 : width}%`,
+      lg: `${lg ? (+lg / 24) * 100 : width}%`,
+      xl: `${xl ? (+xl / 24) * 100 : width}%`,
+    },
+  };
+
+  console.log($$props);
 
   $: classString = getClassString`$$props`;
 
@@ -31,7 +48,10 @@
     if (span === 0) {
       return 'display: none;';
     }
-    return `width: ${(span / 24) * 100}%;`;
+
+    let rt = '';
+    rt += `width: ${width}%;`;
+    return rt;
   }
 
   function getPaddingLeftRight() {
@@ -47,6 +67,6 @@
   }
 </script>
 
-<div class="seu-col {classString}">
+<div class="seu-col {classString}" use:styled={[{ width: ['width.xs', 'width.sm', null, 'width.lg'] }, themeInner]}>
   <slot />
 </div>
