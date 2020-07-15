@@ -1,28 +1,23 @@
 <script>
+  import { css } from 'svelte-styled-system';
   export let direction;
-  let isVertical = false;
-  $: if (direction === 'vertical') {
-    isVertical = true;
-  } else if (direction === 'horizontal') {
-    isVertical = false;
+  $: classString = getClassString`$$props`;
+  function getClassString() {
+    let rt = '';
+    rt += 'box-sizing: border-box;';
+    rt += 'display: flex;';
+    if (direction === 'vertical') {
+      rt += 'flex-direction: column;';
+    } else if (direction === 'horizontal') {
+      rt += 'flex-direction: row;';
+    }
+    rt += 'flex: 1;';
+    rt += 'flex-basis: auto;';
+    rt += 'min-width: 0;';
+    return css(rt);
   }
 </script>
 
-<style>
-  .seu-container {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    flex-basis: auto;
-    min-width: 0;
-  }
-
-  .seu-container.is-vertical {
-    flex-direction: column;
-  }
-</style>
-
-<section class="seu-container {isVertical ? 'is-vertical' : ''}">
+<section class="seu-container {classString}">
   <slot />
 </section>
