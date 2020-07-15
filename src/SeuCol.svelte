@@ -14,8 +14,6 @@
   export let lg;
   export let xl;
 
-  let scales = [xs, sm, md, lg, xl];
-
   let width = (span / 24) * 100;
   $: themeInner = {
     ...$theme,
@@ -28,8 +26,6 @@
     },
   };
 
-  console.log($$props);
-
   $: classString = getClassString`$$props`;
 
   function getClassString() {
@@ -39,9 +35,21 @@
 
     rt += getPaddingLeftRight();
     rt += getWidth();
+    rt += getLeftRight(push, 'left');
+    rt += getLeftRight(pull, 'right');
+
     rt += offset ? `margin-left: ${(offset / 24) * 100}%;` : '';
 
     return css(rt);
+  }
+
+  function getLeftRight(pushOrPull) {
+    if (!pushOrPull) {
+      return '';
+    }
+    let rt = 'position: relative;';
+    rt += `left: ${(pushOrPull / 24) * 100}%;`;
+    return rt;
   }
 
   function getWidth() {
