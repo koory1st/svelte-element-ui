@@ -1,6 +1,5 @@
 <script>
   import { get } from 'svelte/store';
-
   import { css, styled } from 'svelte-styled-system';
   import { theme } from './theme.js';
   export let type = 'default';
@@ -94,6 +93,8 @@
   $: round && getRound();
 
   $: circle && getCircle();
+
+  $: disabled;
 
   function getRound() {
     styles = { ...styles, borderRadius: '20px', p: '12px 23px' };
@@ -190,7 +191,7 @@
   }
 </script>
 
-<button class="seu-button" type={nativeType} use:styled={[styles, $theme]} on:click>
+<button class="seu-button" type={nativeType} use:styled={[styles, $theme]} disabled={disabled || loading} on:click>
   {#if loading}
     <i class="seu-icon-loading" />
   {/if}
@@ -198,6 +199,5 @@
   {#if icon && !loading}
     <i class={icon} />
   {/if}
-
   <slot />
 </button>
