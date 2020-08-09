@@ -1,5 +1,5 @@
 <script>
-  import { css, styled } from 'svelte-styled-system';
+  import { css, styled } from 'SvelteStyledSystem';
   import { getContext } from 'svelte';
   import { theme } from './theme.js';
 

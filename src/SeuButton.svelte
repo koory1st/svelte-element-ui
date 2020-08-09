@@ -1,6 +1,6 @@
 <script>
   import { get } from 'svelte/store';
-  import { css, styled } from '../src/util/svelte_styled_system/index';
+  import { css, styled } from 'SvelteStyledSystem';
   import { theme } from './theme.js';
   import buttonStyle from './SeuButtonStyle';
   export let type = 'default';
@@ -19,6 +19,17 @@
     console.log('buttonStyle', buttonStyle);
     if (type === 'default' && !plain && !disabled) {
       styles = { ...buttonStyle.default.notPlain.notDisabled };
+    }
+
+    if (type === 'default' && !plain && disabled) {
+      styles = { ...buttonStyle.default.notPlain.disabled };
+    }
+    if (type === 'default' && plain && !disabled) {
+      styles = { ...buttonStyle.default.plain.notDisabled };
+    }
+
+    if (type === 'default' && plain && disabled) {
+      styles = { ...buttonStyle.default.plain.disabled };
     }
   }
 </script>

@@ -1,5 +1,5 @@
 <script>
-  import { css } from 'svelte-styled-system';
+  import { css } from 'SvelteStyledSystem';
   export let height = '60px';
   $: classString = getClassString`$$props`;
   function getClassString() {

@@ -1,5 +1,5 @@
 <script>
-  import { css } from 'svelte-styled-system';
+  import { css } from 'SvelteStyledSystem';
   export let width = '300px';
   $: classString = getClassString`$$props`;
   function getClassString() {

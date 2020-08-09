@@ -1,5 +1,5 @@
 <script>
-  import { css } from 'svelte-styled-system';
+  import { css } from 'SvelteStyledSystem';
   import { setContext } from 'svelte';
   export let gutter;
   export let type;
