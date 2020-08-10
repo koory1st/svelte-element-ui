@@ -1,6 +1,6 @@
 <script>
   import { get } from 'svelte/store';
-  import { css, styled } from 'SvelteStyledSystem';
+  import { styled } from 'SvelteStyledSystem';
   import { theme } from './theme.js';
   import buttonStyle from './SeuButtonStyle';
   export let type = 'default';
@@ -113,12 +113,25 @@
       styles = { ...buttonStyle.danger.plain.disabled };
     }
 
+    // text
+    if (type === 'text' && !disabled) {
+      styles = { ...buttonStyle.text.notDisabled };
+    }
+
+    if (type === 'text' && disabled) {
+      styles = { ...buttonStyle.text.disabled };
+    }
+
     if (disabled) {
       styles.cursor = 'not-allowed';
     }
 
     if (round) {
       styles.borderRadius = '20px';
+    }
+
+    if (circle) {
+      styles.borderRadius = '50%';
     }
   }
 </script>

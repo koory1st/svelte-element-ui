@@ -356,4 +356,33 @@ styles.danger.plain.disabled._active.color = '#f9a7a7';
 styles.danger.plain.disabled._active.bg = '#fef0f0';
 styles.danger.plain.disabled._active.borderColor = '#fde2e2';
 
+styles.text = {};
+styles.text.notDisabled = { ...basic };
+styles.text.notDisabled[hoverFocus] = {};
+styles.text.notDisabled._active = {};
+styles.text.notDisabled.color = '#409eff';
+styles.text.notDisabled.bg = 'transparent';
+styles.text.notDisabled.borderColor = 'transparent';
+styles.text.notDisabled.paddingLeft = 'none';
+styles.text.notDisabled.paddingRight = 'none';
+styles.text.notDisabled[hoverFocus].color = '#66b1ff';
+styles.text.notDisabled[hoverFocus].bg = 'transparent';
+styles.text.notDisabled[hoverFocus].borderColor = 'transparent';
+styles.text.notDisabled._active.color = '#3a8ee6';
+styles.text.notDisabled._active.bg = 'transparent';
+styles.text.notDisabled._active.borderColor = 'transparent';
+
+styles.text.disabled = { ...basic };
+styles.text.disabled[hoverFocus] = {};
+styles.text.disabled._active = {};
+styles.text.disabled.color = '#c0c4cc';
+styles.text.disabled.bg = 'transparent';
+styles.text.disabled.borderColor = 'transparent';
+styles.text.disabled[hoverFocus].color = '#c0c4cc';
+styles.text.disabled[hoverFocus].bg = 'transparent';
+styles.text.disabled[hoverFocus].borderColor = 'transparent';
+styles.text.disabled._active.color = '#c0c4cc';
+styles.text.disabled._active.bg = 'transparent';
+styles.text.disabled._active.borderColor = 'transparent';
+
 export default styles;
