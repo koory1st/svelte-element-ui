@@ -1,4 +1,4 @@
-<script>
+<script type="ts">
   import SeuButtonStyle from './SeuButtonStyle.svelte';
   import { get } from 'svelte/store';
   export let type = 'default';
@@ -31,10 +31,13 @@
     if (circle) {
       classList.push('is-circle');
     }
+
+    if (size) {
+      classList.push(`seu-button--${size}`);
+    }
   }
 </script>
 
-<SeuButtonStyle />
 <button class={classList.join(' ')} type={nativeType} disabled={disabled || loading} on:click>
   {#if loading}
     <i class="seu-icon-loading" />
