@@ -5,10 +5,12 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
-import alias from 'rollup-plugin-alias';
+import alias from '@rollup/plugin-alias';
 import postcss from 'rollup-plugin-postcss';
+import path from 'path';
 
 const production = !process.env.ROLLUP_WATCH;
+const projectRootDir = path.resolve(__dirname);
 
 function serve() {
   let server;
@@ -43,8 +45,8 @@ export default {
   plugins: [
     alias({
       entries: {
-        '@': __dirname + '/src',
-        root: __dirname,
+        '@': projectRootDir + '/src',
+        root: projectRootDir,
         SvelteStyledSystem: __dirname + '/src/util/svelte_styled_system',
       },
     }),
