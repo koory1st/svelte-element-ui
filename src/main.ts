@@ -1,3 +1,4 @@
+import '../static/seu.css';
 export { default as SeuContainer } from './SeuContainer.svelte';
 export { default as SeuMain } from './SeuMain.svelte';
 export { default as SeuFooter } from './SeuFooter.svelte';

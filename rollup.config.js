@@ -6,6 +6,7 @@ import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import alias from 'rollup-plugin-alias';
+import postcss from 'rollup-plugin-postcss';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -31,21 +32,19 @@ function serve() {
 }
 
 export default {
+  // input: 'src/index.js',
   input: 'src/main.ts',
   output: {
     sourcemap: true,
     format: 'es',
     name: 'app',
-		file: 'dist/bundle.js',
-
-
-
+    file: 'dist/bundle.js',
   },
   plugins: [
     alias({
       entries: {
         '@': __dirname + '/src',
-        static: __dirname + '/static',
+        root: __dirname,
         SvelteStyledSystem: __dirname + '/src/util/svelte_styled_system',
       },
     }),
@@ -54,6 +53,7 @@ export default {
       dev: !production,
       // we'll extract any component CSS out into
       // a separate file - better for performance
+      emitCss: true,
       css: css => {
         css.write('dist/bundle.css');
       },
@@ -71,7 +71,11 @@ export default {
     }),
     commonjs(),
     typescript({ sourceMap: !production }),
-
+    postcss({
+      extract: 'bundle.css',
+      minimize: true,
+      sourceMap: !production,
+    }),
     // In dev mode, call `npm run start` once
     // the bundle has been generated
     // !production && serve(),

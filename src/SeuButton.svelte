@@ -1,5 +1,4 @@
 <script type="ts">
-  import SeuButtonStyle from './SeuButtonStyle.svelte';
   import { get } from 'svelte/store';
   export let type = 'default';
   export let size;
