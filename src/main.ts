@@ -1,4 +1,4 @@
-import 'root/static/seu.css';
+import 'style/seuButton.css';
 export { default as SeuContainer } from './SeuContainer.svelte';
 export { default as SeuMain } from './SeuMain.svelte';
 export { default as SeuFooter } from './SeuFooter.svelte';

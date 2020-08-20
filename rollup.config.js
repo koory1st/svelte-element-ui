@@ -47,6 +47,7 @@ export default {
       entries: {
         '@': projectRootDir + '/src',
         root: projectRootDir,
+        style: projectRootDir + '/static/style',
         SvelteStyledSystem: __dirname + '/src/util/svelte_styled_system',
       },
     }),
