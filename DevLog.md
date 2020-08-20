@@ -14,6 +14,13 @@
 
 之后会重新实现一下其他的之前的组件.
 
+- TODO: [添加测试方式](https://testing-library.com/docs/svelte-testing-library/intro)
+- TODO: [使用变量实现动态样式](https://css-tricks.com/what-i-like-about-writing-styles-with-svelte/)
+- TODO: 在本项目里使用 storybook(之前是吧 storybook 写到了另一个项目)
+- TODO: 在 storybook 里启用 knobs
+- TODO: 用 rollup 工作流,先 build 代码,然后启动 storybook 服务
+- TODO: 用 rollup 工作流,先 build 代码,然后 build storybook 代码
+
 # 2020.08.13
 
 不会用 rollup, 遇到了在项目里导入图标的问题.弄了半天也没成功导入到项目里.
