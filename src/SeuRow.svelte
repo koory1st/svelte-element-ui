@@ -1,59 +1,32 @@
-<script>
-  import { css } from 'SvelteStyledSystem';
-  import { setContext } from 'svelte';
-  export let gutter;
-  export let type;
-  export let justify = 'start';
-  export let align = 'top';
-  let classJustify = justify !== 'start' ? `is-justify-${justify}` : false;
-  let classAlign = align !== 'top' ? `is-align-${align}` : false;
+<script type="ts">
+  import { setContext } from 'svelte'
+  export let gutter = 0
+  export let type: string
+  export let justify = 'start'
+  export let align = 'top'
 
-  setContext('$_seu_row_gutter', gutter);
+  let classList = ['seu-row']
+  let styleList = []
 
-  $: classString = getClassString`$$props`;
-
-  function getClassString() {
-    let rt = '';
-    rt += 'position: relative;';
-    rt += 'box-sizing: border-box;';
-    rt += `&::before, &::after {
-      display: table;
-      content: "";
+  $: {
+    if (justify !== 'start') {
+      styleList.push(`--justify:${justify}`)
     }
-    &::after {
-      clear: both;
-    }`;
-    rt += type ? 'display: flex;' : '';
-    rt += getJustifyContent();
-    rt += getMarginLeftRight();
 
-    return css(rt);
+    if (align === 'middle') {
+      styleList.push(`--align:center`)
+    } else if (align === 'bottom') {
+      styleList.push(`--align:flex-end`)
+    }
+
+    if (type === 'flex') {
+      classList.push('seu-row--flex')
+    }
   }
 
-  function getJustifyContent() {
-    if (!justify || justify === 'start') {
-      return '';
-    }
-
-    if (justify === 'end') {
-      return 'justify-content: flex-end;';
-    }
-
-    return `justify-content: ${justify};`;
-  }
-
-  function getMarginLeftRight() {
-    let rt = '';
-    if (!gutter) {
-      return '';
-    }
-
-    rt += `margin-left: -${gutter / 2}px;`;
-    rt += `margin-right: -${gutter / 2}px;`;
-    return rt;
-  }
+  setContext('$_seu_row_gutter', gutter)
 </script>
 
-<div class="seu-row {classString}" alignItems="center">
+<div class={classList.join(' ')} style={styleList.join(';')}>
   <slot {gutter} />
 </div>

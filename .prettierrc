@@ -1,6 +1,7 @@
 {
+  "svelteSortOrder": "styles-scripts-markup",
   "printWidth": 120,
-  "semi": true,
+  "semi": false,
   "singleQuote": true,
   "trailingComma": "all",
   "bracketSpacing": true,

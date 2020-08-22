@@ -1,0 +1,18 @@
+.seu-row {
+  position: relative;
+  box-sizing: border-box;
+  justify-content: var(--justify);
+  align-items: var(--align);
+}
+.seu-row:after,
+.seu-row:before {
+  display: table;
+  content: '';
+}
+.seu-row:after {
+  clear: both;
+}
+
+.seu-row--flex {
+  display: flex;
+}
