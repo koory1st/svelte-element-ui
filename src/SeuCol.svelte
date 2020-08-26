@@ -1,80 +1,34 @@
-<script>
-  import { css, styled } from 'SvelteStyledSystem';
-  import { getContext } from 'svelte';
-  import { theme } from './theme.js';
+<script type="ts">
+  import { css, styled } from 'SvelteStyledSystem'
+  import { getContext } from 'svelte'
+  import { theme } from './theme.js'
 
-  export let span = 24;
-  export let offset;
-  export let pull;
-  export let push;
-  const gutter = getContext('$_seu_row_gutter');
-  export let xs;
-  export let sm;
-  export let md;
-  export let lg;
-  export let xl;
+  export let span = 24
+  export let offset
+  export let pull
+  export let push
+  const gutter = getContext('$_seu_row_gutter')
+  export let xs
+  export let sm
+  export let md
+  export let lg
+  export let xl
 
-  let width = (span / 24) * 100;
-  $: themeInner = {
-    ...$theme,
-    width: {
-      xs: `${xs ? (+xs / 24) * 100 : width}%`,
-      sm: `${sm ? (+xs / 24) * 100 : width}%`,
-      md: `${md ? (+md / 24) * 100 : width}%`,
-      lg: `${lg ? (+lg / 24) * 100 : width}%`,
-      xl: `${xl ? (+xl / 24) * 100 : width}%`,
-    },
-  };
+  let classList = ['seu-col']
+  let styleList = []
 
-  $: classString = getClassString`$$props`;
-
-  function getClassString() {
-    let rt = '';
-    rt += 'float: left;';
-    rt += 'box-sizing: border-box;';
-
-    rt += getPaddingLeftRight();
-    rt += getWidth();
-    rt += getLeftRight(push, 'left');
-    rt += getLeftRight(pull, 'right');
-
-    rt += offset ? `margin-left: ${(offset / 24) * 100}%;` : '';
-
-    return css(rt);
+  $: {
+    classList.push(`seu-col-${span}`)
+    xs && classList.push(`seu-col-xs-${xs}`)
+    sm && classList.push(`seu-col-sm-${sm}`)
+    md && classList.push(`seu-col-md-${md}`)
+    lg && classList.push(`seu-col-lg-${lg}`)
+    xl && classList.push(`seu-col-xl-${xl}`)
   }
 
-  function getLeftRight(pushOrPull) {
-    if (!pushOrPull) {
-      return '';
-    }
-    let rt = 'position: relative;';
-    rt += `left: ${(pushOrPull / 24) * 100}%;`;
-    return rt;
-  }
-
-  function getWidth() {
-    if (span === 0) {
-      return 'display: none;';
-    }
-
-    let rt = '';
-    rt += `width: ${width}%;`;
-    return rt;
-  }
-
-  function getPaddingLeftRight() {
-    let rt = '';
-    if (!gutter) {
-      return rt;
-    }
-
-    rt += `padding-left: ${gutter / 2}px;`;
-    rt += `padding-right: ${gutter / 2}px;`;
-
-    return rt;
-  }
+  console.log('$$props :', $$props)
 </script>
 
-<div class="seu-col {classString}" use:styled={[{ width: ['width.xs', 'width.sm', null, 'width.lg'] }, themeInner]}>
+<div class={classList.join(' ')}>
   <slot />
 </div>
