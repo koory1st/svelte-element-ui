@@ -1,3 +1,7 @@
+# 2020.08.27
+
+实现了 layout 部分(row 和 col),使用的是 css 变量的方式
+
 # 2020.08.20
 
 使用 svelte 的 template 把本项目升级成支持 typescript.
@@ -30,7 +34,7 @@
 svelte-style-system 在用 style 方式处理的时候,不支持用逗号分隔的属性写法,像这样
 
 ```javascript
-style['_hover,_focus'];
+style['_hover,_focus']
 ```
 
 造成了写 button 样式的时候,不得不把相同的 hover 和 focus 分开写.
