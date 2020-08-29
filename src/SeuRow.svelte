@@ -5,12 +5,12 @@
   export let justify = 'start'
   export let align = 'top'
 
-  let classList = ['seu-row']
+  let classList = ['seu-row', $$props['class']]
   let styleList = []
 
   $: {
-    if (justify !== 'start') {
-      styleList.push(`--justify:${justify}`)
+    if (justify && justify !== 'start') {
+      styleList.push(`--justify:${justify === 'end' ? 'flex-end' : justify}`)
     }
 
     if (align === 'middle') {
@@ -24,9 +24,11 @@
     }
   }
 
+  console.log('$$props :', $$props)
+
   setContext('$_seu_row_gutter', gutter)
 </script>
 
-<div class={classList.join(' ')} style={styleList.join(';')}>
+<div class={classList.join(' ')} style={styleList.length ? styleList.join(';') : null}>
   <slot {gutter} />
 </div>
