@@ -42,11 +42,19 @@
 
 <script>
   import { SeuRow, SeuCol } from '../dist/bundle'
-  export let colSpan
   export let rowGutter
   export let rowType
   export let rowJustify
   export let rowAlign
+  export let colSpan
+  export let colOffset
+  export let colPull
+  export let colPush
+  export let colXs
+  export let colSm
+  export let colMd
+  export let colLg
+  export let colXl
 </script>
 
 <h1>Layout</h1>
@@ -55,10 +63,10 @@
 <h2>Try It with Knobs below</h2>
 
 <SeuRow class="height-100" gutter={rowGutter} type={rowType} justify={rowJustify} align={rowAlign}>
-  <SeuCol span={colSpan}>
+  <SeuCol span={colSpan} offset={colOffset} pull={colPull} push={colPush} xs={colXs} sm={colSm} md={colMd} lg={colLg} xl={colXl}>
     <div class="grid-content bg-purple-dark" />
   </SeuCol>
-  <SeuCol span={colSpan}>
+  <SeuCol span={colSpan} offset={colOffset} pull={colPull} push={colPush} xs={colXs} sm={colSm} md={colMd} lg={colLg} xl={colXl}>
     <div class="grid-content bg-purple-dark" />
   </SeuCol>
 </SeuRow>
