@@ -48,7 +48,6 @@ export const Layout = () => ({
     colOffset: number('col offset', 1, { range: true, max: 24, min: 0, step: 1 }, 'Main'),
     colPull: number('col pull', 1, { range: true, max: 24, min: 0, step: 1 }, 'Main'),
     colPush: number('col push', 1, { range: true, max: 24, min: 0, step: 1 }, 'Main'),
-    colPush: number('col push', 1, { range: true, max: 24, min: 0, step: 1 }, 'Main'),
     colXs: number('col xs', 1, { range: true, max: 24, min: 0, step: 1 }, 'Media Query'),
     colSm: number('col sm', 1, { range: true, max: 24, min: 0, step: 1 }, 'Media Query'),
     colMd: number('col md', 1, { range: true, max: 24, min: 0, step: 1 }, 'Media Query'),

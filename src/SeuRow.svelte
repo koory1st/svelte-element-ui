@@ -24,8 +24,6 @@
     }
   }
 
-  console.log('$$props :', $$props)
-
   setContext('$_seu_row_gutter', gutter)
 </script>
 

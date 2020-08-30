@@ -12,7 +12,7 @@
   export let lg = 0
   export let xl = 0
 
-  let classList = ['seu-col']
+  let classList = ['seu-col', $$props['class']]
   let style: string
 
   $: {
