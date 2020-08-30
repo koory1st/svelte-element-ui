@@ -33,6 +33,7 @@
   export let containerDirection
   export let headerHeight
   export let asideWidth
+  export let footerHeight
 </script>
 
 <h2>Container Direction. Try It with Knobs below</h2>
@@ -48,10 +49,11 @@
     <SeuAside width={asideWidth}>Aside</SeuAside>
     <SeuContainer direction="vertical">
       <SeuMain>Main</SeuMain>
-      <SeuFooter>Footer</SeuFooter>
+      <SeuFooter height={footerHeight}>Footer</SeuFooter>
     </SeuContainer>
   </SeuContainer>
 </SeuContainer>
+
 <h2>Samples</h2>
 <SeuContainer direction="vertical">
   <SeuHeader>Header</SeuHeader>
