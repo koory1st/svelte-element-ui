@@ -82,7 +82,7 @@
 .seu-button--primary:active {
   outline: none;
 }
-.seu-button--primary.is-plaind {
+.seu-button--primary.is-plain {
   color: #409eff;
   background: #ecf5ff;
   border-color: #b3d8ff;
@@ -138,7 +138,7 @@
 .seu-button--success:active {
   outline: none;
 }
-.seu-button--success.is-plaind {
+.seu-button--success.is-plain {
   color: #67c23a;
   background: #f0f9eb;
   border-color: #c2e7b0;
@@ -199,7 +199,7 @@
 .seu-button--info:active {
   outline: none;
 }
-.seu-button--info.is-plaind {
+.seu-button--info.is-plain {
   color: #909399;
   background: #f4f4f5;
   border-color: #d3d4d6;
@@ -254,7 +254,7 @@
 .seu-button--warning:active {
   outline: none;
 }
-.seu-button--warning.is-plaind {
+.seu-button--warning.is-plain {
   color: #e6a23c;
   background: #fdf6ec;
   border-color: #f5dab1;
@@ -309,7 +309,7 @@
 .seu-button--danger:active {
   outline: none;
 }
-.seu-button--danger.is-plaind {
+.seu-button--danger.is-plain {
   color: #f56c6c;
   background: #fef0f0;
   border-color: #fbc4c4;
