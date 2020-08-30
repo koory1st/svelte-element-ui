@@ -1,23 +1,18 @@
-<script>
-  import { css } from 'SvelteStyledSystem';
-  export let direction;
-  $: classString = getClassString`$$props`;
-  function getClassString() {
-    let rt = '';
-    rt += 'box-sizing: border-box;';
-    rt += 'display: flex;';
+<script type="ts">
+  export let direction = 'horizontal'
+
+  let classList = ['seu-container', $$props['class']]
+  let style: string
+
+  $: {
     if (direction === 'vertical') {
-      rt += 'flex-direction: column;';
+      style = `--direction:column`
     } else if (direction === 'horizontal') {
-      rt += 'flex-direction: row;';
+      style = `--direction:row`
     }
-    rt += 'flex: 1;';
-    rt += 'flex-basis: auto;';
-    rt += 'min-width: 0;';
-    return css(rt);
   }
 </script>
 
-<section class="seu-container {classString}">
+<section class={classList.join(' ')} {style}>
   <slot />
 </section>
