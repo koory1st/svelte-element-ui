@@ -32,6 +32,7 @@
   import { SeuContainer, SeuHeader, SeuMain, SeuFooter, SeuAside } from '../dist/bundle'
   export let containerDirection
   export let headerHeight
+  export let asideWidth
 </script>
 
 <h2>Container Direction. Try It with Knobs below</h2>
@@ -44,7 +45,7 @@
 <SeuContainer direction="vertical">
   <SeuHeader height={headerHeight}>Header</SeuHeader>
   <SeuContainer>
-    <SeuAside width="200px">Aside</SeuAside>
+    <SeuAside width={asideWidth}>Aside</SeuAside>
     <SeuContainer direction="vertical">
       <SeuMain>Main</SeuMain>
       <SeuFooter>Footer</SeuFooter>

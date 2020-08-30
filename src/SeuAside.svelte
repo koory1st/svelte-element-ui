@@ -1,12 +1,9 @@
-<script>
-  import { css } from 'SvelteStyledSystem';
-  export let width = '300px';
-  $: classString = getClassString`$$props`;
-  function getClassString() {
-    return css(`width:${width};`);
-  }
+<script type="ts">
+  export let width = '300px'
+  let classList = ['seu-aside', $$props['class']]
+  $: style = `--width:${width}`
 </script>
 
-<aside class="seu-aside {classString}">
+<aside class={classList.join(' ')} {style}>
   <slot />
 </aside>

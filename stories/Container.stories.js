@@ -15,6 +15,7 @@ export const seuContainer = () => ({
       },
       'Container Direction',
     ),
-    headerHeight: text('Header height', '60px', 'Main'),
+    headerHeight: text('Header Height', '60px', 'Main'),
+    asideWidth: text('Aside Width', '200px', 'Main'),
   },
 })

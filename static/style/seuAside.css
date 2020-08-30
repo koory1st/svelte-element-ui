@@ -1,0 +1,6 @@
+.seu-aside {
+  overflow: auto;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: var(--width);
+}
