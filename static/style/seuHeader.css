@@ -1,0 +1,6 @@
+.seu-header {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 0 20px;
+  height: var(--height);
+}
