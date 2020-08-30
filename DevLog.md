@@ -1,3 +1,6 @@
+# 2020.08.30
+基本完成layout部分的逻辑和storybook的展示逻辑. 未实现的是col的tag变量,暂时未找到svelte有相关的处理.
+
 # 2020.08.27
 
 实现了 layout 部分(row 和 col),使用的是 css 变量的方式
