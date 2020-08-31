@@ -33,6 +33,10 @@
     if (size) {
       classList.push(`seu-button--${size}`)
     }
+
+    if (loading) {
+      classList.push('is-loading')
+    }
   }
 </script>
 

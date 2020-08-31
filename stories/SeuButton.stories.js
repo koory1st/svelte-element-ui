@@ -38,5 +38,6 @@ export const SeuButton = () => ({
     plain: boolean('plain', false),
     round: boolean('round', false),
     circle: boolean('circle', false),
+    loading: boolean('loading', false),
   },
 })

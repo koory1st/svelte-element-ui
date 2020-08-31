@@ -22,7 +22,7 @@
 </script>
 
 <h2>Try It with Knobs below</h2>
-<SeuButton {type} {size} {disabled} {plain} {round} {circle}>默认按钮</SeuButton>
+<SeuButton {type} {size} {disabled} {plain} {round} {circle} {loading}>默认按钮</SeuButton>
 
 <h2>Samples</h2>
 <SeuRow>

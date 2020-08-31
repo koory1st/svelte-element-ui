@@ -35,6 +35,23 @@
   outline: none;
 }
 
+.seu-button.is-loading {
+  position: relative;
+  pointer-events: none;
+}
+
+.seu-button.is-loading::before {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  border-radius: inherit;
+  background-color: hsla(0, 0%, 100%, 0.35);
+}
+
 .seu-button.is-plain:focus,
 .seu-button.is-plain:hover {
   background: #fff;
