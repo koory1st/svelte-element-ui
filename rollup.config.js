@@ -1,36 +1,37 @@
-import svelte from 'rollup-plugin-svelte';
-import resolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import livereload from 'rollup-plugin-livereload';
-import { terser } from 'rollup-plugin-terser';
-import sveltePreprocess from 'svelte-preprocess';
-import typescript from '@rollup/plugin-typescript';
-import alias from '@rollup/plugin-alias';
-import postcss from 'rollup-plugin-postcss';
-import path from 'path';
+import svelte from 'rollup-plugin-svelte'
+import resolve from '@rollup/plugin-node-resolve'
+import commonjs from '@rollup/plugin-commonjs'
+// import livereload from 'rollup-plugin-livereload'
+import { terser } from 'rollup-plugin-terser'
+import sveltePreprocess from 'svelte-preprocess'
+import typescript from '@rollup/plugin-typescript'
+import alias from '@rollup/plugin-alias'
+import postcss from 'rollup-plugin-postcss'
+import path from 'path'
+import copy from 'rollup-plugin-copy'
 
-const production = !process.env.ROLLUP_WATCH;
-const projectRootDir = path.resolve(__dirname);
+const production = !process.env.ROLLUP_WATCH
+const projectRootDir = path.resolve(__dirname)
 
 function serve() {
-  let server;
+  let server
 
   function toExit() {
-    if (server) server.kill(0);
+    if (server) server.kill(0)
   }
 
   return {
     writeBundle() {
-      if (server) return;
+      if (server) return
       server = require('child_process').spawn('npm', ['run', 'start', '--', '--dev'], {
         stdio: ['ignore', 'inherit', 'inherit'],
         shell: true,
-      });
+      })
 
-      process.on('SIGTERM', toExit);
-      process.on('exit', toExit);
+      process.on('SIGTERM', toExit)
+      process.on('exit', toExit)
     },
-  };
+  }
 }
 
 export default {
@@ -58,7 +59,7 @@ export default {
       // a separate file - better for performance
       emitCss: true,
       css: css => {
-        css.write('dist/bundle.css');
+        css.write('dist/bundle.css')
       },
       preprocess: sveltePreprocess(),
     }),
@@ -79,6 +80,14 @@ export default {
       minimize: true,
       sourceMap: !production,
     }),
+    copy({
+      targets: [
+        {
+          src: ['static/fonts/element-icons.ttf', 'static/fonts/element-icons.woff'],
+          dest: 'dist/',
+        },
+      ],
+    }),
     // In dev mode, call `npm run start` once
     // the bundle has been generated
     // !production && serve(),
@@ -94,4 +103,4 @@ export default {
   watch: {
     clearScreen: false,
   },
-};
+}

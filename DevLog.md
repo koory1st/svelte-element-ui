@@ -1,5 +1,18 @@
+# 2020.08.31
+
+使用了 rollup-plugin-copy,将 element 的字体文件复制到了 dist 文件里,利用 element 的 font 的 css,直接让 icon 好用了.惊喜.
+
+- TODO 不知为什么,在 vscode 里,使用了 ts,总是用 ts 验证 js 里有一些错误.如果加上
+
+```json
+"javascript.validate.enable": false
+```
+
+这样连 js 都无法验证了,之后试试使用 eslint 验证
+
 # 2020.08.30
-基本完成layout部分的逻辑和storybook的展示逻辑. 未实现的是col的tag变量,暂时未找到svelte有相关的处理.
+
+基本完成 layout 部分的逻辑和 storybook 的展示逻辑. 未实现的是 col 的 tag 变量,暂时未找到 svelte 有相关的处理.
 
 # 2020.08.27
 
@@ -22,9 +35,9 @@
 之后会重新实现一下其他的之前的组件.
 
 - TODO: [添加测试方式](https://testing-library.com/docs/svelte-testing-library/intro)
-- TODO: [使用变量实现动态样式](https://css-tricks.com/what-i-like-about-writing-styles-with-svelte/)
-- TODO: 在本项目里使用 storybook(之前是吧 storybook 写到了另一个项目)
-- TODO: 在 storybook 里启用 knobs
+- DONE: [使用变量实现动态样式](https://css-tricks.com/what-i-like-about-writing-styles-with-svelte/)
+- DONE: 在本项目里使用 storybook(之前是吧 storybook 写到了另一个项目)
+- DONE: 在 storybook 里启用 knobs
 - TODO: 用 rollup 工作流,先 build 代码,然后启动 storybook 服务
 - TODO: 用 rollup 工作流,先 build 代码,然后 build storybook 代码
 
