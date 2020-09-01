@@ -1,9 +1,13 @@
 import SeuButtonStory from './SeuButton.storybook.svelte'
 import { withKnobs, optionsKnob, boolean } from '@storybook/addon-knobs'
+import { action } from '@storybook/addon-actions'
 export default { title: 'SeuButton', decorators: [withKnobs] }
 
 export const SeuButton = () => ({
   Component: SeuButtonStory,
+  on: {
+    click: action('be clicked'),
+  },
   props: {
     type: optionsKnob(
       'Type',

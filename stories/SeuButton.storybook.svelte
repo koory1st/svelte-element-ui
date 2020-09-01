@@ -15,14 +15,10 @@
   export let plain
   export let round
   export let circle
-
-  function clickHandler() {
-    console.log(123)
-  }
 </script>
 
 <h2>Try It with Knobs below</h2>
-<SeuButton {type} {size} {disabled} {plain} {round} {circle} {loading}>默认按钮</SeuButton>
+<SeuButton {type} {size} {disabled} {plain} {round} {circle} {loading} on:click>默认按钮</SeuButton>
 
 <h2>Samples</h2>
 <SeuRow>
@@ -96,5 +92,5 @@
   <SeuButton round>默认按钮</SeuButton>
   <SeuButton size="medium" round>中等按钮</SeuButton>
   <SeuButton size="small" round>小型按钮</SeuButton>
-  <SeuButton size="mini" round on:click={clickHandler}>超小按钮</SeuButton>
+  <SeuButton size="mini" round on:click>超小按钮</SeuButton>
 </SeuRow>
