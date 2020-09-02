@@ -8,7 +8,7 @@
     "start": "sirv public",
     "validate": "svelte-check",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o docs"
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",

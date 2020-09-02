@@ -1,3 +1,23 @@
+# 2020.09.02
+
+准备把 storybook 的静态页面发布到 github 的 page 上.
+
+- 先用***build-storybook***执行了一次,成功的输出到 storybook-static 文件夹中
+
+- 在 github 上配置 page,发现只能配置到***/***或者**/docs**文件夹里,只能让storybook输出到/docs文件夹里了
+
+- 查找storybook的主页,查到了api:https://storybook.js.org/docs/react/api/cli-options,使用-o /docs输出到docs文件夹
+
+- 但是执行时提示建立docs报错EROFS: read-only file system, mkdir '/docs',想起之前升级npm的时候也提示错误,以为是没有权限的问题,查找sof,https://stackoverflow.com/questions/47252451/permission-denied-when-installing-npm-modules-in-osx,使用以下命令之后权限问题解决.
+
+  ```bash
+  sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+  ```
+
+- 但是EROFS: read-only file system, mkdir '/docs问题仍然存在
+
+- 只能手动创建好文件夹了,然后-o docs,竟然好用了.
+
 # 2020.09.01
 
 一个动态加载 svelte 组件的库:https://github.com/kaisermann/svelte-loadable
