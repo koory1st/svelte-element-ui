@@ -1,3 +1,7 @@
+# 2020.09.01
+
+一个动态加载 svelte 组件的库:https://github.com/kaisermann/svelte-loadable
+
 # 2020.08.31
 
 使用了 rollup-plugin-copy,将 element 的字体文件复制到了 dist 文件里,利用 element 的 font 的 css,直接让 icon 好用了.惊喜.
