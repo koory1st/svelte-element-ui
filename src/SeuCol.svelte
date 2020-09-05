@@ -1,4 +1,5 @@
 <script type="ts">
+  import { styleStr2Array, styleArray2Str, classStr2Array, classArray2Str } from './util/StringUtil'
   import { getContext } from 'svelte'
 
   export let span = 24
@@ -12,8 +13,8 @@
   export let lg = 0
   export let xl = 0
 
-  let classList = ['seu-col', $$props['class']]
-  let style: string
+  let classList = ['seu-col', ...classStr2Array($$props['class'])]
+  let styleList = styleStr2Array($$props['style'])
 
   $: {
     classList.push(`seu-col-${span}`)
@@ -28,11 +29,11 @@
 
     if (gutter) {
       classList.push(`seu-col-gutter`)
-      style = `--padding:${gutter / 2}px`
+      styleList.push(`--padding:${gutter / 2}px`)
     }
   }
 </script>
 
-<div class={classList.join(' ')} {style}>
+<div class={classArray2Str(classList)} style={styleArray2Str(styleList)}>
   <slot />
 </div>

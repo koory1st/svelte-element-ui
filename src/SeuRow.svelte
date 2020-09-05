@@ -1,12 +1,13 @@
 <script type="ts">
+  import { styleStr2Array, styleArray2Str, classStr2Array, classArray2Str } from './util/StringUtil'
   import { setContext } from 'svelte'
   export let gutter = 0
   export let type: string
   export let justify = 'start'
   export let align = 'top'
 
-  let classList = ['seu-row', $$props['class']]
-  let styleList = []
+  let classList = ['seu-row', ...classStr2Array($$props['class'])]
+  let styleList = styleStr2Array($$props['style'])
 
   $: {
     if (justify && justify !== 'start') {
@@ -27,6 +28,6 @@
   setContext('$_seu_row_gutter', gutter)
 </script>
 
-<div class={classList.join(' ')} style={styleList.length ? styleList.join(';') : null}>
+<div class={classArray2Str(classList)} style={styleArray2Str(styleList)}>
   <slot {gutter} />
 </div>
