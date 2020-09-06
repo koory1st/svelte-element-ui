@@ -1,0 +1,128 @@
+.seu-link {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.seu-link.is-disabled {
+  cursor: not-allowed;
+}
+
+.seu-link.seu-link--default {
+  color: #606266;
+}
+
+.seu-link.seu-link--default:hover {
+  color: #409eff;
+}
+
+.seu-link.is-underline:hover:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0;
+  bottom: 0;
+  border-bottom: 1px solid #409eff;
+}
+
+.seu-link.seu-link--default:after {
+  border-color: #409eff;
+}
+
+.seu-link.seu-link--default.is-disabled {
+  color: #c0c4cc;
+}
+
+.seu-link.seu-link--primary {
+  color: #409eff;
+}
+
+.seu-link.seu-link--primary:hover {
+  color: #66b1ff;
+}
+
+.seu-link.seu-link--primary.is-underline:hover:after {
+  border-color: #409eff;
+}
+
+.seu-link.seu-link--primary.is-disabled {
+  color: #a0cfff;
+}
+
+.seu-link.seu-link--success {
+  color: #67c23a;
+}
+
+.seu-link.seu-link--success:hover {
+  color: #85ce61;
+}
+
+.seu-link.seu-link--success.is-underline:hover:after {
+  border-color: #67c23a;
+}
+
+.seu-link.seu-link--success.is-disabled {
+  color: #b3e19d;
+}
+
+.seu-link.seu-link--warning {
+  color: #e6a23c;
+}
+
+.seu-link.seu-link--warning:hover {
+  color: #ebb563;
+}
+
+.seu-link.seu-link--warning.is-underline:hover:after {
+  border-color: #e6a23c;
+}
+
+.seu-link.seu-link--warning.is-disabled {
+  color: #f3d19e;
+}
+
+.seu-link.seu-link--danger {
+  color: #f56c6c;
+}
+
+.seu-link.seu-link--danger:hover {
+  color: #f78989;
+}
+
+.seu-link.seu-link--danger.is-underline:hover:after {
+  border-color: #f56c6c;
+}
+
+.seu-link.seu-link--danger.is-disabled {
+  color: #fab6b6;
+}
+
+.seu-link.seu-link--info {
+  color: #909399;
+}
+
+.seu-link.seu-link--info:hover {
+  color: #a6a9ad;
+}
+
+.seu-link.seu-link--info.is-underline:hover:after {
+  border-color: #909399;
+}
+
+.seu-link.seu-link--info.is-disabled {
+  color: #c8c9cc;
+}
+
+.seu-link [class*='seu-icon-'] + span {
+  margin-left: 5px;
+}

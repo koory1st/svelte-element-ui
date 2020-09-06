@@ -1,9 +1,3 @@
-<style>
-  :global(.seu-row) {
-    margin-bottom: 20px;
-  }
-</style>
-
 <script>
   import { SeuRow, SeuButton } from '../dist/bundle'
   export let type
@@ -94,3 +88,9 @@
   <SeuButton size="small" round>小型按钮</SeuButton>
   <SeuButton size="mini" round on:click>超小按钮</SeuButton>
 </SeuRow>
+
+<style>
+  :global(.seu-row) {
+    margin-bottom: 20px;
+  }
+</style>
