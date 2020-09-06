@@ -416,3 +416,52 @@
 .seu-button--small.is-round {
   padding: 9px 15px;
 }
+
+.seu-button-group {
+  display: inline-block;
+  vertical-align: middle;
+}
+.seu-button-group:after,
+.seu-button-group:before {
+  display: table;
+  content: '';
+}
+.seu-button-group:after {
+  clear: both;
+}
+.seu-button-group:after,
+.seu-button-group:before {
+  display: table;
+  content: '';
+}
+.seu-button-group.seu-button {
+  float: none;
+}
+.seu-button-group .seu-button:first-child {
+  border-right-color: hsla(0, 0%, 100%, 0.5);
+}
+.seu-button-group > .seu-button:not(:last-child) {
+  margin-right: -1px;
+}
+.seu-button-group > .seu-button:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.seu-button-group .seu-button:last-child {
+  border-left-color: hsla(0, 0%, 100%, 0.5);
+}
+.seu-button-group > .seu-button:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.seu-button-group .seu-button:not(:first-child):not(:last-child) {
+  border-left-color: hsla(0, 0%, 100%, 0.5);
+  border-right-color: hsla(0, 0%, 100%, 0.5);
+}
+.seu-button-group > .seu-button:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.seu-button-group > .seu-button {
+  float: left;
+  position: relative;
+}
