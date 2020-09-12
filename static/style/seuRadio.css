@@ -87,14 +87,26 @@
 }
 
 .seu-radio.is-disabled .seu-radio__inner {
-  background-color: #f5f7fa;
-  border-color: #e4e7ed;
+  background-color: var(--background-color-base);
+  border-color: var(--border-color-light);
   cursor: not-allowed;
 }
 
+.seu-radio.is-disabled.is-checked .seu-radio__inner {
+  background-color: var(--background-color-base);
+  border-color: var(--border-color-light);
+}
+
+.seu-radio.is-disabled.is-checked .seu-radio__inner:after {
+  background-color: var(--color-text-placeholder);
+}
 .seu-radio.is-disabled .seu-radio__inner:after {
   cursor: not-allowed;
-  background-color: #f5f7fa;
+  background-color: var(--background-color-base);
+}
+
+.seu-radio.is-disabled {
+  cursor: not-allowed;
 }
 
 .seu-radio.is-disabled span.seu-radio__label {

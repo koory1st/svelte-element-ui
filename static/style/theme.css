@@ -1,3 +1,11 @@
 :root {
   --color-primary: #409eff;
+
+  --background-color-base: #f5f7fa;
+  --border-color-base: #dcdfe6;
+  --border-color-light: #e4e7ed;
+
+  --background-color-base: #f5f7fa;
+
+  --color-text-placeholder: #c0c4cc;
 }

@@ -1,20 +1,29 @@
+# 2020.09.09
+
+在做 radio 的过程中,发现 element ui 的 dom 结构里, label 里的 input 层级太深了,导致使用 svelte 的时候被插件警告.警告不能忍,所以把层级修改成正常的,但是结果就是样式需要自己调整了.
+
+另外在做 tabindex 的时候发现不好用了,原因是自己的 keydown 事件逻辑写错了,导致 tab 被按下之后 也 prevent default 了,本应该只控制空格被按下的.
+
+- TODO: 感觉有必要把整体的样式控制加上,用 css 变量实现
+- TODO: radio 里还有好多的 size 样式,头疼
+
 # 2020.09.02
 
 准备把 storybook 的静态页面发布到 github 的 page 上.
 
-- 先用***build-storybook***执行了一次,成功的输出到 storybook-static 文件夹中
+- 先用**_build-storybook_**执行了一次,成功的输出到 storybook-static 文件夹中
 
-- 在 github 上配置 page,发现只能配置到***/***或者**/docs**文件夹里,只能让storybook输出到/docs文件夹里了
+- 在 github 上配置 page,发现只能配置到**_/_**或者**/docs**文件夹里,只能让 storybook 输出到/docs 文件夹里了
 
-- 查找storybook的主页,查到了api:https://storybook.js.org/docs/react/api/cli-options,使用-o /docs输出到docs文件夹
+- 查找 storybook 的主页,查到了 api:https://storybook.js.org/docs/react/api/cli-options,使用-o /docs 输出到 docs 文件夹
 
-- 但是执行时提示建立docs报错EROFS: read-only file system, mkdir '/docs',想起之前升级npm的时候也提示错误,以为是没有权限的问题,查找sof,https://stackoverflow.com/questions/47252451/permission-denied-when-installing-npm-modules-in-osx,使用以下命令之后权限问题解决.
+- 但是执行时提示建立 docs 报错 EROFS: read-only file system, mkdir '/docs',想起之前升级 npm 的时候也提示错误,以为是没有权限的问题,查找 sof,https://stackoverflow.com/questions/47252451/permission-denied-when-installing-npm-modules-in-osx,使用以下命令之后权限问题解决.
 
   ```bash
   sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
   ```
 
-- 但是EROFS: read-only file system, mkdir '/docs问题仍然存在
+- 但是 EROFS: read-only file system, mkdir '/docs 问题仍然存在
 
 - 只能手动创建好文件夹了,然后-o docs,竟然好用了.
 
