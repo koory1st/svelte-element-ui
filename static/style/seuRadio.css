@@ -71,7 +71,7 @@
 }
 
 .seu-radio.is-checked .seu-radio__label {
-  color: var(--color-primary) f;
+  color: var(--color-primary);
 }
 .seu-radio__label {
   font-size: 14px;
@@ -124,4 +124,25 @@
 
 .seu-radio:focus:not(.is-focus):not(:active):not(.is-disabled) .seu-radio__inner {
   box-shadow: 0 0 2px 2px #409eff;
+}
+
+.seu-radio.is-bordered {
+  padding: var(--radio-bordered-padding);
+  border-radius: var(--border-radius-base);
+  border: var(--border-base);
+  box-sizing: border-box;
+  height: var(--radio-bordered-height);
+}
+
+.seu-radio.is-bordered.is-checked {
+  border-color: var(--color-primary);
+}
+
+.seu-radio.is-bordered.is-checked.is-disabled {
+  cursor: not-allowed;
+  border-color: var(--border-color-lighter);
+}
+
+.seu-radio.is-bordered + .seu-radio.is-bordered {
+  margin-left: 10px;
 }

@@ -21,6 +21,9 @@ export const seuLinkStory = () => ({
         display: 'inline-radio',
       },
     ),
+    label1: text('label1', '1'),
+    label2: text('label2', '2'),
+    border: boolean('border', false),
     size: optionsKnob(
       'size',
       {

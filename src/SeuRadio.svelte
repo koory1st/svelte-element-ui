@@ -14,7 +14,6 @@
 
   $: isChecked = value === label ? true : null
   $: isDisabled = disabled ? disabled : null
-  $: tabindex = '0'
 
   function handleKeydown(event: KeyboardEvent) {
     if (event.code !== 'Space') {

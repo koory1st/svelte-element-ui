@@ -15,8 +15,8 @@
 <h2>Try It with Knobs below</h2>
 selected value: {value}
 <div>
-  <SeuRadio bind:value {label1} {border} {size} {name} {disabled}>Option A</SeuRadio>
-  <SeuRadio bind:value {label2} {border} {size} {name} {disabled}>Option B</SeuRadio>
+  <SeuRadio bind:value label={label1} {border} {size} {name} {disabled}>Option A</SeuRadio>
+  <SeuRadio bind:value label={label2} {border} {size} {name} {disabled}>Option B</SeuRadio>
 </div>
 
 <h2>Disabled</h2>
