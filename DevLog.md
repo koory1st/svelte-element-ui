@@ -1,3 +1,7 @@
+# 2020.09.12
+
+svelte 的 gitbub 上已经添加了\$\$slot 的支持,但是仍为发布,TODO:等待发布,把 radio 加上判断是否有 slot,没有的话就用 label
+
 # 2020.09.09
 
 在做 radio 的过程中,发现 element ui 的 dom 结构里, label 里的 input 层级太深了,导致使用 svelte 的时候被插件警告.警告不能忍,所以把层级修改成正常的,但是结果就是样式需要自己调整了.

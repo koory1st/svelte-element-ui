@@ -10,24 +10,29 @@ export const seuLinkStory = () => ({
     click: action('be clicked'),
   },
   props: {
-    type: optionsKnob(
-      'type',
+    value: optionsKnob(
+      'value',
       {
-        default: 'default',
-        primary: 'primary',
-        success: 'success',
-        warning: 'warning',
-        danger: 'danger',
-        info: 'info',
+        1: '1',
+        2: '2',
       },
-      'default',
+      '1',
       {
         display: 'inline-radio',
       },
     ),
-    underline: boolean('underline', true),
+    size: optionsKnob(
+      'size',
+      {
+        medium: 'medium',
+        small: 'small',
+        mini: 'mini',
+      },
+      '',
+      {
+        display: 'inline-radio',
+      },
+    ),
     disabled: boolean('disabled', false),
-    href: text('href', 'https://koory1st.github.io/svelte-element-ui'),
-    icon: text('icon', 'seu-icon-search'),
   },
 })
