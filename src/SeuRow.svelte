@@ -9,24 +9,22 @@
   let classList = ['seu-row', ...classStr2Array($$props['class'])]
   let styleList = styleStr2Array($$props['style'])
 
-  $: {
-    if (justify && justify !== 'start') {
-      classList.push(`is-justify-${justify}`)
-    }
+  if (justify && justify !== 'start') {
+    classList.push(`is-justify-${justify}`)
+  }
 
-    if (align && align !== 'top') {
-      classList.push(`is-align-${align}`)
-    }
+  if (align && align !== 'top') {
+    classList.push(`is-align-${align}`)
+  }
 
-    if (type === 'flex') {
-      classList.push('seu-row--flex')
-    }
+  if (type === 'flex') {
+    classList.push('seu-row--flex')
+  }
 
-    if (gutter) {
-      const value = `-${gutter / 2}px`
-      styleList.push(`margin-left:${value}`)
-      styleList.push(`margin-right:${value}`)
-    }
+  if (gutter) {
+    const value = `-${gutter / 2}px`
+    styleList.push(`margin-left:${value}`)
+    styleList.push(`margin-right:${value}`)
   }
 
   setContext('$_seu_row_gutter', gutter)

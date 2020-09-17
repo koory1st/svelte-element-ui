@@ -16,22 +16,20 @@
   let classList = ['seu-col', ...classStr2Array($$props['class'])]
   let styleList = styleStr2Array($$props['style'])
 
-  $: {
-    classList.push(`seu-col-${span}`)
-    offset && classList.push(`seu-col-offset-${offset}`)
-    pull && classList.push(`seu-col-pull-${pull}`)
-    push && classList.push(`seu-col-push-${push}`)
-    xs && classList.push(`seu-col-xs-${xs}`)
-    sm && classList.push(`seu-col-sm-${sm}`)
-    md && classList.push(`seu-col-md-${md}`)
-    lg && classList.push(`seu-col-lg-${lg}`)
-    xl && classList.push(`seu-col-xl-${xl}`)
+  classList.push(`seu-col-${span}`)
+  offset && classList.push(`seu-col-offset-${offset}`)
+  pull && classList.push(`seu-col-pull-${pull}`)
+  push && classList.push(`seu-col-push-${push}`)
+  xs && classList.push(`seu-col-xs-${xs}`)
+  sm && classList.push(`seu-col-sm-${sm}`)
+  md && classList.push(`seu-col-md-${md}`)
+  lg && classList.push(`seu-col-lg-${lg}`)
+  xl && classList.push(`seu-col-xl-${xl}`)
 
-    if (gutter) {
-      const value = `${gutter / 2}px`
-      styleList.push(`padding-left:${value}`)
-      styleList.push(`padding-right:${value}`)
-    }
+  if (gutter) {
+    const value = `${gutter / 2}px`
+    styleList.push(`padding-left:${value}`)
+    styleList.push(`padding-right:${value}`)
   }
 </script>
 

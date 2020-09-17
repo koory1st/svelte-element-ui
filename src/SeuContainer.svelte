@@ -5,10 +5,8 @@
   let classList = ['seu-container', ...classStr2Array($$props['class'])]
   let styleList = styleStr2Array($$props['style'])
 
-  $: {
-    if (direction === 'vertical') {
-      classList.push(`is-vertical`)
-    }
+  if (direction === 'vertical') {
+    classList.push(`is-vertical`)
   }
 </script>
 

@@ -9,14 +9,12 @@
 
   let classList = ['seu-link', ...classStr2Array($$props['class'])]
 
-  $: {
-    if (!type) {
-      type = 'default'
-    }
-    classList.push(`seu-link--${type}`)
-    disabled && classList.push(`is-disabled`)
-    underline && !disabled && classList.push(`is-underline`)
+  if (!type) {
+    type = 'default'
   }
+  classList.push(`seu-link--${type}`)
+  disabled && classList.push(`is-disabled`)
+  underline && !disabled && classList.push(`is-underline`)
 
   let styleList = styleStr2Array($$props['style'])
 

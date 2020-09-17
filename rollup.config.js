@@ -1,3 +1,4 @@
+// @ts-nocheck
 import svelte from 'rollup-plugin-svelte'
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
@@ -56,12 +57,11 @@ export default {
     }),
     svelte({
       // enable run-time checks when not in production
-      dev: !production,
       // we'll extract any component CSS out into
       // a separate file - better for performance
       emitCss: true,
       css: css => {
-        css.write('dist/bundle.css')
+        css.write('dist/bundle.css', true)
       },
       preprocess: sveltePreprocess(),
     }),
@@ -77,12 +77,12 @@ export default {
     }),
     commonjs(),
     typescript({ sourceMap: !production }),
-    scss(),
-    // postcss({
-    //   extract: 'bundle.css',
-    //   minimize: true,
-    //   sourceMap: !production,
-    // }),
+    // scss(),
+    postcss({
+      extract: 'bundle.css',
+      minimize: true,
+      sourceMap: !production,
+    }),
     copy({
       targets: [
         {
