@@ -7,9 +7,7 @@
 
   $: {
     if (direction === 'vertical') {
-      styleList.push(`--direction:column`)
-    } else if (direction === 'horizontal') {
-      styleList.push(`--direction:row`)
+      classList.push(`is-vertical`)
     }
   }
 </script>

@@ -27,6 +27,7 @@ export const seuLinkStory = () => ({
     size: optionsKnob(
       'size',
       {
+        default: 'default',
         medium: 'medium',
         small: 'small',
         mini: 'mini',

@@ -11,17 +11,21 @@
 
   $: {
     if (justify && justify !== 'start') {
-      styleList.push(`--justify:${justify === 'end' ? 'flex-end' : justify}`)
+      classList.push(`is-justify-${justify}`)
     }
 
-    if (align === 'middle') {
-      styleList.push(`--align:center`)
-    } else if (align === 'bottom') {
-      styleList.push(`--align:flex-end`)
+    if (align && align !== 'top') {
+      classList.push(`is-align-${align}`)
     }
 
     if (type === 'flex') {
       classList.push('seu-row--flex')
+    }
+
+    if (gutter) {
+      const value = `-${gutter / 2}px`
+      styleList.push(`margin-left:${value}`)
+      styleList.push(`margin-right:${value}`)
     }
   }
 

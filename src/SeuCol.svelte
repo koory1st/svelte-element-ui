@@ -28,8 +28,9 @@
     xl && classList.push(`seu-col-xl-${xl}`)
 
     if (gutter) {
-      classList.push(`seu-col-gutter`)
-      styleList.push(`--padding:${gutter / 2}px`)
+      const value = `${gutter / 2}px`
+      styleList.push(`padding-left:${value}`)
+      styleList.push(`padding-right:${value}`)
     }
   }
 </script>

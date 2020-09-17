@@ -14,6 +14,11 @@
 
   $: isChecked = value === label ? true : null
   $: isDisabled = disabled ? disabled : null
+  $: {
+    if (size) {
+      classList.push(`seu-radio--${size}`)
+    }
+  }
 
   function handleKeydown(event: KeyboardEvent) {
     if (event.code !== 'Space') {

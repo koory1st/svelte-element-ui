@@ -9,6 +9,7 @@ import alias from '@rollup/plugin-alias'
 import postcss from 'rollup-plugin-postcss'
 import path from 'path'
 import copy from 'rollup-plugin-copy'
+import scss from 'rollup-plugin-scss'
 
 const production = !process.env.ROLLUP_WATCH
 const projectRootDir = path.resolve(__dirname)
@@ -49,6 +50,7 @@ export default {
         '@': projectRootDir + '/src',
         root: projectRootDir,
         style: projectRootDir + '/static/style',
+        'theme-chalk': projectRootDir + '/static/theme-chalk',
         SvelteStyledSystem: __dirname + '/src/util/svelte_styled_system',
       },
     }),
@@ -75,11 +77,12 @@ export default {
     }),
     commonjs(),
     typescript({ sourceMap: !production }),
-    postcss({
-      extract: 'bundle.css',
-      minimize: true,
-      sourceMap: !production,
-    }),
+    scss(),
+    // postcss({
+    //   extract: 'bundle.css',
+    //   minimize: true,
+    //   sourceMap: !production,
+    // }),
     copy({
       targets: [
         {

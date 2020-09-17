@@ -6,7 +6,7 @@ export default { title: 'Layout', decorators: [withKnobs] }
 export const Layout = () => ({
   Component: LayoutStory,
   props: {
-    rowGutter: number('row gutter', 1, { max: 100, min: 0, step: 1 }, 'Main'),
+    rowGutter: number('row gutter', 0, { max: 100, min: 0, step: 1 }, 'Main'),
     rowType: optionsKnob(
       'row type',
       { normal: '', flex: 'flex' },
@@ -45,13 +45,13 @@ export const Layout = () => ({
       'Main',
     ),
     colSpan: number('col span', 1, { range: true, max: 24, min: 0, step: 1 }, 'Main'),
-    colOffset: number('col offset', 1, { range: true, max: 24, min: 0, step: 1 }, 'Main'),
-    colPull: number('col pull', 1, { range: true, max: 24, min: 0, step: 1 }, 'Main'),
-    colPush: number('col push', 1, { range: true, max: 24, min: 0, step: 1 }, 'Main'),
-    colXs: number('col xs', 1, { range: true, max: 24, min: 0, step: 1 }, 'Media Query'),
-    colSm: number('col sm', 1, { range: true, max: 24, min: 0, step: 1 }, 'Media Query'),
-    colMd: number('col md', 1, { range: true, max: 24, min: 0, step: 1 }, 'Media Query'),
-    colLg: number('col lg', 1, { range: true, max: 24, min: 0, step: 1 }, 'Media Query'),
-    colXl: number('col xl', 1, { range: true, max: 24, min: 0, step: 1 }, 'Media Query'),
+    colOffset: number('col offset', 0, { range: true, max: 24, min: 0, step: 1 }, 'Main'),
+    colPull: number('col pull', 0, { range: true, max: 24, min: 0, step: 1 }, 'Main'),
+    colPush: number('col push', 0, { range: true, max: 24, min: 0, step: 1 }, 'Main'),
+    colXs: number('col xs', 0, { range: true, max: 24, min: 0, step: 1 }, 'Media Query'),
+    colSm: number('col sm', 0, { range: true, max: 24, min: 0, step: 1 }, 'Media Query'),
+    colMd: number('col md', 0, { range: true, max: 24, min: 0, step: 1 }, 'Media Query'),
+    colLg: number('col lg', 0, { range: true, max: 24, min: 0, step: 1 }, 'Media Query'),
+    colXl: number('col xl', 0, { range: true, max: 24, min: 0, step: 1 }, 'Media Query'),
   },
 })
