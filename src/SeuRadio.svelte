@@ -42,7 +42,9 @@
   aria-checked={isChecked}
   style={styleArray2Str(styleList)}
   on:keydown={handleKeydown}>
-  <span class="seu-radio__input"> <span class="seu-radio__inner" /> </span>
+  <span class="seu-radio__input" class:is-checked={isChecked} class:is-disabled={isDisabled}>
+    <span class="seu-radio__inner" />
+  </span>
   <input
     class="seu-radio__original"
     type="radio"
