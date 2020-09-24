@@ -1,33 +1,3 @@
-<style>
-  :global(.seu-header) {
-    text-align: center;
-  }
-
-  :global(.seu-header) {
-    background-color: #b3c0d1;
-    color: #333;
-    line-height: 60px;
-  }
-  :global(.seu-main) {
-    background-color: #e9eef3;
-    color: #333;
-    text-align: center;
-    line-height: 160px;
-  }
-  :global(.seu-footer) {
-    background-color: #b3c0d1;
-    color: #333;
-    line-height: 60px;
-    text-align: center;
-  }
-  :global(.seu-aside) {
-    color: #333;
-    background-color: #d3dce6;
-    text-align: center;
-    line-height: 200px;
-  }
-</style>
-
 <script>
   import { SeuContainer, SeuHeader, SeuMain, SeuFooter, SeuAside } from '../dist/bundle'
   export let containerDirection
@@ -43,13 +13,13 @@
 </SeuContainer>
 
 <h2>Header height. Try It with Knobs below</h2>
-<SeuContainer direction="vertical">
-  <SeuHeader height={headerHeight}>Header</SeuHeader>
+<SeuContainer direction="vertical" style="font-size: 20px ">
+  <SeuHeader height={headerHeight} style="color:red ">Header</SeuHeader>
   <SeuContainer>
-    <SeuAside width={asideWidth}>Aside</SeuAside>
+    <SeuAside width={asideWidth} style="color: red ">Aside</SeuAside>
     <SeuContainer direction="vertical">
-      <SeuMain>Main</SeuMain>
-      <SeuFooter height={footerHeight}>Footer</SeuFooter>
+      <SeuMain style="color: red ">Main</SeuMain>
+      <SeuFooter height={footerHeight} style="color: red ">Footer</SeuFooter>
     </SeuContainer>
   </SeuContainer>
 </SeuContainer>
@@ -106,3 +76,33 @@
     <SeuFooter>Footer</SeuFooter>
   </SeuContainer>
 </SeuContainer>
+
+<style>
+  :global(.seu-header) {
+    text-align: center;
+  }
+
+  :global(.seu-header) {
+    background-color: #b3c0d1;
+    color: #333;
+    line-height: 60px;
+  }
+  :global(.seu-main) {
+    background-color: #e9eef3;
+    color: #333;
+    text-align: center;
+    line-height: 160px;
+  }
+  :global(.seu-footer) {
+    background-color: #b3c0d1;
+    color: #333;
+    line-height: 60px;
+    text-align: center;
+  }
+  :global(.seu-aside) {
+    color: #333;
+    background-color: #d3dce6;
+    text-align: center;
+    line-height: 200px;
+  }
+</style>

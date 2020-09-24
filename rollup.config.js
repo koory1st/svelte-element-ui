@@ -1,3 +1,4 @@
+// @ts-nocheck
 import svelte from 'rollup-plugin-svelte'
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
@@ -9,6 +10,7 @@ import alias from '@rollup/plugin-alias'
 import postcss from 'rollup-plugin-postcss'
 import path from 'path'
 import copy from 'rollup-plugin-copy'
+import scss from 'rollup-plugin-scss'
 
 const production = !process.env.ROLLUP_WATCH
 const projectRootDir = path.resolve(__dirname)
@@ -49,17 +51,17 @@ export default {
         '@': projectRootDir + '/src',
         root: projectRootDir,
         style: projectRootDir + '/static/style',
+        'theme-chalk': projectRootDir + '/static/theme-chalk',
         SvelteStyledSystem: __dirname + '/src/util/svelte_styled_system',
       },
     }),
     svelte({
       // enable run-time checks when not in production
-      dev: !production,
       // we'll extract any component CSS out into
       // a separate file - better for performance
       emitCss: true,
       css: css => {
-        css.write('dist/bundle.css')
+        css.write('dist/bundle.css', true)
       },
       preprocess: sveltePreprocess(),
     }),
@@ -75,6 +77,7 @@ export default {
     }),
     commonjs(),
     typescript({ sourceMap: !production }),
+    // scss(),
     postcss({
       extract: 'bundle.css',
       minimize: true,
