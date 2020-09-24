@@ -2,7 +2,7 @@
   import { styleStr2Array, styleArray2Str, classStr2Array, classArray2Str } from './util/StringUtil'
   export let value: string | number
   export let label: string | number
-  export let disabled = false
+  export let disabled: boolean = false
   export let name: string
   export let border = false
   export let size: string
@@ -42,9 +42,6 @@
   aria-checked={isChecked}
   style={styleArray2Str(styleList)}
   on:keydown={handleKeydown}>
-  <span class="seu-radio__input" class:is-checked={isChecked} class:is-disabled={isDisabled}>
-    <span class="seu-radio__inner" />
-  </span>
   <input
     class="seu-radio__original"
     type="radio"
@@ -56,6 +53,9 @@
     tabindex="-1"
     on:focus={() => (isFocus = true)}
     on:blur={() => (isFocus = false)} />
+  <span class="seu-radio__input" class:is-checked={isChecked} class:is-disabled={isDisabled}>
+    <span class="seu-radio__inner" />
+  </span>
   <span class="seu-radio__label" on:keydown|stopPropagation>
     <slot />
   </span>

@@ -11,6 +11,12 @@
   export let fill = null
   export let radio2 = '2'
   export let groupValue = '1'
+  let groupRadioSetting = [
+    { label: 'Option A', value: '1' },
+    { label: 'Option B', value: '2' },
+    { label: 'Option C', value: '3' },
+  ]
+  export let groupDisabled = false
 </script>
 
 <h2>Try It with Knobs below</h2>
@@ -29,6 +35,4 @@ disabled attribute is used to disable the radio.
 
 <h2>Radio button group</h2>
 group value : {groupValue}
-<SeuRadioGroup
-  bind:value={groupValue}
-  radios={[{ label: 'Option A', value: '1' }, { label: 'Option B', value: '2' }, { label: 'Option C', value: '3' }]} />
+<SeuRadioGroup bind:value={groupValue} radios={groupRadioSetting} disabled={groupDisabled} />

@@ -50,5 +50,6 @@ export const seuLinkStory = () => ({
         display: 'inline-radio',
       },
     ),
+    groupDisabled: boolean('group disabled', false),
   },
 })

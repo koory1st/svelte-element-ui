@@ -43,9 +43,11 @@
       border-radius: $--button-medium-border-radius;
       height: $--radio-bordered-medium-height;
       .seu-radio__label {
+        cursor: not-allowed;
         font-size: $--button-medium-font-size;
       }
       .seu-radio__inner {
+        cursor: not-allowed;
         height: $--radio-bordered-medium-input-height;
         width: $--radio-bordered-medium-input-width;
       }
@@ -94,6 +96,7 @@
     vertical-align: middle;
 
     @include when(disabled) {
+      cursor: not-allowed;
       .seu-radio__inner {
         background-color: $--radio-disabled-input-fill;
         border-color: $--radio-disabled-input-border-color;
@@ -109,11 +112,14 @@
         }
       }
       &.is-checked {
+        cursor: not-allowed;
         .seu-radio__inner {
+          cursor: not-allowed;
           background-color: $--radio-disabled-checked-input-fill;
           border-color: $--radio-disabled-checked-input-border-color;
 
           &::after {
+            cursor: not-allowed;
             background-color: $--radio-disabled-checked-icon-color;
           }
         }
