@@ -4,7 +4,7 @@
   export let label: string | number
   export let disabled: boolean = false
   export let name: string
-  export let border = false
+  export let border: boolean = false
   export let size: string
   let isFocus = false
 
