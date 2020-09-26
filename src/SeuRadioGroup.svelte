@@ -14,6 +14,8 @@
 
 <div class={classArray2Str(classList)} style={styleArray2Str(styleList)}>
   {#each radios as radio}
-    <SeuRadio bind:value label={radio.value} {disabled} {border} {size}>{radio.label || radio.value}</SeuRadio>
+    <SeuRadio bind:value label={radio.value} {disabled} {border} {size} isGroup on:change>
+      {radio.label || radio.value}
+    </SeuRadio>
   {/each}
 </div>

@@ -7,7 +7,7 @@ export default { title: 'SeuRadio', decorators: [withKnobs] }
 export const seuRadioStory = () => ({
   Component: SeuRadioStory,
   on: {
-    click: action('be clicked'),
+    change: action('be changed'),
   },
   props: {
     value: optionsKnob(

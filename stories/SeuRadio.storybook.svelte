@@ -18,11 +18,11 @@
 </script>
 
 <h2>Try It with Knobs below</h2>
-selected value: {value}
+<h3>selected value: {value}</h3>
 <div>
   <SeuRadio bind:value label={label1} {border} {size} {name} {disabled}>Option A</SeuRadio>
   <SeuRadio bind:value label={label2} {border} {size} {name} {disabled}>Option B</SeuRadio>
 </div>
 
-group value : {groupValue}
-<SeuRadioGroup bind:value={groupValue} radios={groupRadioSetting} disabled={groupDisabled} {border} {size} />
+<h3>group value : {groupValue}</h3>
+<SeuRadioGroup bind:value={groupValue} radios={groupRadioSetting} disabled={groupDisabled} {border} {size} on:change />
