@@ -7,7 +7,6 @@
   export let size = ''
   export let name = ''
   export let disabled = null
-  export let radio2 = '2'
   export let groupValue = '1'
   let groupRadioSetting = [
     { label: 'Option A', value: '1' },

@@ -59,5 +59,6 @@
     on:change={handleChange} />
   <span class="seu-radio-button__inner" on:keydown|stopPropagation>
     <slot />
+    {#if !$$slots.default}{label}{/if}
   </span>
 </label>
