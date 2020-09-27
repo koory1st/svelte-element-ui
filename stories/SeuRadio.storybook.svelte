@@ -26,3 +26,13 @@
 
 <h3>group value : {groupValue}</h3>
 <SeuRadioGroup bind:value={groupValue} radios={groupRadioSetting} disabled={groupDisabled} {border} {size} on:change />
+
+<h3>group radio button value : {groupValue}</h3>
+<SeuRadioGroup
+  type="button"
+  bind:value={groupValue}
+  radios={groupRadioSetting}
+  disabled={groupDisabled}
+  {border}
+  {size}
+  on:change />
