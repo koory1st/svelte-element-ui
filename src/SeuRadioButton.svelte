@@ -6,26 +6,21 @@
   export let label: string | number
   export let disabled: boolean = false
   export let name: string
-  export let border: boolean = false
   export let size: string
-
-  // just for group
-  export let isGroup: boolean = false
-
   let isFocus = false
 
-  let classList = ['seu-radio', ...classStr2Array($$props['class'])]
+  let classList = ['seu-radio-button', ...classStr2Array($$props['class'])]
 
   let styleList = styleStr2Array($$props['style'])
 
-  if (size) {
-    classList.push(`seu-radio--${size}`)
-  }
-
   $: isChecked = value === label ? true : null
   $: isDisabled = disabled ? disabled : null
+  $: tabindex = isDisabled || value !== label ? -1 : 0
 
-  $: tabindex = isDisabled || (isGroup && value !== label) ? -1 : 0
+  size && classList.push(`seu-radio-button--${size}`)
+  value === label && classList.push(`is-active`)
+  $: isDisabled && classList.push(`is-disabled`)
+  $: isFocus && classList.push(`is-focus`)
 
   function handleKeydown(event: KeyboardEvent) {
     if (event.code !== 'Space') {
@@ -45,17 +40,13 @@
 <label
   role="radio"
   class={classArray2Str(classList)}
-  class:is-checked={isChecked}
-  class:is-disabled={isDisabled}
-  class:is-focus={isFocus}
-  class:is-bordered={border}
   {tabindex}
   aria-disabled={isDisabled}
   aria-checked={isChecked}
   style={styleArray2Str(styleList)}
   on:keydown={handleKeydown}>
   <input
-    class="seu-radio__original"
+    class="seu-radio-button__orig-radio"
     type="radio"
     value={label}
     bind:group={value}
@@ -66,10 +57,8 @@
     on:focus={() => (isFocus = true)}
     on:blur={() => (isFocus = false)}
     on:change={handleChange} />
-  <span class="seu-radio__input" class:is-checked={isChecked} class:is-disabled={isDisabled}>
-    <span class="seu-radio__inner" />
-  </span>
-  <span class="seu-radio__label" on:keydown|stopPropagation>
+  <span class="seu-radio-button__inner" on:keydown|stopPropagation>
     <slot />
+    {#if !$$slots.default}{label}{/if}
   </span>
 </label>

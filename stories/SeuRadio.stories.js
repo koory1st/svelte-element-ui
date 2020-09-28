@@ -4,10 +4,10 @@ import { action } from '@storybook/addon-actions'
 
 export default { title: 'SeuRadio', decorators: [withKnobs] }
 
-export const seuLinkStory = () => ({
+export const seuRadioStory = () => ({
   Component: SeuRadioStory,
   on: {
-    click: action('be clicked'),
+    change: action('be changed'),
   },
   props: {
     value: optionsKnob(

@@ -34,7 +34,12 @@
   {...$$restProps}
   on:click={handleClick}>
   {#if icon}<i class={icon} />{/if}
-  <span class="seu-link--inner">
-    <slot />
-  </span>
+  {#if $$slots.default}
+    <span class="seu-link--inner">
+      <slot />
+    </span>
+  {/if}
+  {#if $$slots.icon}
+    <slot name="icon" />
+  {/if}
 </a>

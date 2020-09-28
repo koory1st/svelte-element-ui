@@ -86,6 +86,10 @@
     margin-right: 0;
   }
 
+  @include when(disabled) {
+    cursor: not-allowed;
+  }
+
   @include e(input) {
     white-space: nowrap;
     cursor: pointer;

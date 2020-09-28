@@ -30,7 +30,7 @@
     "rollup-plugin-scss": "^2.6.0",
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^6.0.0",
-    "svelte": "^3.25.0",
+    "svelte": "^3.28.0",
     "svelte-check": "^1.0.41",
     "svelte-loader": "^2.13.6",
     "svelte-preprocess": "^4.0.0",

@@ -42,7 +42,9 @@
   {#if loading}<i class="seu-icon-loading" />{/if}
 
   {#if icon && !loading}<i class={icon} />{/if}
-  <span>
-    <slot />
-  </span>
+  {#if $$slots.default}
+    <span>
+      <slot />
+    </span>
+  {/if}
 </button>
