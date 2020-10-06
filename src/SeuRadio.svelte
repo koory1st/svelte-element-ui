@@ -18,7 +18,7 @@
 
   let styleList = styleStr2Array($$props['style'])
 
-  if (size) {
+  if (border && size) {
     classList.push(`seu-radio--${size}`)
   }
 
