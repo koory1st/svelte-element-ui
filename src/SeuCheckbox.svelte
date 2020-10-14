@@ -1,8 +1,8 @@
 <script type="ts">
   import { styleStr2Array, styleArray2Str, classStr2Array, classArray2Str } from './util/StringUtil'
-  import { createEventDispatcher } from 'svelte'
+  import { createEventDispatcher, onMount } from 'svelte'
   const dispatch = createEventDispatcher()
-  export let value: string | number | boolean
+  export let value: boolean
   export let label: string | number
   export let indeterminate: boolean = false
   export let disabled: boolean = false
@@ -15,13 +15,12 @@
   export let border: boolean = false
   export let size: string
 
+  onMount(() => {
+    console.log('the component has mounted')
+  })
   // just for group
   export let isGroup: boolean = false
 
-  let inputBindValue: boolean
-
-  console.log('value', value)
-  console.log('label', label)
   let isFocus = false
 
   let classList = ['seu-checkbox', ...classStr2Array($$props['class'])]
@@ -33,9 +32,8 @@
   }
 
   $: isDisabled = disabled ? disabled : null
-  $: value = inputBindValue
 
-  // $: tabindex = isDisabled || (isGroup && value !== label) ? -1 : 0
+  $: tabindex = isDisabled || (isGroup && value) ? -1 : 0
 
   function handleKeydown(event: KeyboardEvent) {
     if (event.code !== 'Space') {
@@ -49,25 +47,26 @@
 
   function handleChange({ target }) {
     console.log('handleChange -> target', target.checked)
-    inputBindValue = target.checked
-    dispatch('change', inputBindValue)
+    value = target.checked
+    dispatch('change', value)
   }
 </script>
 
 <label
   role="checkbox"
   class={classArray2Str(classList)}
-  class:is-checked={inputBindValue}
+  class:is-checked={value}
   class:is-disabled={isDisabled}
   class:is-focus={isFocus}
   class:is-bordered={border}
+  {tabindex}
   aria-disabled={isDisabled}
   style={styleArray2Str(styleList)}
   on:keydown={handleKeydown}>
   <input
     class="seu-checkbox__original"
     type="checkbox"
-    bind:checked={inputBindValue}
+    bind:checked={value}
     aria-hidden="true"
     {name}
     disabled={isDisabled}
@@ -75,7 +74,7 @@
     on:focus={() => (isFocus = true)}
     on:blur={() => (isFocus = false)}
     on:change={handleChange} />
-  <span class="seu-checkbox__input" class:is-checked={inputBindValue} class:is-disabled={isDisabled}>
+  <span class="seu-checkbox__input" class:is-checked={value} class:is-disabled={isDisabled}>
     <span class="seu-checkbox__inner" />
   </span>
   <span class="seu-checkbox__label" on:keydown|stopPropagation>

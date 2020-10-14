@@ -10,17 +10,7 @@ export const seuCheckboxStory = () => ({
     change: action('be changed'),
   },
   props: {
-    value: optionsKnob(
-      'value',
-      {
-        1: '1',
-        2: '2',
-      },
-      '1',
-      {
-        display: 'inline-radio',
-      },
-    ),
+    value: boolean('value', false),
     label1: text('label1', '1'),
     label2: text('label2', '2'),
     border: boolean('border', false),
