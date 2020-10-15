@@ -1,6 +1,6 @@
 <script type="ts">
   import { styleStr2Array, styleArray2Str, classStr2Array, classArray2Str } from './util/StringUtil'
-  import { createEventDispatcher, onMount } from 'svelte'
+  import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
   export let value: boolean
   export let label: string | number
@@ -8,16 +8,11 @@
   export let disabled: boolean = false
   export let checked: boolean = false
   export let name: string
-  export let trueLabel: string | number
-  export let falseLabel: string | number
   export let id: string
   export let controls: string
   export let border: boolean = false
   export let size: string
 
-  onMount(() => {
-    console.log('the component has mounted')
-  })
   // just for group
   export let isGroup: boolean = false
 
