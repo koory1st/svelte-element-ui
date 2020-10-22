@@ -1,5 +1,5 @@
 import SeuCheckboxStory from './SeuCheckbox.storybook.svelte'
-import { withKnobs, optionsKnob, text, boolean } from '@storybook/addon-knobs'
+import { withKnobs, optionsKnob, text, boolean, array } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
 
 export default { title: 'SeuCheckbox', decorators: [withKnobs] }
@@ -28,18 +28,7 @@ export const seuCheckboxStory = () => ({
       },
     ),
     disabled: boolean('disabled', false),
-    groupValue: optionsKnob(
-      'group value',
-      {
-        1: '1',
-        2: '2',
-        3: '3',
-      },
-      '1',
-      {
-        display: 'inline-radio',
-      },
-    ),
+    groupValue: array('group value', ['1']),
     groupDisabled: boolean('group disabled', false),
   },
 })
