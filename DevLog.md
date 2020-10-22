@@ -9,7 +9,7 @@
 
 # 2020.09.12
 
-svelte 的 gitbub 上已经添加了\$\$slot 的支持,但是仍为发布,TODO:等待发布,把 radio 加上判断是否有 slot,没有的话就用 label
+svelte 的 gitbub 上已经添加了\$\$slot 的支持,但是仍为发布,等待发布,把 radio 加上判断是否有 slot,没有的话就用 label(DONE)
 
 # 2020.09.09
 
