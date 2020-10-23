@@ -9,6 +9,9 @@
   let disabledValue1 = true
   let disabledValue2 = false
   let groupValue
+  let checkAll
+  let indeterminate = true
+  let options = ['Shanghai', 'Beijing', 'Guangzhou', 'Shenzhen']
 </script>
 
 <h1>Checkbox</h1>
@@ -52,3 +55,20 @@
 
 <h2>Indeterminate</h2>
 <p>The indeterminate property can help you to achieve a 'check all' effect.</p>
+<SeuCheckbox
+  {indeterminate}
+  bind:checked={checkAll}
+  on:change={({ detail }) => {
+    indeterminate = false
+    groupValue = detail ? [...options] : []
+  }}>
+  Check all
+</SeuCheckbox>
+<SeuCheckboxGroup
+  {options}
+  bind:group={groupValue}
+  on:change={({ detail }) => {
+    let checkedCount = detail.length
+    checkAll = detail.length === options.length
+    indeterminate = checkedCount > 0 && checkedCount < options.length
+  }} />

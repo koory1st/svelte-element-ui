@@ -6,7 +6,7 @@
   export let value
   export let indeterminate: boolean = false
   export let disabled: boolean = false
-  export let checked: boolean = false
+  export let checked: boolean
   export let name: string
   export let id: string
   export let controls: string
@@ -27,8 +27,9 @@
   }
 
   $: isDisabled = disabled ? disabled : null
-
-  $: tabindex = isDisabled || (isGroup && checked) ? -1 : 0
+  $: tabindex = indeterminate ? 0 : null
+  $: role = indeterminate ? 'checkbox' : null
+  $: ariaChecked = indeterminate ? 'mixed' : null
 
   $: {
     if (group) updateChekbox(group)
@@ -77,9 +78,10 @@
   class={classArray2Str(classList)}
   class:is-checked={checked}
   class:is-disabled={isDisabled}
+  class:is-indeterminate={indeterminate}
   class:is-focus={isFocus}
   class:is-bordered={border}
-  {tabindex}
+  aria-controls={indeterminate}
   aria-disabled={isDisabled}
   style={styleArray2Str(styleList)}
   on:keydown={handleKeydown}>
@@ -88,14 +90,20 @@
     type="checkbox"
     bind:checked
     {value}
-    aria-hidden="true"
+    aria-hidden={indeterminate ? 'true' : 'false'}
     {name}
     disabled={isDisabled}
-    tabindex="-1"
     on:focus={() => (isFocus = true)}
     on:blur={() => (isFocus = false)}
     on:change={handleChange} />
-  <span class="seu-checkbox__input" class:is-checked={checked} class:is-disabled={isDisabled}>
+  <span
+    class="seu-checkbox__input"
+    class:is-checked={checked}
+    class:is-disabled={isDisabled}
+    class:is-indeterminate={indeterminate}
+    {role}
+    {tabindex}
+    aria-checked={ariaChecked}>
     <span class="seu-checkbox__inner" />
   </span>
   <span class="seu-checkbox__label" on:keydown|stopPropagation>
