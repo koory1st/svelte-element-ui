@@ -42,9 +42,13 @@
 
 <SeuCheckboxGroup
   options={[{ label: 'Shanghai', value: 'Shanghai' }, { label: 'Beijing', value: 'Beijing' }, { label: 'Guangzhou', value: 'Guangzhou' }, { label: 'Shenzhen', value: 'Shenzhen' }]}
-  bind:group={groupValue} />
+  bind:group={groupValue}
+  on:change={({ detail }) => console.log(detail)} />
 
 <SeuCheckboxGroup options={['Guangzhou', 'Shenzhen']} bind:group={groupValue}>
   <SeuCheckbox bind:group={groupValue} value="Shanghai" />
   <SeuCheckbox bind:group={groupValue} value="Beijing" />
 </SeuCheckboxGroup>
+
+<h2>Indeterminate</h2>
+<p>The indeterminate property can help you to achieve a 'check all' effect.</p>

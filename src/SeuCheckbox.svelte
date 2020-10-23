@@ -68,7 +68,7 @@
 
   function handleChange({ target }) {
     checked = target.checked
-    // dispatch('change', checked)
+    dispatch('change', checked)
   }
 </script>
 
