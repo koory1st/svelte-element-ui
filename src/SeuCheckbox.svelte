@@ -8,13 +8,8 @@
   export let disabled: boolean = false
   export let checked: boolean
   export let name: string
-  export let id: string
-  export let controls: string
   export let border: boolean = false
   export let size: string
-
-  // just for group
-  export let isGroup: boolean = false
 
   let isFocus = false
 
