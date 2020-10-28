@@ -10,7 +10,7 @@ import alias from '@rollup/plugin-alias'
 import postcss from 'rollup-plugin-postcss'
 import path from 'path'
 import copy from 'rollup-plugin-copy'
-import scss from 'rollup-plugin-scss'
+// import scss from 'rollup-plugin-scss'
 
 const production = !process.env.ROLLUP_WATCH
 const projectRootDir = path.resolve(__dirname)

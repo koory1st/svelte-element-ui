@@ -6,6 +6,9 @@
   export let value: Array<string | number> = []
   export let options: Array<string | { label: string; value: string | number }> = []
   export let group = []
+  export let border: boolean = false
+  export let size: string
+  export let disabled: boolean = false
 
   let classList = ['seu-checkbox-group', ...classStr2Array($$props['class'])]
   let styleList = styleStr2Array($$props['style'])
@@ -43,7 +46,14 @@
 
 <div class={classArray2Str(classList)} style={styleArray2Str(styleList)}>
   {#each checkboxPropList as prop}
-    <SeuCheckbox bind:group checked={prop.checked} value={prop.label} on:change={handleChange}>
+    <SeuCheckbox
+      bind:group
+      checked={prop.checked}
+      value={prop.label}
+      {border}
+      {size}
+      {disabled}
+      on:change={handleChange}>
       {prop.label}
     </SeuCheckbox>
   {/each}

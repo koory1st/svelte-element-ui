@@ -1,5 +1,5 @@
 <script>
-  import { SeuCheckbox, SeuCheckboxGroup } from '../dist/bundle'
+  import { SeuCheckbox, SeuCheckboxButton, SeuCheckboxGroup } from '../dist/bundle'
   export let value = false
   export let border
   export let size = ''
@@ -12,6 +12,13 @@
   let checkAll
   let indeterminate = true
   let options = ['Shanghai', 'Beijing', 'Guangzhou', 'Shenzhen']
+
+  let borderValue1 = true
+  let borderValue2 = false
+  let borderValue3 = false
+  let borderValue4 = true
+  let borderGroup1 = []
+  let borderGroup2 = []
 </script>
 
 <h1>Checkbox</h1>
@@ -72,3 +79,44 @@
     checkAll = detail.length === options.length
     indeterminate = checkedCount > 0 && checkedCount < options.length
   }} />
+
+<h2>Minimum / Maximum items checked</h2>
+<p>The min and max properties can help you to limit the number of checked items.</p>
+
+<h2>Button style</h2>
+<p>Checkbox with button styles.</p>
+<SeuCheckboxGroup>
+  <SeuCheckboxButton bind:group={groupValue} value="Shanghai" />
+  <SeuCheckboxButton bind:group={groupValue} value="Beijing" disabled />
+  <SeuCheckboxButton bind:group={groupValue} value="Guangzhou" />
+  <SeuCheckboxButton bind:group={groupValue} value="Shenzhen" />
+</SeuCheckboxGroup>
+
+<h2>With borders</h2>
+<h3>borderValue1: {borderValue1} borderValue2: {borderValue2}</h3>
+<div>
+  <SeuCheckbox bind:checked={borderValue1} border>Option 1</SeuCheckbox>
+  <SeuCheckbox bind:checked={borderValue2} border>Option 2</SeuCheckbox>
+</div>
+
+<h3>borderValue3: {borderValue3} borderValue4: {borderValue4}</h3>
+<div>
+  <SeuCheckbox bind:checked={borderValue3} border size="medium">Option 3</SeuCheckbox>
+  <SeuCheckbox bind:checked={borderValue4} border size="medium">Option 4</SeuCheckbox>
+</div>
+
+<h3>{borderGroup1}</h3>
+<SeuCheckboxGroup>
+  <SeuCheckbox bind:group={borderGroup1} border value="Option 5" size="small">Option 5</SeuCheckbox>
+  <SeuCheckbox bind:group={borderGroup1} border value="Option 6" disabled size="small">Option 6</SeuCheckbox>
+</SeuCheckboxGroup>
+
+<SeuCheckboxGroup bind:group={borderGroup1} options={['Option 5', 'Option 6']} border size="small" />
+
+<h3>{borderGroup2}</h3>
+<SeuCheckboxGroup>
+  <SeuCheckbox bind:group={borderGroup2} border value="Option 7" size="mini" disabled>Option 7</SeuCheckbox>
+  <SeuCheckbox bind:group={borderGroup2} border value="Option 8" size="mini" disabled>Option 8</SeuCheckbox>
+</SeuCheckboxGroup>
+
+<SeuCheckboxGroup bind:group={borderGroup2} options={['Option 7', 'Option 8']} border size="mini" disabled />
