@@ -3,8 +3,6 @@
   import SeuButtonGroup from '../src/SeuButtonGroup.svelte'
   export let type
   export let size
-  export let icon = ''
-  export let nativeType = 'button'
   export let disabled
   export let loading
   export let plain

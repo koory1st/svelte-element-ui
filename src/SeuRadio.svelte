@@ -18,7 +18,7 @@
 
   let styleList = styleStr2Array($$props['style'])
 
-  if (size) {
+  if (border && size) {
     classList.push(`seu-radio--${size}`)
   }
 
@@ -70,6 +70,8 @@
     <span class="seu-radio__inner" />
   </span>
   <span class="seu-radio__label" on:keydown|stopPropagation>
-    <slot />
+    {#if $$slots.default}
+      <slot />
+    {:else}{label}{/if}
   </span>
 </label>
