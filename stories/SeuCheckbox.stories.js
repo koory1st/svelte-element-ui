@@ -28,7 +28,7 @@ export const seuCheckboxStory = () => ({
       },
     ),
     disabled: boolean('disabled', false),
-    groupValue: array('group value', ['1']),
+    // groupValue: array('group value', ['1']),
     groupDisabled: boolean('group disabled', false),
   },
 })

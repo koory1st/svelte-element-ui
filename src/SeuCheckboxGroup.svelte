@@ -3,7 +3,6 @@
   import { styleStr2Array, styleArray2Str, classStr2Array, classArray2Str } from './util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
-  export let value: Array<string | number> = []
   export let options: Array<string | { label: string; value: string | number }> = []
   export let group = []
   export let border: boolean = false
@@ -21,8 +20,9 @@
 
     if (typeof option === 'string') {
       checkboxProp.label = option
-      checkboxProp.checked = value.includes(option)
+      checkboxProp.checked = group.includes(option)
       checkboxPropList.push(checkboxProp)
+      console.log('checkboxPropList', checkboxPropList)
       continue
     }
 
@@ -34,7 +34,7 @@
       let optionValue = option.value || option.label
 
       checkboxProp.label = optionLabel
-      checkboxProp.checked = value.includes(optionValue)
+      checkboxProp.checked = group.includes(optionValue)
       checkboxPropList.push(checkboxProp)
     }
   }
@@ -46,14 +46,7 @@
 
 <div class={classArray2Str(classList)} style={styleArray2Str(styleList)}>
   {#each checkboxPropList as prop}
-    <SeuCheckbox
-      bind:group
-      checked={prop.checked}
-      value={prop.label}
-      {border}
-      {size}
-      {disabled}
-      on:change={handleChange}>
+    <SeuCheckbox bind:group value={prop.checked} label={prop.label} {border} {size} {disabled} on:change={handleChange}>
       {prop.label}
     </SeuCheckbox>
   {/each}

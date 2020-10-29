@@ -4,10 +4,14 @@
   const dispatch = createEventDispatcher()
   export let group
   export let value
+  export let label = value
   export let disabled: boolean = false
-  export let checked: boolean
   export let name: string
   export let size: string
+  export let checkedValue
+  export let uncheckedValue
+
+  let checked
 
   let isFocus = false
 
@@ -26,18 +30,27 @@
   }
   $: updateGroup(checked)
 
+  $: if (
+    (checkedValue !== null && checkedValue !== undefined) ||
+    (uncheckedValue !== null && uncheckedValue != undefined)
+  ) {
+    checked = checkedValue === value
+  } else {
+    checked = value
+  }
+
   function updateChekbox(group) {
-    checked = group.indexOf(value) >= 0
+    value = group.indexOf(label) >= 0
   }
 
   function updateGroup(checked) {
     if (!group) {
       return
     }
-    const index = group.indexOf(value)
+    const index = group.indexOf(label)
     if (checked) {
       if (index < 0) {
-        group.push(value)
+        group.push(label)
         group = group
       }
     } else {
@@ -47,6 +60,7 @@
       }
     }
   }
+
   function handleKeydown(event: KeyboardEvent) {
     if (event.code !== 'Space') {
       return
@@ -57,8 +71,16 @@
   }
 
   function handleChange({ target }) {
+    if (
+      (checkedValue !== null && checkedValue !== undefined) ||
+      (uncheckedValue !== null && uncheckedValue != undefined)
+    ) {
+      value = target.checked ? checkedValue : uncheckedValue
+    } else {
+      value = target.checked
+    }
     checked = target.checked
-    dispatch('change', checked)
+    dispatch('change', value)
   }
 </script>
 
@@ -75,7 +97,7 @@
     class="seu-checkbox-button__original"
     type="checkbox"
     bind:checked
-    {value}
+    value={label}
     {name}
     disabled={isDisabled}
     on:focus={() => (isFocus = true)}
@@ -84,6 +106,6 @@
   <span class="seu-checkbox-button__inner">
     {#if $$slots.default}
       <slot />
-    {:else}{value}{/if}
+    {:else}{label}{/if}
   </span>
 </label>

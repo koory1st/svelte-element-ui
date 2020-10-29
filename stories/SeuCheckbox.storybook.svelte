@@ -8,7 +8,7 @@
 
   let disabledValue1 = true
   let disabledValue2 = false
-  let groupValue
+  let groupValue = ['Shanghai']
   let checkAll
   let indeterminate = true
   let options = ['Shanghai', 'Beijing', 'Guangzhou', 'Shenzhen']
@@ -19,6 +19,8 @@
   let borderValue4 = true
   let borderGroup1 = []
   let borderGroup2 = []
+
+  let value3
 </script>
 
 <h1>Checkbox</h1>
@@ -27,19 +29,19 @@
 <h2>Try It with Knobs below</h2>
 <h3>checkbox value: {value}</h3>
 <div>
-  <SeuCheckbox bind:checked={value} {border} {size} {name} {disabled}>Option A</SeuCheckbox>
+  <SeuCheckbox bind:value {border} {size} {name} {disabled}>Option A</SeuCheckbox>
 </div>
 
 <h2>Basic usage</h2>
 <p>Checkbox can be used alone to switch between two states.</p>
-<SeuCheckbox bind:checked={value}>Option A</SeuCheckbox>
+<SeuCheckbox bind:value>Option A</SeuCheckbox>
 
 <h2>Disabled State</h2>
 <p>Disabled state for checkbox.</p>
 
-<SeuCheckbox bind:checked={disabledValue1} disabled={true}>Option A</SeuCheckbox>
+<SeuCheckbox bind:value={disabledValue1} disabled={true}>Option A</SeuCheckbox>
 
-<SeuCheckbox bind:checked={disabledValue2} disabled={true}>Option A</SeuCheckbox>
+<SeuCheckbox bind:value={disabledValue2} disabled={true}>Option A</SeuCheckbox>
 
 <h2>Checkbox group</h2>
 <p>
@@ -49,7 +51,6 @@
 <p>Group value: {groupValue}</p>
 
 <SeuCheckboxGroup options={['Shanghai', 'Beijing', 'Guangzhou', 'Shenzhen']} bind:group={groupValue} />
-
 <SeuCheckboxGroup
   options={[{ label: 'Shanghai', value: 'Shanghai' }, { label: 'Beijing', value: 'Beijing' }, { label: 'Guangzhou', value: 'Guangzhou' }, { label: 'Shenzhen', value: 'Shenzhen' }]}
   bind:group={groupValue}
@@ -64,7 +65,7 @@
 <p>The indeterminate property can help you to achieve a 'check all' effect.</p>
 <SeuCheckbox
   {indeterminate}
-  bind:checked={checkAll}
+  bind:value={checkAll}
   on:change={({ detail }) => {
     indeterminate = false
     groupValue = detail ? [...options] : []
@@ -92,17 +93,28 @@
   <SeuCheckboxButton bind:group={groupValue} value="Shenzhen" />
 </SeuCheckboxGroup>
 
+<h2>checked value and unchecked value</h2>
+<p>Can set checkedValue and uncheckedValue to the checkbox</p>
+<p>{value3}</p>
+<SeuCheckbox bind:value={value3} checkedValue="checked" uncheckedValue="unchecked" label="click to change value" />
+
+<SeuCheckboxButton
+  bind:value={value3}
+  checkedValue="checked"
+  uncheckedValue="unchecked"
+  label="click to change value" />
+
 <h2>With borders</h2>
 <h3>borderValue1: {borderValue1} borderValue2: {borderValue2}</h3>
 <div>
-  <SeuCheckbox bind:checked={borderValue1} border>Option 1</SeuCheckbox>
-  <SeuCheckbox bind:checked={borderValue2} border>Option 2</SeuCheckbox>
+  <SeuCheckbox bind:value={borderValue1} border>Option 1</SeuCheckbox>
+  <SeuCheckbox bind:value={borderValue2} border>Option 2</SeuCheckbox>
 </div>
 
 <h3>borderValue3: {borderValue3} borderValue4: {borderValue4}</h3>
 <div>
-  <SeuCheckbox bind:checked={borderValue3} border size="medium">Option 3</SeuCheckbox>
-  <SeuCheckbox bind:checked={borderValue4} border size="medium">Option 4</SeuCheckbox>
+  <SeuCheckbox bind:value={borderValue3} border size="medium">Option 3</SeuCheckbox>
+  <SeuCheckbox bind:value={borderValue4} border size="medium">Option 4</SeuCheckbox>
 </div>
 
 <h3>{borderGroup1}</h3>
