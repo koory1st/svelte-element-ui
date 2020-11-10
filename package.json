@@ -2,13 +2,13 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "scripts": {
+    "test:watch": "npm run test -- --watch",
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
     "dev": "rollup -c -w",
     "start": "sirv public",
     "validate": "svelte-check",
-    "test": "jest src",
-    "test:watch": "npm run test -- --watch",
+    "test": "jest __test__",
     "build-storybook": "build-storybook -o docs"
   },
   "devDependencies": {

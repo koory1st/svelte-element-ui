@@ -12,11 +12,18 @@ export function classArray2Str(arr: Array<string>): string {
   return array2Str(arr, ' ')
 }
 function str2Array(style: string, splitStr: string): Array<string> {
-  if (!style) {
+  if (!style || !style.trim()) {
     return []
   }
 
-  return style.split(splitStr)
+  return [
+    ...new Set(
+      style
+        .split(splitStr)
+        .map(s => s.trim())
+        .filter(s => s),
+    ),
+  ]
 }
 
 function array2Str(arr: Array<string>, joinStr: string): string {
