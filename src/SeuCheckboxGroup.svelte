@@ -22,7 +22,6 @@
       checkboxProp.label = option
       checkboxProp.checked = group.includes(option)
       checkboxPropList.push(checkboxProp)
-      console.log('checkboxPropList', checkboxPropList)
       continue
     }
 
