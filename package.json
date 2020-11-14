@@ -1,6 +1,6 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
+  "name": "svelte-element-ui",
+  "version": "0.0.1",
   "scripts": {
     "test:watch": "npm run test -- --watch",
     "build": "rollup -c",
@@ -11,7 +11,7 @@
     "test": "jest __test__",
     "build-storybook": "build-storybook -o docs",
     "c": "git-cz",
-    "version": "standard-version"
+    "release": "standard-version"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
