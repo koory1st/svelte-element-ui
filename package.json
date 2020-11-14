@@ -54,7 +54,6 @@
     "sirv-cli": "^1.0.0"
   },
   "standard-version": {
-    "changelogHeader": "# Changelog\n\n所有项目的变更记录会记录在如下文件.\n",
     "dryRun": true
   },
   "config": {
