@@ -2,16 +2,33 @@ import '@testing-library/jest-dom/extend-expect'
 
 import { render, fireEvent } from '@testing-library/svelte'
 
-import Comp from './Container.test.svelte'
+import Comp from './Container.test.01.svelte'
 
-test('main class', () => {
-  const { getByText } = render(Comp)
+describe('Test Container 01', () => {
+  
+  test('main class', () => {
+    const { getByText } = render(Comp)
 
-  expect(getByText('aaa')).toHaveClass('seu-container')
-})
+    expect(getByText('Test Container 01')).toHaveClass('seu-container')
+    expect(getByText('Test Container 01')).not.toHaveClass('is-vertical')
+  })
 
-test('with 2 main', () => {
-  const { getByText } = render(Comp, { props: { containerDirection: 'vertical' } })
+  test('test horizontal', () => {
+    const { getByText } = render(Comp, { props: { containerDirection: 'horizontal' } })
 
-  expect(getByText('aaa')).toHaveClass('is-vertical')
-})
+    getByText('Test Container 01')
+
+    expect(getByText('Test Container 01')).not.toHaveClass('is-vertical')
+  })
+
+  test('test vertical', () => {
+    const { getByText } = render(Comp, { props: { containerDirection: 'vertical' } })
+
+    expect(getByText('Test Container 01')).toHaveClass('is-vertical')
+  })
+
+});
+
+describe('Test Header', () => {
+  
+});
