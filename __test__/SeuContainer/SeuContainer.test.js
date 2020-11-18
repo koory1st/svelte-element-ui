@@ -13,10 +13,9 @@ describe('Test Container 01', () => {
   expect(getByText('Test Container 01')).toHaveClass('abc')
   expect(getByText('Test Container 01')).toHaveStyle('color:red')
   expect(getByText('Test Container 01')).toHaveStyle('font-size:14px')
-});
+})
 
 describe('Test Container 02', () => {
-  
   test('main class', () => {
     const { getByText } = render(Comp02)
 
@@ -37,5 +36,4 @@ describe('Test Container 02', () => {
 
     expect(getByText('Test Container 02')).toHaveClass('is-vertical')
   })
-
-});
+})
