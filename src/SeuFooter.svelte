@@ -3,7 +3,7 @@
 
   export let height = '60px'
   let styleList = [...styleStr2Array($$props['style']), `height:${height}`]
-  let classList = ['seu-header', ...classStr2Array($$props['class'])]
+  let classList = ['seu-footer', ...classStr2Array($$props['class'])]
 </script>
 
 <footer class={classArray2Str(classList)} style={styleArray2Str(styleList)}>
