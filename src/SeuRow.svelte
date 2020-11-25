@@ -1,6 +1,5 @@
 <script type="ts">
   import { styleStr2Array, styleArray2Str, classStr2Array, classArray2Str } from './util/StringUtil'
-  import { setContext } from 'svelte'
   export let gutter = 0
   export let type: string
   export let justify = 'start'
@@ -26,8 +25,6 @@
     styleList.push(`margin-left:${value}`)
     styleList.push(`margin-right:${value}`)
   }
-
-  setContext('$_seu_row_gutter', gutter)
 </script>
 
 <div class={classArray2Str(classList)} style={styleArray2Str(styleList)}>
