@@ -1,12 +1,11 @@
 <script type="ts">
   import { styleStr2Array, styleArray2Str, classStr2Array, classArray2Str } from './util/StringUtil'
-  import { getContext } from 'svelte'
 
   export let span = 24
   export let offset = 0
   export let pull = 0
   export let push = 0
-  let gutter: number = getContext('$_seu_row_gutter')
+  export let gutter = 0
   export let xs = 0
   export let sm = 0
   export let md = 0
