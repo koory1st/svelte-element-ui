@@ -4,5 +4,5 @@
 </script>
 
 <SeuContainer>
-  <SeuHeader>seu header 01</SeuHeader>
+  <SeuHeader height="10px">seu header 02</SeuHeader>
 </SeuContainer>
