@@ -1,12 +1,12 @@
 <script type="ts">
-  import { styleStr2Array, styleArray2Str, classStr2Array, classArray2Str } from './util/StringUtil'
+  import { styleArray2Str, classArray2Str } from './util/StringUtil'
   export let gutter = 0
   export let type: string
   export let justify = 'start'
   export let align = 'top'
 
-  let classList = ['seu-row', ...classStr2Array($$props['class'])]
-  let styleList = styleStr2Array($$props['style'])
+  let classList = ['seu-row']
+  let styleList = []
 
   if (justify && justify !== 'start') {
     classList.push(`is-justify-${justify}`)
@@ -19,8 +19,7 @@
   if (type === 'flex') {
     classList.push('seu-row--flex')
   }
-
-  if (gutter) {
+  $: if (gutter) {
     const value = `-${gutter / 2}px`
     styleList.push(`margin-left:${value}`)
     styleList.push(`margin-right:${value}`)
