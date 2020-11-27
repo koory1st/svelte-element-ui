@@ -4,5 +4,5 @@
 </script>
 
 <SeuContainer>
-  <SeuAside>seu aside</SeuAside>
+  <SeuAside width="10px">seu aside</SeuAside>
 </SeuContainer>
