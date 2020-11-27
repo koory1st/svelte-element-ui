@@ -4,5 +4,5 @@
 </script>
 
 <SeuContainer>
-  <SeuMain class="abc" style="color:red;font-size:14px">seu main</SeuMain>
+  <SeuMain>seu main</SeuMain>
 </SeuContainer>

@@ -8,9 +8,6 @@ describe('Test of Main 01', () => {
   test('main class', () => {
     const { getByText } = render(Comp)
     expect(getByText('seu main')).toHaveClass('seu-main')
-    expect(getByText('seu main')).toHaveClass('abc')
-    expect(getByText('seu main')).toHaveStyle('color:red')
-    expect(getByText('seu main')).toHaveStyle('font-size:14px')
     expect(getByText('seu main').tagName).toBe('MAIN')
   })
 })
