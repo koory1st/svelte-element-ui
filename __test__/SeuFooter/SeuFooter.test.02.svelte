@@ -4,5 +4,5 @@
 </script>
 
 <SeuContainer>
-  <SeuFooter>seu footer 01</SeuFooter>
+  <SeuFooter height="10px">seu footer 02</SeuFooter>
 </SeuContainer>
