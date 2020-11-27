@@ -2,4 +2,4 @@
   import SeuContainer from '../../src/SeuContainer.svelte'
 </script>
 
-<SeuContainer direction={'horizontal'}>Test Container 02</SeuContainer>
+<SeuContainer direction={'vertical'}>Test Container 03</SeuContainer>
