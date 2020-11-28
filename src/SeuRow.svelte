@@ -1,7 +1,7 @@
 <script type="ts">
   import { styleArray2Str, classArray2Str } from './util/StringUtil'
   export let gutter = 0
-  export let type: string
+  export let type = ''
   export let justify = 'start'
   export let align = 'top'
 
