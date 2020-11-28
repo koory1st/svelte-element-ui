@@ -1,5 +1,5 @@
 <script type="ts">
-  import { styleStr2Array, styleArray2Str, classStr2Array, classArray2Str } from './util/StringUtil'
+  import { styleArray2Str, classArray2Str } from './util/StringUtil'
 
   export let span = 24
   export let offset = 0
@@ -12,20 +12,20 @@
   export let lg = 0
   export let xl = 0
 
-  let classList = ['seu-col', ...classStr2Array($$props['class'])]
-  let styleList = styleStr2Array($$props['style'])
+  let classList = ['seu-col']
+  let styleList = []
 
-  classList.push(`seu-col-${span}`)
-  offset && classList.push(`seu-col-offset-${offset}`)
-  pull && classList.push(`seu-col-pull-${pull}`)
-  push && classList.push(`seu-col-push-${push}`)
-  xs && classList.push(`seu-col-xs-${xs}`)
-  sm && classList.push(`seu-col-sm-${sm}`)
-  md && classList.push(`seu-col-md-${md}`)
-  lg && classList.push(`seu-col-lg-${lg}`)
-  xl && classList.push(`seu-col-xl-${xl}`)
+  $: classList.push(`seu-col-${span}`)
+  $: offset && classList.push(`seu-col-offset-${offset}`)
+  $: pull && classList.push(`seu-col-pull-${pull}`)
+  $: push && classList.push(`seu-col-push-${push}`)
+  $: xs && classList.push(`seu-col-xs-${xs}`)
+  $: sm && classList.push(`seu-col-sm-${sm}`)
+  $: md && classList.push(`seu-col-md-${md}`)
+  $: lg && classList.push(`seu-col-lg-${lg}`)
+  $: xl && classList.push(`seu-col-xl-${xl}`)
 
-  if (gutter) {
+  $: if (gutter) {
     const value = `${gutter / 2}px`
     styleList.push(`padding-left:${value}`)
     styleList.push(`padding-right:${value}`)

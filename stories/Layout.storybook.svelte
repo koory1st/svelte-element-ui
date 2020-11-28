@@ -1,45 +1,3 @@
-<style>
-  :global(.seu-row) {
-    margin-bottom: 20px;
-  }
-  .bg-purple-dark {
-    background: #99a9bf;
-  }
-  .bg-purple {
-    background: #d3dce6;
-  }
-  .bg-purple-light {
-    background: #e5e9f2;
-  }
-  .grid-content {
-    border-radius: 4px;
-    min-height: 36px;
-  }
-  .row-bg {
-    padding: 10px 0;
-    background-color: #f9fafc;
-  }
-  .seu-col {
-    border-radius: 4px;
-  }
-  .bg-purple-dark {
-    background: #99a9bf;
-  }
-  .bg-purple {
-    background: #d3dce6;
-  }
-  .bg-purple-light {
-    background: #e5e9f2;
-  }
-  .grid-content {
-    border-radius: 4px;
-    min-height: 36px;
-  }
-  :global(.height-100) {
-    height: 100px;
-  }
-</style>
-
 <script>
   import { SeuRow, SeuCol } from '../dist/bundle'
   export let rowGutter
@@ -63,10 +21,30 @@
 <h2>Try It with Knobs below</h2>
 
 <SeuRow class="height-100" gutter={rowGutter} type={rowType} justify={rowJustify} align={rowAlign}>
-  <SeuCol span={colSpan} offset={colOffset} pull={colPull} push={colPush} xs={colXs} sm={colSm} md={colMd} lg={colLg} xl={colXl}>
+  <SeuCol
+    gutter={rowGutter}
+    span={colSpan}
+    offset={colOffset}
+    pull={colPull}
+    push={colPush}
+    xs={colXs}
+    sm={colSm}
+    md={colMd}
+    lg={colLg}
+    xl={colXl}>
     <div class="grid-content bg-purple-dark" />
   </SeuCol>
-  <SeuCol span={colSpan} offset={colOffset} pull={colPull} push={colPush} xs={colXs} sm={colSm} md={colMd} lg={colLg} xl={colXl}>
+  <SeuCol
+    gutter={rowGutter}
+    span={colSpan}
+    offset={colOffset}
+    pull={colPull}
+    push={colPush}
+    xs={colXs}
+    sm={colSm}
+    md={colMd}
+    lg={colLg}
+    xl={colXl}>
     <div class="grid-content bg-purple-dark" />
   </SeuCol>
 </SeuRow>
@@ -278,3 +256,45 @@
     <div class="grid-content bg-purple-light" />
   </SeuCol>
 </SeuRow>
+
+<style>
+  :global(.seu-row) {
+    margin-bottom: 20px;
+  }
+  .bg-purple-dark {
+    background: #99a9bf;
+  }
+  .bg-purple {
+    background: #d3dce6;
+  }
+  .bg-purple-light {
+    background: #e5e9f2;
+  }
+  .grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+  }
+  .row-bg {
+    padding: 10px 0;
+    background-color: #f9fafc;
+  }
+  .seu-col {
+    border-radius: 4px;
+  }
+  .bg-purple-dark {
+    background: #99a9bf;
+  }
+  .bg-purple {
+    background: #d3dce6;
+  }
+  .bg-purple-light {
+    background: #e5e9f2;
+  }
+  .grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+  }
+  :global(.height-100) {
+    height: 100px;
+  }
+</style>
