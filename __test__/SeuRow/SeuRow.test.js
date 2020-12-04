@@ -13,6 +13,17 @@ describe('Test Row 01', () => {
 
     expect(getByText('Test Row 01')).toHaveClass('seu-row')
   })
+  test('default class', () => {
+    const { getByText } = render(Comp01)
+
+    expect(getByText('Test Row 01')).not.toHaveClass('seu-row--flex')
+    expect(getByText('Test Row 01')).not.toHaveClass('is-justify-end')
+    expect(getByText('Test Row 01')).not.toHaveClass('is-justify-center')
+    expect(getByText('Test Row 01')).not.toHaveClass('is-justify-space-around')
+    expect(getByText('Test Row 01')).not.toHaveClass('is-justify-space-between')
+    expect(getByText('Test Row 01')).not.toHaveClass('is-align-middle')
+    expect(getByText('Test Row 01')).not.toHaveClass('is-align-bottom')
+  })
 })
 
 describe('Test Row properties', () => {

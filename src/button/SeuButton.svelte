@@ -1,13 +1,13 @@
 <script type="ts">
   export let type = 'default'
-  export let size: string
+  export let size = ''
   export let icon = ''
   export let nativeType = 'button'
-  export let disabled: boolean
-  export let loading: boolean
-  export let plain: boolean
-  export let round: boolean
-  export let circle: boolean
+  export let disabled = false
+  export let loading = false
+  export let plain = false
+  export let round = false
+  export let circle = false
 
   let classList = ['seu-button']
 
