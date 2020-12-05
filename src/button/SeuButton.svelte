@@ -11,29 +11,29 @@
 
   let classList = ['seu-button']
 
-  if (disabled) {
+  $: if (disabled) {
     classList.push('is-disabled')
   }
 
-  if (plain) {
+  $: if (plain) {
     classList.push('is-plain')
   }
 
   classList.push(`seu-button--${type || 'default'}`)
 
-  if (round) {
+  $: if (round) {
     classList.push('is-round')
   }
 
-  if (circle) {
+  $: if (circle) {
     classList.push('is-circle')
   }
 
-  if (size) {
+  $: if (size) {
     classList.push(`seu-button--${size}`)
   }
 
-  if (loading) {
+  $: if (loading) {
     classList.push('is-loading')
   }
 </script>
