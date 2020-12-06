@@ -1,5 +1,5 @@
 <script type="ts">
-  import { styleArray2Str, classArray2Str } from './util/StringUtil'
+  import { styleArray2Str, classArray2Str } from '../util/StringUtil'
 
   export let span = 24
   export let offset = 0

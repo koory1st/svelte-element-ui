@@ -1,6 +1,6 @@
 <script type="ts">
-  import SeuContainer from '../../src/SeuContainer.svelte'
-  import SeuFooter from '../../src/SeuFooter.svelte'
+  import SeuContainer from '../../src/container/SeuContainer.svelte'
+  import SeuFooter from '../../src/footer/SeuFooter.svelte'
 </script>
 
 <SeuContainer>

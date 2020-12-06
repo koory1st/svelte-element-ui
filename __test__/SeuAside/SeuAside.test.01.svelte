@@ -1,6 +1,6 @@
 <script type="ts">
-  import SeuContainer from '../../src/SeuContainer.svelte'
-  import SeuAside from '../../src/SeuAside.svelte'
+  import SeuContainer from '../../src/container/SeuContainer.svelte'
+  import SeuAside from '../../src/aside/SeuAside.svelte'
 </script>
 
 <SeuContainer>

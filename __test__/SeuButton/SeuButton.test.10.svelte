@@ -7,4 +7,4 @@
 </script>
 
 <span>{text}</span>
-<SeuButton on:click={handleClick}>Test Button 09</SeuButton>
+<SeuButton on:click={handleClick}>Test Button 10</SeuButton>
