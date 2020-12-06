@@ -12,6 +12,7 @@ import Comp07 from './SeuButton.test.07.svelte'
 import Comp08 from './SeuButton.test.08.svelte'
 import Comp09 from './SeuButton.test.09.svelte'
 import Comp10 from './SeuButton.test.10.svelte'
+import Comp11 from './SeuButton.test.11.svelte'
 
 describe('Test of Button', () => {
   const { getByText } = render(Comp01)
@@ -92,8 +93,10 @@ describe('Test of Button', () => {
 
   test('icon', () => {
     const { getByText } = render(Comp09)
-    const button09 = getByText('Test Button 09').parentElement
-    expect(button09.innerHTML).toContain('<i class="test-icon"></i>')
+    const button09withLoading = getByText('Test Button 09-with-loading').parentElement
+    expect(button09withLoading.innerHTML).not.toContain('<i class="test-icon"></i>')
+    const button09withoutLoading = getByText('Test Button 09-without-loading').parentElement
+    expect(button09withoutLoading.innerHTML).toContain('<i class="test-icon"></i>')
   })
 
   test('click', async () => {
@@ -102,5 +105,11 @@ describe('Test of Button', () => {
     const span = getByText('test10-1')
     await fireEvent.click(button10)
     expect(span).toHaveTextContent('button clicked')
+  })
+
+  test('default slot', () => {
+    const { getByText } = render(Comp11)
+    const button11 = getByText('Test Button 11').parentElement.parentElement
+    expect(button11).toContainHTML('<div>Test Button 11</div>')
   })
 })
