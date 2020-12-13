@@ -1,10 +1,10 @@
 <script type="ts">
-  import { styleStr2Array, styleArray2Str, classStr2Array, classArray2Str } from './util/StringUtil'
+  import { styleStr2Array, styleArray2Str, classStr2Array, classArray2Str } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
   export let group
   export let value
-  export let label = value
+  export let label
   export let indeterminate: boolean = false
   export let disabled: boolean = false
   export let name: string
@@ -12,6 +12,9 @@
   export let size: string
   export let checkedValue
   export let uncheckedValue
+
+  let componentLabel
+  $: componentLabel = label ?? value
 
   let checked
 
@@ -45,17 +48,17 @@
   }
 
   function updateChekbox(group) {
-    value = group.indexOf(label) >= 0
+    value = group.indexOf(componentLabel) >= 0
   }
 
   function updateGroup(checked) {
     if (!group) {
       return
     }
-    const index = group.indexOf(label)
+    const index = group.indexOf(componentLabel)
     if (checked) {
       if (index < 0) {
-        group.push(label)
+        group.push(componentLabel)
         group = group
       }
     } else {
@@ -106,7 +109,7 @@
     class="seu-checkbox__original"
     type="checkbox"
     bind:checked
-    value={label}
+    value={componentLabel}
     aria-hidden={indeterminate ? 'true' : 'false'}
     {name}
     disabled={isDisabled}
