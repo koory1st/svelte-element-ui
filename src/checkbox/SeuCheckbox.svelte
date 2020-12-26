@@ -13,8 +13,11 @@
   export let checkedValue
   export let uncheckedValue
 
-  let componentLabel
-  $: componentLabel = label ?? value
+  let componentLabel: string = null
+  // label is only valid in group
+  $: if (group) {
+    componentLabel = label ?? value
+  }
 
   let checked
 
@@ -129,6 +132,6 @@
   <span class="seu-checkbox__label" on:keydown|stopPropagation>
     {#if $$slots.default}
       <slot />
-    {:else}{label}{/if}
+    {:else}{componentLabel}{/if}
   </span>
 </label>
