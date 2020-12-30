@@ -31,6 +31,7 @@
     "babel-loader": "^8.1.0",
     "commitizen": "^4.2.2",
     "cz-conventional-changelog": "^3.3.0",
+    "html-to-text": "^6.0.0",
     "jest": "^26.6.3",
     "node-sass": "^5.0.0",
     "path": "^0.12.7",
@@ -68,7 +69,11 @@
       "^.+\\.svelte$": [
         "svelte-jester",
         {
-          "preprocess": true
+          "preprocess": true,
+          "debug": false,
+          "compilerOptions": {
+            "dev": false
+          }
         }
       ],
       "^.+\\.ts$": "ts-jest"
