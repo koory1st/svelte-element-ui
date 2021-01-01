@@ -3,6 +3,6 @@
 </script>
 
 <div>
-  SeuCheckbox01
+  SeuCheckbox.01
   <SeuCheckbox>label1</SeuCheckbox>
 </div>

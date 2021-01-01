@@ -3,8 +3,8 @@
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
   export let group
-  export let value
-  export let label
+  export let value: boolean = false
+  export let label: string | number | boolean | null | undefined
   export let indeterminate: boolean = false
   export let disabled: boolean = false
   export let name: string
@@ -13,10 +13,14 @@
   export let checkedValue
   export let uncheckedValue
 
-  let componentLabel: string = null
+  let componentLabel: string = ''
   // label is only valid in group
-  $: if (group) {
-    componentLabel = label ?? value
+  $: if (group && label) {
+    if (typeof label === 'string') {
+      componentLabel = label
+    } else if (typeof label === 'number' || typeof label === 'boolean') {
+      componentLabel = String(label)
+    }
   }
 
   let checked
@@ -31,7 +35,6 @@
     classList.push(`seu-checkbox--${size}`)
   }
 
-  $: isDisabled = disabled ? disabled : null
   $: tabindex = indeterminate ? 0 : null
   $: role = indeterminate ? 'checkbox' : null
   $: ariaChecked = indeterminate ? 'mixed' : null
@@ -100,12 +103,12 @@
   role="checkbox"
   class={classArray2Str(classList)}
   class:is-checked={checked}
-  class:is-disabled={isDisabled}
+  class:is-disabled={disabled}
   class:is-indeterminate={indeterminate}
   class:is-focus={isFocus}
   class:is-bordered={border}
   aria-controls={indeterminate}
-  aria-disabled={isDisabled}
+  aria-disabled={disabled}
   style={styleArray2Str(styleList)}
   on:keydown={handleKeydown}>
   <input
@@ -115,14 +118,14 @@
     value={componentLabel}
     aria-hidden={indeterminate ? 'true' : 'false'}
     {name}
-    disabled={isDisabled}
+    {disabled}
     on:focus={() => (isFocus = true)}
     on:blur={() => (isFocus = false)}
     on:change={handleChange} />
   <span
     class="seu-checkbox__input"
     class:is-checked={checked}
-    class:is-disabled={isDisabled}
+    class:is-disabled={disabled}
     class:is-indeterminate={indeterminate}
     {role}
     {tabindex}
