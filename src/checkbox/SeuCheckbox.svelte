@@ -23,7 +23,7 @@
     }
   }
 
-  let checked
+  let innerChecked: boolean
 
   let isFocus = false
 
@@ -42,15 +42,15 @@
   $: {
     if (group) updateChekbox(group)
   }
-  $: updateGroup(checked)
+  $: updateGroup(innerChecked)
 
   $: if (
     (checkedValue !== null && checkedValue !== undefined) ||
     (uncheckedValue !== null && uncheckedValue != undefined)
   ) {
-    checked = checkedValue === value
+    innerChecked = checkedValue === value
   } else {
-    checked = value
+    innerChecked = value
   }
 
   function updateChekbox(group) {
@@ -94,7 +94,7 @@
     } else {
       value = target.checked
     }
-    checked = target.checked
+    innerChecked = target.checked
     dispatch('change', value)
   }
 </script>
@@ -102,7 +102,7 @@
 <label
   role="checkbox"
   class={classArray2Str(classList)}
-  class:is-checked={checked}
+  class:is-checked={innerChecked}
   class:is-disabled={disabled}
   class:is-indeterminate={indeterminate}
   class:is-focus={isFocus}
@@ -114,7 +114,7 @@
   <input
     class="seu-checkbox__original"
     type="checkbox"
-    bind:checked
+    bind:checked={innerChecked}
     value={componentLabel}
     aria-hidden={indeterminate ? 'true' : 'false'}
     {name}
@@ -124,7 +124,7 @@
     on:change={handleChange} />
   <span
     class="seu-checkbox__input"
-    class:is-checked={checked}
+    class:is-checked={innerChecked}
     class:is-disabled={disabled}
     class:is-indeterminate={indeterminate}
     {role}
