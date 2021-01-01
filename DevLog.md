@@ -1,3 +1,23 @@
+# 2020.12.31
+
+在使用 testing-liberary 写测试。
+写到 checkbox 的时候，发现奇怪的事情
+input 里的 boolean 类型的 disabled 属性，会被渲染成 disabled=""。我在浏览器里编辑 html，把写上 disabled=""，控件就变成可用了。不科学啊。
+
+然后我就写了个 html
+
+```html
+<input type="text" disabled="" />
+```
+
+浏览器打开后，发现，会被浏览器渲染成
+
+```html
+<input type="text" disabled />
+```
+
+控件的可用状态也是对的，真是见了鬼了。
+
 # 2020.10.22
 
 代码量越来越大了,把 checkbox 写完之后必须把单元测试加进来了.
