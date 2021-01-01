@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SeuCheckbox.02 value change and null label 1`] = `
+exports[`SeuCheckbox.02 toggle the value prop by change prop 1`] = `
 <label
   aria-controls="false"
   aria-disabled="false"
@@ -30,7 +30,7 @@ exports[`SeuCheckbox.02 value change and null label 1`] = `
 </label>
 `;
 
-exports[`SeuCheckbox.02 value change and null label 2`] = `
+exports[`SeuCheckbox.02 toggle the value prop by change prop 2`] = `
 <label
   aria-controls="false"
   aria-disabled="false"
@@ -60,7 +60,7 @@ exports[`SeuCheckbox.02 value change and null label 2`] = `
 </label>
 `;
 
-exports[`SeuCheckbox.02 value change and null label 3`] = `
+exports[`SeuCheckbox.02 toggle the value prop by change prop 3`] = `
 <label
   aria-controls="false"
   aria-disabled="false"
