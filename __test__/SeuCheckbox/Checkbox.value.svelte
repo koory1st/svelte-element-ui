@@ -4,7 +4,7 @@
 </script>
 
 <div>
-  SeuCheckbox04
-  <div id="value">{value}</div>
-  <SeuCheckbox bind:value>label4</SeuCheckbox>
+  test component
+  <SeuCheckbox bind:value>label2</SeuCheckbox>
 </div>
+<button on:click={() => (value = !value)}>button02</button>

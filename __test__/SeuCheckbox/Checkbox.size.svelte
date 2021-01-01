@@ -3,7 +3,7 @@
 </script>
 
 <div>
-  SeuCheckbox.07
+  test component
   <SeuCheckbox size="medium">medium no border</SeuCheckbox>
   <SeuCheckbox size="small">small no border</SeuCheckbox>
   <SeuCheckbox size="mini">mini no border</SeuCheckbox>

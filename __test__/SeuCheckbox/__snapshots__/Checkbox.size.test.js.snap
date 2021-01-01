@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SeuCheckbox.07 size 1`] = `
+exports[`size 1`] = `
 <div>
-  SeuCheckbox.07
+  test component
   
   <label
     aria-controls="false"

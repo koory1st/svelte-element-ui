@@ -3,6 +3,6 @@
 </script>
 
 <div>
-  SeuCheckbox.01
-  <SeuCheckbox>label1</SeuCheckbox>
+  test component
+  <SeuCheckbox name="test_name">label08</SeuCheckbox>
 </div>

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SeuCheckbox.03 toggle the disabled prop by change prop 1`] = `
+exports[`checkedValue 1`] = `
 <label
   aria-controls="false"
   aria-disabled="false"
@@ -25,28 +25,27 @@ exports[`SeuCheckbox.03 toggle the disabled prop by change prop 1`] = `
   <span
     class="seu-checkbox__label"
   >
-    label3
+    label5
   </span>
 </label>
 `;
 
-exports[`SeuCheckbox.03 toggle the disabled prop by change prop 2`] = `
+exports[`checkedValue 2`] = `
 <label
   aria-controls="false"
-  aria-disabled="true"
-  class="seu-checkbox is-disabled"
+  aria-disabled="false"
+  class="seu-checkbox is-checked"
   role="checkbox"
 >
   <input
     aria-hidden="false"
     class="seu-checkbox__original"
-    disabled=""
     type="checkbox"
     value=""
   />
    
   <span
-    class="seu-checkbox__input is-disabled"
+    class="seu-checkbox__input is-checked"
   >
     <span
       class="seu-checkbox__inner"
@@ -56,12 +55,12 @@ exports[`SeuCheckbox.03 toggle the disabled prop by change prop 2`] = `
   <span
     class="seu-checkbox__label"
   >
-    label3
+    label5
   </span>
 </label>
 `;
 
-exports[`SeuCheckbox.03 toggle the disabled prop by change prop 3`] = `
+exports[`checkedValue 3`] = `
 <label
   aria-controls="false"
   aria-disabled="false"
@@ -86,7 +85,67 @@ exports[`SeuCheckbox.03 toggle the disabled prop by change prop 3`] = `
   <span
     class="seu-checkbox__label"
   >
-    label3
+    label5
+  </span>
+</label>
+`;
+
+exports[`checkedValue 4`] = `
+<label
+  aria-controls="false"
+  aria-disabled="false"
+  class="seu-checkbox is-checked"
+  role="checkbox"
+>
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+    value=""
+  />
+   
+  <span
+    class="seu-checkbox__input is-checked"
+  >
+    <span
+      class="seu-checkbox__inner"
+    />
+  </span>
+   
+  <span
+    class="seu-checkbox__label"
+  >
+    label5
+  </span>
+</label>
+`;
+
+exports[`checkedValue 5`] = `
+<label
+  aria-controls="false"
+  aria-disabled="false"
+  class="seu-checkbox"
+  role="checkbox"
+>
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+    value=""
+  />
+   
+  <span
+    class="seu-checkbox__input"
+  >
+    <span
+      class="seu-checkbox__inner"
+    />
+  </span>
+   
+  <span
+    class="seu-checkbox__label"
+  >
+    label5
   </span>
 </label>
 `;

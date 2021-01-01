@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SeuCheckbox.04 change the value by click checkbox 1`] = `
+exports[`change the value by click checkbox 1`] = `
 <label
   aria-controls="false"
   aria-disabled="false"
@@ -30,7 +30,7 @@ exports[`SeuCheckbox.04 change the value by click checkbox 1`] = `
 </label>
 `;
 
-exports[`SeuCheckbox.04 change the value by click checkbox 2`] = `
+exports[`change the value by click checkbox 2`] = `
 <label
   aria-controls="false"
   aria-disabled="false"

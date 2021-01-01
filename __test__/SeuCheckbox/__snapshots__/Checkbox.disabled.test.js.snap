@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SeuCheckbox.02 toggle the value prop by change prop 1`] = `
+exports[`toggle the disabled prop by change prop 1`] = `
 <label
   aria-controls="false"
   aria-disabled="false"
@@ -25,27 +25,28 @@ exports[`SeuCheckbox.02 toggle the value prop by change prop 1`] = `
   <span
     class="seu-checkbox__label"
   >
-    label2
+    label3
   </span>
 </label>
 `;
 
-exports[`SeuCheckbox.02 toggle the value prop by change prop 2`] = `
+exports[`toggle the disabled prop by change prop 2`] = `
 <label
   aria-controls="false"
-  aria-disabled="false"
-  class="seu-checkbox is-checked"
+  aria-disabled="true"
+  class="seu-checkbox is-disabled"
   role="checkbox"
 >
   <input
     aria-hidden="false"
     class="seu-checkbox__original"
+    disabled=""
     type="checkbox"
     value=""
   />
    
   <span
-    class="seu-checkbox__input is-checked"
+    class="seu-checkbox__input is-disabled"
   >
     <span
       class="seu-checkbox__inner"
@@ -55,12 +56,12 @@ exports[`SeuCheckbox.02 toggle the value prop by change prop 2`] = `
   <span
     class="seu-checkbox__label"
   >
-    label2
+    label3
   </span>
 </label>
 `;
 
-exports[`SeuCheckbox.02 toggle the value prop by change prop 3`] = `
+exports[`toggle the disabled prop by change prop 3`] = `
 <label
   aria-controls="false"
   aria-disabled="false"
@@ -85,7 +86,7 @@ exports[`SeuCheckbox.02 toggle the value prop by change prop 3`] = `
   <span
     class="seu-checkbox__label"
   >
-    label2
+    label3
   </span>
 </label>
 `;

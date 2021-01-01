@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SeuCheckbox.01 default props 1`] = `
+exports[`border 1`] = `
 <label
   aria-controls="false"
   aria-disabled="false"
-  class="seu-checkbox"
+  class="seu-checkbox is-bordered"
   role="checkbox"
 >
   <input
@@ -25,7 +25,7 @@ exports[`SeuCheckbox.01 default props 1`] = `
   <span
     class="seu-checkbox__label"
   >
-    label1
+    label6
   </span>
 </label>
 `;

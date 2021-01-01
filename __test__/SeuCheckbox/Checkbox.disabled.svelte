@@ -4,7 +4,7 @@
 </script>
 
 <div>
-  SeuCheckbox03
+  test component
   <SeuCheckbox {disabled}>label3</SeuCheckbox>
 </div>
-<button on:click={() => (disabled = true)}>button03</button>
+<button on:click={() => (disabled = !disabled)}>button03</button>

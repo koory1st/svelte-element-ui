@@ -3,6 +3,6 @@
 </script>
 
 <div>
-  SeuCheckbox10
-  <SeuCheckbox border size="mini">label10</SeuCheckbox>
+  test component
+  <SeuCheckbox border={true}>label6</SeuCheckbox>
 </div>
