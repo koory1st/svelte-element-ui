@@ -2,16 +2,16 @@
   import { styleStr2Array, styleArray2Str, classStr2Array, classArray2Str } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
-  export let group
-  export let value: boolean = false
+  export let group: Array<string | number>
+  export let value: boolean | string | number = false
   export let label: string | number | boolean | null | undefined
   export let indeterminate: boolean = false
   export let disabled: boolean = false
   export let name: string
   export let border: boolean = false
   export let size: string
-  export let checkedValue
-  export let uncheckedValue
+  export let checkedValue: string | number
+  export let uncheckedValue: string | number
 
   let componentLabel: string = ''
   // label is only valid in group
@@ -44,20 +44,26 @@
   }
   $: updateGroup(innerChecked)
 
-  $: if (
-    (checkedValue !== null && checkedValue !== undefined) ||
-    (uncheckedValue !== null && uncheckedValue != undefined)
-  ) {
+  $: getInnerChecked(value, checkedValue)
+
+  function getInnerChecked(value: boolean | string | number, checkedValue: string | number) {
+    if (typeof value === 'boolean') {
+      innerChecked = value
+      return
+    }
+
+    if (checkedValue === null || checkedValue === undefined) {
+      return
+    }
+
     innerChecked = checkedValue === value
-  } else {
-    innerChecked = value
   }
 
-  function updateChekbox(group) {
+  function updateChekbox(group: Array<string | number>) {
     value = group.indexOf(componentLabel) >= 0
   }
 
-  function updateGroup(checked) {
+  function updateGroup(checked: boolean) {
     if (!group) {
       return
     }
