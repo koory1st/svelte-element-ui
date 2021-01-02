@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`change the value by click checkbox 1`] = `
+<div>
+  test component
+  
+  <span>
+    changedValue:
+    undefined
+  </span>
+   
+  <div
+    id="value"
+  >
+    false
+  </div>
+   
+  <label
+    aria-controls="false"
+    aria-disabled="false"
+    class="seu-checkbox"
+    role="checkbox"
+  >
+    <input
+      aria-hidden="false"
+      class="seu-checkbox__original"
+      type="checkbox"
+      value=""
+    />
+     
+    <span
+      class="seu-checkbox__input"
+    >
+      <span
+        class="seu-checkbox__inner"
+      />
+    </span>
+     
+    <span
+      class="seu-checkbox__label"
+    >
+      label4
+    </span>
+  </label>
+</div>
+`;
+
+exports[`change the value by click checkbox 2`] = `
+<div>
+  test component
+  
+  <span>
+    changedValue:
+    true
+  </span>
+   
+  <div
+    id="value"
+  >
+    true
+  </div>
+   
+  <label
+    aria-controls="false"
+    aria-disabled="false"
+    class="seu-checkbox is-checked"
+    role="checkbox"
+  >
+    <input
+      aria-hidden="false"
+      class="seu-checkbox__original"
+      type="checkbox"
+      value=""
+    />
+     
+    <span
+      class="seu-checkbox__input is-checked"
+    >
+      <span
+        class="seu-checkbox__inner"
+      />
+    </span>
+     
+    <span
+      class="seu-checkbox__label"
+    >
+      label4
+    </span>
+  </label>
+</div>
+`;
