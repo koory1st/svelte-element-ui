@@ -1,5 +1,5 @@
 <script type="ts">
-  import { styleStr2Array, styleArray2Str, classStr2Array, classArray2Str } from '../util/StringUtil'
+  import { classArray2Str } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
   export let group: Array<string | number>
@@ -27,9 +27,7 @@
 
   let isFocus = false
 
-  let classList = ['seu-checkbox', ...classStr2Array($$props['class'])]
-
-  let styleList = styleStr2Array($$props['style'])
+  let classList = ['seu-checkbox']
 
   if (border && size) {
     classList.push(`seu-checkbox--${size}`)
@@ -115,7 +113,6 @@
   class:is-bordered={border}
   aria-controls={indeterminate}
   aria-disabled={disabled}
-  style={styleArray2Str(styleList)}
   on:keydown={handleKeydown}>
   <input
     class="seu-checkbox__original"
