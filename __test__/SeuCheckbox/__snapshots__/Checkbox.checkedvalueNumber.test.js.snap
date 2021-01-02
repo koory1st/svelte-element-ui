@@ -47,7 +47,7 @@ exports[`checkedValue string 2`] = `
   <div
     id="value"
   >
-    yes
+    1
   </div>
    
   <label
@@ -87,7 +87,7 @@ exports[`checkedValue string 3`] = `
   <div
     id="value"
   >
-    no
+    0
   </div>
    
   <label
@@ -127,7 +127,7 @@ exports[`checkedValue string 4`] = `
   <div
     id="value"
   >
-    yes
+    1
   </div>
    
   <label
@@ -167,7 +167,7 @@ exports[`checkedValue string 5`] = `
   <div
     id="value"
   >
-    no
+    0
   </div>
    
   <label

@@ -87,7 +87,7 @@ exports[`checkedValue string 3`] = `
   <div
     id="value"
   >
-    no
+    undefined
   </div>
    
   <label
