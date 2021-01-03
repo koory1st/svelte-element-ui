@@ -1,5 +1,6 @@
 <script type="ts">
   import SeuCheckbox from './SeuCheckbox.svelte'
+  import { setContext } from 'svelte'
   import { classArray2Str } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()

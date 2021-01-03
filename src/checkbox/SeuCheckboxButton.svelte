@@ -1,15 +1,12 @@
 <script type="ts">
   import { classArray2Str } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
-  import { getContext } from 'svelte'
   const dispatch = createEventDispatcher()
   export let group: Array<string | number>
   export let value: boolean | string | number = false
   export let label: string | number | boolean | null | undefined
-  export let indeterminate: boolean = false
   export let disabled: boolean = false
   export let name: string
-  export let border: boolean = false
   export let size: string
   export let checkedValue: string | number
   export let uncheckedValue: string | number
@@ -28,15 +25,11 @@
 
   let isFocus = false
 
-  let classList = ['seu-checkbox']
+  let classList = ['seu-checkbox-button']
 
-  if (border && size) {
-    classList.push(`seu-checkbox--${size}`)
+  if (size) {
+    classList.push(`seu-checkbox-button--${size}`)
   }
-
-  $: tabindex = indeterminate ? 0 : null
-  $: role = indeterminate ? 'checkbox' : null
-  $: ariaChecked = indeterminate ? 'mixed' : null
 
   $: {
     if (group) updateChekbox(group)
@@ -109,34 +102,20 @@
   class={classArray2Str(classList)}
   class:is-checked={innerChecked}
   class:is-disabled={disabled}
-  class:is-indeterminate={indeterminate}
   class:is-focus={isFocus}
-  class:is-bordered={border}
-  aria-controls={indeterminate}
   aria-disabled={disabled}
   on:keydown={handleKeydown}>
   <input
-    class="seu-checkbox__original"
+    class="seu-checkbox-button__original"
     type="checkbox"
     bind:checked={innerChecked}
     value={componentLabel}
-    aria-hidden={indeterminate ? 'true' : 'false'}
     {name}
     {disabled}
     on:focus={() => (isFocus = true)}
     on:blur={() => (isFocus = false)}
     on:change={handleChange} />
-  <span
-    class="seu-checkbox__input"
-    class:is-checked={innerChecked}
-    class:is-disabled={disabled}
-    class:is-indeterminate={indeterminate}
-    {role}
-    {tabindex}
-    aria-checked={ariaChecked}>
-    <span class="seu-checkbox__inner" />
-  </span>
-  <span class="seu-checkbox__label" on:keydown|stopPropagation>
+  <span class="seu-checkbox-button__inner">
     {#if $$slots.default}
       <slot />
     {:else}{componentLabel}{/if}

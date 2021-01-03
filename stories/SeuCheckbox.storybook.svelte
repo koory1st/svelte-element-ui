@@ -87,10 +87,10 @@
 <h2>Button style</h2>
 <p>Checkbox with button styles.</p>
 <SeuCheckboxGroup>
-  <SeuCheckboxButton bind:group={groupValue} value="Shanghai" />
-  <SeuCheckboxButton bind:group={groupValue} value="Beijing" disabled />
-  <SeuCheckboxButton bind:group={groupValue} value="Guangzhou" />
-  <SeuCheckboxButton bind:group={groupValue} value="Shenzhen" />
+  <SeuCheckboxButton bind:group={groupValue} label="Shanghai" />
+  <SeuCheckboxButton bind:group={groupValue} label="Beijing" disabled />
+  <SeuCheckboxButton bind:group={groupValue} label="Guangzhou" />
+  <SeuCheckboxButton bind:group={groupValue} label="Shenzhen" />
 </SeuCheckboxGroup>
 
 <h2>checked value and unchecked value</h2>
