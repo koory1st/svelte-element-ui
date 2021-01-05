@@ -15,7 +15,7 @@
   let checkboxPropList = []
 
   for (let index = 0; index < options.length; index++) {
-    const checkboxProp: { label?: string; checked?: boolean } = {}
+    const checkboxProp: { label?: string; checked?: boolean; checkedValue?: string | number } = {}
     const option = options[index]
 
     if (typeof option === 'string') {
@@ -29,11 +29,11 @@
       if ('label' in option === false && 'value' in option === false) {
         continue
       }
-      let optionLabel = option.label || '' + option.value
-      let optionValue = option.value || option.label
+      let optionLabel = option.label || String(option.value)
+      let optionValue = String(option.value) || option.label
 
       checkboxProp.label = optionLabel
-      checkboxProp.checked = group.includes(optionValue)
+      checkboxProp.checkedValue = optionValue
       checkboxPropList.push(checkboxProp)
     }
   }
@@ -45,7 +45,14 @@
 
 <div class={classArray2Str(classList)}>
   {#each checkboxPropList as prop}
-    <SeuCheckbox bind:group value={prop.checked} label={prop.label} {border} {size} {disabled} on:change={handleChange}>
+    <SeuCheckbox
+      bind:group
+      checkedValue={prop.checkedValue}
+      label={prop.label}
+      {border}
+      {size}
+      {disabled}
+      on:change={handleChange}>
       {prop.label}
     </SeuCheckbox>
   {/each}

@@ -15,13 +15,11 @@
   export let uncheckedValue: string | number
 
   let componentLabel: string = ''
+  let groupLabel: string | number = ''
   // label is only valid in group
   $: if (group && label) {
-    if (typeof label === 'string') {
-      componentLabel = label
-    } else if (typeof label === 'number' || typeof label === 'boolean') {
-      componentLabel = String(label)
-    }
+    componentLabel = String(label)
+    groupLabel = checkedValue || componentLabel
   }
 
   let innerChecked: boolean
@@ -59,17 +57,17 @@
   }
 
   function updateChekbox(group: Array<string | number>) {
-    value = group.indexOf(componentLabel) >= 0
+    value = group.indexOf(groupLabel) >= 0
   }
 
   function updateGroup(checked: boolean) {
     if (!group) {
       return
     }
-    const index = group.indexOf(componentLabel)
+    const index = group.indexOf(groupLabel)
     if (checked) {
       if (index < 0) {
-        group.push(componentLabel)
+        group.push(groupLabel)
         group = group
       }
     } else {
@@ -119,7 +117,7 @@
     class="seu-checkbox__original"
     type="checkbox"
     bind:checked={innerChecked}
-    value={componentLabel}
+    value={groupLabel}
     aria-hidden={indeterminate ? 'true' : 'false'}
     {name}
     {disabled}
