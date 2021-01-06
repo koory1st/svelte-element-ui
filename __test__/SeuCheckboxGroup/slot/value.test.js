@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom/extend-expect'
 import { render, fireEvent } from '@testing-library/svelte'
-import { testElementAndResult } from '../util/TestUtil'
-import Comp from './CheckboxGroup.slot.value.svelte'
+import { testElementAndResult } from '../../util/TestUtil'
+import Comp from './value.svelte'
 
 test('click and change group value', async () => {
   const { getByText } = render(Comp)

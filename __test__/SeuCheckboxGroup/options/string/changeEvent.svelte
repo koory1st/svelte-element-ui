@@ -1,5 +1,5 @@
 <script type="ts">
-  import SeuCheckboxGroup from '../../src/checkbox/SeuCheckboxGroup.svelte'
+  import SeuCheckboxGroup from '../../../../src/checkbox/SeuCheckboxGroup.svelte'
   let group
   let changedValue
 </script>
