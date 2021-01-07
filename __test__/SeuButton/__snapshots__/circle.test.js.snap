@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`circle 1`] = `
+<div>
+  test component
+  
+  <button
+    class="seu-button seu-button--default is-circle"
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 06
+    </span>
+  </button>
+</div>
+`;

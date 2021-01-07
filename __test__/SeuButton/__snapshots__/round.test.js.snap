@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`round 1`] = `
+<div>
+  test component
+  
+  <button
+    class="seu-button seu-button--default is-round"
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 05
+    </span>
+  </button>
+</div>
+`;

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default 1`] = `
+<div>
+  test component
+  
+  <button
+    class="seu-button seu-button--default"
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 01
+    </span>
+  </button>
+</div>
+`;

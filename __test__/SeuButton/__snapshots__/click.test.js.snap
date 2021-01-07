@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`click 1`] = `
+<div>
+  test component
+  
+  <span>
+    test10-1
+  </span>
+   
+  <button
+    class="seu-button seu-button--default"
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 10
+    </span>
+  </button>
+</div>
+`;
+
+exports[`click 2`] = `
+<div>
+  test component
+  
+  <span>
+    button clicked
+  </span>
+   
+  <button
+    class="seu-button seu-button--default"
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 10
+    </span>
+  </button>
+</div>
+`;

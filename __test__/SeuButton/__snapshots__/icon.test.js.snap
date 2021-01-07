@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`icon 1`] = `
+<div>
+  test component
+  
+  <button
+    class="seu-button seu-button--default is-loading"
+    disabled=""
+    type="button"
+  >
+    <i
+      class="seu-icon-loading"
+    />
+     
+     
+    <span>
+      Test Button 08
+    </span>
+  </button>
+</div>
+`;

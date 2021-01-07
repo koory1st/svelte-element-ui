@@ -40,7 +40,6 @@
 
 <button class={classList.join(' ')} type={nativeType} disabled={disabled || loading} on:click>
   {#if loading}<i class="seu-icon-loading" />{/if}
-
   {#if icon && !loading}<i class={icon} />{/if}
   {#if $$slots.default}
     <span>
