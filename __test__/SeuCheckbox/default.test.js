@@ -1,13 +1,10 @@
 import '@testing-library/jest-dom/extend-expect'
-import { render, fireEvent } from '@testing-library/svelte'
+import { render } from '@testing-library/svelte'
 import { testElementAndResult } from '../util/TestUtil'
-import Comp from './Checkbox.click.svelte'
+import Comp from './default.svelte'
 
-test('change the value by click checkbox', async () => {
+test('default props', () => {
   const { getByText } = render(Comp)
   const checkboxEle = getByText('test component').querySelector('label')
-  testElementAndResult(checkboxEle)
-
-  await fireEvent.click(checkboxEle)
   testElementAndResult(checkboxEle)
 })

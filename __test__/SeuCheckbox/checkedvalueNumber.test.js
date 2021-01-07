@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom/extend-expect'
 import { render, fireEvent } from '@testing-library/svelte'
 import { testElementAndResult } from '../util/TestUtil'
-import Comp from './Checkbox.uncheckedvalue.svelte'
+import Comp from './checkedvalueNumber.svelte'
 
 test('checkedValue string', async () => {
   const { getByText } = render(Comp)

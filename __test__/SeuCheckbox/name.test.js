@@ -1,10 +1,10 @@
 import '@testing-library/jest-dom/extend-expect'
 import { render } from '@testing-library/svelte'
 import { testElementAndResult } from '../util/TestUtil'
-import Comp from './Checkbox.label.svelte'
+import Comp from './name.svelte'
 
-test('label:no work without group', () => {
+test('name', () => {
   const { getByText } = render(Comp)
-  const checkboxEle = getByText('test component').querySelector('label')
+  const checkboxEle = getByText('test component')
   testElementAndResult(checkboxEle)
 })
