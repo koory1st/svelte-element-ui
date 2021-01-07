@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`click and change group value 1`] = `
+exports[`click 1`] = `
 <div>
   test component
   
@@ -13,6 +13,11 @@ exports[`click and change group value 1`] = `
     
   </span>
    
+  <span>
+    changedValue: 
+    undefined
+  </span>
+   
   <div
     class="seu-checkbox-group"
   >
@@ -27,7 +32,7 @@ exports[`click and change group value 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shanghai"
+        value="1"
       />
        
       <span
@@ -55,7 +60,7 @@ exports[`click and change group value 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Beijing"
+        value="2"
       />
        
       <span
@@ -83,7 +88,7 @@ exports[`click and change group value 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Guangzhou"
+        value="3"
       />
        
       <span
@@ -111,7 +116,7 @@ exports[`click and change group value 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shenzhen"
+        value="4"
       />
        
       <span
@@ -132,7 +137,7 @@ exports[`click and change group value 1`] = `
 </div>
 `;
 
-exports[`click and change group value 2`] = `
+exports[`click 2`] = `
 <div>
   test component
   
@@ -142,7 +147,12 @@ exports[`click and change group value 2`] = `
    
   <span>
     group: 
-    Shanghai
+    1
+  </span>
+   
+  <span>
+    changedValue: 
+    1
   </span>
    
   <div
@@ -152,18 +162,18 @@ exports[`click and change group value 2`] = `
     <label
       aria-controls="false"
       aria-disabled="false"
-      class="seu-checkbox"
+      class="seu-checkbox is-checked"
       role="checkbox"
     >
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shanghai"
+        value="1"
       />
        
       <span
-        class="seu-checkbox__input"
+        class="seu-checkbox__input is-checked"
       >
         <span
           class="seu-checkbox__inner"
@@ -187,7 +197,7 @@ exports[`click and change group value 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Beijing"
+        value="2"
       />
        
       <span
@@ -215,7 +225,7 @@ exports[`click and change group value 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Guangzhou"
+        value="3"
       />
        
       <span
@@ -243,7 +253,7 @@ exports[`click and change group value 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shenzhen"
+        value="4"
       />
        
       <span
@@ -264,7 +274,7 @@ exports[`click and change group value 2`] = `
 </div>
 `;
 
-exports[`click and change group value 3`] = `
+exports[`click 3`] = `
 <div>
   test component
   
@@ -274,7 +284,12 @@ exports[`click and change group value 3`] = `
    
   <span>
     group: 
-    Beijing
+    1,2
+  </span>
+   
+  <span>
+    changedValue: 
+    1,2
   </span>
    
   <div
@@ -284,18 +299,18 @@ exports[`click and change group value 3`] = `
     <label
       aria-controls="false"
       aria-disabled="false"
-      class="seu-checkbox"
+      class="seu-checkbox is-checked"
       role="checkbox"
     >
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shanghai"
+        value="1"
       />
        
       <span
-        class="seu-checkbox__input"
+        class="seu-checkbox__input is-checked"
       >
         <span
           class="seu-checkbox__inner"
@@ -312,18 +327,18 @@ exports[`click and change group value 3`] = `
     <label
       aria-controls="false"
       aria-disabled="false"
-      class="seu-checkbox"
+      class="seu-checkbox is-checked"
       role="checkbox"
     >
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Beijing"
+        value="2"
       />
        
       <span
-        class="seu-checkbox__input"
+        class="seu-checkbox__input is-checked"
       >
         <span
           class="seu-checkbox__inner"
@@ -347,7 +362,7 @@ exports[`click and change group value 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Guangzhou"
+        value="3"
       />
        
       <span
@@ -375,7 +390,7 @@ exports[`click and change group value 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shenzhen"
+        value="4"
       />
        
       <span
@@ -396,7 +411,7 @@ exports[`click and change group value 3`] = `
 </div>
 `;
 
-exports[`click and change group value 4`] = `
+exports[`click 4`] = `
 <div>
   test component
   
@@ -406,7 +421,12 @@ exports[`click and change group value 4`] = `
    
   <span>
     group: 
-    Guangzhou
+    1,2,3
+  </span>
+   
+  <span>
+    changedValue: 
+    1,2,3
   </span>
    
   <div
@@ -416,18 +436,18 @@ exports[`click and change group value 4`] = `
     <label
       aria-controls="false"
       aria-disabled="false"
-      class="seu-checkbox"
+      class="seu-checkbox is-checked"
       role="checkbox"
     >
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shanghai"
+        value="1"
       />
        
       <span
-        class="seu-checkbox__input"
+        class="seu-checkbox__input is-checked"
       >
         <span
           class="seu-checkbox__inner"
@@ -444,18 +464,18 @@ exports[`click and change group value 4`] = `
     <label
       aria-controls="false"
       aria-disabled="false"
-      class="seu-checkbox"
+      class="seu-checkbox is-checked"
       role="checkbox"
     >
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Beijing"
+        value="2"
       />
        
       <span
-        class="seu-checkbox__input"
+        class="seu-checkbox__input is-checked"
       >
         <span
           class="seu-checkbox__inner"
@@ -472,18 +492,18 @@ exports[`click and change group value 4`] = `
     <label
       aria-controls="false"
       aria-disabled="false"
-      class="seu-checkbox"
+      class="seu-checkbox is-checked"
       role="checkbox"
     >
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Guangzhou"
+        value="3"
       />
        
       <span
-        class="seu-checkbox__input"
+        class="seu-checkbox__input is-checked"
       >
         <span
           class="seu-checkbox__inner"
@@ -507,7 +527,7 @@ exports[`click and change group value 4`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shenzhen"
+        value="4"
       />
        
       <span
@@ -528,7 +548,7 @@ exports[`click and change group value 4`] = `
 </div>
 `;
 
-exports[`click and change group value 5`] = `
+exports[`click 5`] = `
 <div>
   test component
   
@@ -538,7 +558,12 @@ exports[`click and change group value 5`] = `
    
   <span>
     group: 
-    Shenzhen
+    1,2,3,4
+  </span>
+   
+  <span>
+    changedValue: 
+    1,2,3,4
   </span>
    
   <div
@@ -548,18 +573,18 @@ exports[`click and change group value 5`] = `
     <label
       aria-controls="false"
       aria-disabled="false"
-      class="seu-checkbox"
+      class="seu-checkbox is-checked"
       role="checkbox"
     >
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shanghai"
+        value="1"
       />
        
       <span
-        class="seu-checkbox__input"
+        class="seu-checkbox__input is-checked"
       >
         <span
           class="seu-checkbox__inner"
@@ -576,18 +601,18 @@ exports[`click and change group value 5`] = `
     <label
       aria-controls="false"
       aria-disabled="false"
-      class="seu-checkbox"
+      class="seu-checkbox is-checked"
       role="checkbox"
     >
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Beijing"
+        value="2"
       />
        
       <span
-        class="seu-checkbox__input"
+        class="seu-checkbox__input is-checked"
       >
         <span
           class="seu-checkbox__inner"
@@ -604,18 +629,18 @@ exports[`click and change group value 5`] = `
     <label
       aria-controls="false"
       aria-disabled="false"
-      class="seu-checkbox"
+      class="seu-checkbox is-checked"
       role="checkbox"
     >
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Guangzhou"
+        value="3"
       />
        
       <span
-        class="seu-checkbox__input"
+        class="seu-checkbox__input is-checked"
       >
         <span
           class="seu-checkbox__inner"
@@ -632,150 +657,18 @@ exports[`click and change group value 5`] = `
     <label
       aria-controls="false"
       aria-disabled="false"
-      class="seu-checkbox"
+      class="seu-checkbox is-checked"
       role="checkbox"
     >
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shenzhen"
+        value="4"
       />
        
       <span
-        class="seu-checkbox__input"
-      >
-        <span
-          class="seu-checkbox__inner"
-        />
-      </span>
-       
-      <span
-        class="seu-checkbox__label"
-      >
-        Shenzhen
-      </span>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`click and change group value 6`] = `
-<div>
-  test component
-  
-  <span>
-    slot
-  </span>
-   
-  <span>
-    group: 
-    
-  </span>
-   
-  <div
-    class="seu-checkbox-group"
-  >
-     
-    <label
-      aria-controls="false"
-      aria-disabled="false"
-      class="seu-checkbox"
-      role="checkbox"
-    >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shanghai"
-      />
-       
-      <span
-        class="seu-checkbox__input"
-      >
-        <span
-          class="seu-checkbox__inner"
-        />
-      </span>
-       
-      <span
-        class="seu-checkbox__label"
-      >
-        Shanghai
-      </span>
-    </label>
-     
-    <label
-      aria-controls="false"
-      aria-disabled="false"
-      class="seu-checkbox"
-      role="checkbox"
-    >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Beijing"
-      />
-       
-      <span
-        class="seu-checkbox__input"
-      >
-        <span
-          class="seu-checkbox__inner"
-        />
-      </span>
-       
-      <span
-        class="seu-checkbox__label"
-      >
-        Beijing
-      </span>
-    </label>
-     
-    <label
-      aria-controls="false"
-      aria-disabled="false"
-      class="seu-checkbox"
-      role="checkbox"
-    >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Guangzhou"
-      />
-       
-      <span
-        class="seu-checkbox__input"
-      >
-        <span
-          class="seu-checkbox__inner"
-        />
-      </span>
-       
-      <span
-        class="seu-checkbox__label"
-      >
-        Guangzhou
-      </span>
-    </label>
-     
-    <label
-      aria-controls="false"
-      aria-disabled="false"
-      class="seu-checkbox"
-      role="checkbox"
-    >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shenzhen"
-      />
-       
-      <span
-        class="seu-checkbox__input"
+        class="seu-checkbox__input is-checked"
       >
         <span
           class="seu-checkbox__inner"

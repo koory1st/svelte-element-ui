@@ -7,12 +7,12 @@
 <div>
   test component
   <span>slot</span>
-  <span>{group}</span>
-  <SeuCheckboxGroup>
-    <SeuCheckbox label="Shanghai" bind:group />
-    <SeuCheckbox label="Beijing" bind:group />
-    <SeuCheckbox label="Guangzhou" bind:group />
-    <SeuCheckbox label="Shenzhen" bind:group />
+  <span>group: {group}</span>
+  <SeuCheckboxGroup bind:group>
+    <SeuCheckbox label="Shanghai" />
+    <SeuCheckbox label="Beijing" />
+    <SeuCheckbox label="Guangzhou" />
+    <SeuCheckbox label="Shenzhen" />
   </SeuCheckboxGroup>
 </div>
 

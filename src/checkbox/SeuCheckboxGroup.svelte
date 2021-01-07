@@ -10,6 +10,9 @@
   export let size: string
   export let disabled: boolean = false
 
+  setContext('checkboxGroup_flg', true)
+  setContext('checkboxGroup_changeEvent', changeEventForChild)
+
   let classList = ['seu-checkbox-group']
 
   let checkboxPropList = []
@@ -38,21 +41,15 @@
     }
   }
 
-  function handleChange() {
-    dispatch('change', group)
+  function changeEventForChild(groupFromChild) {
+    group = groupFromChild
+    dispatch('change', groupFromChild)
   }
 </script>
 
 <div class={classArray2Str(classList)}>
   {#each checkboxPropList as prop}
-    <SeuCheckbox
-      bind:group
-      checkedValue={prop.checkedValue}
-      label={prop.label}
-      {border}
-      {size}
-      {disabled}
-      on:change={handleChange}>
+    <SeuCheckbox bind:group checkedValue={prop.checkedValue} label={prop.label} {border} {size} {disabled}>
       {prop.label}
     </SeuCheckbox>
   {/each}

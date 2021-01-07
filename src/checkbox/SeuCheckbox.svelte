@@ -3,7 +3,7 @@
   import { createEventDispatcher } from 'svelte'
   import { getContext } from 'svelte'
   const dispatch = createEventDispatcher()
-  export let group: Array<string | number>
+  export let group: Array<string | number> = []
   export let value: boolean | string | number = false
   export let label: string | number | boolean | null | undefined
   export let indeterminate: boolean = false
@@ -14,12 +14,13 @@
   export let checkedValue: string | number
   export let uncheckedValue: string | number
 
-  let componentLabel: string = ''
+  const checkboxGroupFlg: boolean = getContext('checkboxGroup_flg')
+  const changeEvent: Function = getContext('checkboxGroup_changeEvent')
+
   let groupLabel: string | number = ''
   // label is only valid in group
-  $: if (group && label) {
-    componentLabel = String(label)
-    groupLabel = checkedValue || componentLabel
+  $: if (checkboxGroupFlg) {
+    groupLabel = checkedValue || String(label)
   }
 
   let innerChecked: boolean
@@ -36,10 +37,8 @@
   $: role = indeterminate ? 'checkbox' : null
   $: ariaChecked = indeterminate ? 'mixed' : null
 
-  $: {
-    if (group) updateChekbox(group)
-  }
-  $: updateGroup(innerChecked)
+  $: checkboxGroupFlg && updateChekbox(group)
+  $: checkboxGroupFlg && updateGroup(innerChecked)
 
   $: getInnerChecked(value, checkedValue)
 
@@ -60,21 +59,27 @@
     value = group.indexOf(groupLabel) >= 0
   }
 
-  function updateGroup(checked: boolean) {
+  function updateGroup(innerChecked: boolean) {
     if (!group) {
       return
     }
+
     const index = group.indexOf(groupLabel)
-    if (checked) {
-      if (index < 0) {
-        group.push(groupLabel)
-        group = group
-      }
-    } else {
-      if (index >= 0) {
-        group.splice(index, 1)
-        group = group
-      }
+
+    // this checkbox is checked and the label is not in the group
+    // push in the group
+    if (innerChecked && index < 0) {
+      group.push(groupLabel)
+      group = group
+      return
+    }
+
+    // this checkbox is unchecked and the label is in the group
+    // remove from the group
+    if (!innerChecked && index >= 0) {
+      group.splice(index, 1)
+      group = group
+      return
     }
   }
 
@@ -99,6 +104,11 @@
     }
     innerChecked = target.checked
     dispatch('change', value)
+
+    // if in group, fire the group event
+    if (checkboxGroupFlg) {
+      changeEvent(group)
+    }
   }
 </script>
 
@@ -137,6 +147,6 @@
   <span class="seu-checkbox__label" on:keydown|stopPropagation>
     {#if $$slots.default}
       <slot />
-    {:else}{componentLabel}{/if}
+    {:else}{label}{/if}
   </span>
 </label>
