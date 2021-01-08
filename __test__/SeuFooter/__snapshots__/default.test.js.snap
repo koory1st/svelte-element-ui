@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default 1`] = `
+<div>
+  test component
+  
+  <section
+    class="seu-container"
+  >
+    <footer
+      class="seu-footer"
+      style="height:60px"
+    >
+      seu footer 01
+    </footer>
+  </section>
+   
+  <section
+    class="seu-container"
+  >
+    <footer
+      class="seu-footer"
+      style="height:10px"
+    >
+      seu footer 02
+    </footer>
+  </section>
+</div>
+`;
