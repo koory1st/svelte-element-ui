@@ -3,6 +3,9 @@
   import SeuCol from '../../src/col/SeuCol.svelte'
 </script>
 
-<SeuRow gutter={12}>
-  <SeuCol>Test Col 12</SeuCol>
-</SeuRow>
+<div>
+  test component
+  <SeuRow>
+    <SeuCol>Test Col 01</SeuCol>
+  </SeuRow>
+</div>

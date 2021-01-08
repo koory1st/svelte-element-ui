@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`span 1`] = `
+<div>
+  test component
+  
+  <div
+    class="seu-row"
+  >
+    <div
+      class="seu-col seu-col-10"
+    >
+      Test Col 02
+    </div>
+  </div>
+</div>
+`;

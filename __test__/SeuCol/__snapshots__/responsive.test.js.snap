@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`responsive 1`] = `
+<div>
+  test component
+  
+  <div
+    class="seu-row"
+  >
+    <div
+      class="seu-col seu-col-24 seu-col-xs-6"
+    >
+      Test Col 06
+    </div>
+     
+    <div
+      class="seu-col seu-col-24 seu-col-sm-7"
+    >
+      Test Col 07
+    </div>
+     
+    <div
+      class="seu-col seu-col-24 seu-col-md-8"
+    >
+      Test Col 08
+    </div>
+     
+    <div
+      class="seu-col seu-col-24 seu-col-lg-9"
+    >
+      Test Col 09
+    </div>
+     
+    <div
+      class="seu-col seu-col-24 seu-col-xl-10"
+    >
+      Test Col 10
+    </div>
+     
+    <div
+      class="seu-col seu-col-24 seu-col-xs-6 seu-col-sm-7 seu-col-md-8 seu-col-lg-9 seu-col-xl-10"
+    >
+      Test Col 11
+    </div>
+  </div>
+</div>
+`;
