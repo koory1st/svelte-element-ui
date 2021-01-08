@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`href 1`] = `
+<div>
+  test component
+  
+  <a
+    class="seu-link seu-link--default is-underline"
+    href="abc.com"
+  >
+     
+    <span
+      class="seu-link--inner"
+    >
+      seu link 05
+    </span>
+     
+  </a>
+</div>
+`;

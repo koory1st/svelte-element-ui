@@ -6,5 +6,8 @@
   }
 </script>
 
-<span>{text}</span>
-<SeuLink on:click={handleClick}>seu link 07</SeuLink>
+<div>
+  test component
+  <span>{text}</span>
+  <SeuLink on:click={handleClick}>seu link 07</SeuLink>
+</div>

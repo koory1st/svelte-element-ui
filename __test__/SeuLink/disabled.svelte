@@ -2,4 +2,7 @@
   import SeuLink from '../../src/link/SeuLink.svelte'
 </script>
 
-<SeuLink href="abc.com">seu link 05</SeuLink>
+<div>
+  test component
+  <SeuLink disabled={true}>seu link 04</SeuLink>
+</div>

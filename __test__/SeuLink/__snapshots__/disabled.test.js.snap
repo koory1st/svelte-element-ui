@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`disabled 1`] = `
+<div>
+  test component
+  
+  <a
+    class="seu-link seu-link--default is-disabled"
+  >
+     
+    <span
+      class="seu-link--inner"
+    >
+      seu link 04
+    </span>
+     
+  </a>
+</div>
+`;
