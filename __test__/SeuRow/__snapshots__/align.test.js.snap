@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`align 1`] = `
+<div>
+  test component
+  
+  <div
+    class="seu-row is-align-middle"
+  >
+    Test Row align middle
+  </div>
+   
+  <div
+    class="seu-row is-align-bottom"
+  >
+    Test Row align bottom
+  </div>
+</div>
+`;

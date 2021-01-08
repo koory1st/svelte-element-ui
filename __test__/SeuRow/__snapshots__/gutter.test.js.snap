@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`gutter 1`] = `
+<div>
+  test component
+  
+  <div
+    class="seu-row"
+    style="margin-left:-5px;margin-right:-5px;"
+  >
+    Test Row 02
+  </div>
+</div>
+`;

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`justify 1`] = `
+<div>
+  test component
+  
+  <div
+    class="seu-row is-justify-end"
+  >
+    Test Row justify end
+  </div>
+   
+  <div
+    class="seu-row is-justify-center"
+  >
+    Test Row justify center
+  </div>
+   
+  <div
+    class="seu-row is-justify-space-around"
+  >
+    Test Row justify space-around
+  </div>
+   
+  <div
+    class="seu-row is-justify-space-between"
+  >
+    Test Row justify space-between
+  </div>
+</div>
+`;

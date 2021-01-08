@@ -2,4 +2,7 @@
   import SeuRow from '../../src/row/SeuRow.svelte'
 </script>
 
-<SeuRow>Test Row 01</SeuRow>
+<div>
+  test component
+  <SeuRow gutter={10}>Test Row 02</SeuRow>
+</div>
