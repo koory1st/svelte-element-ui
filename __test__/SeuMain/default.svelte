@@ -3,6 +3,9 @@
   import SeuMain from '../../src/main/SeuMain.svelte'
 </script>
 
-<SeuContainer>
-  <SeuMain>seu main</SeuMain>
-</SeuContainer>
+<div>
+  test component
+  <SeuContainer>
+    <SeuMain>seu main</SeuMain>
+  </SeuContainer>
+</div>

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default 1`] = `
+<div>
+  test component
+  
+  <section
+    class="seu-container"
+  >
+    <main
+      class="seu-main"
+    >
+      seu main
+    </main>
+  </section>
+</div>
+`;
