@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default 1`] = `
+<div>
+  test component
+  
+  <section
+    class="seu-container"
+  >
+    Test Container 01
+  </section>
+   
+  <section
+    class="seu-container"
+  >
+    Test Container 02
+  </section>
+   
+  <section
+    class="seu-container is-vertical"
+  >
+    Test Container 03
+  </section>
+</div>
+`;
