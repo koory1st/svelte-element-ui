@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`name 1`] = `
+<div>
+  test component
+  
+  <label
+    aria-disabled="false"
+    class="seu-checkbox-button"
+    role="checkbox"
+  >
+    <input
+      class="seu-checkbox-button__original"
+      name="test_name"
+      type="checkbox"
+      value=""
+    />
+     
+    <span
+      class="seu-checkbox-button__inner"
+    >
+      label08
+    </span>
+  </label>
+</div>
+`;

@@ -2,7 +2,8 @@
   import { classArray2Str } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
-  export let group: Array<string | number>
+  import { getContext } from 'svelte'
+  export let group: Array<string | number> = []
   export let value: boolean | string | number = false
   export let label: string | number | boolean | null | undefined
   export let disabled: boolean = false
@@ -11,14 +12,13 @@
   export let checkedValue: string | number
   export let uncheckedValue: string | number
 
-  let componentLabel: string = ''
+  const checkboxGroupFlg: boolean = getContext('checkboxGroup_flg')
+  const changeEvent: Function = getContext('checkboxGroup_changeEvent')
+
+  let groupLabel: string | number = ''
   // label is only valid in group
-  $: if (group && label) {
-    if (typeof label === 'string') {
-      componentLabel = label
-    } else if (typeof label === 'number' || typeof label === 'boolean') {
-      componentLabel = String(label)
-    }
+  $: if (checkboxGroupFlg) {
+    groupLabel = checkedValue || String(label)
   }
 
   let innerChecked: boolean
@@ -31,10 +31,8 @@
     classList.push(`seu-checkbox-button--${size}`)
   }
 
-  $: {
-    if (group) updateChekbox(group)
-  }
-  $: updateGroup(innerChecked)
+  $: checkboxGroupFlg && updateChekbox(group)
+  $: checkboxGroupFlg && updateGroup(innerChecked)
 
   $: getInnerChecked(value, checkedValue)
 
@@ -52,24 +50,30 @@
   }
 
   function updateChekbox(group: Array<string | number>) {
-    value = group.indexOf(componentLabel) >= 0
+    value = group.indexOf(groupLabel) >= 0
   }
 
-  function updateGroup(checked: boolean) {
+  function updateGroup(innerChecked: boolean) {
     if (!group) {
       return
     }
-    const index = group.indexOf(componentLabel)
-    if (checked) {
-      if (index < 0) {
-        group.push(componentLabel)
-        group = group
-      }
-    } else {
-      if (index >= 0) {
-        group.splice(index, 1)
-        group = group
-      }
+
+    const index = group.indexOf(groupLabel)
+
+    // this checkbox is checked and the label is not in the group
+    // push in the group
+    if (innerChecked && index < 0) {
+      group.push(groupLabel)
+      group = group
+      return
+    }
+
+    // this checkbox is unchecked and the label is in the group
+    // remove from the group
+    if (!innerChecked && index >= 0) {
+      group.splice(index, 1)
+      group = group
+      return
     }
   }
 
@@ -94,6 +98,11 @@
     }
     innerChecked = target.checked
     dispatch('change', value)
+
+    // if in group, fire the group event
+    if (checkboxGroupFlg) {
+      changeEvent(group)
+    }
   }
 </script>
 
@@ -109,7 +118,7 @@
     class="seu-checkbox-button__original"
     type="checkbox"
     bind:checked={innerChecked}
-    value={componentLabel}
+    value={groupLabel}
     {name}
     {disabled}
     on:focus={() => (isFocus = true)}
@@ -118,6 +127,6 @@
   <span class="seu-checkbox-button__inner">
     {#if $$slots.default}
       <slot />
-    {:else}{componentLabel}{/if}
+    {:else}{label}{/if}
   </span>
 </label>
