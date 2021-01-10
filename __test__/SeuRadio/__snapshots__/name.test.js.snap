@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`name 1`] = `
+<div>
+  test component
+  
+  <label
+    class="seu-radio"
+    role="radio"
+    tabindex="0"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio__original"
+      name="test_name"
+      tabindex="-1"
+      type="radio"
+      value=""
+    />
+     
+    <span
+      class="seu-radio__input"
+    >
+      <span
+        class="seu-radio__inner"
+      />
+    </span>
+     
+    <span
+      class="seu-radio__label"
+    >
+      label08
+    </span>
+  </label>
+</div>
+`;

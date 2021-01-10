@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`size 1`] = `
+<div>
+  test component
+  
+  <label
+    class="seu-radio"
+    role="radio"
+    tabindex="0"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio__original"
+      tabindex="-1"
+      type="radio"
+      value=""
+    />
+     
+    <span
+      class="seu-radio__input"
+    >
+      <span
+        class="seu-radio__inner"
+      />
+    </span>
+     
+    <span
+      class="seu-radio__label"
+    >
+      medium no border
+    </span>
+  </label>
+   
+  <label
+    class="seu-radio"
+    role="radio"
+    tabindex="0"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio__original"
+      tabindex="-1"
+      type="radio"
+      value=""
+    />
+     
+    <span
+      class="seu-radio__input"
+    >
+      <span
+        class="seu-radio__inner"
+      />
+    </span>
+     
+    <span
+      class="seu-radio__label"
+    >
+      small no border
+    </span>
+  </label>
+   
+  <label
+    class="seu-radio"
+    role="radio"
+    tabindex="0"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio__original"
+      tabindex="-1"
+      type="radio"
+      value=""
+    />
+     
+    <span
+      class="seu-radio__input"
+    >
+      <span
+        class="seu-radio__inner"
+      />
+    </span>
+     
+    <span
+      class="seu-radio__label"
+    >
+      mini no border
+    </span>
+  </label>
+   
+  <label
+    class="seu-radio seu-radio--medium is-bordered"
+    role="radio"
+    tabindex="0"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio__original"
+      tabindex="-1"
+      type="radio"
+      value=""
+    />
+     
+    <span
+      class="seu-radio__input"
+    >
+      <span
+        class="seu-radio__inner"
+      />
+    </span>
+     
+    <span
+      class="seu-radio__label"
+    >
+      medium
+    </span>
+  </label>
+   
+  <label
+    class="seu-radio seu-radio--small is-bordered"
+    role="radio"
+    tabindex="0"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio__original"
+      tabindex="-1"
+      type="radio"
+      value=""
+    />
+     
+    <span
+      class="seu-radio__input"
+    >
+      <span
+        class="seu-radio__inner"
+      />
+    </span>
+     
+    <span
+      class="seu-radio__label"
+    >
+      small
+    </span>
+  </label>
+   
+  <label
+    class="seu-radio seu-radio--mini is-bordered"
+    role="radio"
+    tabindex="0"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio__original"
+      tabindex="-1"
+      type="radio"
+      value=""
+    />
+     
+    <span
+      class="seu-radio__input"
+    >
+      <span
+        class="seu-radio__inner"
+      />
+    </span>
+     
+    <span
+      class="seu-radio__label"
+    >
+      mini
+    </span>
+  </label>
+</div>
+`;

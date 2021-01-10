@@ -1,7 +1,7 @@
 <script type="ts">
-  import SeuRadio from './SeuRadio.svelte'
+  import SeuRadio from '../SeuRadio.svelte'
   import SeuRadioButton from './SeuRadioButton.svelte'
-  import { styleStr2Array, styleArray2Str, classStr2Array, classArray2Str } from './util/StringUtil'
+  import { classArray2Str } from '../util/StringUtil'
   export let value: string | number
   export let radios: Array<{ label: string; value: string | number }> = []
   export let border: boolean = false
@@ -9,12 +9,10 @@
   export let disabled: boolean = false
   export let type: string
 
-  let classList = ['seu-radio-group', ...classStr2Array($$props['class'])]
-
-  let styleList = styleStr2Array($$props['style'])
+  let classList = ['seu-radio-group']
 </script>
 
-<div class={classArray2Str(classList)} style={styleArray2Str(styleList)}>
+<div class={classArray2Str(classList)}>
   {#each radios as radio}
     {#if type === 'button'}
       <SeuRadioButton bind:value label={radio.value} {disabled} {border} {size} isGroup on:change>
