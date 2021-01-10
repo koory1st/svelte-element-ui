@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`value.number 1`] = `
+<div>
+  test component
+  
+  <label
+    class="seu-radio-button"
+    role="radio"
+    tabindex="-1"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio-button__orig-radio"
+      tabindex="-1"
+      type="radio"
+      value="1"
+    />
+     
+    <span
+      class="seu-radio-button__inner"
+    >
+      label2
+       
+    </span>
+  </label>
+</div>
+`;
+
+exports[`value.number 2`] = `
+<div>
+  test component
+  
+  <label
+    aria-checked="true"
+    class="seu-radio-button"
+    role="radio"
+    tabindex="0"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio-button__orig-radio"
+      tabindex="-1"
+      type="radio"
+      value="1"
+    />
+     
+    <span
+      class="seu-radio-button__inner"
+    >
+      label2
+       
+    </span>
+  </label>
+</div>
+`;
+
+exports[`value.number 3`] = `
+<div>
+  test component
+  
+  <label
+    class="seu-radio-button"
+    role="radio"
+    tabindex="-1"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio-button__orig-radio"
+      tabindex="-1"
+      type="radio"
+      value="1"
+    />
+     
+    <span
+      class="seu-radio-button__inner"
+    >
+      label2
+       
+    </span>
+  </label>
+</div>
+`;

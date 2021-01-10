@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`disabled 1`] = `
+<div>
+  test component
+  
+  <label
+    aria-disabled="true"
+    class="seu-radio-button is-disabled"
+    role="radio"
+    tabindex="-1"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio-button__orig-radio"
+      disabled=""
+      tabindex="-1"
+      type="radio"
+      value=""
+    />
+     
+    <span
+      class="seu-radio-button__inner"
+    >
+      label1
+       
+    </span>
+  </label>
+   
+  <label
+    aria-disabled="true"
+    class="seu-radio-button is-disabled"
+    role="radio"
+    tabindex="-1"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio-button__orig-radio"
+      disabled=""
+      tabindex="-1"
+      type="radio"
+      value=""
+    />
+     
+    <span
+      class="seu-radio-button__inner"
+    >
+      label2
+       
+    </span>
+  </label>
+</div>
+`;
