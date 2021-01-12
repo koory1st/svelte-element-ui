@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom/extend-expect'
 import { render, fireEvent } from '@testing-library/svelte'
-import { testElementAndResult } from '../../util/TestUtil'
-import Comp from './changeEvent.svelte'
+import { testElementAndResult } from '../../../util/TestUtil'
+import Comp from './click.svelte'
 
 test('click', async () => {
   const { getByText } = render(Comp)
@@ -21,6 +21,12 @@ test('click', async () => {
   testElementAndResult(testDom)
 
   const checkbox4 = testDom.querySelector('div.seu-checkbox-group label:nth-child(4)')
+  await fireEvent.click(checkbox4)
+  testElementAndResult(testDom)
+
+  await fireEvent.click(checkbox1)
+  await fireEvent.click(checkbox2)
+  await fireEvent.click(checkbox3)
   await fireEvent.click(checkbox4)
   testElementAndResult(testDom)
 })
