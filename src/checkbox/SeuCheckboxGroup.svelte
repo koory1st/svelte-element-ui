@@ -4,7 +4,7 @@
   import { classArray2Str } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
-  export let options: Array<string | { label: string; value: string | number; disabled?: boolean }> = []
+  export let options: Array<string | { label: string; value: string | number | boolean; disabled?: boolean }> = []
   export let group = []
   export let border: boolean = false
   export let size: string
@@ -18,7 +18,12 @@
   let checkboxPropList = []
 
   for (let index = 0; index < options.length; index++) {
-    const checkboxProp: { label?: string; checked?: boolean; checkedValue?: string | number; disabled?: boolean } = {}
+    const checkboxProp: {
+      label?: string
+      checked?: boolean
+      checkedValue?: string | number | boolean
+      disabled?: boolean
+    } = {}
     const option = options[index]
 
     if (typeof option === 'string') {

@@ -11,8 +11,8 @@
   export let size: string
 
   // just for group
-  const checkboxGroupFlg: boolean = getContext('checkboxGroup_flg')
-  // export let isGroup: boolean = false
+  const radioGroupFlg: boolean = getContext('radioGroup_flg')
+  const changeEvent: Function = getContext('radioGroup_changeEvent')
 
   let isFocus = false
 
@@ -25,7 +25,7 @@
   $: isChecked = value === label ? true : null
   $: isDisabled = disabled ? disabled : null
 
-  $: tabindex = isDisabled || (checkboxGroupFlg && value !== label) ? -1 : 0
+  $: tabindex = isDisabled || (radioGroupFlg && value !== label) ? -1 : 0
 
   function handleKeydown(event: KeyboardEvent) {
     if (event.code !== 'Space') {
@@ -39,6 +39,11 @@
 
   function handleChange() {
     dispatch('change', { value, label })
+
+    // if in group, fire the group event
+    if (radioGroupFlg) {
+      changeEvent(value)
+    }
   }
 </script>
 

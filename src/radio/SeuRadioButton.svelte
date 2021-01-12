@@ -1,12 +1,18 @@
 <script type="ts">
   import { classArray2Str } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
+  import { getContext } from 'svelte'
   const dispatch = createEventDispatcher()
   export let value: boolean | string | number = false
   export let label: string | number | boolean | null | undefined = ''
   export let disabled: boolean = false
   export let name: string
   export let size: string
+
+  // just for group
+  const radioGroupFlg: boolean = getContext('radioGroup_flg')
+  const changeEvent: Function = getContext('radioGroup_changeEvent')
+
   let isFocus = false
 
   let classList = ['seu-radio-button']
@@ -32,6 +38,11 @@
 
   function handleChange() {
     dispatch('change', { value, label })
+
+    // if in group, fire the group event
+    if (radioGroupFlg) {
+      changeEvent(value)
+    }
   }
 </script>
 
