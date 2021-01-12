@@ -4,7 +4,7 @@
   import { classArray2Str } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
-  export let options: Array<string | { label: string; value: string | number }> = []
+  export let options: Array<string | { label: string; value: string | number; disabled?: boolean }> = []
   export let group = []
   export let border: boolean = false
   export let size: string
@@ -18,12 +18,11 @@
   let checkboxPropList = []
 
   for (let index = 0; index < options.length; index++) {
-    const checkboxProp: { label?: string; checked?: boolean; checkedValue?: string | number } = {}
+    const checkboxProp: { label?: string; checked?: boolean; checkedValue?: string | number; disabled?: boolean } = {}
     const option = options[index]
 
     if (typeof option === 'string') {
       checkboxProp.label = option
-      checkboxProp.checked = group.includes(option)
       checkboxPropList.push(checkboxProp)
       continue
     }
@@ -37,11 +36,12 @@
 
       checkboxProp.label = optionLabel
       checkboxProp.checkedValue = optionValue
+      checkboxProp.disabled = option.disabled
       checkboxPropList.push(checkboxProp)
     }
   }
 
-  function changeEventForChild(groupFromChild) {
+  function changeEventForChild(groupFromChild: Array<string | number>) {
     group = groupFromChild
     dispatch('change', groupFromChild)
   }
@@ -49,7 +49,13 @@
 
 <div class={classArray2Str(classList)}>
   {#each checkboxPropList as prop}
-    <SeuCheckbox bind:group checkedValue={prop.checkedValue} label={prop.label} {border} {size} {disabled}>
+    <SeuCheckbox
+      bind:group
+      checkedValue={prop.checkedValue}
+      label={prop.label}
+      {border}
+      {size}
+      disabled={disabled || prop.disabled}>
       {prop.label}
     </SeuCheckbox>
   {/each}
