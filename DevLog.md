@@ -4,7 +4,7 @@
 - TODO: checkbox and radio's name to control arrow key
 - TODO: checkbox's focus test
 - TODO: radio's focus test
-- TODO: radio's slot test
+- [ x ]: radio's slot test
 - TODO: svelte-doc
 - TODO: release 0.0.1
 

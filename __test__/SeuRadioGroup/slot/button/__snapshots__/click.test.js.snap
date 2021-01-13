@@ -1,0 +1,320 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`click 1`] = `
+<div>
+  test component
+  
+  <span>
+    value: 
+    false
+  </span>
+   
+  <div
+    class="seu-radio-group"
+  >
+     
+    <label
+      class="seu-radio-button"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio-button__orig-radio"
+        tabindex="-1"
+        type="radio"
+        value="1"
+      />
+       
+      <span
+        class="seu-radio-button__inner"
+      >
+        label1
+         
+      </span>
+    </label>
+     
+    <label
+      class="seu-radio-button"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio-button__orig-radio"
+        tabindex="-1"
+        type="radio"
+        value="2"
+      />
+       
+      <span
+        class="seu-radio-button__inner"
+      >
+        label2
+         
+      </span>
+    </label>
+     
+    <label
+      class="seu-radio-button"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio-button__orig-radio"
+        tabindex="-1"
+        type="radio"
+        value="3"
+      />
+       
+      <span
+        class="seu-radio-button__inner"
+      >
+        label3
+         
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`click 2`] = `
+<div>
+  test component
+  
+  <span>
+    value: 
+    1
+  </span>
+   
+  <div
+    class="seu-radio-group"
+  >
+     
+    <label
+      aria-checked="true"
+      class="seu-radio-button is-active"
+      role="radio"
+      tabindex="0"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio-button__orig-radio"
+        tabindex="-1"
+        type="radio"
+        value="1"
+      />
+       
+      <span
+        class="seu-radio-button__inner"
+      >
+        label1
+         
+      </span>
+    </label>
+     
+    <label
+      class="seu-radio-button"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio-button__orig-radio"
+        tabindex="-1"
+        type="radio"
+        value="2"
+      />
+       
+      <span
+        class="seu-radio-button__inner"
+      >
+        label2
+         
+      </span>
+    </label>
+     
+    <label
+      class="seu-radio-button"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio-button__orig-radio"
+        tabindex="-1"
+        type="radio"
+        value="3"
+      />
+       
+      <span
+        class="seu-radio-button__inner"
+      >
+        label3
+         
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`click 3`] = `
+<div>
+  test component
+  
+  <span>
+    value: 
+    2
+  </span>
+   
+  <div
+    class="seu-radio-group"
+  >
+     
+    <label
+      class="seu-radio-button"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio-button__orig-radio"
+        tabindex="-1"
+        type="radio"
+        value="1"
+      />
+       
+      <span
+        class="seu-radio-button__inner"
+      >
+        label1
+         
+      </span>
+    </label>
+     
+    <label
+      aria-checked="true"
+      class="seu-radio-button is-active"
+      role="radio"
+      tabindex="0"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio-button__orig-radio"
+        tabindex="-1"
+        type="radio"
+        value="2"
+      />
+       
+      <span
+        class="seu-radio-button__inner"
+      >
+        label2
+         
+      </span>
+    </label>
+     
+    <label
+      class="seu-radio-button"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio-button__orig-radio"
+        tabindex="-1"
+        type="radio"
+        value="3"
+      />
+       
+      <span
+        class="seu-radio-button__inner"
+      >
+        label3
+         
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`click 4`] = `
+<div>
+  test component
+  
+  <span>
+    value: 
+    3
+  </span>
+   
+  <div
+    class="seu-radio-group"
+  >
+     
+    <label
+      class="seu-radio-button"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio-button__orig-radio"
+        tabindex="-1"
+        type="radio"
+        value="1"
+      />
+       
+      <span
+        class="seu-radio-button__inner"
+      >
+        label1
+         
+      </span>
+    </label>
+     
+    <label
+      class="seu-radio-button"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio-button__orig-radio"
+        tabindex="-1"
+        type="radio"
+        value="2"
+      />
+       
+      <span
+        class="seu-radio-button__inner"
+      >
+        label2
+         
+      </span>
+    </label>
+     
+    <label
+      aria-checked="true"
+      class="seu-radio-button is-active"
+      role="radio"
+      tabindex="0"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio-button__orig-radio"
+        tabindex="-1"
+        type="radio"
+        value="3"
+      />
+       
+      <span
+        class="seu-radio-button__inner"
+      >
+        label3
+         
+      </span>
+    </label>
+  </div>
+</div>
+`;
