@@ -38,7 +38,8 @@
   }
 
   function handleChange() {
-    dispatch('change', { value, label })
+    value = label
+    dispatch('change', value)
 
     // if in group, fire the group event
     if (radioGroupFlg) {
