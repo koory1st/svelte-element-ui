@@ -21,8 +21,7 @@
   $: isDisabled = disabled ? disabled : null
   $: tabindex = isDisabled || value !== label ? -1 : 0
 
-  size && classList.push(`seu-radio-button--${size}`)
-  value === label && classList.push(`is-active`)
+  $: size && classList.push(`seu-radio-button--${size}`)
   $: isDisabled && classList.push(`is-disabled`)
   $: isFocus && classList.push(`is-focus`)
 
@@ -50,6 +49,7 @@
 <label
   role="radio"
   class={classArray2Str(classList)}
+  class:is-active={isChecked}
   {tabindex}
   aria-disabled={isDisabled}
   aria-checked={isChecked}

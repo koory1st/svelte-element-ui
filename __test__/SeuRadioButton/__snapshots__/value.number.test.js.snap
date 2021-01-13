@@ -33,7 +33,7 @@ exports[`value.number 2`] = `
   
   <label
     aria-checked="true"
-    class="seu-radio-button"
+    class="seu-radio-button is-active"
     role="radio"
     tabindex="0"
   >
