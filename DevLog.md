@@ -1,3 +1,11 @@
+# 2021.01.12
+
+- TODO: checkbox's max and min
+- TODO: checkbox and radio's name to control arrow key
+- TODO: radio's slot test
+- TODO: svelte-doc
+- TODO: release 0.0.1
+
 # 2020.12.31
 
 在使用 testing-liberary 写测试。
