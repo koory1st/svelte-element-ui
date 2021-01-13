@@ -35,6 +35,7 @@ exports[`disabled 1`] = `
         Shanghai
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -62,6 +63,7 @@ exports[`disabled 1`] = `
         Beijing
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -89,6 +91,7 @@ exports[`disabled 1`] = `
         Guangzhou
       </span>
     </label>
+    
      
   </div>
    
@@ -123,6 +126,7 @@ exports[`disabled 1`] = `
         Shanghai
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="true"
@@ -151,6 +155,7 @@ exports[`disabled 1`] = `
         Beijing
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="true"
@@ -179,6 +184,7 @@ exports[`disabled 1`] = `
         Guangzhou
       </span>
     </label>
+    
      
   </div>
    
@@ -213,6 +219,7 @@ exports[`disabled 1`] = `
         Shanghai
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="true"
@@ -241,6 +248,7 @@ exports[`disabled 1`] = `
         Beijing
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="true"
@@ -269,6 +277,7 @@ exports[`disabled 1`] = `
         Guangzhou
       </span>
     </label>
+    
      
   </div>
 </div>

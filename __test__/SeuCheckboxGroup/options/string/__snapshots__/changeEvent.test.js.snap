@@ -44,6 +44,7 @@ exports[`click 1`] = `
         Shanghai
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -71,6 +72,7 @@ exports[`click 1`] = `
         Beijing
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -98,6 +100,7 @@ exports[`click 1`] = `
         Guangzhou
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -125,6 +128,7 @@ exports[`click 1`] = `
         Shenzhen
       </span>
     </label>
+    
      
   </div>
 </div>
@@ -174,6 +178,7 @@ exports[`click 2`] = `
         Shanghai
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -201,6 +206,7 @@ exports[`click 2`] = `
         Beijing
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -228,6 +234,7 @@ exports[`click 2`] = `
         Guangzhou
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -255,6 +262,7 @@ exports[`click 2`] = `
         Shenzhen
       </span>
     </label>
+    
      
   </div>
 </div>
@@ -304,6 +312,7 @@ exports[`click 3`] = `
         Shanghai
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -331,6 +340,7 @@ exports[`click 3`] = `
         Beijing
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -358,6 +368,7 @@ exports[`click 3`] = `
         Guangzhou
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -385,6 +396,7 @@ exports[`click 3`] = `
         Shenzhen
       </span>
     </label>
+    
      
   </div>
 </div>
@@ -434,6 +446,7 @@ exports[`click 4`] = `
         Shanghai
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -461,6 +474,7 @@ exports[`click 4`] = `
         Beijing
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -488,6 +502,7 @@ exports[`click 4`] = `
         Guangzhou
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -515,6 +530,7 @@ exports[`click 4`] = `
         Shenzhen
       </span>
     </label>
+    
      
   </div>
 </div>
@@ -564,6 +580,7 @@ exports[`click 5`] = `
         Shanghai
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -591,6 +608,7 @@ exports[`click 5`] = `
         Beijing
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -618,6 +636,7 @@ exports[`click 5`] = `
         Guangzhou
       </span>
     </label>
+    
     <label
       aria-controls="false"
       aria-disabled="false"
@@ -645,6 +664,7 @@ exports[`click 5`] = `
         Shenzhen
       </span>
     </label>
+    
      
   </div>
 </div>

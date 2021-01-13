@@ -1,5 +1,6 @@
 <script type="ts">
   import SeuCheckbox from './SeuCheckbox.svelte'
+  import SeuCheckboxButton from './SeuCheckboxButton.svelte'
   import { setContext } from 'svelte'
   import { classArray2Str } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
@@ -9,6 +10,7 @@
   export let border: boolean = false
   export let size: string
   export let disabled: boolean = false
+  export let type: string
 
   setContext('checkboxGroup_flg', true)
   setContext('checkboxGroup_changeEvent', changeEventForChild)
@@ -54,15 +56,26 @@
 
 <div class={classArray2Str(classList)}>
   {#each checkboxPropList as prop}
-    <SeuCheckbox
-      bind:group
-      checkedValue={prop.checkedValue}
-      label={prop.label}
-      {border}
-      {size}
-      disabled={disabled || prop.disabled}>
-      {prop.label}
-    </SeuCheckbox>
+    {#if type === 'button'}
+      <SeuCheckboxButton
+        bind:group
+        checkedValue={prop.checkedValue}
+        label={prop.label}
+        {size}
+        disabled={disabled || prop.disabled}>
+        {prop.label}
+      </SeuCheckboxButton>
+    {:else}
+      <SeuCheckbox
+        bind:group
+        checkedValue={prop.checkedValue}
+        label={prop.label}
+        {border}
+        {size}
+        disabled={disabled || prop.disabled}>
+        {prop.label}
+      </SeuCheckbox>
+    {/if}
   {/each}
   <slot />
 </div>
