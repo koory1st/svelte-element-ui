@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`click 1`] = `
+exports[`changeEvent 1`] = `
 <div>
   test component
   
@@ -134,7 +134,7 @@ exports[`click 1`] = `
 </div>
 `;
 
-exports[`click 2`] = `
+exports[`changeEvent 2`] = `
 <div>
   test component
   
@@ -268,7 +268,7 @@ exports[`click 2`] = `
 </div>
 `;
 
-exports[`click 3`] = `
+exports[`changeEvent 3`] = `
 <div>
   test component
   
@@ -402,7 +402,7 @@ exports[`click 3`] = `
 </div>
 `;
 
-exports[`click 4`] = `
+exports[`changeEvent 4`] = `
 <div>
   test component
   
@@ -536,7 +536,7 @@ exports[`click 4`] = `
 </div>
 `;
 
-exports[`click 5`] = `
+exports[`changeEvent 5`] = `
 <div>
   test component
   

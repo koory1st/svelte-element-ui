@@ -3,7 +3,7 @@ import { render, fireEvent } from '@testing-library/svelte'
 import { testElementAndResult } from '../../../util/TestUtil.js'
 import Comp from './changeEvent.svelte'
 
-test('click', async () => {
+test('changeEvent', async () => {
   const { getByText } = render(Comp)
   const testDom = getByText('test component')
   testElementAndResult(testDom)
