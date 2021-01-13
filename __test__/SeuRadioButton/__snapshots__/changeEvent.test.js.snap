@@ -44,7 +44,7 @@ exports[`change the value by click checkbox 2`] = `
   
   <span>
     changedValue:
-    label:1, value:1
+    1
   </span>
    
   <div

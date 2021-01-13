@@ -4,7 +4,7 @@
   let changedValue
 
   function changeHandler({ detail }) {
-    changedValue = `label:${detail.label}, value:${detail.value}`
+    changedValue = detail
   }
 </script>
 
