@@ -1,19 +1,18 @@
-// @ts-nocheck
 import svelte from 'rollup-plugin-svelte'
-import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
-// import livereload from 'rollup-plugin-livereload'
+import resolve from '@rollup/plugin-node-resolve'
+import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'
 import sveltePreprocess from 'svelte-preprocess'
 import typescript from '@rollup/plugin-typescript'
 import alias from '@rollup/plugin-alias'
 import postcss from 'rollup-plugin-postcss'
+import css from 'rollup-plugin-css-only'
 import path from 'path'
 import copy from 'rollup-plugin-copy'
-// import scss from 'rollup-plugin-scss'
 
 const production = !process.env.ROLLUP_WATCH
-const projectRootDir = path.resolve(__dirname)
+const projectRootDir = path.resolve(__dirname.split('/demo')[0])
 
 function serve() {
   let server
@@ -25,7 +24,7 @@ function serve() {
   return {
     writeBundle() {
       if (server) return
-      server = require('child_process').spawn('npm', ['run', 'start', '--', '--dev'], {
+      server = require('child_process').spawn('npm', ['run', 'demo-start', '--', '--dev'], {
         stdio: ['ignore', 'inherit', 'inherit'],
         shell: true,
       })
@@ -37,12 +36,12 @@ function serve() {
 }
 
 export default {
-  input: 'src/main.ts',
+  input: 'demo/src/main.ts',
   output: {
     sourcemap: true,
-    format: 'es',
+    format: 'iife',
     name: 'app',
-    file: 'dist/bundle.js',
+    file: 'demo/public/build/bundle.js',
   },
   plugins: [
     alias({
@@ -56,14 +55,15 @@ export default {
     }),
     svelte({
       emitCss: true,
-      // enable run-time checks when not in production
-      // we'll extract any component CSS out into
-      // a separate file - better for performance
-      css: css => {
-        css.write('dist/bundle.css', true)
-      },
       preprocess: sveltePreprocess(),
+      // compilerOptions: {
+      //   // enable run-time checks when not in production
+      //   dev: !production,
+      // },
     }),
+    // we'll extract any component CSS out into
+    // a separate file - better for performance
+    css({ output: 'bundle.css' }),
 
     // If you have external dependencies installed from
     // npm, you'll most likely need these plugins. In
@@ -75,8 +75,10 @@ export default {
       dedupe: ['svelte'],
     }),
     commonjs(),
-    typescript({ sourceMap: !production }),
-    // scss(),
+    typescript({
+      sourceMap: !production,
+      inlineSources: !production,
+    }),
     postcss({
       extract: 'bundle.css',
       minimize: true,
@@ -86,17 +88,18 @@ export default {
       targets: [
         {
           src: ['static/fonts/element-icons.ttf', 'static/fonts/element-icons.woff'],
-          dest: 'dist/',
+          dest: 'demo/public/build',
         },
       ],
     }),
+
     // In dev mode, call `npm run start` once
     // the bundle has been generated
-    // !production && serve(),
+    !production && serve(),
 
     // Watch the `public` directory and refresh the
     // browser on changes when not in production
-    // !production && livereload('public'),
+    !production && livereload('demo/public'),
 
     // If we're building for production (npm run build
     // instead of npm run dev), minify
