@@ -1,3 +1,7 @@
+# 2021.01.14
+
+在工程里又开了个 svele app 调用组件，方便调试。
+
 # 2021.01.12
 
 - TODO: checkbox's max and min

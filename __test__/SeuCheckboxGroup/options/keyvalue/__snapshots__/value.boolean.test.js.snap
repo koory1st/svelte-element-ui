@@ -1,0 +1,361 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`value.boolean 1`] = `
+<div>
+  test component
+  
+  <span>
+    
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+    <label
+      aria-controls="false"
+      aria-disabled="false"
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="false"
+      />
+       
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+    
+    <label
+      aria-controls="false"
+      aria-disabled="false"
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="true"
+      />
+       
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+    
+     
+  </div>
+</div>
+`;
+
+exports[`value.boolean 2`] = `
+<div>
+  test component
+  
+  <span>
+    false
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+    <label
+      aria-controls="false"
+      aria-disabled="false"
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="false"
+      />
+       
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+    
+    <label
+      aria-controls="false"
+      aria-disabled="false"
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="true"
+      />
+       
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+    
+     
+  </div>
+</div>
+`;
+
+exports[`value.boolean 3`] = `
+<div>
+  test component
+  
+  <span>
+    true
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+    <label
+      aria-controls="false"
+      aria-disabled="false"
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="false"
+      />
+       
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+    
+    <label
+      aria-controls="false"
+      aria-disabled="false"
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="true"
+      />
+       
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+    
+     
+  </div>
+</div>
+`;
+
+exports[`value.boolean 4`] = `
+<div>
+  test component
+  
+  <span>
+    false,true
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+    <label
+      aria-controls="false"
+      aria-disabled="false"
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="false"
+      />
+       
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+    
+    <label
+      aria-controls="false"
+      aria-disabled="false"
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="true"
+      />
+       
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+    
+     
+  </div>
+</div>
+`;
+
+exports[`value.boolean 5`] = `
+<div>
+  test component
+  
+  <span>
+    
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+    <label
+      aria-controls="false"
+      aria-disabled="false"
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="false"
+      />
+       
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+    
+    <label
+      aria-controls="false"
+      aria-disabled="false"
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="true"
+      />
+       
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+    
+     
+  </div>
+</div>
+`;
