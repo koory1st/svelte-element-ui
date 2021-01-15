@@ -4,14 +4,16 @@
 
 # 2021.01.12
 
-- TODO: checkbox's max and min
-- TODO: checkbox group's type
-- TODO: checkbox group and radio group's name to control arrow key
-- TODO: checkbox's focus test
-- TODO: radio's focus test
-- [ x ]: radio's slot test
-- TODO: svelte-doc
-- TODO: release 0.0.1
+TODO:
+
+- [ ] checkbox's max and min
+- [x] checkbox group's type
+- [ ] checkbox group and radio group's name to control arrow key
+- [x] checkbox's focus test
+- [ ] radio's focus test
+- [x]: radio's slot test
+- [ ] svelte-doc
+- [ ] release 0.0.1
 
 # 2020.12.31
 
