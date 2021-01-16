@@ -1,5 +1,5 @@
 <script type="ts">
-  import { classArray2Str } from '../util/StringUtil'
+  import { getClass } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   import { getContext } from 'svelte'
   const dispatch = createEventDispatcher()
@@ -22,8 +22,14 @@
   $: tabindex = isDisabled || value !== label ? -1 : 0
 
   $: size && classList.push(`seu-radio-button--${size}`)
-  $: isDisabled && classList.push(`is-disabled`)
-  $: isFocus && classList.push(`is-focus`)
+
+  $: classString = getClass([
+    'seu-radio-button',
+    [`seu-radio-button--${size}`, Boolean(size)],
+    [`is-active`, isChecked],
+    [`is-focus`, isFocus],
+    [`is-disabled`, isDisabled],
+  ])
 
   function handleKeydown(event: KeyboardEvent) {
     if (event.code !== 'Space') {
@@ -48,8 +54,7 @@
 
 <label
   role="radio"
-  class={classArray2Str(classList)}
-  class:is-active={isChecked}
+  class={classString}
   {tabindex}
   aria-disabled={isDisabled}
   aria-checked={isChecked}
@@ -65,7 +70,8 @@
     tabindex="-1"
     on:focus={() => (isFocus = true)}
     on:blur={() => (isFocus = false)}
-    on:change={handleChange} />
+    on:change={handleChange}
+  />
   <span class="seu-radio-button__inner" on:keydown|stopPropagation>
     <slot />
     {#if !$$slots.default}{label}{/if}
