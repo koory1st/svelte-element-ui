@@ -2,7 +2,6 @@
   import SeuCheckbox from './SeuCheckbox.svelte'
   import SeuCheckboxButton from './SeuCheckboxButton.svelte'
   import { setContext } from 'svelte'
-  import { classArray2Str } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
   export let options: Array<string | { label: string; value: string | number | boolean; disabled?: boolean }> = []
@@ -14,8 +13,6 @@
 
   setContext('checkboxGroup_flg', true)
   setContext('checkboxGroup_changeEvent', changeEventForChild)
-
-  let classList = ['seu-checkbox-group']
 
   let checkboxPropList = []
 
@@ -54,7 +51,7 @@
   }
 </script>
 
-<div class={classArray2Str(classList)}>
+<div class="seu-checkbox-group">
   {#each checkboxPropList as prop}
     {#if type === 'button'}
       <SeuCheckboxButton
@@ -62,7 +59,8 @@
         checkedValue={prop.checkedValue}
         label={prop.label}
         {size}
-        disabled={disabled || prop.disabled}>
+        disabled={disabled || prop.disabled}
+      >
         {prop.label}
       </SeuCheckboxButton>
     {:else}
@@ -72,7 +70,8 @@
         label={prop.label}
         {border}
         {size}
-        disabled={disabled || prop.disabled}>
+        disabled={disabled || prop.disabled}
+      >
         {prop.label}
       </SeuCheckbox>
     {/if}

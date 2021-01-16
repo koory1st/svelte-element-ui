@@ -6,7 +6,7 @@
 
 TODO:
 
-- [ ] All component's class logic
+- [x] All component's class logic
 - [ ] checkbox's max and min
 - [x] checkbox group's type
 - [ ] checkbox group and radio group's name to control arrow key
