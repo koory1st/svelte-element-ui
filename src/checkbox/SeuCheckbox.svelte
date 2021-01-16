@@ -2,6 +2,7 @@
   import { getClass } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   import { getContext } from 'svelte'
+  import { getDisabled } from './checkboxUtil'
   const dispatch = createEventDispatcher()
   export let group: Array<string | number> = []
   export let value: boolean | string | number = false
@@ -25,20 +26,15 @@
     groupLabel = checkedValue || String(label)
   }
 
-  let innerChecked: boolean
-
   let isFocus = false
-
-  let isDisabled: boolean
 
   $: tabindex = indeterminate ? 0 : null
   $: role = indeterminate ? 'checkbox' : null
   $: ariaChecked = indeterminate ? 'mixed' : null
-  $: checkboxGroupFlg && updateChekbox(group)
+  $: checkboxGroupFlg && updateValueByGroup(group)
+  $: innerChecked = getInnerChecked(value, checkedValue)
   $: checkboxGroupFlg && updateGroup(innerChecked)
-  $: isDisabled = getDisabled(disabled, checkboxGroupFlg, group, checkboxGroupMax, checkboxGroupMin)
-
-  $: getInnerChecked(value, checkedValue)
+  $: isDisabled = getDisabled(disabled, checkboxGroupFlg, group, checkboxGroupMax, checkboxGroupMin, innerChecked)
 
   $: classString = getClass([
     'seu-checkbox',
@@ -50,55 +46,19 @@
     [`is-bordered`, border],
   ])
 
-  /**
-   * getDisabled
-   *
-   * only used in group mode
-   *
-   * @param disabledProp
-   * @param groupFlg
-   * @param group
-   * @param max
-   * @param min
-   */
-  function getDisabled(
-    disabledProp: boolean,
-    groupFlg: boolean,
-    group: Array<string | number>,
-    maxInput: string | number | null,
-    minInput: string | number | null,
-  ): boolean {
-    if (!groupFlg) {
-      return disabledProp
-    }
-
-    const max = Number(maxInput)
-    const min = Number(minInput)
-
-    if (max && group.length >= max && !innerChecked) {
-      return true
-    }
-
-    if (min && group.length <= min && innerChecked) {
-      return true
-    }
-    return disabledProp
-  }
-
-  function getInnerChecked(value: boolean | string | number, checkedValue: string | number) {
+  function getInnerChecked(value: boolean | string | number, checkedValue: string | number): boolean {
     if (typeof value === 'boolean') {
-      innerChecked = value
-      return
+      return value
     }
 
     if (checkedValue === null || checkedValue === undefined) {
-      return
+      return false
     }
 
-    innerChecked = checkedValue === value
+    return checkedValue === value
   }
 
-  function updateChekbox(group: Array<string | number>) {
+  function updateValueByGroup(group: Array<string | number>) {
     value = group.indexOf(groupLabel) >= 0
   }
 
