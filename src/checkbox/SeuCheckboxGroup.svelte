@@ -10,9 +10,16 @@
   export let size: string
   export let disabled: boolean = false
   export let type: string
+  /**
+   * max and min props are only avalible in creation
+   */
+  export let max: string | number | null = null
+  export let min: string | number | null = null
 
   setContext('checkboxGroup_flg', true)
   setContext('checkboxGroup_changeEvent', changeEventForChild)
+  setContext('checkboxGroup_max', max)
+  setContext('checkboxGroup_min', min)
 
   let checkboxPropList = []
 

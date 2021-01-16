@@ -16,6 +16,8 @@
 
   const checkboxGroupFlg: boolean = getContext('checkboxGroup_flg')
   const changeEvent: Function = getContext('checkboxGroup_changeEvent')
+  const checkboxGroupMax: string | number | null = getContext('checkboxGroup_max')
+  const checkboxGroupMin: string | number | null = getContext('checkboxGroup_min')
 
   let groupLabel: string | number = ''
   // label is only valid in group
@@ -27,11 +29,14 @@
 
   let isFocus = false
 
+  let isDisabled: boolean
+
   $: tabindex = indeterminate ? 0 : null
   $: role = indeterminate ? 'checkbox' : null
   $: ariaChecked = indeterminate ? 'mixed' : null
   $: checkboxGroupFlg && updateChekbox(group)
   $: checkboxGroupFlg && updateGroup(innerChecked)
+  $: isDisabled = getDisabled(disabled, checkboxGroupFlg, group, checkboxGroupMax, checkboxGroupMin)
 
   $: getInnerChecked(value, checkedValue)
 
@@ -39,11 +44,46 @@
     'seu-checkbox',
     [`seu-checkbox--${size}`, size && border],
     [`is-checked`, innerChecked],
-    [`is-disabled`, disabled],
+    [`is-disabled`, isDisabled],
     [`is-indeterminate`, indeterminate],
     [`is-focus`, isFocus],
     [`is-bordered`, border],
   ])
+
+  /**
+   * getDisabled
+   *
+   * only used in group mode
+   *
+   * @param disabledProp
+   * @param groupFlg
+   * @param group
+   * @param max
+   * @param min
+   */
+  function getDisabled(
+    disabledProp: boolean,
+    groupFlg: boolean,
+    group: Array<string | number>,
+    maxInput: string | number | null,
+    minInput: string | number | null,
+  ): boolean {
+    if (!groupFlg) {
+      return disabledProp
+    }
+
+    const max = Number(maxInput)
+    const min = Number(minInput)
+
+    if (max && group.length >= max && !innerChecked) {
+      return true
+    }
+
+    if (min && group.length <= min && innerChecked) {
+      return true
+    }
+    return disabledProp
+  }
 
   function getInnerChecked(value: boolean | string | number, checkedValue: string | number) {
     if (typeof value === 'boolean') {
@@ -119,7 +159,7 @@
   role="checkbox"
   class={classString}
   aria-controls={indeterminate}
-  aria-disabled={disabled}
+  aria-disabled={isDisabled}
   on:keydown={handleKeydown}>
   <input
     class="seu-checkbox__original"
@@ -128,7 +168,7 @@
     value={groupLabel}
     aria-hidden={indeterminate ? 'true' : 'false'}
     {name}
-    {disabled}
+    disabled={isDisabled}
     on:focus={() => (isFocus = true)}
     on:blur={() => (isFocus = false)}
     on:change={handleChange}
@@ -136,7 +176,7 @@
   <span
     class="seu-checkbox__input"
     class:is-checked={innerChecked}
-    class:is-disabled={disabled}
+    class:is-disabled={isDisabled}
     class:is-indeterminate={indeterminate}
     {role}
     {tabindex}
