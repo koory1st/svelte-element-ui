@@ -1,5 +1,5 @@
 <script type="ts">
-  import { classArray2Str } from '../util/StringUtil'
+  import { getClass } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
   import { getContext } from 'svelte'
@@ -35,6 +35,14 @@
   $: checkboxGroupFlg && updateGroup(innerChecked)
 
   $: getInnerChecked(value, checkedValue)
+
+  $: classString = getClass([
+    'seu-checkbox-button',
+    [`seu-checkbox-button--${size}`, Boolean(size)],
+    [`is-checked`, innerChecked],
+    [`is-disabled`, disabled],
+    [`is-focus`, isFocus],
+  ])
 
   function getInnerChecked(value: boolean | string | number, checkedValue: string | number) {
     if (typeof value === 'boolean') {
@@ -106,14 +114,7 @@
   }
 </script>
 
-<label
-  role="checkbox"
-  class={classArray2Str(classList)}
-  class:is-checked={innerChecked}
-  class:is-disabled={disabled}
-  class:is-focus={isFocus}
-  aria-disabled={disabled}
-  on:keydown={handleKeydown}>
+<label role="checkbox" class={classString} aria-disabled={disabled} on:keydown={handleKeydown}>
   <input
     class="seu-checkbox-button__original"
     type="checkbox"
@@ -123,7 +124,8 @@
     {disabled}
     on:focus={() => (isFocus = true)}
     on:blur={() => (isFocus = false)}
-    on:change={handleChange} />
+    on:change={handleChange}
+  />
   <span class="seu-checkbox-button__inner">
     {#if $$slots.default}
       <slot />
