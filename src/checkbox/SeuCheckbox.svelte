@@ -1,5 +1,5 @@
 <script type="ts">
-  import { classArray2Str } from '../util/StringUtil'
+  import { getClass } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   import { getContext } from 'svelte'
   const dispatch = createEventDispatcher()
@@ -27,20 +27,23 @@
 
   let isFocus = false
 
-  let classList = ['seu-checkbox']
-
-  if (border && size) {
-    classList.push(`seu-checkbox--${size}`)
-  }
-
   $: tabindex = indeterminate ? 0 : null
   $: role = indeterminate ? 'checkbox' : null
   $: ariaChecked = indeterminate ? 'mixed' : null
-
   $: checkboxGroupFlg && updateChekbox(group)
   $: checkboxGroupFlg && updateGroup(innerChecked)
 
   $: getInnerChecked(value, checkedValue)
+
+  $: classString = getClass([
+    'seu-checkbox',
+    [`seu-checkbox--${size}`, size && border],
+    [`is-checked`, innerChecked],
+    [`is-disabled`, disabled],
+    [`is-indeterminate`, indeterminate],
+    [`is-focus`, isFocus],
+    [`is-bordered`, border],
+  ])
 
   function getInnerChecked(value: boolean | string | number, checkedValue: string | number) {
     if (typeof value === 'boolean') {
@@ -114,12 +117,7 @@
 
 <label
   role="checkbox"
-  class={classArray2Str(classList)}
-  class:is-checked={innerChecked}
-  class:is-disabled={disabled}
-  class:is-indeterminate={indeterminate}
-  class:is-focus={isFocus}
-  class:is-bordered={border}
+  class={classString}
   aria-controls={indeterminate}
   aria-disabled={disabled}
   on:keydown={handleKeydown}>
@@ -133,7 +131,8 @@
     {disabled}
     on:focus={() => (isFocus = true)}
     on:blur={() => (isFocus = false)}
-    on:change={handleChange} />
+    on:change={handleChange}
+  />
   <span
     class="seu-checkbox__input"
     class:is-checked={innerChecked}

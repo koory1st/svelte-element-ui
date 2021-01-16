@@ -6,11 +6,12 @@
 
 TODO:
 
+- [ ] All component's class logic
 - [ ] checkbox's max and min
 - [x] checkbox group's type
 - [ ] checkbox group and radio group's name to control arrow key
 - [x] checkbox's focus test
-- [ ] radio's focus test
+- [x] radio's focus test
 - [x]: radio's slot test
 - [ ] svelte-doc
 - [ ] release 0.0.1
