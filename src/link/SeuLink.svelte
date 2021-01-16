@@ -1,5 +1,5 @@
 <script type="ts">
-  import { classArray2Str } from '../util/StringUtil'
+  import { getClass } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   export let type = 'default'
   export let underline = true
@@ -7,14 +7,15 @@
   export let href = ''
   export let icon = ''
 
-  let classList = ['seu-link']
-
-  $: if (!type) {
-    type = 'default'
-  }
-  $: classList.push(`seu-link--${type}`)
-  $: disabled && classList.push(`is-disabled`)
-  $: underline && !disabled && classList.push(`is-underline`)
+  // $: if (!type) {
+  //   type = 'default'
+  // }
+  $: classString = getClass([
+    'seu-link',
+    `seu-link--${type}`,
+    [`is-disabled`, disabled],
+    [`is-underline`, underline && !disabled],
+  ])
 
   const dispatch = createEventDispatcher()
   function handleClick(event: Event) {
@@ -25,11 +26,7 @@
   }
 </script>
 
-<a
-  class={classArray2Str(classList)}
-  href={disabled ? null : href ? href : null}
-  {...$$restProps}
-  on:click={handleClick}>
+<a class={classString} href={disabled ? null : href ? href : null} on:click={handleClick}>
   {#if icon}<i class={icon} />{/if}
   {#if $$slots.default}
     <span class="seu-link--inner">
