@@ -13,18 +13,9 @@ exports[`minMax 1`] = `
   >
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shanghai"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -32,6 +23,13 @@ exports[`minMax 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shanghai"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -41,18 +39,9 @@ exports[`minMax 1`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Beijing"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -60,6 +49,13 @@ exports[`minMax 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Beijing"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -69,18 +65,9 @@ exports[`minMax 1`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Guangzhou"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -88,6 +75,13 @@ exports[`minMax 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Guangzhou"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -97,18 +91,9 @@ exports[`minMax 1`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shenzhen"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -116,6 +101,13 @@ exports[`minMax 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shenzhen"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -140,11 +132,18 @@ exports[`minMax 2`] = `
   >
      
     <label
-      aria-controls="false"
       aria-disabled="true"
       class="seu-checkbox is-checked is-disabled"
       role="checkbox"
     >
+      <span
+        class="seu-checkbox__input is-checked is-disabled"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
@@ -154,14 +153,6 @@ exports[`minMax 2`] = `
       />
        
       <span
-        class="seu-checkbox__input is-checked is-disabled"
-      >
-        <span
-          class="seu-checkbox__inner"
-        />
-      </span>
-       
-      <span
         class="seu-checkbox__label"
       >
         Shanghai
@@ -169,18 +160,9 @@ exports[`minMax 2`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Beijing"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -188,6 +170,13 @@ exports[`minMax 2`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Beijing"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -197,18 +186,9 @@ exports[`minMax 2`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Guangzhou"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -216,6 +196,13 @@ exports[`minMax 2`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Guangzhou"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -225,18 +212,9 @@ exports[`minMax 2`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shenzhen"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -244,6 +222,13 @@ exports[`minMax 2`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shenzhen"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -268,18 +253,9 @@ exports[`minMax 3`] = `
   >
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox is-checked"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shanghai"
-      />
-       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -287,6 +263,13 @@ exports[`minMax 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shanghai"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -296,18 +279,9 @@ exports[`minMax 3`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox is-checked"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Beijing"
-      />
-       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -315,6 +289,13 @@ exports[`minMax 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Beijing"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -324,18 +305,9 @@ exports[`minMax 3`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Guangzhou"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -343,6 +315,13 @@ exports[`minMax 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Guangzhou"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -352,18 +331,9 @@ exports[`minMax 3`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shenzhen"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -371,6 +341,13 @@ exports[`minMax 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shenzhen"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -395,18 +372,9 @@ exports[`minMax 4`] = `
   >
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox is-checked"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shanghai"
-      />
-       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -414,6 +382,13 @@ exports[`minMax 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shanghai"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -423,18 +398,9 @@ exports[`minMax 4`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox is-checked"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Beijing"
-      />
-       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -442,6 +408,13 @@ exports[`minMax 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Beijing"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -451,18 +424,9 @@ exports[`minMax 4`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox is-checked"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Guangzhou"
-      />
-       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -470,6 +434,13 @@ exports[`minMax 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Guangzhou"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -479,19 +450,10 @@ exports[`minMax 4`] = `
     </label>
      
     <label
-      aria-controls="false"
       aria-disabled="true"
       class="seu-checkbox is-disabled"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        disabled=""
-        type="checkbox"
-        value="Shenzhen"
-      />
-       
       <span
         class="seu-checkbox__input is-disabled"
       >
@@ -499,6 +461,14 @@ exports[`minMax 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        disabled=""
+        type="checkbox"
+        value="Shenzhen"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -523,18 +493,9 @@ exports[`minMax 5`] = `
   >
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shanghai"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -542,6 +503,13 @@ exports[`minMax 5`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shanghai"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -551,18 +519,9 @@ exports[`minMax 5`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Beijing"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -570,6 +529,13 @@ exports[`minMax 5`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Beijing"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -579,11 +545,18 @@ exports[`minMax 5`] = `
     </label>
      
     <label
-      aria-controls="false"
       aria-disabled="true"
       class="seu-checkbox is-checked is-disabled"
       role="checkbox"
     >
+      <span
+        class="seu-checkbox__input is-checked is-disabled"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
@@ -593,14 +566,6 @@ exports[`minMax 5`] = `
       />
        
       <span
-        class="seu-checkbox__input is-checked is-disabled"
-      >
-        <span
-          class="seu-checkbox__inner"
-        />
-      </span>
-       
-      <span
         class="seu-checkbox__label"
       >
         Guangzhou
@@ -608,18 +573,9 @@ exports[`minMax 5`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shenzhen"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -627,6 +583,13 @@ exports[`minMax 5`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shenzhen"
+      />
        
       <span
         class="seu-checkbox__label"

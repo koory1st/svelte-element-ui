@@ -18,18 +18,9 @@ exports[`value 1`] = `
   >
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shanghai"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -37,6 +28,13 @@ exports[`value 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shanghai"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -46,18 +44,9 @@ exports[`value 1`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Beijing"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -65,6 +54,13 @@ exports[`value 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Beijing"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -74,18 +70,9 @@ exports[`value 1`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Guangzhou"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -93,6 +80,13 @@ exports[`value 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Guangzhou"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -102,18 +96,9 @@ exports[`value 1`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shenzhen"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -121,6 +106,13 @@ exports[`value 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shenzhen"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -150,18 +142,9 @@ exports[`value 2`] = `
   >
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox is-checked"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shanghai"
-      />
-       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -169,6 +152,13 @@ exports[`value 2`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shanghai"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -178,18 +168,9 @@ exports[`value 2`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Beijing"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -197,6 +178,13 @@ exports[`value 2`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Beijing"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -206,18 +194,9 @@ exports[`value 2`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Guangzhou"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -225,6 +204,13 @@ exports[`value 2`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Guangzhou"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -234,18 +220,9 @@ exports[`value 2`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shenzhen"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -253,6 +230,13 @@ exports[`value 2`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shenzhen"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -282,18 +266,9 @@ exports[`value 3`] = `
   >
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shanghai"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -301,6 +276,13 @@ exports[`value 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shanghai"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -310,18 +292,9 @@ exports[`value 3`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox is-checked"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Beijing"
-      />
-       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -329,6 +302,13 @@ exports[`value 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Beijing"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -338,18 +318,9 @@ exports[`value 3`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Guangzhou"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -357,6 +328,13 @@ exports[`value 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Guangzhou"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -366,18 +344,9 @@ exports[`value 3`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shenzhen"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -385,6 +354,13 @@ exports[`value 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shenzhen"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -414,18 +390,9 @@ exports[`value 4`] = `
   >
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shanghai"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -433,6 +400,13 @@ exports[`value 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shanghai"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -442,18 +416,9 @@ exports[`value 4`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Beijing"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -461,6 +426,13 @@ exports[`value 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Beijing"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -470,18 +442,9 @@ exports[`value 4`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox is-checked"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Guangzhou"
-      />
-       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -489,6 +452,13 @@ exports[`value 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Guangzhou"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -498,18 +468,9 @@ exports[`value 4`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shenzhen"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -517,6 +478,13 @@ exports[`value 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shenzhen"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -546,18 +514,9 @@ exports[`value 5`] = `
   >
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shanghai"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -565,6 +524,13 @@ exports[`value 5`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shanghai"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -574,18 +540,9 @@ exports[`value 5`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Beijing"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -593,6 +550,13 @@ exports[`value 5`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Beijing"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -602,18 +566,9 @@ exports[`value 5`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Guangzhou"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -621,6 +576,13 @@ exports[`value 5`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Guangzhou"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -630,18 +592,9 @@ exports[`value 5`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox is-checked"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shenzhen"
-      />
-       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -649,6 +602,13 @@ exports[`value 5`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shenzhen"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -678,18 +638,9 @@ exports[`value 6`] = `
   >
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shanghai"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -697,6 +648,13 @@ exports[`value 6`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shanghai"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -706,18 +664,9 @@ exports[`value 6`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Beijing"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -725,6 +674,13 @@ exports[`value 6`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Beijing"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -734,18 +690,9 @@ exports[`value 6`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Guangzhou"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -753,6 +700,13 @@ exports[`value 6`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Guangzhou"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -762,18 +716,9 @@ exports[`value 6`] = `
     </label>
      
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="Shenzhen"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -781,6 +726,13 @@ exports[`value 6`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="Shenzhen"
+      />
        
       <span
         class="seu-checkbox__label"

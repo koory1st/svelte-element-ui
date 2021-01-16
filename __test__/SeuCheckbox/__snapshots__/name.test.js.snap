@@ -5,19 +5,9 @@ exports[`name 1`] = `
   test component
   
   <label
-    aria-controls="false"
-    aria-disabled="false"
     class="seu-checkbox"
     role="checkbox"
   >
-    <input
-      aria-hidden="false"
-      class="seu-checkbox__original"
-      name="test_name"
-      type="checkbox"
-      value=""
-    />
-     
     <span
       class="seu-checkbox__input"
     >
@@ -25,6 +15,14 @@ exports[`name 1`] = `
         class="seu-checkbox__inner"
       />
     </span>
+     
+    <input
+      aria-hidden="false"
+      class="seu-checkbox__original"
+      name="test_name"
+      type="checkbox"
+      value=""
+    />
      
     <span
       class="seu-checkbox__label"

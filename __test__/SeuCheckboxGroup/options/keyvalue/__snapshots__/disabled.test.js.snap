@@ -8,11 +8,18 @@ exports[`disabled 1`] = `
     class="seu-checkbox-group"
   >
     <label
-      aria-controls="false"
       aria-disabled="true"
       class="seu-checkbox is-disabled"
       role="checkbox"
     >
+      <span
+        class="seu-checkbox__input is-disabled"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
@@ -22,14 +29,6 @@ exports[`disabled 1`] = `
       />
        
       <span
-        class="seu-checkbox__input is-disabled"
-      >
-        <span
-          class="seu-checkbox__inner"
-        />
-      </span>
-       
-      <span
         class="seu-checkbox__label"
       >
         Shanghai
@@ -37,18 +36,9 @@ exports[`disabled 1`] = `
     </label>
     
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="2"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -56,6 +46,13 @@ exports[`disabled 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="2"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -65,18 +62,9 @@ exports[`disabled 1`] = `
     </label>
     
     <label
-      aria-controls="false"
-      aria-disabled="false"
       class="seu-checkbox"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-        value="3"
-      />
-       
       <span
         class="seu-checkbox__input"
       >
@@ -84,6 +72,13 @@ exports[`disabled 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+        value="3"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -99,11 +94,18 @@ exports[`disabled 1`] = `
     class="seu-checkbox-group"
   >
     <label
-      aria-controls="false"
       aria-disabled="true"
       class="seu-checkbox is-disabled"
       role="checkbox"
     >
+      <span
+        class="seu-checkbox__input is-disabled"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
@@ -113,14 +115,6 @@ exports[`disabled 1`] = `
       />
        
       <span
-        class="seu-checkbox__input is-disabled"
-      >
-        <span
-          class="seu-checkbox__inner"
-        />
-      </span>
-       
-      <span
         class="seu-checkbox__label"
       >
         Shanghai
@@ -128,11 +122,18 @@ exports[`disabled 1`] = `
     </label>
     
     <label
-      aria-controls="false"
       aria-disabled="true"
       class="seu-checkbox is-disabled"
       role="checkbox"
     >
+      <span
+        class="seu-checkbox__input is-disabled"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
@@ -142,14 +143,6 @@ exports[`disabled 1`] = `
       />
        
       <span
-        class="seu-checkbox__input is-disabled"
-      >
-        <span
-          class="seu-checkbox__inner"
-        />
-      </span>
-       
-      <span
         class="seu-checkbox__label"
       >
         Beijing
@@ -157,19 +150,10 @@ exports[`disabled 1`] = `
     </label>
     
     <label
-      aria-controls="false"
       aria-disabled="true"
       class="seu-checkbox is-disabled"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        disabled=""
-        type="checkbox"
-        value="3"
-      />
-       
       <span
         class="seu-checkbox__input is-disabled"
       >
@@ -177,6 +161,14 @@ exports[`disabled 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        disabled=""
+        type="checkbox"
+        value="3"
+      />
        
       <span
         class="seu-checkbox__label"
@@ -192,11 +184,18 @@ exports[`disabled 1`] = `
     class="seu-checkbox-group"
   >
     <label
-      aria-controls="false"
       aria-disabled="true"
       class="seu-checkbox is-disabled"
       role="checkbox"
     >
+      <span
+        class="seu-checkbox__input is-disabled"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
@@ -206,14 +205,6 @@ exports[`disabled 1`] = `
       />
        
       <span
-        class="seu-checkbox__input is-disabled"
-      >
-        <span
-          class="seu-checkbox__inner"
-        />
-      </span>
-       
-      <span
         class="seu-checkbox__label"
       >
         Shanghai
@@ -221,11 +212,18 @@ exports[`disabled 1`] = `
     </label>
     
     <label
-      aria-controls="false"
       aria-disabled="true"
       class="seu-checkbox is-disabled"
       role="checkbox"
     >
+      <span
+        class="seu-checkbox__input is-disabled"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
       <input
         aria-hidden="false"
         class="seu-checkbox__original"
@@ -235,14 +233,6 @@ exports[`disabled 1`] = `
       />
        
       <span
-        class="seu-checkbox__input is-disabled"
-      >
-        <span
-          class="seu-checkbox__inner"
-        />
-      </span>
-       
-      <span
         class="seu-checkbox__label"
       >
         Beijing
@@ -250,19 +240,10 @@ exports[`disabled 1`] = `
     </label>
     
     <label
-      aria-controls="false"
       aria-disabled="true"
       class="seu-checkbox is-disabled"
       role="checkbox"
     >
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        disabled=""
-        type="checkbox"
-        value="3"
-      />
-       
       <span
         class="seu-checkbox__input is-disabled"
       >
@@ -270,6 +251,14 @@ exports[`disabled 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        disabled=""
+        type="checkbox"
+        value="3"
+      />
        
       <span
         class="seu-checkbox__label"

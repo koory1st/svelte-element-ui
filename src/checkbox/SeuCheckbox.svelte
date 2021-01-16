@@ -1,4 +1,5 @@
 <script type="ts">
+  import { boolNull } from '../util/BooleanUtil'
   import { getClass } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   import { getContext } from 'svelte'
@@ -7,7 +8,7 @@
   export let group: Array<string | number> = []
   export let value: boolean | string | number = false
   export let label: string | number | boolean | null | undefined
-  export let indeterminate: boolean = false
+  export let indeterminate: boolean = null
   export let disabled: boolean = false
   export let name: string
   export let border: boolean = false
@@ -42,7 +43,6 @@
     [`is-checked`, innerChecked],
     [`is-disabled`, isDisabled],
     [`is-indeterminate`, indeterminate],
-    [`is-focus`, isFocus],
     [`is-bordered`, border],
   ])
 
@@ -118,9 +118,20 @@
 <label
   role="checkbox"
   class={classString}
-  aria-controls={indeterminate}
-  aria-disabled={isDisabled}
+  aria-controls={boolNull(indeterminate)}
+  aria-disabled={boolNull(isDisabled)}
   on:keydown={handleKeydown}>
+  <span
+    class="seu-checkbox__input"
+    class:is-checked={innerChecked}
+    class:is-disabled={isDisabled}
+    class:is-indeterminate={indeterminate}
+    class:is-focus={isFocus}
+    {role}
+    {tabindex}
+    aria-checked={ariaChecked}>
+    <span class="seu-checkbox__inner" />
+  </span>
   <input
     class="seu-checkbox__original"
     type="checkbox"
@@ -133,16 +144,6 @@
     on:blur={() => (isFocus = false)}
     on:change={handleChange}
   />
-  <span
-    class="seu-checkbox__input"
-    class:is-checked={innerChecked}
-    class:is-disabled={isDisabled}
-    class:is-indeterminate={indeterminate}
-    {role}
-    {tabindex}
-    aria-checked={ariaChecked}>
-    <span class="seu-checkbox__inner" />
-  </span>
   <span class="seu-checkbox__label" on:keydown|stopPropagation>
     {#if $$slots.default}
       <slot />

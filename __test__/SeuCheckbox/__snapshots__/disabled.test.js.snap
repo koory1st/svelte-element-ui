@@ -2,18 +2,9 @@
 
 exports[`toggle the disabled prop by change prop 1`] = `
 <label
-  aria-controls="false"
-  aria-disabled="false"
   class="seu-checkbox"
   role="checkbox"
 >
-  <input
-    aria-hidden="false"
-    class="seu-checkbox__original"
-    type="checkbox"
-    value=""
-  />
-   
   <span
     class="seu-checkbox__input"
   >
@@ -21,6 +12,13 @@ exports[`toggle the disabled prop by change prop 1`] = `
       class="seu-checkbox__inner"
     />
   </span>
+   
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+    value=""
+  />
    
   <span
     class="seu-checkbox__label"
@@ -32,19 +30,10 @@ exports[`toggle the disabled prop by change prop 1`] = `
 
 exports[`toggle the disabled prop by change prop 2`] = `
 <label
-  aria-controls="false"
   aria-disabled="true"
   class="seu-checkbox is-disabled"
   role="checkbox"
 >
-  <input
-    aria-hidden="false"
-    class="seu-checkbox__original"
-    disabled=""
-    type="checkbox"
-    value=""
-  />
-   
   <span
     class="seu-checkbox__input is-disabled"
   >
@@ -52,6 +41,14 @@ exports[`toggle the disabled prop by change prop 2`] = `
       class="seu-checkbox__inner"
     />
   </span>
+   
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    disabled=""
+    type="checkbox"
+    value=""
+  />
    
   <span
     class="seu-checkbox__label"
@@ -63,18 +60,9 @@ exports[`toggle the disabled prop by change prop 2`] = `
 
 exports[`toggle the disabled prop by change prop 3`] = `
 <label
-  aria-controls="false"
-  aria-disabled="false"
   class="seu-checkbox"
   role="checkbox"
 >
-  <input
-    aria-hidden="false"
-    class="seu-checkbox__original"
-    type="checkbox"
-    value=""
-  />
-   
   <span
     class="seu-checkbox__input"
   >
@@ -82,6 +70,13 @@ exports[`toggle the disabled prop by change prop 3`] = `
       class="seu-checkbox__inner"
     />
   </span>
+   
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+    value=""
+  />
    
   <span
     class="seu-checkbox__label"

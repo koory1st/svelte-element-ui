@@ -2,18 +2,9 @@
 
 exports[`focusBlur 1`] = `
 <label
-  aria-controls="false"
-  aria-disabled="false"
   class="seu-checkbox"
   role="checkbox"
 >
-  <input
-    aria-hidden="false"
-    class="seu-checkbox__original"
-    type="checkbox"
-    value=""
-  />
-   
   <span
     class="seu-checkbox__input"
   >
@@ -21,6 +12,13 @@ exports[`focusBlur 1`] = `
       class="seu-checkbox__inner"
     />
   </span>
+   
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+    value=""
+  />
    
   <span
     class="seu-checkbox__label"
@@ -32,25 +30,23 @@ exports[`focusBlur 1`] = `
 
 exports[`focusBlur 2`] = `
 <label
-  aria-controls="false"
-  aria-disabled="false"
-  class="seu-checkbox is-focus"
+  class="seu-checkbox"
   role="checkbox"
 >
+  <span
+    class="seu-checkbox__input is-focus"
+  >
+    <span
+      class="seu-checkbox__inner"
+    />
+  </span>
+   
   <input
     aria-hidden="false"
     class="seu-checkbox__original"
     type="checkbox"
     value=""
   />
-   
-  <span
-    class="seu-checkbox__input"
-  >
-    <span
-      class="seu-checkbox__inner"
-    />
-  </span>
    
   <span
     class="seu-checkbox__label"
@@ -62,18 +58,9 @@ exports[`focusBlur 2`] = `
 
 exports[`focusBlur 3`] = `
 <label
-  aria-controls="false"
-  aria-disabled="false"
   class="seu-checkbox"
   role="checkbox"
 >
-  <input
-    aria-hidden="false"
-    class="seu-checkbox__original"
-    type="checkbox"
-    value=""
-  />
-   
   <span
     class="seu-checkbox__input"
   >
@@ -81,6 +68,13 @@ exports[`focusBlur 3`] = `
       class="seu-checkbox__inner"
     />
   </span>
+   
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+    value=""
+  />
    
   <span
     class="seu-checkbox__label"
