@@ -1,6 +1,6 @@
 <script type="ts">
   import { getContext } from 'svelte'
-  import { styleArray2Str, classArray2Str } from '../util/StringUtil'
+  import { styleArray2Str, getClass } from '../util/StringUtil'
 
   export let span = 24
   export let offset = 0
@@ -14,18 +14,20 @@
 
   let gutter: number = getContext('seuRowGutter')
 
-  let classList = ['seu-col']
-  let styleList = []
+  $: classString = getClass([
+    'seu-col',
+    [`seu-col-${span}`, Boolean(span)],
+    [`seu-col-offset-${offset}`, Boolean(offset)],
+    [`seu-col-pull-${pull}`, Boolean(pull)],
+    [`seu-col-push-${push}`, Boolean(push)],
+    [`seu-col-xs-${xs}`, Boolean(xs)],
+    [`seu-col-sm-${sm}`, Boolean(sm)],
+    [`seu-col-md-${md}`, Boolean(md)],
+    [`seu-col-lg-${lg}`, Boolean(lg)],
+    [`seu-col-xl-${xl}`, Boolean(xl)],
+  ])
 
-  $: classList.push(`seu-col-${span}`)
-  $: offset && classList.push(`seu-col-offset-${offset}`)
-  $: pull && classList.push(`seu-col-pull-${pull}`)
-  $: push && classList.push(`seu-col-push-${push}`)
-  $: xs && classList.push(`seu-col-xs-${xs}`)
-  $: sm && classList.push(`seu-col-sm-${sm}`)
-  $: md && classList.push(`seu-col-md-${md}`)
-  $: lg && classList.push(`seu-col-lg-${lg}`)
-  $: xl && classList.push(`seu-col-xl-${xl}`)
+  let styleList = []
 
   $: if (gutter) {
     const value = `${gutter / 2}px`
@@ -34,6 +36,6 @@
   }
 </script>
 
-<div class={classArray2Str(classList)} style={styleArray2Str(styleList)}>
+<div class={classString} style={styleArray2Str(styleList)}>
   <slot />
 </div>
