@@ -1,5 +1,5 @@
 <script type="ts">
-  import { classArray2Str } from '../util/StringUtil'
+  import { getClass } from '../util/StringUtil'
   import { createEventDispatcher } from 'svelte'
   import { getContext } from 'svelte'
   const dispatch = createEventDispatcher()
@@ -16,16 +16,18 @@
 
   let isFocus = false
 
-  let classList = ['seu-radio']
-
-  if (border && size) {
-    classList.push(`seu-radio--${size}`)
-  }
-
   $: isChecked = value === label ? true : null
   $: isDisabled = disabled ? disabled : null
-
   $: tabindex = isDisabled || (radioGroupFlg && value !== label) ? -1 : 0
+
+  $: classString = getClass([
+    'seu-radio',
+    [`is-bordered`, border],
+    [`seu-radio--${size}`, size && border],
+    [`is-checked`, isChecked],
+    [`is-focus`, isFocus],
+    [`is-disabled`, isDisabled],
+  ])
 
   function handleKeydown(event: KeyboardEvent) {
     if (event.code !== 'Space') {
@@ -50,11 +52,7 @@
 
 <label
   role="radio"
-  class={classArray2Str(classList)}
-  class:is-checked={isChecked}
-  class:is-disabled={isDisabled}
-  class:is-focus={isFocus}
-  class:is-bordered={border}
+  class={classString}
   {tabindex}
   aria-disabled={isDisabled}
   aria-checked={isChecked}
@@ -70,7 +68,8 @@
     tabindex="-1"
     on:focus={() => (isFocus = true)}
     on:blur={() => (isFocus = false)}
-    on:change={handleChange} />
+    on:change={handleChange}
+  />
   <span class="seu-radio__input" class:is-checked={isChecked} class:is-disabled={isDisabled}>
     <span class="seu-radio__inner" />
   </span>

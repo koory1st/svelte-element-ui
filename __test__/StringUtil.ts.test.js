@@ -1,4 +1,4 @@
-import { styleStr2Array, classStr2Array, styleArray2Str, classArray2Str } from '../src/util/StringUtil'
+import { styleStr2Array, classStr2Array, styleArray2Str, classArray2Str, getClass } from '../src/util/StringUtil'
 
 describe('Test StringUtil', () => {
   describe('styleStr2Array', () => {
@@ -183,5 +183,46 @@ describe('Test StringUtil', () => {
       const input = [' a ', ' b ']
       expect(classArray2Str(input)).toEqual('a b')
     })
+  })
+})
+
+describe('Test getClass', () => {
+  test('null', () => {
+    const input = null
+    expect(getClass(input)).toEqual(null)
+  })
+  test('empty array', () => {
+    const input = []
+    expect(getClass(input)).toEqual(null)
+  })
+  test('string item', () => {
+    const input = ['aaa', 'bbb']
+    expect(getClass(input)).toEqual('aaa bbb')
+  })
+  test('string item no empty', () => {
+    const input = ['aaa', 'bbb']
+    expect(getClass(input)).toEqual('aaa bbb')
+  })
+  test('string item with empty', () => {
+    const input = ['aaa', '', 'bbb']
+    expect(getClass(input)).toEqual('aaa bbb')
+  })
+
+  test('array with tuple string', () => {
+    const input = ['aaa', 'bbb', ['ccc']]
+    expect(getClass(input)).toEqual('aaa bbb ccc')
+  })
+  test('array with tuple string and boolean', () => {
+    const input = ['aaa', 'bbb', ['ccc', false]]
+    expect(getClass(input)).toEqual('aaa bbb')
+  })
+
+  test('array with tuple error 1st argument', () => {
+    const input = ['aaa', 'bbb', [false, false]]
+    try {
+      getClass(input)
+    } catch (error) {
+      expect(error.message).toBe('Error type of 1st argument.')
+    }
   })
 })

@@ -39,3 +39,48 @@ function array2Str(arr: Array<string>, joinStr: string): string {
   }
   return rt.join(joinStr)
 }
+
+export function getClass(settingList: Array<string | [string, boolean?]>): string | null {
+  if (!settingList || settingList.length == 0) {
+    return null
+  }
+  let rtValue = ''
+
+  for (let setting of settingList) {
+    if (typeof setting === 'string') {
+      if (setting) {
+        if (rtValue) {
+          rtValue += ' '
+        }
+        rtValue += setting
+      }
+      continue
+    }
+
+    if (setting instanceof Array) {
+      const classString = setting[0]
+      if (typeof classString !== 'string') {
+        throw new Error('Error type of 1st argument.')
+      }
+      if (setting.length === 1) {
+        if (classString) {
+          if (rtValue) {
+            rtValue += ' '
+          }
+          rtValue += classString
+        }
+        continue
+      }
+
+      if (classString && setting[1]) {
+        if (rtValue) {
+          rtValue += ' '
+        }
+        rtValue += classString
+        continue
+      }
+    }
+  }
+
+  return rtValue
+}

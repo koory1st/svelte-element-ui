@@ -1,36 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`size 1`] = `
+exports[`click 1`] = `
 <div>
   test component
   
-  <label
-    class="seu-radio"
-    role="radio"
-    tabindex="0"
+  <div
+    id="value"
   >
-    <input
-      aria-hidden="true"
-      class="seu-radio__original"
-      tabindex="-1"
-      type="radio"
-      value=""
-    />
-     
-    <span
-      class="seu-radio__input"
-    >
-      <span
-        class="seu-radio__inner"
-      />
-    </span>
-     
-    <span
-      class="seu-radio__label"
-    >
-      medium no border
-    </span>
-  </label>
+    false
+  </div>
    
   <label
     class="seu-radio"
@@ -42,7 +20,7 @@ exports[`size 1`] = `
       class="seu-radio__original"
       tabindex="-1"
       type="radio"
-      value=""
+      value="1"
     />
      
     <span
@@ -56,7 +34,7 @@ exports[`size 1`] = `
     <span
       class="seu-radio__label"
     >
-      small no border
+      label1
     </span>
   </label>
    
@@ -70,7 +48,7 @@ exports[`size 1`] = `
       class="seu-radio__original"
       tabindex="-1"
       type="radio"
-      value=""
+      value="2"
     />
      
     <span
@@ -84,12 +62,24 @@ exports[`size 1`] = `
     <span
       class="seu-radio__label"
     >
-      mini no border
+      label2
     </span>
   </label>
+</div>
+`;
+
+exports[`click 2`] = `
+<div>
+  test component
+  
+  <div
+    id="value"
+  >
+    false
+  </div>
    
   <label
-    class="seu-radio is-bordered seu-radio--medium"
+    class="seu-radio is-focus"
     role="radio"
     tabindex="0"
   >
@@ -98,7 +88,7 @@ exports[`size 1`] = `
       class="seu-radio__original"
       tabindex="-1"
       type="radio"
-      value=""
+      value="1"
     />
      
     <span
@@ -112,12 +102,12 @@ exports[`size 1`] = `
     <span
       class="seu-radio__label"
     >
-      medium
+      label1
     </span>
   </label>
    
   <label
-    class="seu-radio is-bordered seu-radio--small"
+    class="seu-radio"
     role="radio"
     tabindex="0"
   >
@@ -126,7 +116,7 @@ exports[`size 1`] = `
       class="seu-radio__original"
       tabindex="-1"
       type="radio"
-      value=""
+      value="2"
     />
      
     <span
@@ -140,12 +130,24 @@ exports[`size 1`] = `
     <span
       class="seu-radio__label"
     >
-      small
+      label2
     </span>
   </label>
+</div>
+`;
+
+exports[`click 3`] = `
+<div>
+  test component
+  
+  <div
+    id="value"
+  >
+    false
+  </div>
    
   <label
-    class="seu-radio is-bordered seu-radio--mini"
+    class="seu-radio"
     role="radio"
     tabindex="0"
   >
@@ -154,7 +156,7 @@ exports[`size 1`] = `
       class="seu-radio__original"
       tabindex="-1"
       type="radio"
-      value=""
+      value="1"
     />
      
     <span
@@ -168,7 +170,35 @@ exports[`size 1`] = `
     <span
       class="seu-radio__label"
     >
-      mini
+      label1
+    </span>
+  </label>
+   
+  <label
+    class="seu-radio"
+    role="radio"
+    tabindex="0"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio__original"
+      tabindex="-1"
+      type="radio"
+      value="2"
+    />
+     
+    <span
+      class="seu-radio__input"
+    >
+      <span
+        class="seu-radio__inner"
+      />
+    </span>
+     
+    <span
+      class="seu-radio__label"
+    >
+      label2
     </span>
   </label>
 </div>
