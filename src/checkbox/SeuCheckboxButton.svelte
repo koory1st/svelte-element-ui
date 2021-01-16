@@ -1,5 +1,6 @@
 <script type="ts">
   import { getClass } from '../util/StringUtil'
+  import { getDisabled } from './checkboxUtil'
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
   import { getContext } from 'svelte'
@@ -14,6 +15,8 @@
 
   const checkboxGroupFlg: boolean = getContext('checkboxGroup_flg')
   const changeEvent: Function = getContext('checkboxGroup_changeEvent')
+  const checkboxGroupMax: string | number | null = getContext('checkboxGroup_max')
+  const checkboxGroupMin: string | number | null = getContext('checkboxGroup_min')
 
   let groupLabel: string | number = ''
   // label is only valid in group
@@ -33,14 +36,14 @@
 
   $: checkboxGroupFlg && updateChekbox(group)
   $: checkboxGroupFlg && updateGroup(innerChecked)
-
   $: getInnerChecked(value, checkedValue)
+  $: isDisabled = getDisabled(disabled, checkboxGroupFlg, group, checkboxGroupMax, checkboxGroupMin, innerChecked)
 
   $: classString = getClass([
     'seu-checkbox-button',
     [`seu-checkbox-button--${size}`, Boolean(size)],
     [`is-checked`, innerChecked],
-    [`is-disabled`, disabled],
+    [`is-disabled`, isDisabled],
     [`is-focus`, isFocus],
   ])
 
@@ -114,14 +117,14 @@
   }
 </script>
 
-<label role="checkbox" class={classString} aria-disabled={disabled} on:keydown={handleKeydown}>
+<label role="checkbox" class={classString} aria-disabled={isDisabled} on:keydown={handleKeydown}>
   <input
     class="seu-checkbox-button__original"
     type="checkbox"
     bind:checked={innerChecked}
     value={groupLabel}
     {name}
-    {disabled}
+    disabled={isDisabled}
     on:focus={() => (isFocus = true)}
     on:blur={() => (isFocus = false)}
     on:change={handleChange}
