@@ -15,13 +15,9 @@
 
   let isFocus = false
 
-  let classList = ['seu-radio-button']
-
   $: isChecked = value === label ? true : null
   $: isDisabled = disabled ? disabled : null
   $: tabindex = isDisabled || value !== label ? -1 : 0
-
-  $: size && classList.push(`seu-radio-button--${size}`)
 
   $: classString = getClass([
     'seu-radio-button',
