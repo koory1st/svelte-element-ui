@@ -1,6 +1,6 @@
 <script type="ts">
   import { setContext } from 'svelte'
-  import { styleArray2Str, classArray2Str } from '../util/StringUtil'
+  import { styleArray2Str, getClass } from '../util/StringUtil'
   export let gutter = 0
   export let type = ''
   export let justify = 'start'
@@ -8,20 +8,14 @@
 
   setContext('seuRowGutter', gutter)
 
-  let classList = ['seu-row']
+  $: classString = getClass([
+    'seu-row',
+    [`is-justify-${justify}`, justify && justify !== 'start'],
+    [`is-align-${align}`, align && align !== 'top'],
+    ['seu-row--flex', type === 'flex'],
+  ])
+
   let styleList = []
-
-  if (justify && justify !== 'start') {
-    classList.push(`is-justify-${justify}`)
-  }
-
-  if (align && align !== 'top') {
-    classList.push(`is-align-${align}`)
-  }
-
-  if (type === 'flex') {
-    classList.push('seu-row--flex')
-  }
   $: if (gutter) {
     const value = `-${gutter / 2}px`
     styleList.push(`margin-left:${value}`)
@@ -29,6 +23,6 @@
   }
 </script>
 
-<div class={classArray2Str(classList)} style={styleArray2Str(styleList)}>
+<div class={classString} style={styleArray2Str(styleList)}>
   <slot {gutter} />
 </div>
