@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`focusBlur 1`] = `
+<div>
+  test component
+  
+  <div
+    id="value"
+  >
+    false
+  </div>
+   
+  <label
+    class="seu-radio-button"
+    role="radio"
+    tabindex="-1"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio-button__orig-radio"
+      tabindex="-1"
+      type="radio"
+      value="1"
+    />
+     
+    <span
+      class="seu-radio-button__inner"
+    >
+      label1
+       
+    </span>
+  </label>
+   
+  <label
+    class="seu-radio-button"
+    role="radio"
+    tabindex="-1"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio-button__orig-radio"
+      tabindex="-1"
+      type="radio"
+      value="2"
+    />
+     
+    <span
+      class="seu-radio-button__inner"
+    >
+      label2
+       
+    </span>
+  </label>
+</div>
+`;
+
+exports[`focusBlur 2`] = `
+<div>
+  test component
+  
+  <div
+    id="value"
+  >
+    false
+  </div>
+   
+  <label
+    class="seu-radio-button is-focus"
+    role="radio"
+    tabindex="-1"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio-button__orig-radio"
+      tabindex="-1"
+      type="radio"
+      value="1"
+    />
+     
+    <span
+      class="seu-radio-button__inner"
+    >
+      label1
+       
+    </span>
+  </label>
+   
+  <label
+    class="seu-radio-button"
+    role="radio"
+    tabindex="-1"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio-button__orig-radio"
+      tabindex="-1"
+      type="radio"
+      value="2"
+    />
+     
+    <span
+      class="seu-radio-button__inner"
+    >
+      label2
+       
+    </span>
+  </label>
+</div>
+`;
+
+exports[`focusBlur 3`] = `
+<div>
+  test component
+  
+  <div
+    id="value"
+  >
+    false
+  </div>
+   
+  <label
+    class="seu-radio-button"
+    role="radio"
+    tabindex="-1"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio-button__orig-radio"
+      tabindex="-1"
+      type="radio"
+      value="1"
+    />
+     
+    <span
+      class="seu-radio-button__inner"
+    >
+      label1
+       
+    </span>
+  </label>
+   
+  <label
+    class="seu-radio-button"
+    role="radio"
+    tabindex="-1"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio-button__orig-radio"
+      tabindex="-1"
+      type="radio"
+      value="2"
+    />
+     
+    <span
+      class="seu-radio-button__inner"
+    >
+      label2
+       
+    </span>
+  </label>
+</div>
+`;
