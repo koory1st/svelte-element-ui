@@ -1,3 +1,7 @@
+# 2021.01.16
+
+Today is satday, and it took me a half day to finish the checkbox's problems.
+
 # 2021.01.14
 
 在工程里又开了个 svele app 调用组件，方便调试。
@@ -9,7 +13,7 @@ TODO:
 - [x] All component's class logic
 - [x] checkbox group's max and min
 - [x] checkbox group's type
-- [ ] checkbox group and radio group's name to control arrow key
+- [x] checkbox group and radio group's name to control arrow key
 - [x] checkbox's focus test
 - [x] radio's focus test
 - [x]: radio's slot test
