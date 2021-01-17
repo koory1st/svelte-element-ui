@@ -9,7 +9,6 @@ exports[`label:no work without group 1`] = `
   <input
     class="seu-checkbox-button__original"
     type="checkbox"
-    value=""
   />
    
   <span

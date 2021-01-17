@@ -9,7 +9,6 @@ exports[`focusBlur 1`] = `
   <input
     class="seu-checkbox-button__original"
     type="checkbox"
-    value=""
   />
    
   <span
@@ -29,7 +28,6 @@ exports[`focusBlur 2`] = `
   <input
     class="seu-checkbox-button__original"
     type="checkbox"
-    value=""
   />
    
   <span
@@ -49,7 +47,6 @@ exports[`focusBlur 3`] = `
   <input
     class="seu-checkbox-button__original"
     type="checkbox"
-    value=""
   />
    
   <span

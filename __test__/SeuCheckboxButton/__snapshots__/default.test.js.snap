@@ -9,7 +9,6 @@ exports[`default props 1`] = `
   <input
     class="seu-checkbox-button__original"
     type="checkbox"
-    value=""
   />
    
   <span

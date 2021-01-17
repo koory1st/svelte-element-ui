@@ -20,7 +20,6 @@ exports[`minMax 1`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -38,7 +37,6 @@ exports[`minMax 1`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -56,7 +54,6 @@ exports[`minMax 1`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -74,7 +71,6 @@ exports[`minMax 1`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span
@@ -108,7 +104,6 @@ exports[`minMax 2`] = `
         class="seu-checkbox-button__original"
         disabled=""
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -126,7 +121,6 @@ exports[`minMax 2`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -144,7 +138,6 @@ exports[`minMax 2`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -162,7 +155,6 @@ exports[`minMax 2`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span
@@ -195,7 +187,6 @@ exports[`minMax 3`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -213,7 +204,6 @@ exports[`minMax 3`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -231,7 +221,6 @@ exports[`minMax 3`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -249,7 +238,6 @@ exports[`minMax 3`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span
@@ -282,7 +270,6 @@ exports[`minMax 4`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -300,7 +287,6 @@ exports[`minMax 4`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -318,7 +304,6 @@ exports[`minMax 4`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -337,7 +322,6 @@ exports[`minMax 4`] = `
         class="seu-checkbox-button__original"
         disabled=""
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span
@@ -370,7 +354,6 @@ exports[`minMax 5`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -388,7 +371,6 @@ exports[`minMax 5`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -407,7 +389,6 @@ exports[`minMax 5`] = `
         class="seu-checkbox-button__original"
         disabled=""
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -425,7 +406,6 @@ exports[`minMax 5`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span

@@ -1,43 +1,39 @@
 <script type="ts">
   import { getClass } from '../util/StringUtil'
-  import { getDisabled } from './checkboxUtil'
+  import {
+    getDisabled,
+    getInnerCheckedValue,
+    getValueByInnerChecked,
+    validateCheckedValue,
+    getGroupByInnerChecked,
+    getInnerCheckedByValue,
+  } from './checkboxUtil'
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
   import { getContext } from 'svelte'
-  export let group: Array<string | number> = []
+  export let group: Array<string | number | boolean> = []
   export let value: boolean | string | number = false
   export let label: string | number | boolean | null | undefined
   export let disabled: boolean = false
   export let name: string
   export let size: string
-  export let checkedValue: string | number
-  export let uncheckedValue: string | number
+  export let checkedValue: string | number | boolean | null | undefined
+  export let uncheckedValue: string | number | boolean | null | undefined
 
-  const checkboxGroupFlg: boolean = getContext('checkboxGroup_flg')
+  validateCheckedValue(checkedValue, uncheckedValue)
+
+  const isGroup: boolean = getContext('checkboxGroup_flg')
   const changeEvent: Function = getContext('checkboxGroup_changeEvent')
   const checkboxGroupMax: string | number | null = getContext('checkboxGroup_max')
   const checkboxGroupMin: string | number | null = getContext('checkboxGroup_min')
 
-  let groupLabel: string | number = ''
-  // label is only valid in group
-  $: if (checkboxGroupFlg) {
-    groupLabel = checkedValue || String(label)
-  }
-
-  let innerChecked: boolean
-
   let isFocus = false
 
-  let classList = ['seu-checkbox-button']
-
-  if (size) {
-    classList.push(`seu-checkbox-button--${size}`)
-  }
-
-  $: checkboxGroupFlg && updateChekbox(group)
-  $: checkboxGroupFlg && updateGroup(innerChecked)
-  $: getInnerChecked(value, checkedValue)
-  $: isDisabled = getDisabled(disabled, checkboxGroupFlg, group, checkboxGroupMax, checkboxGroupMin, innerChecked)
+  // innerCheckedValue, get by props
+  $: innerCheckedValue = getInnerCheckedValue(isGroup, checkedValue, label)
+  // fired by value and group props changed
+  $: innerChecked = getInnerCheckedByValue(isGroup, value, group, innerCheckedValue)
+  $: isDisabled = getDisabled(disabled, isGroup, group, checkboxGroupMax, checkboxGroupMin, innerChecked)
 
   $: classString = getClass([
     'seu-checkbox-button',
@@ -47,71 +43,31 @@
     [`is-focus`, isFocus],
   ])
 
-  function getInnerChecked(value: boolean | string | number, checkedValue: string | number) {
-    if (typeof value === 'boolean') {
-      innerChecked = value
-      return
-    }
-
-    if (checkedValue === null || checkedValue === undefined) {
-      return
-    }
-
-    innerChecked = checkedValue === value
-  }
-
-  function updateChekbox(group: Array<string | number>) {
-    value = group.indexOf(groupLabel) >= 0
-  }
-
-  function updateGroup(innerChecked: boolean) {
-    if (!group) {
-      return
-    }
-
-    const index = group.indexOf(groupLabel)
-
-    // this checkbox is checked and the label is not in the group
-    // push in the group
-    if (innerChecked && index < 0) {
-      group.push(groupLabel)
-      group = group
-      return
-    }
-
-    // this checkbox is unchecked and the label is in the group
-    // remove from the group
-    if (!innerChecked && index >= 0) {
-      group.splice(index, 1)
-      group = group
-      return
-    }
-  }
-
   function handleKeydown(event: KeyboardEvent) {
     if (event.code !== 'Space') {
       return
     }
 
-    // value = isDisabled ? value : label
+    if (isDisabled) {
+      return
+    }
+
     event.stopPropagation()
     event.preventDefault()
+
+    if (isGroup) {
+      value = value !== innerCheckedValue ? innerCheckedValue : null
+    }
   }
 
   function handleChange({ target }) {
-    if (
-      (checkedValue !== null && checkedValue !== undefined) ||
-      (uncheckedValue !== null && uncheckedValue != undefined)
-    ) {
-      value = target.checked ? checkedValue : uncheckedValue
-    } else {
-      value = target.checked
-    }
     innerChecked = target.checked
+    value = getValueByInnerChecked(innerChecked, innerCheckedValue, uncheckedValue)
+    group = getGroupByInnerChecked(isGroup, innerChecked, group, innerCheckedValue)
     dispatch('change', value)
 
     // if in group, fire the group event
-    if (checkboxGroupFlg) {
+    if (isGroup) {
       changeEvent(group)
     }
   }
@@ -122,7 +78,6 @@
     class="seu-checkbox-button__original"
     type="checkbox"
     bind:checked={innerChecked}
-    value={groupLabel}
     {name}
     disabled={isDisabled}
     on:focus={() => (isFocus = true)}

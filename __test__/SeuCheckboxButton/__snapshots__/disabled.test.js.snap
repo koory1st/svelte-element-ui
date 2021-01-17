@@ -9,7 +9,6 @@ exports[`toggle the disabled prop by change prop 1`] = `
   <input
     class="seu-checkbox-button__original"
     type="checkbox"
-    value=""
   />
    
   <span
@@ -30,7 +29,6 @@ exports[`toggle the disabled prop by change prop 2`] = `
     class="seu-checkbox-button__original"
     disabled=""
     type="checkbox"
-    value=""
   />
    
   <span
@@ -50,7 +48,6 @@ exports[`toggle the disabled prop by change prop 3`] = `
   <input
     class="seu-checkbox-button__original"
     type="checkbox"
-    value=""
   />
    
   <span

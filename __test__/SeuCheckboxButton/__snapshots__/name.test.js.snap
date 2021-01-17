@@ -13,7 +13,6 @@ exports[`name 1`] = `
       class="seu-checkbox-button__original"
       name="test_name"
       type="checkbox"
-      value=""
     />
      
     <span

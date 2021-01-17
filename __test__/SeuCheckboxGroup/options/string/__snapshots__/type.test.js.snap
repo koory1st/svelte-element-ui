@@ -125,7 +125,6 @@ exports[`type 1`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -143,7 +142,6 @@ exports[`type 1`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -161,7 +159,6 @@ exports[`type 1`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -179,7 +176,6 @@ exports[`type 1`] = `
       <input
         class="seu-checkbox-button__original"
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span
