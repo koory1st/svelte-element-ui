@@ -27,7 +27,6 @@ exports[`value.boolean 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="false"
       />
        
       <span
@@ -53,7 +52,6 @@ exports[`value.boolean 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="true"
       />
        
       <span
@@ -95,7 +93,6 @@ exports[`value.boolean 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="false"
       />
        
       <span
@@ -121,7 +118,6 @@ exports[`value.boolean 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="true"
       />
        
       <span
@@ -163,7 +159,6 @@ exports[`value.boolean 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="false"
       />
        
       <span
@@ -189,7 +184,6 @@ exports[`value.boolean 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="true"
       />
        
       <span
@@ -231,7 +225,6 @@ exports[`value.boolean 4`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="false"
       />
        
       <span
@@ -257,7 +250,6 @@ exports[`value.boolean 4`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="true"
       />
        
       <span
@@ -299,7 +291,6 @@ exports[`value.boolean 5`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="false"
       />
        
       <span
@@ -325,7 +316,6 @@ exports[`value.boolean 5`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="true"
       />
        
       <span

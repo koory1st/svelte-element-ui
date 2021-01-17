@@ -21,7 +21,6 @@ exports[`name 1`] = `
       class="seu-checkbox__original"
       name="test_name"
       type="checkbox"
-      value=""
     />
      
     <span

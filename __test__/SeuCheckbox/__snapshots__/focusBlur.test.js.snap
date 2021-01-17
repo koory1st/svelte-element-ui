@@ -17,7 +17,6 @@ exports[`focusBlur 1`] = `
     aria-hidden="false"
     class="seu-checkbox__original"
     type="checkbox"
-    value=""
   />
    
   <span
@@ -45,7 +44,6 @@ exports[`focusBlur 2`] = `
     aria-hidden="false"
     class="seu-checkbox__original"
     type="checkbox"
-    value=""
   />
    
   <span
@@ -73,7 +71,6 @@ exports[`focusBlur 3`] = `
     aria-hidden="false"
     class="seu-checkbox__original"
     type="checkbox"
-    value=""
   />
    
   <span

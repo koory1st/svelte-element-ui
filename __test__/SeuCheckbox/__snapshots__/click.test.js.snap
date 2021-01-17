@@ -17,7 +17,6 @@ exports[`change the value by click checkbox 1`] = `
     aria-hidden="false"
     class="seu-checkbox__original"
     type="checkbox"
-    value=""
   />
    
   <span
@@ -45,7 +44,6 @@ exports[`change the value by click checkbox 2`] = `
     aria-hidden="false"
     class="seu-checkbox__original"
     type="checkbox"
-    value=""
   />
    
   <span

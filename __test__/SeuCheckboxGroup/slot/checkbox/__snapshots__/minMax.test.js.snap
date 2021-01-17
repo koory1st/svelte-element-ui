@@ -28,7 +28,6 @@ exports[`minMax 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -54,7 +53,6 @@ exports[`minMax 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -80,7 +78,6 @@ exports[`minMax 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -106,7 +103,6 @@ exports[`minMax 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span
@@ -149,7 +145,6 @@ exports[`minMax 2`] = `
         class="seu-checkbox__original"
         disabled=""
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -175,7 +170,6 @@ exports[`minMax 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -201,7 +195,6 @@ exports[`minMax 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -227,7 +220,6 @@ exports[`minMax 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span
@@ -268,7 +260,6 @@ exports[`minMax 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -294,7 +285,6 @@ exports[`minMax 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -320,7 +310,6 @@ exports[`minMax 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -346,7 +335,6 @@ exports[`minMax 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span
@@ -387,7 +375,6 @@ exports[`minMax 4`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -413,7 +400,6 @@ exports[`minMax 4`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -439,7 +425,6 @@ exports[`minMax 4`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -467,7 +452,6 @@ exports[`minMax 4`] = `
         class="seu-checkbox__original"
         disabled=""
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span
@@ -508,7 +492,6 @@ exports[`minMax 5`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -534,7 +517,6 @@ exports[`minMax 5`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -562,7 +544,6 @@ exports[`minMax 5`] = `
         class="seu-checkbox__original"
         disabled=""
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -588,7 +569,6 @@ exports[`minMax 5`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span

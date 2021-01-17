@@ -17,7 +17,6 @@ exports[`default props 1`] = `
     aria-hidden="false"
     class="seu-checkbox__original"
     type="checkbox"
-    value=""
   />
    
   <span

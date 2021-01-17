@@ -33,7 +33,6 @@ exports[`click 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -59,7 +58,6 @@ exports[`click 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -85,7 +83,6 @@ exports[`click 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -111,7 +108,6 @@ exports[`click 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span
@@ -159,7 +155,6 @@ exports[`click 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -185,7 +180,6 @@ exports[`click 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -211,7 +205,6 @@ exports[`click 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -237,7 +230,6 @@ exports[`click 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span
@@ -285,7 +277,6 @@ exports[`click 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -311,7 +302,6 @@ exports[`click 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -337,7 +327,6 @@ exports[`click 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -363,7 +352,6 @@ exports[`click 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span
@@ -411,7 +399,6 @@ exports[`click 4`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -437,7 +424,6 @@ exports[`click 4`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -463,7 +449,6 @@ exports[`click 4`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -489,7 +474,6 @@ exports[`click 4`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span
@@ -537,7 +521,6 @@ exports[`click 5`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shanghai"
       />
        
       <span
@@ -563,7 +546,6 @@ exports[`click 5`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Beijing"
       />
        
       <span
@@ -589,7 +571,6 @@ exports[`click 5`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Guangzhou"
       />
        
       <span
@@ -615,7 +596,6 @@ exports[`click 5`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="Shenzhen"
       />
        
       <span

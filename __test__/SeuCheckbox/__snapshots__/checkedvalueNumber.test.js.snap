@@ -26,7 +26,6 @@ exports[`checkedValue string 1`] = `
       aria-hidden="false"
       class="seu-checkbox__original"
       type="checkbox"
-      value=""
     />
      
     <span
@@ -64,7 +63,6 @@ exports[`checkedValue string 2`] = `
       aria-hidden="false"
       class="seu-checkbox__original"
       type="checkbox"
-      value=""
     />
      
     <span
@@ -102,7 +100,6 @@ exports[`checkedValue string 3`] = `
       aria-hidden="false"
       class="seu-checkbox__original"
       type="checkbox"
-      value=""
     />
      
     <span
@@ -140,7 +137,6 @@ exports[`checkedValue string 4`] = `
       aria-hidden="false"
       class="seu-checkbox__original"
       type="checkbox"
-      value=""
     />
      
     <span
@@ -178,7 +174,6 @@ exports[`checkedValue string 5`] = `
       aria-hidden="false"
       class="seu-checkbox__original"
       type="checkbox"
-      value=""
     />
      
     <span

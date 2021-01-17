@@ -27,7 +27,6 @@ exports[`click 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="1"
       />
        
       <span
@@ -53,7 +52,6 @@ exports[`click 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="2"
       />
        
       <span
@@ -79,7 +77,6 @@ exports[`click 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="3"
       />
        
       <span
@@ -105,7 +102,6 @@ exports[`click 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="4"
       />
        
       <span
@@ -147,7 +143,6 @@ exports[`click 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="1"
       />
        
       <span
@@ -173,7 +168,6 @@ exports[`click 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="2"
       />
        
       <span
@@ -199,7 +193,6 @@ exports[`click 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="3"
       />
        
       <span
@@ -225,7 +218,6 @@ exports[`click 2`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="4"
       />
        
       <span
@@ -267,7 +259,6 @@ exports[`click 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="1"
       />
        
       <span
@@ -293,7 +284,6 @@ exports[`click 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="2"
       />
        
       <span
@@ -319,7 +309,6 @@ exports[`click 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="3"
       />
        
       <span
@@ -345,7 +334,6 @@ exports[`click 3`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="4"
       />
        
       <span
@@ -387,7 +375,6 @@ exports[`click 4`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="1"
       />
        
       <span
@@ -413,7 +400,6 @@ exports[`click 4`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="2"
       />
        
       <span
@@ -439,7 +425,6 @@ exports[`click 4`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="3"
       />
        
       <span
@@ -465,7 +450,6 @@ exports[`click 4`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="4"
       />
        
       <span
@@ -507,7 +491,6 @@ exports[`click 5`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="1"
       />
        
       <span
@@ -533,7 +516,6 @@ exports[`click 5`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="2"
       />
        
       <span
@@ -559,7 +541,6 @@ exports[`click 5`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="3"
       />
        
       <span
@@ -585,7 +566,6 @@ exports[`click 5`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="4"
       />
        
       <span
@@ -627,7 +607,6 @@ exports[`click 6`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="1"
       />
        
       <span
@@ -653,7 +632,6 @@ exports[`click 6`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="2"
       />
        
       <span
@@ -679,7 +657,6 @@ exports[`click 6`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="3"
       />
        
       <span
@@ -705,7 +682,6 @@ exports[`click 6`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="4"
       />
        
       <span

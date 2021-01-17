@@ -23,7 +23,6 @@ exports[`size 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="1"
       />
        
       <span
@@ -49,7 +48,6 @@ exports[`size 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="2"
       />
        
       <span
@@ -75,7 +73,6 @@ exports[`size 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="3"
       />
        
       <span
@@ -107,7 +104,6 @@ exports[`size 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="1"
       />
        
       <span
@@ -133,7 +129,6 @@ exports[`size 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="2"
       />
        
       <span
@@ -159,7 +154,6 @@ exports[`size 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="3"
       />
        
       <span
@@ -191,7 +185,6 @@ exports[`size 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="1"
       />
        
       <span
@@ -217,7 +210,6 @@ exports[`size 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="2"
       />
        
       <span
@@ -243,7 +235,6 @@ exports[`size 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="3"
       />
        
       <span
@@ -275,7 +266,6 @@ exports[`size 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="1"
       />
        
       <span
@@ -301,7 +291,6 @@ exports[`size 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="2"
       />
        
       <span
@@ -327,7 +316,6 @@ exports[`size 1`] = `
         aria-hidden="false"
         class="seu-checkbox__original"
         type="checkbox"
-        value="3"
       />
        
       <span
