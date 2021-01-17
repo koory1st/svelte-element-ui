@@ -10,9 +10,11 @@
   export let size: string
   export let disabled: boolean = false
   export let type: string
+  export let name: string
 
   setContext('radioGroup_flg', true)
   setContext('radioGroup_changeEvent', changeEventForChild)
+  setContext('radioGroup_name', name)
 
   let propList = []
 

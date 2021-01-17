@@ -16,6 +16,7 @@
 
   let isFocus = false
 
+  $: name = name || getContext('radioGroup_name')
   $: isChecked = value === label ? true : null
   $: isDisabled = disabled ? disabled : null
   $: tabindex = isDisabled || (radioGroupFlg && value !== label) ? -1 : 0

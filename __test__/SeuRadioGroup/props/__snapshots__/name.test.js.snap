@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`name 1`] = `
+<div>
+  test component
+  
+  <div
+    class="seu-radio-group"
+  >
+    <label
+      class="seu-radio"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio__original"
+        name="a"
+        tabindex="-1"
+        type="radio"
+        value="1"
+      />
+       
+      <span
+        class="seu-radio__input"
+      >
+        <span
+          class="seu-radio__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-radio__label"
+      >
+        a
+      </span>
+    </label>
+    
+    <label
+      class="seu-radio"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio__original"
+        name="a"
+        tabindex="-1"
+        type="radio"
+        value="2"
+      />
+       
+      <span
+        class="seu-radio__input"
+      >
+        <span
+          class="seu-radio__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-radio__label"
+      >
+        b
+      </span>
+    </label>
+    
+    <label
+      class="seu-radio"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio__original"
+        name="a"
+        tabindex="-1"
+        type="radio"
+        value="3"
+      />
+       
+      <span
+        class="seu-radio__input"
+      >
+        <span
+          class="seu-radio__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-radio__label"
+      >
+        c
+      </span>
+    </label>
+    
+     
+  </div>
+   
+  <div
+    class="seu-radio-group"
+  >
+    <label
+      class="seu-radio"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio__original"
+        name="b"
+        tabindex="-1"
+        type="radio"
+        value="1"
+      />
+       
+      <span
+        class="seu-radio__input"
+      >
+        <span
+          class="seu-radio__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-radio__label"
+      >
+        a
+      </span>
+    </label>
+    
+    <label
+      class="seu-radio"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio__original"
+        name="b"
+        tabindex="-1"
+        type="radio"
+        value="2"
+      />
+       
+      <span
+        class="seu-radio__input"
+      >
+        <span
+          class="seu-radio__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-radio__label"
+      >
+        b
+      </span>
+    </label>
+    
+    <label
+      class="seu-radio"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio__original"
+        name="b"
+        tabindex="-1"
+        type="radio"
+        value="3"
+      />
+       
+      <span
+        class="seu-radio__input"
+      >
+        <span
+          class="seu-radio__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-radio__label"
+      >
+        c
+      </span>
+    </label>
+    
+     
+  </div>
+</div>
+`;
