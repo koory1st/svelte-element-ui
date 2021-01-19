@@ -1,0 +1,813 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`click and change group value 1`] = `
+<div>
+  test component
+  
+  <span>
+    
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Guangzhou
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shenzhen
+      </span>
+    </label>
+    
+     
+  </div>
+</div>
+`;
+
+exports[`click and change group value 2`] = `
+<div>
+  test component
+  
+  <span>
+    Shanghai
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Guangzhou
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shenzhen
+      </span>
+    </label>
+    
+     
+  </div>
+</div>
+`;
+
+exports[`click and change group value 3`] = `
+<div>
+  test component
+  
+  <span>
+    Beijing
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Guangzhou
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shenzhen
+      </span>
+    </label>
+    
+     
+  </div>
+</div>
+`;
+
+exports[`click and change group value 4`] = `
+<div>
+  test component
+  
+  <span>
+    Guangzhou
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Guangzhou
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shenzhen
+      </span>
+    </label>
+    
+     
+  </div>
+</div>
+`;
+
+exports[`click and change group value 5`] = `
+<div>
+  test component
+  
+  <span>
+    Shenzhen
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Guangzhou
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shenzhen
+      </span>
+    </label>
+    
+     
+  </div>
+</div>
+`;
+
+exports[`click and change group value 6`] = `
+<div>
+  test component
+  
+  <span>
+    Shanghai,Beijing,Guangzhou,Shenzhen
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Guangzhou
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shenzhen
+      </span>
+    </label>
+    
+     
+  </div>
+</div>
+`;
+
+exports[`click and change group value 7`] = `
+<div>
+  test component
+  
+  <span>
+    
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Guangzhou
+      </span>
+    </label>
+    
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shenzhen
+      </span>
+    </label>
+    
+     
+  </div>
+</div>
+`;

@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checkedValue string 1`] = `
+<div>
+  test component
+  
+  <div
+    id="value"
+  >
+    false
+  </div>
+   
+  <label
+    aria-disabled="false"
+    class="seu-checkbox-button"
+    role="checkbox"
+  >
+    <input
+      class="seu-checkbox-button__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox-button__inner"
+    >
+      label5
+    </span>
+  </label>
+</div>
+`;
+
+exports[`checkedValue string 2`] = `
+<div>
+  test component
+  
+  <div
+    id="value"
+  >
+    yes
+  </div>
+   
+  <label
+    aria-disabled="false"
+    class="seu-checkbox-button is-checked"
+    role="checkbox"
+  >
+    <input
+      class="seu-checkbox-button__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox-button__inner"
+    >
+      label5
+    </span>
+  </label>
+</div>
+`;
+
+exports[`checkedValue string 3`] = `
+<div>
+  test component
+  
+  <div
+    id="value"
+  >
+    no
+  </div>
+   
+  <label
+    aria-disabled="false"
+    class="seu-checkbox-button"
+    role="checkbox"
+  >
+    <input
+      class="seu-checkbox-button__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox-button__inner"
+    >
+      label5
+    </span>
+  </label>
+</div>
+`;
+
+exports[`checkedValue string 4`] = `
+<div>
+  test component
+  
+  <div
+    id="value"
+  >
+    yes
+  </div>
+   
+  <label
+    aria-disabled="false"
+    class="seu-checkbox-button is-checked"
+    role="checkbox"
+  >
+    <input
+      class="seu-checkbox-button__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox-button__inner"
+    >
+      label5
+    </span>
+  </label>
+</div>
+`;
+
+exports[`checkedValue string 5`] = `
+<div>
+  test component
+  
+  <div
+    id="value"
+  >
+    no
+  </div>
+   
+  <label
+    aria-disabled="false"
+    class="seu-checkbox-button"
+    role="checkbox"
+  >
+    <input
+      class="seu-checkbox-button__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox-button__inner"
+    >
+      label5
+    </span>
+  </label>
+</div>
+`;

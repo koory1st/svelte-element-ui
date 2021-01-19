@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`focusBlur 1`] = `
+<label
+  aria-disabled="false"
+  class="seu-checkbox-button"
+  role="checkbox"
+>
+  <input
+    class="seu-checkbox-button__original"
+    type="checkbox"
+  />
+   
+  <span
+    class="seu-checkbox-button__inner"
+  >
+    label4
+  </span>
+</label>
+`;
+
+exports[`focusBlur 2`] = `
+<label
+  aria-disabled="false"
+  class="seu-checkbox-button is-focus"
+  role="checkbox"
+>
+  <input
+    class="seu-checkbox-button__original"
+    type="checkbox"
+  />
+   
+  <span
+    class="seu-checkbox-button__inner"
+  >
+    label4
+  </span>
+</label>
+`;
+
+exports[`focusBlur 3`] = `
+<label
+  aria-disabled="false"
+  class="seu-checkbox-button"
+  role="checkbox"
+>
+  <input
+    class="seu-checkbox-button__original"
+    type="checkbox"
+  />
+   
+  <span
+    class="seu-checkbox-button__inner"
+  >
+    label4
+  </span>
+</label>
+`;

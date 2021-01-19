@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toggle the value prop by change prop 1`] = `
+<label
+  class="seu-checkbox"
+  role="checkbox"
+>
+  <span
+    class="seu-checkbox__input"
+  >
+    <span
+      class="seu-checkbox__inner"
+    />
+  </span>
+   
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+  />
+   
+  <span
+    class="seu-checkbox__label"
+  >
+    label2
+  </span>
+</label>
+`;
+
+exports[`toggle the value prop by change prop 2`] = `
+<label
+  class="seu-checkbox is-checked"
+  role="checkbox"
+>
+  <span
+    class="seu-checkbox__input is-checked"
+  >
+    <span
+      class="seu-checkbox__inner"
+    />
+  </span>
+   
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+  />
+   
+  <span
+    class="seu-checkbox__label"
+  >
+    label2
+  </span>
+</label>
+`;
+
+exports[`toggle the value prop by change prop 3`] = `
+<label
+  class="seu-checkbox"
+  role="checkbox"
+>
+  <span
+    class="seu-checkbox__input"
+  >
+    <span
+      class="seu-checkbox__inner"
+    />
+  </span>
+   
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+  />
+   
+  <span
+    class="seu-checkbox__label"
+  >
+    label2
+  </span>
+</label>
+`;

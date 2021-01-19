@@ -1,0 +1,292 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`size 1`] = `
+<div>
+  test component
+  
+  <div
+    class="seu-radio-group"
+  >
+    <label
+      class="seu-radio"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio__original"
+        tabindex="-1"
+        type="radio"
+        value="1"
+      />
+       
+      <span
+        class="seu-radio__input"
+      >
+        <span
+          class="seu-radio__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-radio__label"
+      >
+        a
+      </span>
+    </label>
+    
+     
+  </div>
+   
+  <div
+    class="seu-radio-group"
+  >
+    <label
+      class="seu-radio"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio__original"
+        tabindex="-1"
+        type="radio"
+        value="1"
+      />
+       
+      <span
+        class="seu-radio__input"
+      >
+        <span
+          class="seu-radio__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-radio__label"
+      >
+        a
+      </span>
+    </label>
+    
+     
+  </div>
+   
+  <div
+    class="seu-radio-group"
+  >
+    <label
+      class="seu-radio"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio__original"
+        tabindex="-1"
+        type="radio"
+        value="1"
+      />
+       
+      <span
+        class="seu-radio__input"
+      >
+        <span
+          class="seu-radio__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-radio__label"
+      >
+        a
+      </span>
+    </label>
+    
+     
+  </div>
+   
+  <div
+    class="seu-radio-group"
+  >
+    <label
+      class="seu-radio is-bordered seu-radio--medium"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio__original"
+        tabindex="-1"
+        type="radio"
+        value="1"
+      />
+       
+      <span
+        class="seu-radio__input"
+      >
+        <span
+          class="seu-radio__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-radio__label"
+      >
+        a
+      </span>
+    </label>
+    
+     
+  </div>
+   
+  <div
+    class="seu-radio-group"
+  >
+    <label
+      class="seu-radio is-bordered seu-radio--small"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio__original"
+        tabindex="-1"
+        type="radio"
+        value="1"
+      />
+       
+      <span
+        class="seu-radio__input"
+      >
+        <span
+          class="seu-radio__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-radio__label"
+      >
+        a
+      </span>
+    </label>
+    
+     
+  </div>
+   
+  <div
+    class="seu-radio-group"
+  >
+    <label
+      class="seu-radio is-bordered seu-radio--mini"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio__original"
+        tabindex="-1"
+        type="radio"
+        value="1"
+      />
+       
+      <span
+        class="seu-radio__input"
+      >
+        <span
+          class="seu-radio__inner"
+        />
+      </span>
+       
+      <span
+        class="seu-radio__label"
+      >
+        a
+      </span>
+    </label>
+    
+     
+  </div>
+   
+  <div
+    class="seu-radio-group"
+  >
+    <label
+      class="seu-radio-button seu-radio-button--medium"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio-button__orig-radio"
+        tabindex="-1"
+        type="radio"
+        value="1"
+      />
+       
+      <span
+        class="seu-radio-button__inner"
+      >
+        a
+         
+      </span>
+    </label>
+    
+     
+  </div>
+   
+  <div
+    class="seu-radio-group"
+  >
+    <label
+      class="seu-radio-button seu-radio-button--small"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio-button__orig-radio"
+        tabindex="-1"
+        type="radio"
+        value="1"
+      />
+       
+      <span
+        class="seu-radio-button__inner"
+      >
+        a
+         
+      </span>
+    </label>
+    
+     
+  </div>
+   
+  <div
+    class="seu-radio-group"
+  >
+    <label
+      class="seu-radio-button seu-radio-button--mini"
+      role="radio"
+      tabindex="-1"
+    >
+      <input
+        aria-hidden="true"
+        class="seu-radio-button__orig-radio"
+        tabindex="-1"
+        type="radio"
+        value="1"
+      />
+       
+      <span
+        class="seu-radio-button__inner"
+      >
+        a
+         
+      </span>
+    </label>
+    
+     
+  </div>
+</div>
+`;

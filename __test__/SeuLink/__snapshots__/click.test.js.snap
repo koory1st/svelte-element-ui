@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`click 1`] = `
+<div>
+  test component
+  
+  <span>
+    test07-1
+  </span>
+   
+  <a
+    class="seu-link seu-link--default is-underline"
+  >
+     
+    <span
+      class="seu-link--inner"
+    >
+      seu link 07
+    </span>
+     
+  </a>
+</div>
+`;
+
+exports[`click 2`] = `
+<div>
+  test component
+  
+  <span>
+    link clicked
+  </span>
+   
+  <a
+    class="seu-link seu-link--default is-underline"
+  >
+     
+    <span
+      class="seu-link--inner"
+    >
+      seu link 07
+    </span>
+     
+  </a>
+</div>
+`;

@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`change the value by click checkbox 1`] = `
+<div>
+  test component
+  
+  <span>
+    changedValue:
+    undefined
+  </span>
+   
+  <div
+    id="value"
+  >
+    false
+  </div>
+   
+  <label
+    class="seu-radio-button"
+    role="radio"
+    tabindex="-1"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio-button__orig-radio"
+      tabindex="-1"
+      type="radio"
+      value="1"
+    />
+     
+    <span
+      class="seu-radio-button__inner"
+    >
+      label4
+       
+    </span>
+  </label>
+</div>
+`;
+
+exports[`change the value by click checkbox 2`] = `
+<div>
+  test component
+  
+  <span>
+    changedValue:
+    1
+  </span>
+   
+  <div
+    id="value"
+  >
+    1
+  </div>
+   
+  <label
+    aria-checked="true"
+    class="seu-radio-button is-active"
+    role="radio"
+    tabindex="0"
+  >
+    <input
+      aria-hidden="true"
+      class="seu-radio-button__orig-radio"
+      tabindex="-1"
+      type="radio"
+      value="1"
+    />
+     
+    <span
+      class="seu-radio-button__inner"
+    >
+      label4
+       
+    </span>
+  </label>
+</div>
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`disabled 1`] = `
+<div>
+  test component
+  
+  <button
+    class="seu-button seu-button--default is-disabled"
+    disabled=""
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 02
+    </span>
+  </button>
+</div>
+`;

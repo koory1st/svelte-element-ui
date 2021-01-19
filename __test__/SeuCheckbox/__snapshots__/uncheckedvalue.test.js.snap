@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checkedValue string 1`] = `
+<div>
+  test component
+  
+  <div
+    id="value"
+  >
+    false
+  </div>
+   
+  <label
+    class="seu-checkbox"
+    role="checkbox"
+  >
+    <span
+      class="seu-checkbox__input"
+    >
+      <span
+        class="seu-checkbox__inner"
+      />
+    </span>
+     
+    <input
+      aria-hidden="false"
+      class="seu-checkbox__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox__label"
+    >
+      label5
+    </span>
+  </label>
+</div>
+`;
+
+exports[`checkedValue string 2`] = `
+<div>
+  test component
+  
+  <div
+    id="value"
+  >
+    yes
+  </div>
+   
+  <label
+    class="seu-checkbox is-checked"
+    role="checkbox"
+  >
+    <span
+      class="seu-checkbox__input is-checked"
+    >
+      <span
+        class="seu-checkbox__inner"
+      />
+    </span>
+     
+    <input
+      aria-hidden="false"
+      class="seu-checkbox__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox__label"
+    >
+      label5
+    </span>
+  </label>
+</div>
+`;
+
+exports[`checkedValue string 3`] = `
+<div>
+  test component
+  
+  <div
+    id="value"
+  >
+    false
+  </div>
+   
+  <label
+    class="seu-checkbox"
+    role="checkbox"
+  >
+    <span
+      class="seu-checkbox__input"
+    >
+      <span
+        class="seu-checkbox__inner"
+      />
+    </span>
+     
+    <input
+      aria-hidden="false"
+      class="seu-checkbox__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox__label"
+    >
+      label5
+    </span>
+  </label>
+</div>
+`;
+
+exports[`checkedValue string 4`] = `
+<div>
+  test component
+  
+  <div
+    id="value"
+  >
+    yes
+  </div>
+   
+  <label
+    class="seu-checkbox is-checked"
+    role="checkbox"
+  >
+    <span
+      class="seu-checkbox__input is-checked"
+    >
+      <span
+        class="seu-checkbox__inner"
+      />
+    </span>
+     
+    <input
+      aria-hidden="false"
+      class="seu-checkbox__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox__label"
+    >
+      label5
+    </span>
+  </label>
+</div>
+`;
+
+exports[`checkedValue string 5`] = `
+<div>
+  test component
+  
+  <div
+    id="value"
+  >
+    no
+  </div>
+   
+  <label
+    class="seu-checkbox"
+    role="checkbox"
+  >
+    <span
+      class="seu-checkbox__input"
+    >
+      <span
+        class="seu-checkbox__inner"
+      />
+    </span>
+     
+    <input
+      aria-hidden="false"
+      class="seu-checkbox__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox__label"
+    >
+      label5
+    </span>
+  </label>
+</div>
+`;

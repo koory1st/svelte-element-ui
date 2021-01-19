@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`type 1`] = `
+<div>
+  test component
+  
+  <button
+    class="seu-button seu-button--default"
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 04-default
+    </span>
+  </button>
+   
+  <button
+    class="seu-button seu-button--primary"
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 04-primary
+    </span>
+  </button>
+   
+  <button
+    class="seu-button seu-button--success"
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 04-success
+    </span>
+  </button>
+   
+  <button
+    class="seu-button seu-button--warning"
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 04-warning
+    </span>
+  </button>
+   
+  <button
+    class="seu-button seu-button--danger"
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 04-danger
+    </span>
+  </button>
+   
+  <button
+    class="seu-button seu-button--info"
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 04-info
+    </span>
+  </button>
+   
+  <button
+    class="seu-button seu-button--text"
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 04-text
+    </span>
+  </button>
+</div>
+`;

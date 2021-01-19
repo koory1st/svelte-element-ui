@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`type 1`] = `
+<div>
+  test component
+  
+  <a
+    class="seu-link seu-link--default is-underline"
+  >
+     
+    <span
+      class="seu-link--inner"
+    >
+      seu link 02-default
+    </span>
+     
+  </a>
+   
+  <a
+    class="seu-link seu-link--primary is-underline"
+  >
+     
+    <span
+      class="seu-link--inner"
+    >
+      seu link 02-primary
+    </span>
+     
+  </a>
+   
+  <a
+    class="seu-link seu-link--success is-underline"
+  >
+     
+    <span
+      class="seu-link--inner"
+    >
+      seu link 02-success
+    </span>
+     
+  </a>
+   
+  <a
+    class="seu-link seu-link--warning is-underline"
+  >
+     
+    <span
+      class="seu-link--inner"
+    >
+      seu link 02-warning
+    </span>
+     
+  </a>
+   
+  <a
+    class="seu-link seu-link--danger is-underline"
+  >
+     
+    <span
+      class="seu-link--inner"
+    >
+      seu link 02-danger
+    </span>
+     
+  </a>
+   
+  <a
+    class="seu-link seu-link--info is-underline"
+  >
+     
+    <span
+      class="seu-link--inner"
+    >
+      seu link 02-info
+    </span>
+     
+  </a>
+</div>
+`;

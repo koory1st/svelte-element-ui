@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default 1`] = `
+<div>
+  test component
+  
+  <section
+    class="seu-container"
+  >
+    <aside
+      class="seu-aside"
+      style="width:300px"
+    >
+      seu aside
+    </aside>
+  </section>
+   
+  <section
+    class="seu-container"
+  >
+    <aside
+      class="seu-aside"
+      style="width:10px"
+    >
+      seu aside
+    </aside>
+  </section>
+</div>
+`;

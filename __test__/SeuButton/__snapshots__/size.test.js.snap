@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`size 1`] = `
+<div>
+  test component
+  
+  <button
+    class="seu-button seu-button--default seu-button--medium"
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 07-medium
+    </span>
+  </button>
+   
+  <button
+    class="seu-button seu-button--default seu-button--small"
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 07-small
+    </span>
+  </button>
+   
+  <button
+    class="seu-button seu-button--default seu-button--mini"
+    type="button"
+  >
+     
+     
+    <span>
+      Test Button 07-mini
+    </span>
+  </button>
+</div>
+`;

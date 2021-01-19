@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`label:no work without group 1`] = `
+<label
+  aria-disabled="false"
+  class="seu-checkbox-button"
+  role="checkbox"
+>
+  <input
+    class="seu-checkbox-button__original"
+    type="checkbox"
+  />
+   
+  <span
+    class="seu-checkbox-button__inner"
+  >
+    label1
+  </span>
+</label>
+`;

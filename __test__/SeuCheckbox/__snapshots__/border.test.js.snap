@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`border 1`] = `
+<label
+  class="seu-checkbox is-bordered"
+  role="checkbox"
+>
+  <span
+    class="seu-checkbox__input"
+  >
+    <span
+      class="seu-checkbox__inner"
+    />
+  </span>
+   
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+  />
+   
+  <span
+    class="seu-checkbox__label"
+  >
+    label6
+  </span>
+</label>
+`;

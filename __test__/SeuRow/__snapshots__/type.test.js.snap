@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`type 1`] = `
+<div>
+  test component
+  
+  <div
+    class="seu-row seu-row--flex"
+  >
+    Test Row 03
+  </div>
+</div>
+`;

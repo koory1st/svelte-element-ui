@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default props 1`] = `
+<label
+  aria-controls="true"
+  class="seu-checkbox is-indeterminate"
+  role="checkbox"
+>
+  <span
+    aria-checked="mixed"
+    class="seu-checkbox__input is-indeterminate"
+    role="checkbox"
+    tabindex="0"
+  >
+    <span
+      class="seu-checkbox__inner"
+    />
+  </span>
+   
+  <input
+    aria-hidden="true"
+    class="seu-checkbox__original"
+    type="checkbox"
+  />
+   
+  <span
+    class="seu-checkbox__label"
+  >
+    label1
+  </span>
+</label>
+`;

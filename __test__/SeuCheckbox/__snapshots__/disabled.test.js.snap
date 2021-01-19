@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toggle the disabled prop by change prop 1`] = `
+<label
+  class="seu-checkbox"
+  role="checkbox"
+>
+  <span
+    class="seu-checkbox__input"
+  >
+    <span
+      class="seu-checkbox__inner"
+    />
+  </span>
+   
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+  />
+   
+  <span
+    class="seu-checkbox__label"
+  >
+    label3
+  </span>
+</label>
+`;
+
+exports[`toggle the disabled prop by change prop 2`] = `
+<label
+  aria-disabled="true"
+  class="seu-checkbox is-disabled"
+  role="checkbox"
+>
+  <span
+    class="seu-checkbox__input is-disabled"
+  >
+    <span
+      class="seu-checkbox__inner"
+    />
+  </span>
+   
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    disabled=""
+    type="checkbox"
+  />
+   
+  <span
+    class="seu-checkbox__label"
+  >
+    label3
+  </span>
+</label>
+`;
+
+exports[`toggle the disabled prop by change prop 3`] = `
+<label
+  class="seu-checkbox"
+  role="checkbox"
+>
+  <span
+    class="seu-checkbox__input"
+  >
+    <span
+      class="seu-checkbox__inner"
+    />
+  </span>
+   
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+  />
+   
+  <span
+    class="seu-checkbox__label"
+  >
+    label3
+  </span>
+</label>
+`;

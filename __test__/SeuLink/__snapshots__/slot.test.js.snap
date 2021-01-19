@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`slot 1`] = `
+<div>
+  test component
+  
+  <a
+    class="seu-link seu-link--default is-underline"
+  >
+     
+    <span
+      class="seu-link--inner"
+    >
+      seu link 06-default
+    </span>
+     
+  </a>
+   
+  <a
+    class="seu-link seu-link--default is-underline"
+  >
+     
+     
+    <div
+      slot="icon"
+    >
+      seu link 06-icon
+    </div>
+  </a>
+</div>
+`;

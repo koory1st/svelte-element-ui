@@ -1,0 +1,626 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`changeEvent 1`] = `
+<div>
+  test component
+  
+  <span>
+    slot
+  </span>
+   
+  <span>
+    group: 
+    
+  </span>
+   
+  <span>
+    changedValue: 
+    undefined
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+     
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+     
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+     
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Guangzhou
+      </span>
+    </label>
+     
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shenzhen
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`changeEvent 2`] = `
+<div>
+  test component
+  
+  <span>
+    slot
+  </span>
+   
+  <span>
+    group: 
+    1
+  </span>
+   
+  <span>
+    changedValue: 
+    1
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+     
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+     
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+     
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Guangzhou
+      </span>
+    </label>
+     
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shenzhen
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`changeEvent 3`] = `
+<div>
+  test component
+  
+  <span>
+    slot
+  </span>
+   
+  <span>
+    group: 
+    1,2
+  </span>
+   
+  <span>
+    changedValue: 
+    1,2
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+     
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+     
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+     
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Guangzhou
+      </span>
+    </label>
+     
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shenzhen
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`changeEvent 4`] = `
+<div>
+  test component
+  
+  <span>
+    slot
+  </span>
+   
+  <span>
+    group: 
+    1,2,3
+  </span>
+   
+  <span>
+    changedValue: 
+    1,2,3
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+     
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+     
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+     
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Guangzhou
+      </span>
+    </label>
+     
+    <label
+      class="seu-checkbox"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shenzhen
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`changeEvent 5`] = `
+<div>
+  test component
+  
+  <span>
+    slot
+  </span>
+   
+  <span>
+    group: 
+    1,2,3,4
+  </span>
+   
+  <span>
+    changedValue: 
+    1,2,3,4
+  </span>
+   
+  <div
+    class="seu-checkbox-group"
+  >
+     
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shanghai
+      </span>
+    </label>
+     
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Beijing
+      </span>
+    </label>
+     
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Guangzhou
+      </span>
+    </label>
+     
+    <label
+      class="seu-checkbox is-checked"
+      role="checkbox"
+    >
+      <span
+        class="seu-checkbox__input is-checked"
+      >
+        <span
+          class="seu-checkbox__inner"
+        />
+      </span>
+       
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
+      <span
+        class="seu-checkbox__label"
+      >
+        Shenzhen
+      </span>
+    </label>
+  </div>
+</div>
+`;

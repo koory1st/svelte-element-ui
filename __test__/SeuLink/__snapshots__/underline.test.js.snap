@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`underline 1`] = `
+<div>
+  test component
+  
+  <a
+    class="seu-link seu-link--default is-underline"
+  >
+     
+    <span
+      class="seu-link--inner"
+    >
+      seu link 03
+    </span>
+     
+  </a>
+   
+  <a
+    class="seu-link seu-link--default"
+  >
+     
+    <span
+      class="seu-link--inner"
+    >
+      seu link 03
+    </span>
+     
+  </a>
+</div>
+`;

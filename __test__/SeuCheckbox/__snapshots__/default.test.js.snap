@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default props 1`] = `
+<label
+  class="seu-checkbox"
+  role="checkbox"
+>
+  <span
+    class="seu-checkbox__input"
+  >
+    <span
+      class="seu-checkbox__inner"
+    />
+  </span>
+   
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+  />
+   
+  <span
+    class="seu-checkbox__label"
+  >
+    label1
+  </span>
+</label>
+`;

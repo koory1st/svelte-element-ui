@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`size 1`] = `
+<div>
+  test component
+  
+  <label
+    class="seu-checkbox"
+    role="checkbox"
+  >
+    <span
+      class="seu-checkbox__input"
+    >
+      <span
+        class="seu-checkbox__inner"
+      />
+    </span>
+     
+    <input
+      aria-hidden="false"
+      class="seu-checkbox__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox__label"
+    >
+      medium no border
+    </span>
+  </label>
+   
+  <label
+    class="seu-checkbox"
+    role="checkbox"
+  >
+    <span
+      class="seu-checkbox__input"
+    >
+      <span
+        class="seu-checkbox__inner"
+      />
+    </span>
+     
+    <input
+      aria-hidden="false"
+      class="seu-checkbox__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox__label"
+    >
+      small no border
+    </span>
+  </label>
+   
+  <label
+    class="seu-checkbox"
+    role="checkbox"
+  >
+    <span
+      class="seu-checkbox__input"
+    >
+      <span
+        class="seu-checkbox__inner"
+      />
+    </span>
+     
+    <input
+      aria-hidden="false"
+      class="seu-checkbox__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox__label"
+    >
+      mini no border
+    </span>
+  </label>
+   
+  <label
+    class="seu-checkbox seu-checkbox--medium is-bordered"
+    role="checkbox"
+  >
+    <span
+      class="seu-checkbox__input"
+    >
+      <span
+        class="seu-checkbox__inner"
+      />
+    </span>
+     
+    <input
+      aria-hidden="false"
+      class="seu-checkbox__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox__label"
+    >
+      medium
+    </span>
+  </label>
+   
+  <label
+    class="seu-checkbox seu-checkbox--small is-bordered"
+    role="checkbox"
+  >
+    <span
+      class="seu-checkbox__input"
+    >
+      <span
+        class="seu-checkbox__inner"
+      />
+    </span>
+     
+    <input
+      aria-hidden="false"
+      class="seu-checkbox__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox__label"
+    >
+      small
+    </span>
+  </label>
+   
+  <label
+    class="seu-checkbox seu-checkbox--mini is-bordered"
+    role="checkbox"
+  >
+    <span
+      class="seu-checkbox__input"
+    >
+      <span
+        class="seu-checkbox__inner"
+      />
+    </span>
+     
+    <input
+      aria-hidden="false"
+      class="seu-checkbox__original"
+      type="checkbox"
+    />
+     
+    <span
+      class="seu-checkbox__label"
+    >
+      mini
+    </span>
+  </label>
+</div>
+`;
