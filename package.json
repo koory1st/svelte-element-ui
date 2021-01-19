@@ -1,5 +1,6 @@
 {
   "name": "svelte-element-ui",
+  "version": "1.0.1",
   "scripts": {
     "build": "rollup -c",
     "test:watch": "npm run test -- --watch",
@@ -12,6 +13,7 @@
     "c": "git-cz",
     "release": "standard-version"
   },
+  "main": "dist/bundle.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/koory1st/svelte-element-ui.git"
@@ -88,6 +90,5 @@
   },
   "setupFilesAfterEnv": [
     "@testing-library/jest-dom/extend-expect"
-  ],
-  "version": "1.0.1"
+  ]
 }
