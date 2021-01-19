@@ -1,6 +1,5 @@
 {
   "name": "svelte-element-ui",
-  "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
     "test:watch": "npm run test -- --watch",
@@ -60,9 +59,7 @@
   "dependencies": {
     "sirv-cli": "^1.0.0"
   },
-  "standard-version": {
-    "dryRun": true
-  },
+  "standard-version": {},
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
@@ -91,5 +88,6 @@
   },
   "setupFilesAfterEnv": [
     "@testing-library/jest-dom/extend-expect"
-  ]
+  ],
+  "version": "1.0.0"
 }
