@@ -89,5 +89,5 @@
   "setupFilesAfterEnv": [
     "@testing-library/jest-dom/extend-expect"
   ],
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
