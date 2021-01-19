@@ -1,22 +1,13 @@
-# Svelte Element UI
+## What is svelte-element-ui?
 
-This is a Web UI component set by [Svelte](!https://svelte.dev/) and styles of [ElementUI](!https://element.eleme.cn/).
+svelte-element-ui is a a element-ui component library base on Svelte.
 
-[Demo](!https://koory1st.github.io/svelte-element-ui/)
+### Running Tests
 
-## Done
+```bash
+npm run test
+```
 
-- Container
-- Layout
-- Button
-- Link
-- Radio
-- Checkbox
-- Demo with Storybook
+## License
 
-## TODO
-
-- Unit Test
-- other ElementUI components
-
-There are lots of things left to do and I made this out of my work hours, so it will take a lot of time to the rest of the TODO things.
+[MIT](LICENSE)
