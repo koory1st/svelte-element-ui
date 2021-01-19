@@ -1,6 +1,6 @@
 {
   "name": "svelte-element-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "build": "rollup -c",
     "test:watch": "npm run test -- --watch",
