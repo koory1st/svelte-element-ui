@@ -1,6 +1,6 @@
 {
   "name": "svelte-element-ui",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
     "test:watch": "npm run test -- --watch",
@@ -12,6 +12,10 @@
     "build-storybook": "build-storybook -o docs",
     "c": "git-cz",
     "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koory1st/svelte-element-ui.git"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
