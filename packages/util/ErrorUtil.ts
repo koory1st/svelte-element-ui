@@ -1,5 +1,5 @@
 export class SeuPropValidateError extends Error {
-  constructor(message) {
+  constructor(message: string) {
     super(message)
     this.name = 'SeuPropValidateError'
   }

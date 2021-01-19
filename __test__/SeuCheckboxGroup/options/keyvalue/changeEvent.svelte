@@ -1,5 +1,5 @@
 <script type="ts">
-  import SeuCheckboxGroup from '../../../../src/checkbox/SeuCheckboxGroup.svelte'
+  import SeuCheckboxGroup from '../../../../packages/checkboxGroup/SeuCheckboxGroup.svelte'
   let group
   let changedValue
 </script>
@@ -9,9 +9,15 @@
   <span>changedValue:{changedValue}</span>
   <span>group:{group}</span>
   <SeuCheckboxGroup
-    options={[{ label: 'Shanghai', value: 1 }, { label: 'Beijing', value: 2 }, { label: 'Guangzhou', value: 3 }, { label: 'Shenzhen', value: 4 }]}
+    options={[
+      { label: 'Shanghai', value: 1 },
+      { label: 'Beijing', value: 2 },
+      { label: 'Guangzhou', value: 3 },
+      { label: 'Shenzhen', value: 4 },
+    ]}
     bind:group
     on:change={event => {
       changedValue = event.detail
-    }} />
+    }}
+  />
 </div>

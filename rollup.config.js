@@ -15,27 +15,6 @@ import copy from 'rollup-plugin-copy'
 const production = !process.env.ROLLUP_WATCH
 const projectRootDir = path.resolve(__dirname)
 
-function serve() {
-  let server
-
-  function toExit() {
-    if (server) server.kill(0)
-  }
-
-  return {
-    writeBundle() {
-      if (server) return
-      server = require('child_process').spawn('npm', ['run', 'start', '--', '--dev'], {
-        stdio: ['ignore', 'inherit', 'inherit'],
-        shell: true,
-      })
-
-      process.on('SIGTERM', toExit)
-      process.on('exit', toExit)
-    },
-  }
-}
-
 export default {
   input: 'src/main.ts',
   output: {
@@ -51,7 +30,7 @@ export default {
         root: projectRootDir,
         style: projectRootDir + '/static/style',
         'theme-chalk': projectRootDir + '/static/theme-chalk',
-        SvelteStyledSystem: __dirname + '/src/util/svelte_styled_system',
+        pkg: projectRootDir + '/packages',
       },
     }),
     svelte({

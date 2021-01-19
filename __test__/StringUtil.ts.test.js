@@ -1,4 +1,4 @@
-import { styleArray2Str, getClass } from '../src/util/StringUtil'
+import { styleArray2Str, getClass } from '../packages/util/StringUtil'
 
 describe('Test StringUtil', () => {
   describe('styleArray2Str', () => {

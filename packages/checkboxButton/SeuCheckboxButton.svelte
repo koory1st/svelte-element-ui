@@ -7,7 +7,7 @@
     validateCheckedValue,
     getGroupByInnerChecked,
     getInnerCheckedByValue,
-  } from './checkboxUtil'
+  } from '../util/CheckboxUtil'
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
   import { getContext } from 'svelte'

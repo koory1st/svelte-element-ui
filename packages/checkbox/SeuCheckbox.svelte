@@ -10,8 +10,7 @@
     validateCheckedValue,
     getGroupByInnerChecked,
     getInnerCheckedByValue,
-  } from './checkboxUtil'
-  const dispatch = createEventDispatcher()
+  } from '../util/CheckboxUtil'
   export let group: Array<string | number | boolean> = []
   export let value: boolean | string | number = false
   export let label: string | number | boolean | null | undefined
@@ -22,6 +21,7 @@
   export let size: string
   export let checkedValue: string | number | boolean | null | undefined
   export let uncheckedValue: string | number | boolean | null | undefined
+  const dispatch = createEventDispatcher()
 
   validateCheckedValue(checkedValue, uncheckedValue)
 

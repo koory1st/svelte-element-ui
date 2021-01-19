@@ -1,5 +1,5 @@
 <script type="ts">
-  import SeuCheckboxGroup from '../../../../src/checkbox/SeuCheckboxGroup.svelte'
+  import SeuCheckboxGroup from '../../../../packages/checkboxGroup/SeuCheckboxGroup.svelte'
   let group
 </script>
 
@@ -7,8 +7,12 @@
   test component
   <span>{group}</span>
   <SeuCheckboxGroup
-    options={[{ label: 'Shanghai', value: false }, { label: 'Beijing', value: true }]}
-    bind:group />
+    options={[
+      { label: 'Shanghai', value: false },
+      { label: 'Beijing', value: true },
+    ]}
+    bind:group
+  />
 </div>
 
 <button on:click={() => (group = [false])}>buttonShanghai</button>

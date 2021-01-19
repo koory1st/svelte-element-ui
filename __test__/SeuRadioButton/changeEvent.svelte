@@ -1,5 +1,5 @@
 <script type="ts">
-  import SeuRadioButton from '../../src/radio/SeuRadioButton.svelte'
+  import SeuRadioButton from '../../packages/radioButton/SeuRadioButton.svelte'
   let value
   let changedValue
 

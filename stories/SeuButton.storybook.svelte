@@ -1,6 +1,6 @@
 <script>
   import { SeuRow, SeuButton } from '../dist/bundle'
-  import SeuButtonGroup from '../src/buttonGroup/SeuButtonGroup.svelte'
+  import SeuButtonGroup from '../packages/buttonGroup/SeuButtonGroup.svelte'
   export let type
   export let size
   export let disabled

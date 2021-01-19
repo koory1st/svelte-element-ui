@@ -1,6 +1,6 @@
 <script type="ts">
-  import SeuRadioGroup from '../../../../src/radio/SeuRadioGroup.svelte'
-  import SeuRadioButton from '../../../../src/radio/SeuRadioButton.svelte'
+  import SeuRadioGroup from '../../../../packages/radioGroup/SeuRadioGroup.svelte'
+  import SeuRadioButton from '../../../../packages/radioButton/SeuRadioButton.svelte'
   let value
   let changeValue
   function changeHandler({ detail }) {

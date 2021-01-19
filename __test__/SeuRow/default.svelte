@@ -1,5 +1,5 @@
 <script type="ts">
-  import SeuRow from '../../src/row/SeuRow.svelte'
+  import SeuRow from '../../packages/row/SeuRow.svelte'
 </script>
 
 <div>

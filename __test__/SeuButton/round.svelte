@@ -1,5 +1,5 @@
 <script>
-  import SeuButton from '../../src/button/SeuButton.svelte'
+  import SeuButton from '../../packages/button/SeuButton.svelte'
 </script>
 
 <div>

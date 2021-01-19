@@ -1,5 +1,5 @@
 <script type="ts">
-  import SeuRadio from '../../src/radio/SeuRadio.svelte'
+  import SeuRadio from '../../packages/radio/SeuRadio.svelte'
   let value = '0'
 </script>
 

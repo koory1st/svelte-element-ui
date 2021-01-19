@@ -1,6 +1,6 @@
 <script type="ts">
-  import SeuRadioGroup from '../../../../src/radio/SeuRadioGroup.svelte'
-  import SeuRadio from '../../../../src/radio/SeuRadio.svelte'
+  import SeuRadioGroup from '../../../../packages/radioGroup/SeuRadioGroup.svelte'
+  import SeuRadio from '../../../../packages/radio/SeuRadio.svelte'
   let value
 </script>
 

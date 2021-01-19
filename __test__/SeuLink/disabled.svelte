@@ -1,5 +1,5 @@
 <script type="ts">
-  import SeuLink from '../../src/link/SeuLink.svelte'
+  import SeuLink from '../../packages/link/SeuLink.svelte'
 </script>
 
 <div>

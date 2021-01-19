@@ -1,6 +1,6 @@
 <script type="ts">
-  import SeuCheckbox from './SeuCheckbox.svelte'
-  import SeuCheckboxButton from './SeuCheckboxButton.svelte'
+  import SeuCheckbox from '../checkbox/SeuCheckbox.svelte'
+  import SeuCheckboxButton from '../checkboxButton/SeuCheckboxButton.svelte'
   import { setContext } from 'svelte'
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()

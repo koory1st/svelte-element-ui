@@ -1,5 +1,5 @@
 <script type="ts">
-  import SeuButtonGroup from '../../src/buttonGroup/SeuButtonGroup.svelte'
+  import SeuButtonGroup from '../../packages/buttonGroup/SeuButtonGroup.svelte'
 </script>
 
 <div>

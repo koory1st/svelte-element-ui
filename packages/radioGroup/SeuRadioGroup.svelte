@@ -1,8 +1,7 @@
 <script type="ts">
-  import SeuRadio from './SeuRadio.svelte'
-  import SeuRadioButton from './SeuRadioButton.svelte'
-  import { setContext } from 'svelte'
-  import { createEventDispatcher } from 'svelte'
+  import SeuRadio from '../radio/SeuRadio.svelte'
+  import SeuRadioButton from '../radioButton/SeuRadioButton.svelte'
+  import { setContext, createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
   export let value: string | number
   export let options: Array<string | { label: string; value: string | number | boolean; disabled?: boolean }> = []

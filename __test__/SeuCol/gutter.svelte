@@ -1,6 +1,6 @@
 <script type="ts">
-  import SeuRow from '../../src/row/SeuRow.svelte'
-  import SeuCol from '../../src/col/SeuCol.svelte'
+  import SeuRow from '../../packages/row/SeuRow.svelte'
+  import SeuCol from '../../packages/col/SeuCol.svelte'
 </script>
 
 <div>

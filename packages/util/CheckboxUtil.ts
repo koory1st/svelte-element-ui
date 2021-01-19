@@ -1,4 +1,4 @@
-import { SeuPropValidateError } from '../util/ErrorUtil'
+import { SeuPropValidateError } from './ErrorUtil'
 /**
  * getDisabled
  *

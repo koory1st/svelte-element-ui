@@ -1,5 +1,5 @@
 <script type="ts">
-  import SeuRadioGroup from '../../../src/radio/SeuRadioGroup.svelte'
+  import SeuRadioGroup from '../../../packages/radioGroup/SeuRadioGroup.svelte'
 </script>
 
 <div>

@@ -1,6 +1,6 @@
 <script type="ts">
-  import SeuCheckboxGroup from '../../../../src/checkbox/SeuCheckboxGroup.svelte'
-  import SeuCheckbox from '../../../../src/checkbox/SeuCheckbox.svelte'
+  import SeuCheckboxGroup from '../../../../packages/checkboxGroup/SeuCheckboxGroup.svelte'
+  import SeuCheckbox from '../../../../packages/checkbox/SeuCheckbox.svelte'
   let group
 </script>
 

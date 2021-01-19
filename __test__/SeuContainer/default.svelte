@@ -1,5 +1,5 @@
 <script type="ts">
-  import SeuContainer from '../../src/container/SeuContainer.svelte'
+  import SeuContainer from '../../packages/container/SeuContainer.svelte'
 </script>
 
 <div>

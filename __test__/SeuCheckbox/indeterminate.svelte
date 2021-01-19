@@ -1,5 +1,5 @@
 <script type="ts">
-  import SeuCheckbox from '../../src/checkbox/SeuCheckbox.svelte'
+  import SeuCheckbox from '../../packages/checkbox/SeuCheckbox.svelte'
 </script>
 
 <div>

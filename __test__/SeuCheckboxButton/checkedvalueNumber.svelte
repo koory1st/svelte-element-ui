@@ -1,5 +1,5 @@
 <script type="ts">
-  import SeuCheckboxButton from '../../src/checkbox/SeuCheckboxButton.svelte'
+  import SeuCheckboxButton from '../../packages/checkboxButton/SeuCheckboxButton.svelte'
   let value
 </script>
 
