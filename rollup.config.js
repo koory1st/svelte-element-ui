@@ -17,7 +17,7 @@ const production = !process.env.ROLLUP_WATCH
 const projectRootDir = path.resolve(__dirname)
 
 export default {
-  input: 'src/main.ts',
+  input: 'src/index.ts',
   output: {
     sourcemap: true,
     format: 'es',
@@ -25,7 +25,7 @@ export default {
     file: 'lib/seu.es.js',
   },
   plugins: [
-    del({ targets: 'dist/*' }),
+    del({ targets: 'lib/*' }),
     alias({
       entries: {
         '@': projectRootDir + '/src',

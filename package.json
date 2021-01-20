@@ -17,6 +17,7 @@
     "clear": "rimraf node_modules"
   },
   "main": "lib/seu.es.js",
+  "typings": "types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/koory1st/svelte-element-ui.git"
