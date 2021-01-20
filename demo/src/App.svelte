@@ -1,7 +1,7 @@
 <script lang="ts">
-  import SeuContainer from '@/container/SeuContainer'
-  import SeuButton from '@/button/SeuButton'
-  import SeuRadio from '@/radio/SeuRadio'
+  import SeuContainer from 'pkg/container'
+  import SeuButton from 'pkg/button'
+  import SeuRadio from 'pkg/radio'
   export let name: string
   let value
 </script>

@@ -10,6 +10,7 @@ import alias from '@rollup/plugin-alias'
 import postcss from 'rollup-plugin-postcss'
 import path from 'path'
 import copy from 'rollup-plugin-copy'
+import del from 'rollup-plugin-delete'
 // import scss from 'rollup-plugin-scss'
 
 const production = !process.env.ROLLUP_WATCH
@@ -24,6 +25,7 @@ export default {
     file: 'dist/bundle.js',
   },
   plugins: [
+    del({ targets: 'dist/*' }),
     alias({
       entries: {
         '@': projectRootDir + '/src',
@@ -39,7 +41,7 @@ export default {
       // we'll extract any component CSS out into
       // a separate file - better for performance
       css: css => {
-        css.write('dist/bundle.css', true)
+        css.write('libs/bundle.css', true)
       },
       preprocess: sveltePreprocess(),
     }),
@@ -57,7 +59,7 @@ export default {
     typescript({ sourceMap: !production }),
     // scss(),
     postcss({
-      extract: 'bundle.css',
+      extract: 'libs/bundle.css',
       minimize: true,
       sourceMap: !production,
     }),
@@ -65,7 +67,7 @@ export default {
       targets: [
         {
           src: ['static/fonts/element-icons.ttf', 'static/fonts/element-icons.woff'],
-          dest: 'dist/',
+          dest: 'dist/libs/',
         },
       ],
     }),
