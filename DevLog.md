@@ -3,9 +3,10 @@
 TODO:
 
 - [x] 整理 dependencies
-- [ ] 丰富 package 内容
+- [x] 丰富 package 内容
 - [ ] github action
 - [ ] d.ts
+- [ ] 分别打包
 
 # 2021.01.16
 

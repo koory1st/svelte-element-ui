@@ -22,7 +22,7 @@ export default {
     sourcemap: true,
     format: 'es',
     name: 'app',
-    file: 'dist/bundle.js',
+    file: 'lib/seu.es.js',
   },
   plugins: [
     del({ targets: 'dist/*' }),
@@ -30,7 +30,6 @@ export default {
       entries: {
         '@': projectRootDir + '/src',
         root: projectRootDir,
-        style: projectRootDir + '/static/style',
         'theme-chalk': projectRootDir + '/static/theme-chalk',
         pkg: projectRootDir + '/packages',
       },
@@ -41,7 +40,7 @@ export default {
       // we'll extract any component CSS out into
       // a separate file - better for performance
       css: css => {
-        css.write('libs/bundle.css', true)
+        css.write('seu.css', true)
       },
       preprocess: sveltePreprocess(),
     }),
@@ -59,7 +58,7 @@ export default {
     typescript({ sourceMap: !production }),
     // scss(),
     postcss({
-      extract: 'libs/bundle.css',
+      extract: 'seu.css',
       minimize: true,
       sourceMap: !production,
     }),
@@ -67,7 +66,7 @@ export default {
       targets: [
         {
           src: ['static/fonts/element-icons.ttf', 'static/fonts/element-icons.woff'],
-          dest: 'dist/libs/',
+          dest: 'lib/',
         },
       ],
     }),

@@ -1,6 +1,7 @@
 {
   "name": "svelte-element-ui",
   "version": "1.0.2",
+  "description": "svelte-element-ui is a element-ui component library base on Svelte.",
   "scripts": {
     "build": "rollup -c",
     "test:watch": "npm run test -- --watch",
@@ -12,10 +13,10 @@
     "build-storybook": "build-storybook -o docs",
     "c": "git-cz",
     "release": "standard-version",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run test && npm run build",
     "clear": "rimraf node_modules"
   },
-  "main": "dist/bundle.js",
+  "main": "lib/seu.es.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/koory1st/svelte-element-ui.git"
@@ -90,5 +91,14 @@
   },
   "setupFilesAfterEnv": [
     "@testing-library/jest-dom/extend-expect"
-  ]
+  ],
+  "keywords": [
+    "UI",
+    "Svelte",
+    "UI-Library",
+    "element"
+  ],
+  "author": "koory1st",
+  "license": "MIT",
+  "homepage": "https://github.com/koory1st/svelte-element-ui"
 }

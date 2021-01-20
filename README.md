@@ -1,6 +1,6 @@
 ## What is svelte-element-ui?
 
-svelte-element-ui is a a element-ui component library base on Svelte.
+svelte-element-ui is a element-ui component library base on Svelte.
 
 ### Running Tests
 
