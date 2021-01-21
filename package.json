@@ -88,7 +88,12 @@
       "js",
       "ts",
       "svelte"
-    ]
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "__test__/tsconfig.test.json"
+      }
+    }
   },
   "setupFilesAfterEnv": [
     "@testing-library/jest-dom/extend-expect"

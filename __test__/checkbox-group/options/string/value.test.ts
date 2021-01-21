@@ -1,9 +1,9 @@
 import '@testing-library/jest-dom/extend-expect'
 import { render, fireEvent } from '@testing-library/svelte'
-import { testElementAndResult } from '../../../util/TestUtil.js'
-import Comp from './value.string.svelte'
+import { testElementAndResult } from '../../../util/TestUtil'
+import Comp from './value.svelte'
 
-test('value.string', async () => {
+test('click and change group value', async () => {
   const { getByText } = render(Comp)
   const testDom = getByText('test component')
   testElementAndResult(testDom)
@@ -18,6 +18,10 @@ test('value.string', async () => {
 
   const buttonGuangzhou = getByText('buttonGuangzhou')
   await fireEvent.click(buttonGuangzhou)
+  testElementAndResult(testDom)
+
+  const buttonShenzhen = getByText('buttonShenzhen')
+  await fireEvent.click(buttonShenzhen)
   testElementAndResult(testDom)
 
   const buttonAll = getByText('buttonAll')

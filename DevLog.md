@@ -1,3 +1,63 @@
+# 2021.01.21
+
+尝试将 test 改成 ts，结果报错：
+
+```
+error TS2593: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha` and then add `jest` or `mocha` to the types field in your tsconfig.
+```
+
+在网上找到的解决方案是,https://daveceddia.com/svelte-typescript-jest/
+
+tsconfig.json 里加入，确实可以解决问题。
+
+```json
+{
+  "compilerOptions": {
+    "types": ["jest"]
+  }
+}
+```
+
+但是 build 就开始报错了。大概原因应该是我把全局的唯一的一个 tsconfig 给改了，svelte 也需要这个 tsconfig，结果就报错了。
+那么就应该维持总体的 tsconfig 不动，改掉走 test 的时候的 tsconfig 就好了。至于怎么弄，又是一顿查。
+
+首先我用的是 testing-library，那么就查他，是关于 typescript 的，找到那个位置https://testing-library.com/docs/svelte-testing-library/setup。
+
+这里写是用 svelte-jester处理的，那么就继续找他。https://github.com/mihar-22/svelte-jester#typescript。关于ts部分，这里写查看ts-jest的文档。
+
+继续找ts-jest的文档：https://kulshekhar.github.io/ts-jest/docs/options。这里写了如何配置ts。
+
+其中有一处配置tsconfig的部分。https://kulshekhar.github.io/ts-jest/docs/options/tsconfig/
+
+```json
+// OR package.json
+{
+  // [...]
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "tsconfig.test.json"
+      }
+    }
+  }
+}
+```
+
+然后呢，我就新建了一个tsconfig文件，放到了\__test__文件夹下。内容呢就是：
+
+```json
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "types": ["jest"]
+  }
+}
+```
+
+这样呢，再test，build，就都没有问题了。
+
+
+
 # 2021.01.20
 
 昨天已经发布了第一版，还算成功。

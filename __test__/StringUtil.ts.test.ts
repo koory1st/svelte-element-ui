@@ -64,20 +64,11 @@ describe('Test getClass', () => {
   })
 
   test('array with tuple string', () => {
-    const input = ['aaa', 'bbb', ['ccc']]
+    const input: Array<string | [string, boolean?]> = ['aaa', 'bbb', ['ccc']]
     expect(getClass(input)).toEqual('aaa bbb ccc')
   })
   test('array with tuple string and boolean', () => {
-    const input = ['aaa', 'bbb', ['ccc', false]]
+    const input: Array<string | [string, boolean?]> = ['aaa', 'bbb', ['ccc', false]]
     expect(getClass(input)).toEqual('aaa bbb')
-  })
-
-  test('array with tuple error 1st argument', () => {
-    const input = ['aaa', 'bbb', [false, false]]
-    try {
-      getClass(input)
-    } catch (error) {
-      expect(error.message).toBe('Error type of 1st argument.')
-    }
   })
 })
