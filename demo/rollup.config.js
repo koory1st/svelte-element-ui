@@ -51,6 +51,7 @@ export default {
         style: projectRootDir + '/static/style',
         'theme-chalk': projectRootDir + '/static/theme-chalk',
         SvelteStyledSystem: __dirname + '/src/util/svelte_styled_system',
+        pkg: projectRootDir + '/packages',
       },
     }),
     svelte({

@@ -10,25 +10,26 @@ import alias from '@rollup/plugin-alias'
 import postcss from 'rollup-plugin-postcss'
 import path from 'path'
 import copy from 'rollup-plugin-copy'
+import del from 'rollup-plugin-delete'
 // import scss from 'rollup-plugin-scss'
 
 const production = !process.env.ROLLUP_WATCH
 const projectRootDir = path.resolve(__dirname)
 
 export default {
-  input: 'src/main.ts',
+  input: 'src/index.ts',
   output: {
     sourcemap: true,
     format: 'es',
     name: 'app',
-    file: 'dist/bundle.js',
+    file: 'lib/seu.es.js',
   },
   plugins: [
+    del({ targets: 'lib/*' }),
     alias({
       entries: {
         '@': projectRootDir + '/src',
         root: projectRootDir,
-        style: projectRootDir + '/static/style',
         'theme-chalk': projectRootDir + '/static/theme-chalk',
         pkg: projectRootDir + '/packages',
       },
@@ -39,7 +40,7 @@ export default {
       // we'll extract any component CSS out into
       // a separate file - better for performance
       css: css => {
-        css.write('dist/bundle.css', true)
+        css.write('seu.css', true)
       },
       preprocess: sveltePreprocess(),
     }),
@@ -57,7 +58,7 @@ export default {
     typescript({ sourceMap: !production }),
     // scss(),
     postcss({
-      extract: 'bundle.css',
+      extract: 'seu.css',
       minimize: true,
       sourceMap: !production,
     }),
@@ -65,7 +66,7 @@ export default {
       targets: [
         {
           src: ['static/fonts/element-icons.ttf', 'static/fonts/element-icons.woff'],
-          dest: 'dist/',
+          dest: 'lib/',
         },
       ],
     }),

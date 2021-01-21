@@ -1,3 +1,83 @@
+# 2021.01.21
+
+尝试将 test 改成 ts，结果报错：
+
+```
+error TS2593: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha` and then add `jest` or `mocha` to the types field in your tsconfig.
+```
+
+在网上找到的解决方案是,https://daveceddia.com/svelte-typescript-jest/
+
+tsconfig.json 里加入，确实可以解决问题。
+
+```json
+{
+  "compilerOptions": {
+    "types": ["jest"]
+  }
+}
+```
+
+但是 build 就开始报错了。大概原因应该是我把全局的唯一的一个 tsconfig 给改了，svelte 也需要这个 tsconfig，结果就报错了。
+那么就应该维持总体的 tsconfig 不动，改掉走 test 的时候的 tsconfig 就好了。至于怎么弄，又是一顿查。
+
+首先我用的是 testing-library，那么就查他，是关于 typescript 的，找到那个位置https://testing-library.com/docs/svelte-testing-library/setup。
+
+这里写是用 svelte-jester处理的，那么就继续找他。https://github.com/mihar-22/svelte-jester#typescript。关于ts部分，这里写查看ts-jest的文档。
+
+继续找ts-jest的文档：https://kulshekhar.github.io/ts-jest/docs/options。这里写了如何配置ts。
+
+其中有一处配置tsconfig的部分。https://kulshekhar.github.io/ts-jest/docs/options/tsconfig/
+
+```json
+// OR package.json
+{
+  // [...]
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "tsconfig.test.json"
+      }
+    }
+  }
+}
+```
+
+然后呢，我就新建了一个tsconfig文件，放到了\__test__文件夹下。内容呢就是：
+
+```json
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "types": ["jest"]
+  }
+}
+```
+
+这样呢，再test，build，就都没有问题了。
+
+
+
+# 2021.01.20
+
+昨天已经发布了第一版，还算成功。
+
+TODO:
+
+- [ ] 使用 ts 重写 test
+- [ ] readme 里添加使用方式
+- [x] 修改文件夹名
+
+# 2021.01.19
+
+TODO:
+
+- [x] 整理 dependencies
+- [x] 丰富 package 内容
+- [ ] github action
+- [ ] d.ts
+- [ ] 分别打包
+
 # 2021.01.16
 
 Today is satday, and it took me a half day to finish the checkbox's problems.
@@ -8,8 +88,6 @@ Today is satday, and it took me a half day to finish the checkbox's problems.
 
 # 2021.01.12
 
-TODO:
-
 - [x] All component's class logic
 - [x] checkbox group's max and min
 - [x] checkbox group's type
@@ -18,7 +96,7 @@ TODO:
 - [x] radio's focus test
 - [x]: radio's slot test
 - [ ] svelte-doc
-- [ ] release 0.0.1
+- [x] release 1.0.0
 
 # 2020.12.31
 
@@ -59,8 +137,8 @@ svelte 的 gitbub 上已经添加了\$\$slot 的支持,但是仍为发布,等待
 
 另外在做 tabindex 的时候发现不好用了,原因是自己的 keydown 事件逻辑写错了,导致 tab 被按下之后 也 prevent default 了,本应该只控制空格被按下的.
 
-- TODO: 感觉有必要把整体的样式控制加上,用 css 变量实现
-- TODO: radio 里还有好多的 size 样式,头疼
+- 感觉有必要把整体的样式控制加上,用 css 变量实现
+- radio 里还有好多的 size 样式,头疼
 
 # 2020.09.02
 
@@ -122,7 +200,7 @@ svelte 的 gitbub 上已经添加了\$\$slot 的支持,但是仍为发布,等待
 
 之后会重新实现一下其他的之前的组件.
 
-- TODO: [添加测试方式](https://testing-library.com/docs/svelte-testing-library/intro)
+- [添加测试方式](https://testing-library.com/docs/svelte-testing-library/intro)
 - DONE: [使用变量实现动态样式](https://css-tricks.com/what-i-like-about-writing-styles-with-svelte/)
 - DONE: 在本项目里使用 storybook(之前是吧 storybook 写到了另一个项目)
 - DONE: 在 storybook 里启用 knobs
