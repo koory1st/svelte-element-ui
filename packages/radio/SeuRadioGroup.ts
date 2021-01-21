@@ -1,1 +1,1 @@
-export { default } from '../radioGroup/SeuRadioGroup.svelte'
+export { default } from '../radio-group/SeuRadioGroup.svelte'
