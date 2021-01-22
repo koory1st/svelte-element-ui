@@ -23,11 +23,11 @@ tsconfig.json 里加入，确实可以解决问题。
 
 首先我用的是 testing-library，那么就查他，是关于 typescript 的，找到那个位置https://testing-library.com/docs/svelte-testing-library/setup。
 
-这里写是用 svelte-jester处理的，那么就继续找他。https://github.com/mihar-22/svelte-jester#typescript。关于ts部分，这里写查看ts-jest的文档。
+这里写是用 svelte-jester 处理的，那么就继续找他。https://github.com/mihar-22/svelte-jester#typescript。关于ts部分，这里写查看ts-jest的文档。
 
-继续找ts-jest的文档：https://kulshekhar.github.io/ts-jest/docs/options。这里写了如何配置ts。
+继续找 ts-jest 的文档：https://kulshekhar.github.io/ts-jest/docs/options。这里写了如何配置ts。
 
-其中有一处配置tsconfig的部分。https://kulshekhar.github.io/ts-jest/docs/options/tsconfig/
+其中有一处配置 tsconfig 的部分。https://kulshekhar.github.io/ts-jest/docs/options/tsconfig/
 
 ```json
 // OR package.json
@@ -43,7 +43,7 @@ tsconfig.json 里加入，确实可以解决问题。
 }
 ```
 
-然后呢，我就新建了一个tsconfig文件，放到了\__test__文件夹下。内容呢就是：
+然后呢，我就新建了一个 tsconfig 文件，放到了\_\_test\_\_文件夹下。内容呢就是：
 
 ```json
 {
@@ -54,9 +54,7 @@ tsconfig.json 里加入，确实可以解决问题。
 }
 ```
 
-这样呢，再test，build，就都没有问题了。
-
-
+这样呢，再 test，build，就都没有问题了。
 
 # 2021.01.20
 
@@ -64,7 +62,7 @@ tsconfig.json 里加入，确实可以解决问题。
 
 TODO:
 
-- [ ] 使用 ts 重写 test
+- [x] 使用 ts 重写 test
 - [ ] readme 里添加使用方式
 - [x] 修改文件夹名
 
@@ -75,7 +73,7 @@ TODO:
 - [x] 整理 dependencies
 - [x] 丰富 package 内容
 - [ ] github action
-- [ ] d.ts
+- [x] d.ts
 - [ ] 分别打包
 
 # 2021.01.16
@@ -94,7 +92,7 @@ Today is satday, and it took me a half day to finish the checkbox's problems.
 - [x] checkbox group and radio group's name to control arrow key
 - [x] checkbox's focus test
 - [x] radio's focus test
-- [x]: radio's slot test
+- [x] radio's slot test
 - [ ] svelte-doc
 - [x] release 1.0.0
 

@@ -7,9 +7,6 @@
   export let href = ''
   export let icon = ''
 
-  // $: if (!type) {
-  //   type = 'default'
-  // }
   $: classString = getClass([
     'seu-link',
     `seu-link--${type}`,
