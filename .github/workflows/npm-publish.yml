@@ -19,7 +19,7 @@ jobs:
         with: # All of theses inputs are optional
           tag_name: 'v%s'
           tag_message: 'v%s'
-          commit_pattern: "\(release\):"
+          commit_pattern: '(release):'
           # commit_user: "" # if not provided will extract from the repo
           # commit_email: "" # if not provided will extract from the repo
           # publish_with: "yarn" # options are `yarn`, `npm` or `skip`
