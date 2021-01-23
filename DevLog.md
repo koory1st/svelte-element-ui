@@ -63,7 +63,7 @@ tsconfig.json 里加入，确实可以解决问题。
 TODO:
 
 - [x] 使用 ts 重写 test
-- [ ] readme 里添加使用方式
+- [x] readme 里添加使用方式
 - [x] 修改文件夹名
 
 # 2021.01.19
