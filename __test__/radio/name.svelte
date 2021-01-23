@@ -4,5 +4,5 @@
 
 <div>
   test component
-  <SeuRadio name="test_name">label08</SeuRadio>
+  <SeuRadio label="1" name="test_name">label08</SeuRadio>
 </div>

@@ -16,7 +16,7 @@ exports[`disabled 1`] = `
       disabled=""
       tabindex="-1"
       type="radio"
-      value=""
+      value="1"
     />
      
     <span
@@ -39,7 +39,7 @@ exports[`disabled 1`] = `
       disabled=""
       tabindex="-1"
       type="radio"
-      value=""
+      value="2"
     />
      
     <span
