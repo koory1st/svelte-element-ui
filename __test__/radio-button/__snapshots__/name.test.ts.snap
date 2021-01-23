@@ -15,7 +15,7 @@ exports[`name 1`] = `
       name="test_name"
       tabindex="-1"
       type="radio"
-      value=""
+      value="1"
     />
      
     <span

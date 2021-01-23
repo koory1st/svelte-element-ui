@@ -4,5 +4,5 @@
 
 <div>
   test component
-  <SeuRadioButton name="test_name">label08</SeuRadioButton>
+  <SeuRadioButton label="1" name="test_name">label08</SeuRadioButton>
 </div>

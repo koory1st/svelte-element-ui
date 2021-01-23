@@ -4,6 +4,6 @@
 
 <div>
   test component
-  <SeuRadio disabled>label1</SeuRadio>
-  <SeuRadio disabled={true}>label2</SeuRadio>
+  <SeuRadio label="1" disabled>label1</SeuRadio>
+  <SeuRadio label="2" disabled={true}>label2</SeuRadio>
 </div>
