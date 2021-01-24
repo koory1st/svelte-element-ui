@@ -72,7 +72,7 @@ TODO:
 
 - [x] 整理 dependencies
 - [x] 丰富 package 内容
-- [ ] github action
+- [x] github action
 - [x] d.ts
 - [ ] 分别打包
 
