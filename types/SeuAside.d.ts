@@ -1,2 +1,3 @@
 import type { SvelteComponentTyped } from 'svelte'
-export class SeuAside extends SvelteComponentTyped<{ width?: string }, {}, { default?: { aSlot: string } }> {}
+import { IWidthProp } from './Types'
+export class SeuAside extends SvelteComponentTyped<IWidthProp> {}
