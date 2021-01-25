@@ -1,11 +1,6 @@
 import type { SvelteComponentTyped } from 'svelte'
-export class SeuRow extends SvelteComponentTyped<
-  {
-    gutter?: number
-    type?: string
-    justify?: string
-    align?: string
-  },
-  {},
-  { default?: { aSlot: string } }
-> {}
+import { IChangeEvent, IGutterProp, ITypeProp, IJustifyProp, IAlignProp } from './Types'
+
+interface IProps extends IGutterProp, ITypeProp, IJustifyProp, IAlignProp {}
+
+export class SeuRow extends SvelteComponentTyped<IProps> {}

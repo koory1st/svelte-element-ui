@@ -1,16 +1,26 @@
 import type { SvelteComponentTyped } from 'svelte'
-export class SeuButton extends SvelteComponentTyped<
-  {
-    type?: string
-    size?: string
-    icon?: string
-    nativeType?: string
-    disabled?: boolean
-    loading?: boolean
-    plain?: boolean
-    round?: boolean
-    circle?: boolean
-  },
-  { click?: MouseEvent },
-  { default?: { aSlot: string } }
-> {}
+import {
+  IClickEvent,
+  ITypeProp,
+  ISizeProp,
+  IIconProp,
+  INativeTypeProp,
+  IDisabledProp,
+  ILoadingProp,
+  IPlainProp,
+  IRoundProp,
+  ICircleProp,
+} from './Types'
+
+interface IProps
+  extends ITypeProp,
+    ISizeProp,
+    IIconProp,
+    INativeTypeProp,
+    IDisabledProp,
+    ILoadingProp,
+    IPlainProp,
+    IRoundProp,
+    ICircleProp {}
+
+export class SeuButton extends SvelteComponentTyped<IProps, IClickEvent> {}

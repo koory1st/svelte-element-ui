@@ -1,2 +1,3 @@
 import type { SvelteComponentTyped } from 'svelte'
-export class SeuFooter extends SvelteComponentTyped<{ height?: string }, {}, { default?: { aSlot: string } }> {}
+import { IHeightProp } from './Types'
+export class SeuFooter extends SvelteComponentTyped<IHeightProp> {}
