@@ -1,15 +1,24 @@
 import type { SvelteComponentTyped } from 'svelte'
-export class SeuCheckboxButton extends SvelteComponentTyped<
-  {
-    group?: Array<string | number | boolean>
-    value?: boolean | string | number
-    label?: string | number | boolean
-    disabled?: boolean
-    name?: string
-    size?: string
-    checkedValue?: string | number | boolean
-    uncheckedValue?: string | number | boolean
-  },
-  { change?: UIEvent },
-  { default?: { aSlot: string } }
-> {}
+import {
+  IChangeEvent,
+  IGroupProp,
+  IValueProp,
+  ILabelProp,
+  IDisabledProp,
+  INameProp,
+  ISizeProp,
+  ICheckedValueProp,
+  IUnCheckedValueProp,
+} from './Types'
+
+interface IProps
+  extends IGroupProp,
+    IValueProp,
+    ILabelProp,
+    IDisabledProp,
+    INameProp,
+    ISizeProp,
+    ICheckedValueProp,
+    IUnCheckedValueProp {}
+
+export class SeuCheckboxButton extends SvelteComponentTyped<IProps, IChangeEvent> {}

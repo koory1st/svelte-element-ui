@@ -1,13 +1,6 @@
 import type { SvelteComponentTyped } from 'svelte'
-export class SeuRadio extends SvelteComponentTyped<
-  {
-    value?: boolean | string | number
-    label?: string | number | boolean
-    disabled?: boolean
-    name?: string
-    border?: boolean
-    size?: string
-  },
-  { change?: UIEvent },
-  { default?: { aSlot: string } }
-> {}
+import { IChangeEvent, IValueProp, ILabelProp, IDisabledProp, INameProp, IBorderProp, ISizeProp } from './Types'
+
+interface IProps extends IValueProp, ILabelProp, IDisabledProp, INameProp, IBorderProp, ISizeProp {}
+
+export class SeuRadio extends SvelteComponentTyped<IProps, IChangeEvent> {}

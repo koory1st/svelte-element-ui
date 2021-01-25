@@ -1,12 +1,6 @@
 import type { SvelteComponentTyped } from 'svelte'
-export class SeuLink extends SvelteComponentTyped<
-  {
-    type?: string
-    underline?: boolean
-    disabled?: boolean
-    href?: string
-    icon?: string
-  },
-  { click: UIEvent },
-  { default?: { aSlot: string } }
-> {}
+import { IChangeEvent, ITypeProp, IUnderlineProp, IDisabledProp, IHrefProp, IIconProp } from './Types'
+
+interface IProps extends ITypeProp, IUnderlineProp, IDisabledProp, IHrefProp, IIconProp {}
+
+export class SeuLink extends SvelteComponentTyped<IProps, IChangeEvent> {}
