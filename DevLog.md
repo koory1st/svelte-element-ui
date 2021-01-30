@@ -1,3 +1,13 @@
+# 2021.01.28
+
+I'm developing the menu component right now, because there is no slide bar menu component for the site which I want to develop.
+
+# 2021.01.27
+
+Svelte 的 API 里有这么一句，关于 context 的，很有帮助。
+
+> Context is not inherently reactive. If you need reactive values in context then you can pass a store into context, which _will_ be reactive.
+
 # 2021.01.21
 
 尝试将 test 改成 ts，结果报错：

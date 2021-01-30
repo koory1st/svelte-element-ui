@@ -1,15 +1,17 @@
 <script lang="ts">
-  import SeuContainer from 'pkg/container'
-  import SeuButton from 'pkg/button'
-  import SeuRadio from 'pkg/radio'
+  import SeuMenu from 'pkg/menu'
+  import SeuMenuItem from 'pkg/menu-item'
   export let name: string
-  let value
 </script>
 
-<SeuContainer>
-  value:
-  {value}
-  <SeuRadio bind:value label="1">1</SeuRadio>
-  <SeuRadio bind:value label="2">2</SeuRadio>
-  <SeuButton>111</SeuButton>
-</SeuContainer>
+<SeuMenu defaultActive="789" mode="horizontal" on:select>
+  <SeuMenuItem index="1">111</SeuMenuItem>
+  <SeuMenuItem index="456">222</SeuMenuItem>
+  <SeuMenuItem index="789">222</SeuMenuItem>
+</SeuMenu>
+
+<SeuMenu backgroundColor="#545c64" textColor="#fff" mode="horizontal" activeTextColor="#ffd04b">
+  <SeuMenuItem index="123">111</SeuMenuItem>
+  <SeuMenuItem index="456">222</SeuMenuItem>
+  <SeuMenuItem index="789">222</SeuMenuItem>
+</SeuMenu>
