@@ -1,6 +1,6 @@
 <script type="ts">
   import { boolNull } from '../util/BooleanUtil'
-  import { getClass } from '../util/StringUtil'
+  import { array2string as a2s } from 'array2string'
   import { createEventDispatcher } from 'svelte'
   import { getContext } from 'svelte'
   import {
@@ -42,7 +42,7 @@
   $: innerChecked = getInnerCheckedByValue(isGroup, value, group, innerCheckedValue)
   $: isDisabled = getDisabled(disabled, isGroup, group, checkboxGroupMax, checkboxGroupMin, innerChecked)
 
-  $: classString = getClass([
+  $: classString = a2s([
     'seu-checkbox',
     [`seu-checkbox--${size}`, size && border],
     [`is-checked`, innerChecked],

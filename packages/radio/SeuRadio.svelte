@@ -1,5 +1,5 @@
 <script type="ts">
-  import { getClass } from '../util/StringUtil'
+  import { array2string as a2s } from 'array2string'
   import { createEventDispatcher } from 'svelte'
   import { getContext } from 'svelte'
   const dispatch = createEventDispatcher()
@@ -21,7 +21,7 @@
   $: isDisabled = disabled ? disabled : null
   $: tabindex = isDisabled || (radioGroupFlg && value !== label) ? -1 : 0
 
-  $: classString = getClass([
+  $: classString = a2s([
     'seu-radio',
     [`is-bordered`, border],
     [`seu-radio--${size}`, size && border],

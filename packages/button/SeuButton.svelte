@@ -1,5 +1,5 @@
 <script type="ts">
-  import { getClass } from '../util/StringUtil'
+  import { array2string as a2s } from 'array2string'
   export let type = 'default'
   export let size = ''
   export let icon = ''
@@ -10,7 +10,7 @@
   export let round = false
   export let circle = false
 
-  $: classString = getClass([
+  $: classString = a2s([
     'seu-button',
     `seu-button--${type || 'default'}`,
     [`is-disabled`, disabled],
