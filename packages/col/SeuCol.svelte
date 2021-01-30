@@ -1,6 +1,6 @@
 <script type="ts">
   import { getContext } from 'svelte'
-  import { styleArray2Str, getClass } from '../util/StringUtil'
+  import { array2string as a2s, array2StyleString as a2st } from 'array2string'
 
   export let span = 24
   export let offset = 0
@@ -14,7 +14,7 @@
 
   let gutter: number = getContext('seuRowGutter')
 
-  $: classString = getClass([
+  $: classString = a2s([
     'seu-col',
     [`seu-col-${span}`, Boolean(span)],
     [`seu-col-offset-${offset}`, Boolean(offset)],
@@ -27,15 +27,12 @@
     [`seu-col-xl-${xl}`, Boolean(xl)],
   ])
 
-  let styleList = []
-
-  $: if (gutter) {
-    const value = `${gutter / 2}px`
-    styleList.push(`padding-left:${value}`)
-    styleList.push(`padding-right:${value}`)
-  }
+  $: style = a2st([
+    ['padding-left', gutter / 2, Boolean(gutter)],
+    ['padding-right', gutter / 2, Boolean(gutter)],
+  ])
 </script>
 
-<div class={classString} style={styleArray2Str(styleList)}>
+<div class={classString} {style}>
   <slot />
 </div>

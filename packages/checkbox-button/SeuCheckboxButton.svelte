@@ -1,5 +1,5 @@
 <script type="ts">
-  import { getClass } from '../util/StringUtil'
+  import { array2string as a2s } from 'array2string'
   import {
     getDisabled,
     getInnerCheckedValue,
@@ -35,7 +35,7 @@
   $: innerChecked = getInnerCheckedByValue(isGroup, value, group, innerCheckedValue)
   $: isDisabled = getDisabled(disabled, isGroup, group, checkboxGroupMax, checkboxGroupMin, innerChecked)
 
-  $: classString = getClass([
+  $: classString = a2s([
     'seu-checkbox-button',
     [`seu-checkbox-button--${size}`, Boolean(size)],
     [`is-checked`, innerChecked],
