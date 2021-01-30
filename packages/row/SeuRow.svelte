@@ -1,6 +1,7 @@
 <script type="ts">
   import { setContext } from 'svelte'
-  import { styleArray2Str, getClass } from '../util/StringUtil'
+  import { styleArray2Str } from '../util/StringUtil'
+  import { array2string as a2s } from 'array2string'
   export let gutter = 0
   export let type = ''
   export let justify = 'start'
@@ -8,7 +9,7 @@
 
   setContext('seuRowGutter', gutter)
 
-  $: classString = getClass([
+  $: classString = a2s([
     'seu-row',
     [`is-justify-${justify}`, justify && justify !== 'start'],
     [`is-align-${align}`, align && align !== 'top'],

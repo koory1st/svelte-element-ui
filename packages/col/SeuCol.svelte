@@ -1,6 +1,7 @@
 <script type="ts">
   import { getContext } from 'svelte'
-  import { styleArray2Str, getClass } from '../util/StringUtil'
+  import { array2string as a2s } from 'array2string'
+  import { styleArray2Str } from '../util/StringUtil'
 
   export let span = 24
   export let offset = 0
@@ -14,7 +15,7 @@
 
   let gutter: number = getContext('seuRowGutter')
 
-  $: classString = getClass([
+  $: classString = a2s([
     'seu-col',
     [`seu-col-${span}`, Boolean(span)],
     [`seu-col-offset-${offset}`, Boolean(offset)],

@@ -1,5 +1,5 @@
 <script type="ts">
-  import { getClass } from '../util/StringUtil'
+  import { array2string as a2s } from 'array2string'
   import { createEventDispatcher } from 'svelte'
   export let type = 'default'
   export let underline = true
@@ -7,7 +7,7 @@
   export let href = ''
   export let icon = ''
 
-  $: classString = getClass([
+  $: classString = a2s([
     'seu-link',
     `seu-link--${type}`,
     [`is-disabled`, disabled],
