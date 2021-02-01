@@ -66,7 +66,7 @@ export default {
       targets: [
         {
           src: ['static/fonts/element-icons.ttf', 'static/fonts/element-icons.woff'],
-          dest: 'lib/',
+          dest: 'lib/fonts/',
         },
       ],
     }),

@@ -1,4 +1,4 @@
-import 'style/icon.css'
+import 'theme-chalk/src/icon.scss'
 
 export { default as SeuContainer } from '../packages/container'
 export { default as SeuMain } from '../packages/main'

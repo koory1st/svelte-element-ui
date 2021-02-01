@@ -10,6 +10,7 @@ import postcss from 'rollup-plugin-postcss'
 import css from 'rollup-plugin-css-only'
 import path from 'path'
 import copy from 'rollup-plugin-copy'
+import del from 'rollup-plugin-delete'
 
 const production = !process.env.ROLLUP_WATCH
 const projectRootDir = path.resolve(__dirname.split('/demo')[0])
@@ -41,19 +42,18 @@ export default {
     sourcemap: true,
     format: 'iife',
     name: 'app',
-    file: 'demo/public/build/bundle.js',
+    file: 'demo/public/lib/bundle.js',
   },
   plugins: [
     alias({
       entries: {
         '@': projectRootDir + '/src',
         root: projectRootDir,
-        style: projectRootDir + '/static/style',
         'theme-chalk': projectRootDir + '/static/theme-chalk',
-        SvelteStyledSystem: __dirname + '/src/util/svelte_styled_system',
         pkg: projectRootDir + '/packages',
       },
     }),
+    del({ targets: 'demo/public/lib/*' }),
     svelte({
       emitCss: true,
       preprocess: sveltePreprocess(),
@@ -89,7 +89,7 @@ export default {
       targets: [
         {
           src: ['static/fonts/element-icons.ttf', 'static/fonts/element-icons.woff'],
-          dest: 'demo/public/build',
+          dest: 'demo/public/lib/fonts',
         },
       ],
     }),
