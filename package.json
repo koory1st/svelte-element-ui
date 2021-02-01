@@ -8,6 +8,7 @@
     "test": "jest __test__",
     "demo-dev": "rollup -c demo/rollup.config.js -w",
     "demo-start": "sirv demo/public",
+    "demo-build": "rollup -c demo/rollup.config.js",
     "validate": "svelte-check",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs",

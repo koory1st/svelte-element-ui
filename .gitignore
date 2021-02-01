@@ -3,5 +3,5 @@ node_modules
 /dist/
 /.vscode
 /public/.
-/demo/public/build/
+/demo/public/lib/
 /lib/
