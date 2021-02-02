@@ -2,7 +2,8 @@
   import { array2string as a2s, array2StyleString as a2st } from 'array2string'
   import { setContext, createEventDispatcher } from 'svelte'
   import { writable } from 'svelte/store'
-  import { Menu, MenuItem } from '../util/MenuUtil'
+  import { Menu } from './obj/Menu'
+  import type { MenuItem } from './obj/MenuItem'
   const dispatch = createEventDispatcher()
 
   export let mode: string = 'vertical'
@@ -33,7 +34,7 @@
     }),
   )
   setContext('seu_menu_root_store', menuStore)
-  setContext('seu_menu_current_store', $menuStore)
+  setContext('seu_menu_current', $menuStore)
 
   setContext('seu_menu_root_select_func', (item: MenuItem): void => {
     dispatch('select', item)

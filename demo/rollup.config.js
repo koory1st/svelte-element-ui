@@ -88,7 +88,10 @@ export default {
     copy({
       targets: [
         {
-          src: ['static/fonts/element-icons.ttf', 'static/fonts/element-icons.woff'],
+          src: [
+            projectRootDir + '/static/fonts/element-icons.ttf',
+            projectRootDir + '/static/fonts/element-icons.woff',
+          ],
           dest: 'demo/public/lib/fonts',
         },
       ],
