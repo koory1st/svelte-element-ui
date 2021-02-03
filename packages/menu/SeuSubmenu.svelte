@@ -4,6 +4,8 @@
   import { array2string as a2s, array2StyleString as a2st } from 'array2string'
   import type { Menu } from './obj/Menu'
   import { Submenu } from './obj/Submenu'
+  import collapse from 'svelte-collapse'
+  import Portal from 'svelte-portal'
 
   export let index: string
   export let showTimeout: number = 300
@@ -36,7 +38,7 @@
     divTextColor = self.isActive ? rootProps.activeTextColor : rootProps.textColor
   }
 
-  let backgroundColor: string
+  $: backgroundColor = rootProps.backgroundColor
   function handleMouseenter(event, showTimeout = this.showTimeout) {
     if (!('ActiveXObject' in window) && event.type === 'focus' && !event.relatedTarget) {
       return
@@ -89,8 +91,7 @@
     ['color', divTextColor],
     ['background-color', backgroundColor],
   ])
-  $: inlineUlStyle = a2st([['display', 'none', !self.isOpened]])
-  $: popupUlStyle = a2st([['display', 'none', !self.isOpened]])
+  $: styleBackgroundColor = a2st([['background-color', $rootMenuStore.props.backgroundColor]])
 
   function handleClick() {}
   function handleTitleMouseenter() {}
@@ -117,20 +118,21 @@
     <i class={iconClass} />
   </div>
   {#if $rootMenuStore.isMenuPopup}
-    <transition>
+    <Portal target="body">
       <div
+        use:collapse={{ open: self.isOpened }}
         class={popupDivClass}
         on:mouseenter={$event => handleMouseenter($event, 100)}
         on:mouseleave={() => handleMouseleave(true)}
         on:focus={$event => handleMouseenter($event, 100)}
       >
-        <ul role="menu" class={popupUlClass} style={popupUlStyle}>
+        <ul role="menu" class={popupUlClass} style={styleBackgroundColor}>
           <slot />
         </ul>
       </div>
-    </transition>
+    </Portal>
   {:else}
-    <ul role="menu" class="seu-menu seu-menu--inline" style={inlineUlStyle}>
+    <ul role="menu" class="seu-menu seu-menu--inline" style={styleBackgroundColor}>
       <slot />
     </ul>
   {/if}

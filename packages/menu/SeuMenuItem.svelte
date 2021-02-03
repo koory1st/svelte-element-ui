@@ -28,7 +28,7 @@
     dispatch('select', self)
   }
 
-  let backgroundColor: string
+  $: backgroundColor = rootProps.backgroundColor
   function mouseEnterHandler() {
     if (rootProps.mode === 'horizontal' && !rootProps.backgroundColor) {
       return
