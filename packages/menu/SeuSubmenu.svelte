@@ -3,9 +3,10 @@
   import type { Writable } from 'svelte/store'
   import { array2string as a2s, array2StyleString as a2st } from 'array2string'
   import type { Menu } from './obj/Menu'
-  import { Submenu } from './obj/Submenu'
+  import { Submenu, MenuDirectionType } from './obj/Submenu'
   import collapse from 'svelte-collapse'
   import Portal from 'svelte-portal'
+  import { createPopperActions } from '../util/SveltePopperJs'
 
   export let index: string
   export let showTimeout: number = 300
@@ -39,7 +40,7 @@
   }
 
   $: backgroundColor = rootProps.backgroundColor
-  function handleMouseenter(event, showTimeout = this.showTimeout) {
+  function handleMouseEnter(event, showTimeout = this.showTimeout) {
     if (!('ActiveXObject' in window) && event.type === 'focus' && !event.relatedTarget) {
       return
     }
@@ -48,27 +49,33 @@
     }
     backgroundColor = $rootMenuStore.hoverBackground
 
+    // set hoveredSubMenu
+    $rootMenuStore.setHoveredSubMenu(self)
+
     clearTimeout(timeout)
     timeout = setTimeout(() => {
       $rootMenuStore.openMenu(self)
       self = self
     }, showTimeout)
   }
-  function handleMouseleave(deepDispatch = false) {
+
+  function handleMouseLeave() {
     if (rootProps.mode === 'horizontal' && !rootProps.backgroundColor) {
       return
     }
     backgroundColor = rootProps.backgroundColor
 
+    // clear hoveredSubMenu
+    $rootMenuStore.clearHoveredSubMenu()
+
     clearTimeout(timeout)
     timeout = setTimeout(() => {
       $rootMenuStore.closeMenu(self)
       self = self
-    }, showTimeout)
+    }, hideTimeout)
   }
 
-  let isFirstLevel: boolean
-  $: currentPlacement = rootProps.mode === 'horizontal' && isFirstLevel ? 'bottom-start' : 'right-start'
+  $: currentPlacement = rootProps.mode === 'horizontal' && self.isFirstLevel ? 'bottom-start' : 'right-start'
 
   $: liClass = a2s([
     'seu-submenu',
@@ -77,25 +84,65 @@
     ['is-disabled', disabled],
   ])
 
-  const submenuTitleIcon =
-    ($rootMenuStore.props.mode === 'horizontal' && isFirstLevel) ||
-    ($rootMenuStore.props.mode === 'vertical' && !$rootMenuStore.props.collapse)
-      ? 'seu-icon-arrow-down'
-      : 'seu-icon-arrow-right'
+  $: submenuTitleIcon = self.direction === MenuDirectionType.vertical ? 'seu-icon-arrow-down' : 'seu-icon-arrow-right'
 
   $: iconClass = a2s(['seu-submenu__icon-arrow', submenuTitleIcon])
   $: popupDivClass = a2s([`seu-menu--${rootProps.mode}`, popperClass])
   $: popupUlClass = a2s(['seu-menu seu-menu--popup', `seu-menu--popup-${currentPlacement}`])
 
+  let divBackgroundColor: string = $rootMenuStore.props.backgroundColor
   $: divStyle = a2st([
     ['color', divTextColor],
-    ['background-color', backgroundColor],
+    ['background-color', divBackgroundColor],
   ])
   $: styleBackgroundColor = a2st([['background-color', $rootMenuStore.props.backgroundColor]])
 
   function handleClick() {}
-  function handleTitleMouseenter() {}
-  function handleTitleMouseleave() {}
+  function handleTitleMouseenter() {
+    if ($rootMenuStore.props.mode === 'horizontal' && !$rootMenuStore.props.backgroundColor) {
+      return
+    }
+    divBackgroundColor = $rootMenuStore.hoverBackground
+  }
+  function handleTitleMouseleave() {
+    if ($rootMenuStore.props.mode === 'horizontal' && !$rootMenuStore.props.backgroundColor) {
+      return
+    }
+    divBackgroundColor = $rootMenuStore.props.backgroundColor
+  }
+
+  let popperRef: (
+    node: HTMLElement,
+  ) => {
+    destroy: () => void
+  }
+
+  let popperContent: (
+    node: HTMLElement,
+    initOptions?: any,
+  ) => {
+    update: (newOptions: any) => void
+    destroy: () => void
+  }
+  let popperOptions: { modifiers: {}[] }
+
+  $: if ($rootMenuStore.isMenuPopup) {
+    const popperActions = createPopperActions({
+      placement: self.direction === MenuDirectionType.vertical ? 'bottom-start' : 'right-start',
+    })
+    popperRef = popperActions.referenceAction
+    popperContent = popperActions.contentAction
+    popperOptions = {
+      modifiers: [
+        {
+          name: 'flip',
+          options: {
+            fallbackPlacements: [self.direction === MenuDirectionType.vertical ? 'top-start' : 'right-end'],
+          },
+        },
+      ],
+    }
+  }
 </script>
 
 <li
@@ -103,35 +150,48 @@
   role="menuitem"
   aria-haspopup="true"
   aria-expanded={self.isOpened}
-  on:mouseenter={handleMouseenter}
-  on:mouseleave={() => handleMouseleave()}
-  on:focus={handleMouseenter}
+  on:mouseenter={handleMouseEnter}
+  on:mouseleave={() => handleMouseLeave()}
+  on:focus={handleMouseEnter}
 >
-  <div
-    class="seu-submenu__title"
-    style={divStyle}
-    on:click={handleClick}
-    on:mouseenter={handleTitleMouseenter}
-    on:mouseleave={handleTitleMouseleave}
-  >
-    <slot name="title" />
-    <i class={iconClass} />
-  </div>
   {#if $rootMenuStore.isMenuPopup}
+    <div
+      use:popperRef
+      class="seu-submenu__title"
+      style={divStyle}
+      on:click={handleClick}
+      on:mouseenter={handleTitleMouseenter}
+      on:mouseleave={handleTitleMouseleave}
+    >
+      <slot name="title" />
+      <i class={iconClass} />
+    </div>
     <Portal target="body">
-      <div
-        use:collapse={{ open: self.isOpened }}
-        class={popupDivClass}
-        on:mouseenter={$event => handleMouseenter($event, 100)}
-        on:mouseleave={() => handleMouseleave(true)}
-        on:focus={$event => handleMouseenter($event, 100)}
-      >
-        <ul role="menu" class={popupUlClass} style={styleBackgroundColor}>
-          <slot />
-        </ul>
+      <div use:popperContent={popperOptions}>
+        <div
+          use:collapse={{ open: self.isOpened }}
+          class={popupDivClass}
+          on:mouseenter={$event => handleMouseEnter($event, 100)}
+          on:mouseleave={handleMouseLeave}
+          on:focus={$event => handleMouseEnter($event, 100)}
+        >
+          <ul role="menu" class={popupUlClass} style={styleBackgroundColor}>
+            <slot />
+          </ul>
+        </div>
       </div>
     </Portal>
   {:else}
+    <div
+      class="seu-submenu__title"
+      style={divStyle}
+      on:click={handleClick}
+      on:mouseenter={handleTitleMouseenter}
+      on:mouseleave={handleTitleMouseleave}
+    >
+      <slot name="title" />
+      <i class={iconClass} />
+    </div>
     <ul role="menu" class="seu-menu seu-menu--inline" style={styleBackgroundColor}>
       <slot />
     </ul>

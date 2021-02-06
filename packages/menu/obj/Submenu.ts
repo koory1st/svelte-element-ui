@@ -3,6 +3,11 @@ import type { MenuItem } from './MenuItem'
 import { SeuPropValidateError } from '../../util/ErrorUtil'
 import { addParent } from './MenuUtil'
 
+export enum MenuDirectionType {
+  horizontal,
+  vertical,
+}
+
 export class SubmenuProps {
   index?: string
   disabled?: boolean
@@ -27,6 +32,25 @@ export class Submenu {
     }
 
     return this.items.includes(this.root.activeItem)
+  }
+
+  get direction(): MenuDirectionType {
+    // menu is horizontal, and the first submenu is vertical
+    if (!this.parents || this.parents.length === 0) {
+      if (this.root.props.mode === 'horizontal') {
+        return MenuDirectionType.vertical
+      }
+    }
+
+    // all others submenu is horizontal
+    return MenuDirectionType.horizontal
+  }
+
+  get isFirstLevel(): boolean {
+    if (this.parents && this.parents.length > 0) {
+      return false
+    }
+    return true
   }
 
   public constructor(props: SubmenuProps, parent: Menu | Submenu, root: Menu) {
