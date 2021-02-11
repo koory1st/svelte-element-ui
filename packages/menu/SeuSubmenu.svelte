@@ -34,13 +34,15 @@
 
   parent.addItem(self)
 
+  $: isActive = $rootMenuStore.activeItem && $rootMenuStore.activeItem.parents.includes(self)
+
   let divTextColor: string
   let borderBottomColor: string
   $: if (rootProps.mode !== 'horizontal') {
     divTextColor = rootProps.textColor
-    borderBottomColor = self.isActive ? rootProps.activeTextColor : 'transparent'
+    borderBottomColor = isActive ? rootProps.activeTextColor : 'transparent'
   } else {
-    divTextColor = self.isActive ? rootProps.activeTextColor : rootProps.textColor
+    divTextColor = isActive ? rootProps.activeTextColor : rootProps.textColor
   }
 
   $: backgroundColor = rootProps.backgroundColor
@@ -79,7 +81,7 @@
 
   $: currentPlacement = rootProps.mode === 'horizontal' && self.isFirstLevel ? 'bottom-start' : 'right-start'
 
-  $: liClass = a2s(['seu-submenu', ['is-active', self.isActive], ['is-opened', isOpened], ['is-disabled', disabled]])
+  $: liClass = a2s(['seu-submenu', ['is-active', isActive], ['is-opened', isOpened], ['is-disabled', disabled]])
 
   $: submenuTitleIcon = self.direction === MenuDirectionType.vertical ? 'seu-icon-arrow-down' : 'seu-icon-arrow-right'
 
