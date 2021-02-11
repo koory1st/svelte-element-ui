@@ -51,7 +51,7 @@ export class Menu {
     }
   }
 
-  private setDefaultActive(item: MenuItem): void {
+  public setDefaultActive(item: MenuItem): void {
     if (!this.props.defaultActive) {
       return
     }

@@ -3,13 +3,13 @@
   export let name: string
 </script>
 
-<SeuMenu defaultActive="789" mode="horizontal" on:select>
+<SeuMenu defaultActive="456" mode="horizontal" on:select>
   <SeuMenuItem index="1">111</SeuMenuItem>
   <SeuMenuItem index="456">222</SeuMenuItem>
   <SeuMenuItem index="789">222</SeuMenuItem>
 </SeuMenu>
 
-<SeuMenu backgroundColor="#545c64" textColor="#fff" mode="horizontal" activeTextColor="#ffd04b">
+<SeuMenu backgroundColor="#545c64" textColor="#fff" defaultActive="2-4-4-1" mode="horizontal" activeTextColor="#ffd04b">
   <SeuMenuItem index="1">处理中心</SeuMenuItem>
   <SeuSubmenu index="2">
     <span slot="title">我的工作台</span>

@@ -33,6 +33,7 @@
   setContext('seu_menu_current', self)
 
   parent.addItem(self)
+  $rootMenuStore = $rootMenuStore
 
   $: isActive = $rootMenuStore.activeItem && $rootMenuStore.activeItem.parents.includes(self)
 

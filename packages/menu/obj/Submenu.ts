@@ -1,5 +1,5 @@
 import type { Menu } from './Menu'
-import type { MenuItem } from './MenuItem'
+import { MenuItem } from './MenuItem'
 import { SeuPropValidateError } from '../../util/ErrorUtil'
 import { addParent } from './MenuUtil'
 
@@ -69,6 +69,11 @@ export class Submenu {
   public addItem(item: MenuItem | Submenu): void {
     this.isDuplicate(item)
     this.items.push(item)
+
+    if (item instanceof MenuItem) {
+      // set default active
+      this.root.setDefaultActive(item)
+    }
   }
 
   private isDuplicate(item: MenuItem | Submenu): void {
