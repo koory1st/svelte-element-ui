@@ -4,7 +4,7 @@
   import { array2string as a2s, array2StyleString as a2st } from 'array2string'
   import type { Menu } from './obj/Menu'
   import { MenuItem } from './obj/MenuItem'
-  import type { Submenu } from './obj/Submenu'
+  import { Submenu } from './obj/Submenu'
   const dispatch = createEventDispatcher()
 
   export let disabled: boolean
@@ -30,6 +30,11 @@
 
   $: backgroundColor = rootProps.backgroundColor
   function mouseEnterHandler() {
+    if (parent instanceof Submenu) {
+      // set parent submenu hovered
+      parent.isHovered = true
+    }
+
     if (rootProps.mode === 'horizontal' && !rootProps.backgroundColor) {
       return
     }

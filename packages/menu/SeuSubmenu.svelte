@@ -20,6 +20,10 @@
   let rootMenuStore: Writable<Menu> = getContext('seu_menu_root_store')
   let parent: Menu | Submenu = getContext('seu_menu_current')
   let rootProps = $rootMenuStore.props
+  let isOpened = false
+  $: {
+    isOpened = $rootMenuStore.openedMenus.includes(self)
+  }
 
   let self: Submenu = new Submenu(
     { index, disabled, showTimeout, popperClass, popperAppendToBody },
@@ -49,13 +53,12 @@
     }
     backgroundColor = $rootMenuStore.hoverBackground
 
-    // set hoveredSubMenu
-    $rootMenuStore.setHoveredSubMenu(self)
+    self.isHovered = true
 
     clearTimeout(timeout)
     timeout = setTimeout(() => {
       $rootMenuStore.openMenu(self)
-      self = self
+      $rootMenuStore = $rootMenuStore
     }, showTimeout)
   }
 
@@ -65,24 +68,18 @@
     }
     backgroundColor = rootProps.backgroundColor
 
-    // clear hoveredSubMenu
-    $rootMenuStore.clearHoveredSubMenu()
+    self.isHovered = false
 
     clearTimeout(timeout)
     timeout = setTimeout(() => {
       $rootMenuStore.closeMenu(self)
-      self = self
+      $rootMenuStore = $rootMenuStore
     }, hideTimeout)
   }
 
   $: currentPlacement = rootProps.mode === 'horizontal' && self.isFirstLevel ? 'bottom-start' : 'right-start'
 
-  $: liClass = a2s([
-    'seu-submenu',
-    ['is-active', self.isActive],
-    ['is-opened', self.isOpened],
-    ['is-disabled', disabled],
-  ])
+  $: liClass = a2s(['seu-submenu', ['is-active', self.isActive], ['is-opened', isOpened], ['is-disabled', disabled]])
 
   $: submenuTitleIcon = self.direction === MenuDirectionType.vertical ? 'seu-icon-arrow-down' : 'seu-icon-arrow-right'
 
@@ -149,7 +146,7 @@
   class={liClass}
   role="menuitem"
   aria-haspopup="true"
-  aria-expanded={self.isOpened}
+  aria-expanded={isOpened}
   on:mouseenter={handleMouseEnter}
   on:mouseleave={() => handleMouseLeave()}
   on:focus={handleMouseEnter}
@@ -169,7 +166,7 @@
     <Portal target="body">
       <div use:popperContent={popperOptions}>
         <div
-          use:collapse={{ open: self.isOpened }}
+          use:collapse={{ open: isOpened }}
           class={popupDivClass}
           on:mouseenter={$event => handleMouseEnter($event, 100)}
           on:mouseleave={handleMouseLeave}

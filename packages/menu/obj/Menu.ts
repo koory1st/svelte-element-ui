@@ -23,12 +23,10 @@ export class Menu {
   }
   props: MenuProps
   private items: Array<MenuItem | Submenu> = []
-  submenus: Submenu[]
+  allSubmenus: Submenu[] = []
 
   activeItem: MenuItem
   openedMenus: Submenu[] = []
-
-  private hoveredSubMenu: Submenu | null
 
   get hoverBackground(): string {
     return this.props.backgroundColor ? mixColor(this.props.backgroundColor, 0.2) : null
@@ -94,9 +92,12 @@ export class Menu {
   }
 
   public closeMenu(submenu: Submenu): void {
-    // if the close menu is  the hovered submenu's parents
-    // do nothing, still open
-    if (this.hoveredSubMenu && this.hoveredSubMenu.parents && this.hoveredSubMenu.parents.includes(submenu)) {
+    if (submenu.isHovered) {
+      return
+    }
+
+    // if children is hovered, then do nothing
+    if (submenu.children.find(v => v.isHovered)) {
       return
     }
 
@@ -104,21 +105,9 @@ export class Menu {
     if (i !== -1) {
       this.openedMenus.splice(i, 1)
     }
-  }
 
-  public getHoveredSubMenu(): Submenu | null {
-    return this.hoveredSubMenu
-  }
-
-  public setHoveredSubMenu(subMenu: Submenu) {
-    if (this.props.menuTrigger !== 'hover') {
-      return
-    }
-    this.hoveredSubMenu = subMenu
-  }
-
-  public clearHoveredSubMenu(): void {
-    this.hoveredSubMenu = null
+    // and try to close other opened menu
+    this.openedMenus.forEach(v => this.closeMenu(v))
   }
 
   private checkDuplicate(item: MenuItem | Submenu): void {

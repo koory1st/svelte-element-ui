@@ -19,11 +19,16 @@ export class SubmenuProps {
 
 export class Submenu {
   props: SubmenuProps
-  parents: Submenu[]
+  parents: Submenu[] = []
   root: Menu
+  isHovered: boolean = false
   private items: (MenuItem | Submenu)[] = []
   get isOpened(): boolean {
     return this.root.openedMenus.includes(this)
+  }
+
+  get children(): Submenu[] {
+    return this.root.allSubmenus.filter(v => v.parents.includes(this))
   }
 
   get isActive(): boolean {
@@ -57,6 +62,8 @@ export class Submenu {
     this.props = props
     this.root = root
     addParent(this, parent)
+
+    this.root.allSubmenus.push(this)
   }
 
   public addItem(item: MenuItem | Submenu): void {
