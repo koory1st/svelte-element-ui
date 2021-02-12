@@ -42,9 +42,7 @@ export class Submenu {
   get direction(): MenuDirectionType {
     // menu is horizontal, and the first submenu is vertical
     if (!this.parents || this.parents.length === 0) {
-      if (this.root.props.mode === 'horizontal') {
-        return MenuDirectionType.vertical
-      }
+      return MenuDirectionType.vertical
     }
 
     // all others submenu is horizontal
