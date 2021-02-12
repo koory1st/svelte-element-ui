@@ -3,6 +3,11 @@ import { mixColor } from '../../util/ColorUtil'
 import { MenuItem } from './MenuItem'
 import type { Submenu } from './Submenu'
 
+export enum ActualMenuTrigger {
+  hover,
+  click,
+}
+
 export class MenuProps {
   mode?: string = 'vertical'
   collapse?: boolean = false
@@ -28,6 +33,20 @@ export class Menu {
 
   activeItem: MenuItem
   openedMenus: Submenu[] = []
+
+  get actualMenuTrigger(): ActualMenuTrigger {
+    // vertical: only click trigger
+    if (this.props.mode !== 'horizontal') {
+      return ActualMenuTrigger.click
+    }
+
+    // horizontal: set by the trigger props
+    if (this.props.menuTrigger === 'hover') {
+      return ActualMenuTrigger.hover
+    }
+
+    return ActualMenuTrigger.click
+  }
 
   get hoverBackground(): string {
     return this.props.backgroundColor ? mixColor(this.props.backgroundColor, 0.2) : null

@@ -2,7 +2,7 @@
   import { getContext, setContext, createEventDispatcher } from 'svelte'
   import type { Writable } from 'svelte/store'
   import { array2string as a2s, array2StyleString as a2st } from 'array2string'
-  import type { Menu } from './obj/Menu'
+  import { ActualMenuTrigger, Menu } from './obj/Menu'
   import { Submenu, MenuDirectionType } from './obj/Submenu'
   import collapse from 'svelte-collapse'
   import Portal from 'svelte-portal'
@@ -56,6 +56,9 @@
     }
     backgroundColor = $rootMenuStore.hoverBackground
 
+    if ($rootMenuStore.actualMenuTrigger === ActualMenuTrigger.click) {
+      return
+    }
     self.isHovered = true
 
     clearTimeout(timeout)
@@ -70,6 +73,10 @@
       return
     }
     backgroundColor = rootProps.backgroundColor
+
+    if ($rootMenuStore.actualMenuTrigger === ActualMenuTrigger.click) {
+      return
+    }
 
     self.isHovered = false
 
@@ -194,7 +201,7 @@
       <slot name="title" />
       <i class={iconClass} />
     </div>
-    <ul role="menu" class="seu-menu seu-menu--inline" style={styleBackgroundColor}>
+    <ul use:collapse={{ open: isOpened }} role="menu" class="seu-menu seu-menu--inline" style={styleBackgroundColor}>
       <slot />
     </ul>
   {/if}
