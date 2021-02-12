@@ -15,3 +15,18 @@ export function addParent(item: Submenu | MenuItem, parent: Submenu | Menu) {
     item.parents = [parent]
   }
 }
+
+export function getPadding(parent: Menu | Submenu): number | null {
+  if (parent instanceof Menu) {
+    return 20
+  }
+
+  if (parent.root.props.mode !== 'vertical') {
+    return null
+  }
+  if (parent.root.props.collapse) {
+    return 20
+  }
+
+  return 20 * (1 + 1 + parent.parents.length)
+}

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { SeuMenu, SeuMenuItem, SeuSubmenu, SeuRow, SeuCol } from '@/index'
+  import { SeuMenu, SeuMenuItem, SeuSubmenu, SeuRow, SeuCol, SeuMenuItemGroup } from '@/index'
   export let name: string
 
   function handleOpen(key, keyPath) {
@@ -11,6 +11,7 @@
   }
 </script>
 
+<!--
 <SeuMenu backgroundColor="#545c64" textColor="#fff" defaultActive="2-4-4-1" mode="horizontal" activeTextColor="#ffd04b">
   <SeuMenuItem index="1">处理中心</SeuMenuItem>
   <SeuSubmenu index="2">
@@ -33,7 +34,7 @@
   </SeuSubmenu>
   <SeuMenuItem index="3" disabled>消息中心</SeuMenuItem>
   <SeuMenuItem index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></SeuMenuItem>
-</SeuMenu>
+</SeuMenu> -->
 
 <SeuRow>
   <SeuCol span="12">
@@ -43,6 +44,9 @@
           <i class="seu-icon-location" />
           <span>导航一</span>
         </div>
+        <SeuMenuItemGroup>
+          <span slot="title">123</span>
+        </SeuMenuItemGroup>
         <SeuMenuItem index="456">222</SeuMenuItem>
       </SeuSubmenu>
       <SeuMenuItem index="789">222</SeuMenuItem>

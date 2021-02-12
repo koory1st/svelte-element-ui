@@ -5,6 +5,7 @@
   import type { Menu } from './obj/Menu'
   import { MenuItem } from './obj/MenuItem'
   import { Submenu } from './obj/Submenu'
+  import { getPadding } from './obj/MenuUtil'
   const dispatch = createEventDispatcher()
 
   export let disabled: boolean
@@ -59,6 +60,7 @@
     ['color', color],
     ['background-color', backgroundColor],
     ['border-bottom-color', borderBottomColor],
+    ['padding-left', getPadding(parent)],
   ])
 </script>
 

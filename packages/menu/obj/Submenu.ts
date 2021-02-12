@@ -23,6 +23,17 @@ export class Submenu {
   root: Menu
   isHovered: boolean = false
   private items: (MenuItem | Submenu)[] = []
+
+  get padding(): number | null {
+    if (this.root.props.mode === 'vertical') {
+      return null
+    }
+    if (this.root.props.collapse) {
+      return 20
+    }
+    return 20 * (1 + this.parents.length)
+  }
+
   get isOpened(): boolean {
     return this.root.openedMenus.includes(this)
   }
