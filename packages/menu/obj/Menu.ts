@@ -15,6 +15,7 @@ export class MenuProps {
   menuTrigger?: string = 'hover'
   router?: boolean = false
   collapseTransition?: boolean = true
+  popperZIndex?: number = 1000
 }
 
 export class Menu {

@@ -17,6 +17,7 @@
   export let textColor: string
   export let activeTextColor: string
   export let collapseTransition: boolean = true
+  export let popperZIndex: number = 1000
 
   const menuStore = writable(
     new Menu({
@@ -31,6 +32,7 @@
       menuTrigger,
       router,
       collapseTransition,
+      popperZIndex,
     }),
   )
   setContext('seu_menu_root_store', menuStore)

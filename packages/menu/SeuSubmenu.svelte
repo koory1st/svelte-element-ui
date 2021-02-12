@@ -1,5 +1,5 @@
 <script type="ts">
-  import { getContext, setContext, createEventDispatcher, onMount } from 'svelte'
+  import { getContext, setContext, createEventDispatcher } from 'svelte'
   import type { Writable } from 'svelte/store'
   import { array2string as a2s, array2StyleString as a2st } from 'array2string'
   import type { Menu } from './obj/Menu'
@@ -97,6 +97,8 @@
   ])
   $: styleBackgroundColor = a2st([['background-color', $rootMenuStore.props.backgroundColor]])
 
+  let divPopper = a2st([['z-index', $rootMenuStore.props.popperZIndex]])
+
   function handleClick() {}
   function handleTitleMouseenter() {
     if ($rootMenuStore.props.mode === 'horizontal' && !$rootMenuStore.props.backgroundColor) {
@@ -167,7 +169,7 @@
       <i class={iconClass} />
     </div>
     <Portal target="body">
-      <div use:popperContent={popperOptions}>
+      <div use:popperContent={popperOptions} style={divPopper}>
         <div
           use:collapse={{ open: isOpened }}
           class={popupDivClass}
