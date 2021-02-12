@@ -2,7 +2,7 @@
   import { getContext, setContext, createEventDispatcher } from 'svelte'
   import type { Writable } from 'svelte/store'
   import { array2string as a2s, array2StyleString as a2st } from 'array2string'
-  import { ActualMenuTrigger, Menu } from './obj/Menu'
+  import { ActualMenuTrigger as ActualMenuTriggerType, Menu } from './obj/Menu'
   import { Submenu, MenuDirectionType } from './obj/Submenu'
   import collapse from 'svelte-collapse'
   import Portal from 'svelte-portal'
@@ -47,7 +47,37 @@
   }
 
   $: backgroundColor = rootProps.backgroundColor
-  function handleMouseEnter(event, showTimeout = this.showTimeout) {
+  /**
+   * title and menu part mouse enter
+   * @param event
+   * @param showTimeout
+   */
+  function handleMouseEnter(event: MouseEvent | FocusEvent, showTimeout = this.showTimeout) {
+    // set the mouse enter background
+    setMouseEnterBackground(event)
+
+    // if the trigger type is click, then stop
+    if ($rootMenuStore.actualMenuTrigger === ActualMenuTriggerType.click) {
+      return
+    }
+
+    // if the trigger type is hover, try to open the menu
+    tryOpenMenu(showTimeout)
+  }
+
+  function handleMouseLeave() {
+    // set the mouse leave background
+    setMouseLeaveBackground()
+
+    if ($rootMenuStore.actualMenuTrigger === ActualMenuTriggerType.click) {
+      return
+    }
+
+    tryCloseMenu(hideTimeout)
+  }
+
+  function setMouseEnterBackground(event: MouseEvent | FocusEvent) {
+    /** set the mouse enter background start */
     if (!('ActiveXObject' in window) && event.type === 'focus' && !event.relatedTarget) {
       return
     }
@@ -55,10 +85,16 @@
       return
     }
     backgroundColor = $rootMenuStore.hoverBackground
+  }
 
-    if ($rootMenuStore.actualMenuTrigger === ActualMenuTrigger.click) {
+  function setMouseLeaveBackground() {
+    if (rootProps.mode === 'horizontal' && !rootProps.backgroundColor) {
       return
     }
+    backgroundColor = rootProps.backgroundColor
+  }
+
+  function tryOpenMenu(showTimeout: number) {
     self.isHovered = true
 
     clearTimeout(timeout)
@@ -68,16 +104,7 @@
     }, showTimeout)
   }
 
-  function handleMouseLeave() {
-    if (rootProps.mode === 'horizontal' && !rootProps.backgroundColor) {
-      return
-    }
-    backgroundColor = rootProps.backgroundColor
-
-    if ($rootMenuStore.actualMenuTrigger === ActualMenuTrigger.click) {
-      return
-    }
-
+  function tryCloseMenu(hideTimeout: number) {
     self.isHovered = false
 
     clearTimeout(timeout)
@@ -106,7 +133,13 @@
 
   let divPopper = a2st([['z-index', $rootMenuStore.props.popperZIndex]])
 
-  function handleClick() {}
+  function handleClick() {
+    if (!self.isOpened) {
+      tryOpenMenu(0)
+      return
+    }
+    tryCloseMenu(0)
+  }
   function handleTitleMouseenter() {
     if ($rootMenuStore.props.mode === 'horizontal' && !$rootMenuStore.props.backgroundColor) {
       return
