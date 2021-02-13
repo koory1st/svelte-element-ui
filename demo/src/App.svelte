@@ -1,5 +1,6 @@
 <script lang="ts">
   import { SeuMenu, SeuMenuItem, SeuSubmenu, SeuRow, SeuCol, SeuMenuItemGroup } from '@/index'
+  import { MenuItem } from '../../packages/menu/obj/MenuItem'
   export let name: string
 
   function handleOpen(key, keyPath) {
@@ -45,11 +46,71 @@
           <span>导航一</span>
         </div>
         <SeuMenuItemGroup>
-          <span slot="title">123</span>
+          <span slot="title">分组一</span>
+          <SeuMenuItem index="1-1">选项1</SeuMenuItem>
+          <SeuMenuItem index="1-2">选项2</SeuMenuItem>
         </SeuMenuItemGroup>
-        <SeuMenuItem index="456">222</SeuMenuItem>
+        <SeuMenuItemGroup title="分组2">
+          <SeuMenuItem index="1-3">选项3</SeuMenuItem>
+        </SeuMenuItemGroup>
+        <SeuSubmenu index="1-4">
+          <span slot="title">选项4</span>
+          <SeuMenuItem index="1-4-1">选项1</SeuMenuItem>
+        </SeuSubmenu>
       </SeuSubmenu>
-      <SeuMenuItem index="789">222</SeuMenuItem>
+      <SeuMenuItem index="2">
+        <i class="seu-icon-menu" />
+        <span slot="title">导航二</span>
+      </SeuMenuItem>
+      <SeuMenuItem index="3" disabled>
+        <i class="seu-icon-document" />
+        <span slot="title">导航三</span>
+      </SeuMenuItem>
+      <SeuMenuItem index="4">
+        <i class="seu-icon-setting" />
+        <span slot="title">导航四</span>
+      </SeuMenuItem>
+    </SeuMenu>
+  </SeuCol>
+  <SeuCol span="12">
+    <SeuMenu
+      defaultActive="2"
+      backgroundColor="#545c64"
+      textColor="#fff"
+      activeTextColor="#ffd04b"
+      on:open={handleOpen}
+      on:close={handleClose}
+    >
+      <SeuSubmenu index="1">
+        <div slot="title">
+          <i class="seu-icon-location" />
+          <span>导航一</span>
+        </div>
+        <SeuMenuItemGroup>
+          <span slot="title">分组一</span>
+          <SeuMenuItem index="1-1">选项1</SeuMenuItem>
+          <SeuMenuItem index="1-2">选项2</SeuMenuItem>
+        </SeuMenuItemGroup>
+        <SeuMenuItemGroup title="分组2">
+          <SeuMenuItem index="1-3">选项3</SeuMenuItem>
+        </SeuMenuItemGroup>
+        <SeuSubmenu index="1-4">
+          <span slot="title">选项4</span>
+          <SeuMenuItem index="1-4-1">选项1</SeuMenuItem>
+        </SeuSubmenu>
+      </SeuSubmenu>
+      <SeuMenuItem index="2">
+        <i class="seu-icon-menu" />
+        <span slot="title">导航二</span>
+      </SeuMenuItem>
+      <SeuMenuItem index="3" disabled>
+        <i class="seu-icon-document" />
+        <span slot="title">导航三</span>
+      </SeuMenuItem>
+      <SeuMenuItem index="4">
+        <i class="seu-icon-setting" />
+        <span slot="title">导航四</span>
+      </SeuMenuItem>
     </SeuMenu>
   </SeuCol>
 </SeuRow>

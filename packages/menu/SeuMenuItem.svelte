@@ -24,6 +24,9 @@
   $: classString = a2s(['seu-menu-item', ['is-disabled', disabled], ['is-active', $rootMenuStore.isActiveItem(self)]])
 
   function clickHandler() {
+    if (self.props.disabled) {
+      return
+    }
     rootMenuStore.update(menu => menu.setActive(self))
     rootSelectFunc(self)
     dispatch('select', self)
@@ -72,4 +75,5 @@
   on:mouseleave={mouseLeaveHandler}
 >
   <slot />
+  <slot name="title" />
 </li>

@@ -116,8 +116,8 @@ export class Menu {
       return
     }
 
-    // if children is hovered, then do nothing
-    if (submenu.children.find(v => v.isHovered)) {
+    // if trigger is hover and children is hovered, then do nothing
+    if (this.actualMenuTrigger === ActualMenuTrigger.hover && submenu.children.find(v => v.isHovered)) {
       return
     }
 

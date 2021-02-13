@@ -41,7 +41,7 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/svelte": "^3.0.3",
     "@tsconfig/svelte": "^1.0.10",
-    "array2string": "^1.2.3",
+    "array2string": "^1.2.4",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
     "commitizen": "^4.2.3",

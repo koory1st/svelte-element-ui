@@ -7,6 +7,7 @@
   import collapse from 'svelte-collapse'
   import Portal from 'svelte-portal'
   import { createPopperActions } from '../util/SveltePopperJs'
+  import { getPadding } from './obj/MenuUtil'
 
   export let index: string
   export let showTimeout: number = 300
@@ -128,6 +129,7 @@
   $: divStyle = a2st([
     ['color', divTextColor],
     ['background-color', divBackgroundColor],
+    ['padding-left', getPadding(parent)],
   ])
   $: styleBackgroundColor = a2st([['background-color', $rootMenuStore.props.backgroundColor]])
 
