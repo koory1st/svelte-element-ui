@@ -96,29 +96,42 @@ export class Menu {
     return this.activeItem === item
   }
 
-  public openMenu(submenu: Submenu): void {
+  /**
+   * try open menu
+   * return true if success opened the submenu
+   * return false if failed opened the submenu
+   * @param submenu
+   */
+  public openMenu(submenu: Submenu): boolean {
     if (this.openedMenus.includes(submenu)) {
-      return
+      return false
     }
 
     if (this.props.uniqueOpened) {
       this.openedMenus = this.openedMenus.filter(menu => {
         return submenu.parents.includes(menu)
       })
-      return
+      return false
     }
 
     this.openedMenus.push(submenu)
+    return true
   }
 
-  public closeMenu(submenu: Submenu): void {
+  /**
+   * try close menu
+   * return true if success closed the submenu
+   * return false if failed closed the submenu
+   * @param submenu
+   */
+  public closeMenu(submenu: Submenu): boolean {
     if (submenu.isHovered) {
-      return
+      return false
     }
 
     // if trigger is hover and children is hovered, then do nothing
     if (this.actualMenuTrigger === ActualMenuTrigger.hover && submenu.children.find(v => v.isHovered)) {
-      return
+      return false
     }
 
     const i = this.openedMenus.indexOf(submenu)
@@ -128,6 +141,7 @@ export class Menu {
 
     // and try to close other opened menu
     this.openedMenus.forEach(v => this.closeMenu(v))
+    return true
   }
 
   private checkDuplicate(item: MenuItem | Submenu): void {

@@ -20,6 +20,7 @@
 
   let rootMenuStore: Writable<Menu> = getContext('seu_menu_root_store')
   let parent: Menu | Submenu = getContext('seu_menu_current')
+  let rootSelectFunc: (submenu: Submenu, type: string) => void = getContext('seu_menu_root_submenu_func')
   let rootProps = $rootMenuStore.props
   let isOpened = false
   $: {
@@ -100,8 +101,13 @@
 
     clearTimeout(timeout)
     timeout = setTimeout(() => {
-      $rootMenuStore.openMenu(self)
+      const result = $rootMenuStore.openMenu(self)
       $rootMenuStore = $rootMenuStore
+
+      // if success opened the submenu
+      if (result) {
+        rootSelectFunc(self, 'open')
+      }
     }, showTimeout)
   }
 
@@ -110,8 +116,13 @@
 
     clearTimeout(timeout)
     timeout = setTimeout(() => {
-      $rootMenuStore.closeMenu(self)
+      const result = $rootMenuStore.closeMenu(self)
       $rootMenuStore = $rootMenuStore
+
+      // if success closed the submenu
+      if (result) {
+        rootSelectFunc(self, 'close')
+      }
     }, hideTimeout)
   }
 

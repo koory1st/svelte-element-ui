@@ -1,14 +1,13 @@
 <script lang="ts">
   import { SeuMenu, SeuMenuItem, SeuSubmenu, SeuRow, SeuCol, SeuMenuItemGroup } from '@/index'
-  import { MenuItem } from '../../packages/menu/obj/MenuItem'
   export let name: string
 
-  function handleOpen(key, keyPath) {
-    console.log(key, keypath)
+  function handleOpen(event) {
+    console.log(event)
   }
 
-  function handleClose(key, keyPath) {
-    console.log(key, keypath)
+  function handleClose(event) {
+    console.log(event)
   }
 </script>
 

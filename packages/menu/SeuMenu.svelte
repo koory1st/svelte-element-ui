@@ -4,6 +4,7 @@
   import { writable } from 'svelte/store'
   import { Menu } from './obj/Menu'
   import type { MenuItem } from './obj/MenuItem'
+  import type { Submenu } from './obj/Submenu'
   const dispatch = createEventDispatcher()
 
   export let mode: string = 'vertical'
@@ -40,6 +41,13 @@
 
   setContext('seu_menu_root_select_func', (item: MenuItem): void => {
     dispatch('select', item)
+  })
+
+  setContext('seu_menu_root_submenu_func', (submenu: Submenu, type: string): void => {
+    dispatch(type, {
+      key: submenu.props.index,
+      keyPath: [...submenu.parents.map(v => v.props.index), submenu.props.index],
+    })
   })
 
   $: style = a2st([['background-color', backgroundColor, backgroundColor]])
