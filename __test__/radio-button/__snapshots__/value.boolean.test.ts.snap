@@ -7,7 +7,7 @@ exports[`value.boolean 1`] = `
   <label
     class="seu-radio-button"
     role="radio"
-    tabindex="-1"
+    tabindex="0"
   >
     <input
       aria-hidden="true"
@@ -62,7 +62,7 @@ exports[`value.boolean 3`] = `
   <label
     class="seu-radio-button"
     role="radio"
-    tabindex="-1"
+    tabindex="0"
   >
     <input
       aria-hidden="true"

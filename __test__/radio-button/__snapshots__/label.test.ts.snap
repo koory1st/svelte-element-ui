@@ -7,7 +7,7 @@ exports[`label 1`] = `
   <label
     class="seu-radio-button"
     role="radio"
-    tabindex="-1"
+    tabindex="0"
   >
     <input
       aria-hidden="true"
@@ -28,7 +28,7 @@ exports[`label 1`] = `
   <label
     class="seu-radio-button"
     role="radio"
-    tabindex="-1"
+    tabindex="0"
   >
     <input
       aria-hidden="true"
