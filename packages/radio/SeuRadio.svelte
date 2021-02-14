@@ -57,11 +57,12 @@
   {tabindex}
   aria-disabled={isDisabled}
   aria-checked={isChecked}
-  on:keydown={handleKeydown}>
+  on:keydown={handleKeydown}
+>
   <input
     class="seu-radio__original"
     type="radio"
-    value={String(label)}
+    value={label}
     bind:group={value}
     aria-hidden="true"
     {name}

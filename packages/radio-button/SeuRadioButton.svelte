@@ -15,9 +15,10 @@
 
   let isFocus = false
 
+  $: name = name || getContext('radioGroup_name')
   $: isChecked = value === label ? true : null
   $: isDisabled = disabled ? disabled : null
-  $: tabindex = isDisabled || value !== label ? -1 : 0
+  $: tabindex = isDisabled || (radioGroupFlg && value !== label) ? -1 : 0
 
   $: classString = a2s([
     'seu-radio-button',
@@ -54,11 +55,12 @@
   {tabindex}
   aria-disabled={isDisabled}
   aria-checked={isChecked}
-  on:keydown={handleKeydown}>
+  on:keydown={handleKeydown}
+>
   <input
     class="seu-radio-button__orig-radio"
     type="radio"
-    value={String(label)}
+    value={label}
     bind:group={value}
     aria-hidden="true"
     {name}
