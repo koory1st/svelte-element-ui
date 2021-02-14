@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.12](https://github.com/koory1st/svelte-element-ui/compare/v1.0.11...v1.0.12) (2021-02-14)
+
+
+### Bug Fixes
+
+* **radio-group:** use label in input tag ([504ff49](https://github.com/koory1st/svelte-element-ui/commit/504ff49a6f7233d866534e8c5a626f6f18ad7faf))
+
 ### [1.0.11](https://github.com/koory1st/svelte-element-ui/compare/v1.0.10...v1.0.11) (2021-02-01)
 
 
