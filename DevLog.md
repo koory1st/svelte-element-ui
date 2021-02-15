@@ -1,3 +1,47 @@
+# 2021.02.10
+
+Menu的打开状态控制遇到了极大的难题。
+
+假设有ABC三层submenu。
+
+> A -> B -> C
+
+那么光标有以下几种情况
+
+A -> B： A打开，B打开
+
+A -> 空白： A关闭，B关闭
+
+B -> C：A打开，B打开，C打开
+
+B -> A： A打开
+
+B -> 空白： 全关闭
+
+
+
+# 2021.01.29
+
+开发Menu中，期间遇到比较多的技术和设计问题，大部分都是因为svelte和vue的差异造成的。
+
+首先svelte无法访问父组件，这样就不能通过slot的去控制上层的menu的状态。为了解决这个问题，我用了context里面装了个store，store是一个menu对象，通过子读取store里的这个对象，然后进行操作，来实现，子组件或者slot去控制上层父组件。
+
+另一个是svelte的默认transition是基于if判断是否渲染组件的，没有类似vue的v-show的控制，这样的话在处理menu折叠（collapse）的时候会让部分内容选择性渲染，那么在处理menu及子节点关系的时候会有大量的操作节点（增，删）的逻辑。我找到了一个[svelte-collapse库](https://www.npmjs.com/package/svelte-collapse?activeTab=readme)来方便的实现展开折叠功能。不过这个库是基于js的，我同时略微的写了一个d.ts保证引入不报错。
+
+还有一个就是pop组件的问题，element-ui是用的是用vue包裹的popper-js，既vue-popper实现的。popper-js在npm上有3个，我尝试了2个，包括popperjs的[官方svelte版本](https://github.com/popperjs/svelte-popper)，由于各种各样的问题，我选择了更方便的非官方的依靠svelte的use特性实现的[svlete-popper-js](https://github.com/bryanmylee/svelte-popperjs)。但是在处理popperjs的options时，发现这个包实现的有些问题，我提了个issue，然后为了快速继续开发，我在自己的包里实现了一遍他的逻辑，同时按照自己需要的一些需求略微的改动了一下。
+
+再有一个就是appendToBody的功能。我记得React上有个Portal的高阶组件可以实现把组件直接渲染到指定的dom层级，就尝试的用svelte和portal两个关键字搜索了一下，发现真的[有这个库](https://github.com/romkor/svelte-portal)，同时看了一下实现，也是比较简单的。然后就直接用了这个库了。后来听说vue3也支持这个高阶组件了，名字叫teleport，哈哈，为了不一样真是绞尽脑汁了吧。
+
+# 2021.01.28
+
+I'm developing the menu component right now, because there is no slide bar menu component for the site which I want to develop.
+
+# 2021.01.27
+
+Svelte 的 API 里有这么一句，关于 context 的，很有帮助。
+
+> Context is not inherently reactive. If you need reactive values in context then you can pass a store into context, which _will_ be reactive.
+
 # 2021.01.21
 
 尝试将 test 改成 ts，结果报错：

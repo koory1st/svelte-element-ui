@@ -1,3 +1,5 @@
+![npm-publish](https://github.com/koory1st/svelte-element-ui/workflows/npm-publish/badge.svg)
+
 ## What is svelte-element-ui?
 
 svelte-element-ui is a element-ui component library base on Svelte.
@@ -14,8 +16,8 @@ npm install svelte-element-ui
 
 ```html
 <script lang="ts">
-  import "svelte-element-ui/lib/seu.css";
-  import { SeuAside, SeuButton } from "svelte-element-ui";
+  import 'svelte-element-ui/lib/seu.css'
+  import { SeuAside, SeuButton } from 'svelte-element-ui'
 </script>
 
 <SeuAside />
@@ -38,10 +40,8 @@ export default {
 }
 ```
 
-
-
-
 ## Development
+
 ### Running Tests
 
 ```bash
