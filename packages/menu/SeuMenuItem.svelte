@@ -19,7 +19,7 @@
 
   let self: MenuItem = new MenuItem({ index, disabled }, parent, $rootMenuStore)
 
-  parent.addItem(self)
+  // parent.addItem(self)
 
   $: classString = a2s(['seu-menu-item', ['is-disabled', disabled], ['is-active', $rootMenuStore.isActiveItem(self)]])
 

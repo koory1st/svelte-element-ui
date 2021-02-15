@@ -36,6 +36,21 @@
       popperZIndex,
     }),
   )
+
+  $: $menuStore.props = {
+    mode,
+    collapse,
+    backgroundColor,
+    textColor,
+    activeTextColor,
+    defaultActive,
+    defaultOpeneds,
+    uniqueOpened,
+    menuTrigger,
+    router,
+    collapseTransition,
+    popperZIndex,
+  }
   setContext('seu_menu_root_store', menuStore)
   setContext('seu_menu_current', $menuStore)
 
@@ -49,9 +64,12 @@
       keyPath: [...submenu.parents.map(v => v.props.index), submenu.props.index],
     })
   })
+  $: if (collapse) {
+    $menuStore.openedMenus = []
+  }
 
   $: style = a2st([['background-color', backgroundColor, backgroundColor]])
   $: classString = a2s(['seu-menu', ['seu-menu--horizontal', mode === 'horizontal'], ['seu-menu--collapse', collapse]])
 </script>
 
-<ul class={classString} {style}><slot /></ul>
+<ul role="menubar" class={classString} {style}><slot /></ul>

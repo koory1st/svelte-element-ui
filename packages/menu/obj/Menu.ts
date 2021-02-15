@@ -35,9 +35,12 @@ export class Menu {
   openedMenus: Submenu[] = []
 
   get actualMenuTrigger(): ActualMenuTrigger {
-    // vertical: only click trigger
+    // vertical and not collapse: only click trigger
     if (this.props.mode !== 'horizontal') {
-      return ActualMenuTrigger.click
+      if (!this.props.collapse) {
+        return ActualMenuTrigger.click
+      }
+      return ActualMenuTrigger.hover
     }
 
     // horizontal: set by the trigger props
