@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/koory1st/svelte-element-ui/compare/v1.0.12...v1.1.0) (2021-02-15)
+
+
+### Features
+
+* **menu:** add ([9f379c4](https://github.com/koory1st/svelte-element-ui/commit/9f379c49f3b3dfbe9b17bf64efa492814beb6ba2))
+* **menu:** finish submenu pop ([b399101](https://github.com/koory1st/svelte-element-ui/commit/b3991016da6ff6d76172847e9462b208f3cd8ac2))
+* **menu:** finish the hover open status ([869df08](https://github.com/koory1st/svelte-element-ui/commit/869df08c04862fd9f712cbacb270b475abce27b1))
+
+
+### Bug Fixes
+
+* **menu:** add open and close event ([b3e3af1](https://github.com/koory1st/svelte-element-ui/commit/b3e3af17ae662f08ead11b1de24a69acd6c94e16))
+* **menu:** add z-index to popper ([b7d9b12](https://github.com/koory1st/svelte-element-ui/commit/b7d9b127988a131e0f3293ebf86079cbf03f6b1c))
+* **menu:** extract class file ([f0f0b63](https://github.com/koory1st/svelte-element-ui/commit/f0f0b63e16054860d9bcd1c1b22bd848c615e25e))
+* **menu:** finish the vertical open and close ([b88eab7](https://github.com/koory1st/svelte-element-ui/commit/b88eab7ece513c16d3612b8585606896c828d5f3))
+* **menu:** set menu props reactive ([bc913af](https://github.com/koory1st/svelte-element-ui/commit/bc913af581fa3cd856c18956bce83bd1ce3051ed))
+* **menu item group:** add padding-left ([d96cd37](https://github.com/koory1st/svelte-element-ui/commit/d96cd37d72e6249f4d3686185bfbac4f02b2e955))
+* **submenu:** active status ([0620f13](https://github.com/koory1st/svelte-element-ui/commit/0620f137106ea5c09be5a7db361ce9a54fe8a978))
+* **submenu:** default active item ([d358d72](https://github.com/koory1st/svelte-element-ui/commit/d358d72f0ec5b50628bf6f18aa2fec65de30edde))
+* **submenu:** fix the submenu direction ([cf9453d](https://github.com/koory1st/svelte-element-ui/commit/cf9453db8ece11479404a4f6dca54ae2582ef90a))
+* **submenu:** fix the trigger ([36cf796](https://github.com/koory1st/svelte-element-ui/commit/36cf796d0c108837394dda6d417fdb8e75a530e3))
+* **submenu:** fix the vertical menu click open and close ([b0d8024](https://github.com/koory1st/svelte-element-ui/commit/b0d802471fb5057e40c458517c1d1760b502486b))
+* **submenu:** use svelte-collapse ([4758a3d](https://github.com/koory1st/svelte-element-ui/commit/4758a3d6a61f5a3a08b0d797e77da108d2dcf758))
+
 ### [1.0.12](https://github.com/koory1st/svelte-element-ui/compare/v1.0.11...v1.0.12) (2021-02-14)
 
 

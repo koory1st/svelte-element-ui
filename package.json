@@ -1,6 +1,6 @@
 {
   "name": "svelte-element-ui",
-  "version": "1.0.12",
+  "version": "1.1.0",
   "description": "svelte-element-ui is a element-ui component library base on Svelte.",
   "scripts": {
     "build": "rollup -c",
