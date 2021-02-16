@@ -8,7 +8,6 @@
     "build": "rollup -c",
     "test:watch": "npm run test -- --watch",
     "test": "jest __test__",
-    "demo-build": "rollup -c demo/rollup.config.js",
     "validate": "svelte-check",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs",

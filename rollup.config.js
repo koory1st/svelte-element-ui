@@ -43,7 +43,7 @@ function serve() {
 }
 
 export default {
-  input: !production ? 'src/main.ts' : 'src/components.js',
+  input: !production ? 'src/main.ts' : 'src/components.ts',
   output: !production
     ? {
         sourcemap: true,
