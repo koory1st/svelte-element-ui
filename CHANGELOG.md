@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/koory1st/svelte-element-ui/compare/v1.1.0...v1.1.1) (2021-02-16)
+
+
+### Bug Fixes
+
+* **menu:** use popjs esm ([84521cf](https://github.com/koory1st/svelte-element-ui/commit/84521cf1bb1b6c24f88512781eb42bc63f73c92e))
+
 ## [1.1.0](https://github.com/koory1st/svelte-element-ui/compare/v1.0.12...v1.1.0) (2021-02-15)
 
 
