@@ -17,9 +17,6 @@
     "prepublishOnly": "npm run test && npm run build",
     "clear": "rimraf node_modules"
   },
-  "files": [
-    "lib/**/*"
-  ],
   "main": "lib/seu.es.js",
   "typings": "types/index.d.ts",
   "repository": {
