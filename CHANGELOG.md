@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.7](https://github.com/koory1st/svelte-element-ui/compare/v1.1.6...v1.1.7) (2021-02-16)
+
+
+### Bug Fixes
+
+* **rollup config:** modify the entry point ([5763a8f](https://github.com/koory1st/svelte-element-ui/commit/5763a8f8ab2b32205cf0c09fa279dceaf3394185))
+
 ### [1.1.6](https://github.com/koory1st/svelte-element-ui/compare/v1.1.5...v1.1.6) (2021-02-16)
 
 ### [1.1.5](https://github.com/koory1st/svelte-element-ui/compare/v1.1.4...v1.1.5) (2021-02-16)
