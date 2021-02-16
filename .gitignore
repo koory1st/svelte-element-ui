@@ -5,3 +5,4 @@ node_modules
 /public/.
 /demo/public/lib/
 /lib/
+public/dist/
