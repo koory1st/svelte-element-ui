@@ -40,6 +40,34 @@ export default {
 }
 ```
 
+3. Copy the font files by using the [rollup-plugin-copy](https://www.npmjs.com/package/rollup-plugin-copy) in the  **rollup.config.js** as a plugin
+
+```javascript
+import copy from 'rollup-plugin-copy'
+
+export default {
+  ...
+  plugins: [
+    ...
+    copy({
+      targets: [
+        {
+          src: [
+            'node_modules/svelte-element-ui/lib/fonts/element-icons.ttf',
+            'node_modules/svelte-element-ui/lib/fonts/element-icons.woff',
+          ],
+          dest: 'public/build/fonts/',
+        },
+      ],
+    }),
+    ...
+  ]
+  ...
+}
+```
+
+
+
 ## Development
 
 ### Running Tests
