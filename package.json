@@ -17,7 +17,7 @@
     "prepublishOnly": "npm run test && npm run build",
     "clear": "rimraf node_modules"
   },
-  "main": "lib/seu.es.js",
+  "main": "dist/index.min.js",
   "typings": "types/index.d.ts",
   "repository": {
     "type": "git",

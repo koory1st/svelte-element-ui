@@ -11,21 +11,31 @@ import postcss from 'rollup-plugin-postcss'
 import path from 'path'
 import copy from 'rollup-plugin-copy'
 import del from 'rollup-plugin-delete'
-// import scss from 'rollup-plugin-scss'
+import pkg from './package.json'
 
 const production = !process.env.ROLLUP_WATCH
 const projectRootDir = path.resolve(__dirname)
 
+const name = pkg.name
+  .replace(/^(@\S+\/)?(svelte-)?(\S+)/, '$3')
+  .replace(/^\w/, m => m.toUpperCase())
+  .replace(/-\w/g, m => m[1].toUpperCase())
+
 export default {
   input: 'src/index.ts',
-  output: {
-    sourcemap: true,
-    format: 'es',
-    name: 'app',
-    file: 'lib/seu.es.js',
-  },
+  output: !production
+    ? {
+        sourcemap: true,
+        format: 'iife',
+        name: 'app',
+        file: 'public/bundle.js',
+      }
+    : [
+        { file: 'dist/index.min.mjs', format: 'es' },
+        { file: 'dist/index.min.js', format: 'umd', name },
+      ],
   plugins: [
-    del({ targets: 'lib/*' }),
+    del({ targets: 'dist/*' }),
     alias({
       entries: {
         '@': projectRootDir + '/src',
@@ -66,7 +76,7 @@ export default {
       targets: [
         {
           src: ['static/fonts/element-icons.ttf', 'static/fonts/element-icons.woff'],
-          dest: 'lib/fonts/',
+          dest: 'dist/fonts/',
         },
       ],
     }),
