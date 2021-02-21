@@ -183,7 +183,10 @@
 
   $: if ($rootMenuStore.isMenuPopup) {
     const popperActions = createPopperActions({
-      placement: self.direction === MenuDirectionType.vertical ? 'bottom-start' : 'right-start',
+      placement:
+        rootProps.mode === 'horizontal' && self.direction === MenuDirectionType.vertical
+          ? 'bottom-start'
+          : 'right-start',
     })
     popperRef = popperActions.referenceAction
     popperContent = popperActions.contentAction
@@ -192,7 +195,11 @@
         {
           name: 'flip',
           options: {
-            fallbackPlacements: [self.direction === MenuDirectionType.vertical ? 'top-start' : 'right-end'],
+            fallbackPlacements: [
+              rootProps.mode === 'horizontal' && self.direction === MenuDirectionType.vertical
+                ? 'top-start'
+                : 'right-end',
+            ],
           },
         },
       ],

@@ -130,7 +130,7 @@
     }
   }
   @include m(collapse) {
-    width: 64px;
+    width: 64px !important;
 
     > .seu-menu-item,
     > .seu-submenu > .seu-submenu__title {

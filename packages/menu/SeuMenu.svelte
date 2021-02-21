@@ -5,6 +5,7 @@
   import { Menu } from './obj/Menu'
   import type { MenuItem } from './obj/MenuItem'
   import type { Submenu } from './obj/Submenu'
+  import transition from './transition'
   const dispatch = createEventDispatcher()
 
   export let mode: string = 'vertical'
@@ -69,7 +70,23 @@
   }
 
   $: style = a2st([['background-color', backgroundColor, backgroundColor]])
-  $: classString = a2s(['seu-menu', ['seu-menu--horizontal', mode === 'horizontal'], ['seu-menu--collapse', collapse]])
+  let classString = a2s(['seu-menu', ['seu-menu--horizontal', mode === 'horizontal'], $$props.class])
 </script>
 
-<ul role="menubar" class={classString} {style}><slot /></ul>
+<ul
+  use:transition={{
+    open: !collapse,
+    beforeEnter: el => el.classList.add('horizontal-collapse-transition'),
+    doEnter: el => el.classList.remove('seu-menu--collapse'),
+    afterEnter: el => el.classList.remove('horizontal-collapse-transition'),
+    beforeLeave: el => el.classList.add('horizontal-collapse-transition'),
+    doLeave: el => {
+      el.classList.add('seu-menu--collapse')
+    },
+  }}
+  role="menubar"
+  class={classString}
+  {style}
+>
+  <slot />
+</ul>

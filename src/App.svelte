@@ -131,7 +131,7 @@
 <div style="margin-bottom: 20px;" />
 <SeuMenu
   defaultActive="1-4-1"
-  class="el-menu-vertical-demo"
+  class="seu-menu-vertical-demo"
   on:open={handleOpen}
   on:close={handleClose}
   collapse={isCollapse}
@@ -156,3 +156,10 @@
   </SeuSubmenu>
 </SeuMenu>
 11111 2222 3333
+
+<style>
+  :global(.seu-menu-vertical-demo) {
+    width: 240px;
+    min-height: 400px;
+  }
+</style>
