@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.8](https://github.com/koory1st/svelte-element-ui/compare/v1.1.7...v1.1.8) (2021-02-21)
+
+
+### Bug Fixes
+
+* **menu:** add transition triggered by class ([86b9899](https://github.com/koory1st/svelte-element-ui/commit/86b9899713a319d4f15fe3e12e000b0135d302c3))
+
 ### [1.1.7](https://github.com/koory1st/svelte-element-ui/compare/v1.1.6...v1.1.7) (2021-02-16)
 
 
