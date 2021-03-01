@@ -47,7 +47,7 @@
 </SeuMenu>
 
 <SeuRow>
-  <SeuCol span="12">
+  <SeuCol span={12}>
     <SeuMenu defaultActive="2" on:open={handleOpen} on:close={handleClose}>
       <SeuSubmenu index="1">
         <div slot="title">
@@ -81,7 +81,7 @@
       </SeuMenuItem>
     </SeuMenu>
   </SeuCol>
-  <SeuCol span="12">
+  <SeuCol span={12}>
     <SeuMenu
       defaultActive="2"
       backgroundColor="#545c64"
