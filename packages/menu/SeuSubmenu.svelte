@@ -16,7 +16,7 @@
   export let disabled: boolean
   export let popperAppendToBody: boolean = false
 
-  let timeout: number
+  let timeout: any
 
   let rootMenuStore: Writable<Menu> = getContext('seu_menu_root_store')
   let parent: Menu | Submenu = getContext('seu_menu_current')
