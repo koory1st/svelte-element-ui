@@ -68,6 +68,28 @@ export default {
 
 
 
+## Example
+
+Edit the file src/App.svelte, and import the component in examples path like this.
+
+```html
+<script lang="ts">
+  import Menu from '../examples/menu/App.svelte'
+</script>
+
+<Menu />
+```
+
+then, execute the **dev** command.
+
+```bash
+npm run dev
+```
+
+
+
+
+
 ## Development
 
 ### Running Tests
