@@ -143,3 +143,47 @@ export interface IJustifyProp {
 export interface IAlignProp {
   align?: string
 }
+
+export interface IModeProp {
+  mode?: string
+}
+
+export interface IDefaultActiveProp {
+  defaultActive?: string
+}
+
+export interface IDefaultOpenedsProp {
+  defaultOpeneds?: string[]
+}
+
+export interface IUniqueOpenedProp {
+  uniqueOpened?: boolean
+}
+
+export interface IMenuTriggerProp {
+  menuTrigger?: string
+}
+
+export interface ICollapseProp {
+  collapse?: boolean
+}
+
+export interface IBackgroundColorProp {
+  backgroundColor?: string
+}
+
+export interface ITextColorProp {
+  textColor?: string
+}
+
+export interface IActiveTextColorProp {
+  activeTextColor?: string
+}
+
+export interface ICollapseTransitionProp {
+  collapseTransition?: boolean
+}
+
+export interface IPopperZIndexProp {
+  popperZIndex?: number
+}
