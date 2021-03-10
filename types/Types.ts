@@ -187,3 +187,27 @@ export interface ICollapseTransitionProp {
 export interface IPopperZIndexProp {
   popperZIndex?: number
 }
+
+export interface IIndexProp {
+  index?: String
+}
+
+export interface IShowTimeoutProp {
+  showTimeout?: number
+}
+
+export interface IHideTimeoutProp {
+  hideTimeout?: number
+}
+
+export interface IPopperClassProp {
+  popperClass?: string
+}
+
+export interface IPopperAppendToBodyProp {
+  popperAppendToBody?: boolean
+}
+
+export interface ITitleProp {
+  title?: String
+}
