@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SeuInput from '../../packages/input/SeuInput.svelte'
+  import SeuInput from '../../packages/input/index'
 
   let value = ''
 </script>
