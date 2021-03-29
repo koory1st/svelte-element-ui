@@ -16,7 +16,7 @@ npm install svelte-element-ui
 
 ```html
 <script lang="ts">
-  import 'svelte-element-ui/lib/seu.css'
+  import 'svelte-element-ui/dist/style.css'
   import { SeuAside, SeuButton } from 'svelte-element-ui'
 </script>
 
