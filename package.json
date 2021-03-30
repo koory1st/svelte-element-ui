@@ -17,7 +17,9 @@
     "clear": "rimraf node_modules"
   },
   "files": [
-    "dist"
+    "dist",
+    "packages",
+    "static"
   ],
   "main": "./dist/svelte-element-ui.umd.js",
   "module": "./dist/svelte-element-ui.es.js",
