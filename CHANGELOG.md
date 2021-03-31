@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.5](https://github.com/koory1st/svelte-element-ui/compare/v1.2.4...v1.2.5) (2021-03-31)
+
+
+### Bug Fixes
+
+* **package:** solve the error ([c8878d4](https://github.com/koory1st/svelte-element-ui/commit/c8878d4b7494d669bae5b0bc046d600d7861e093))
+
 ### [1.2.4](https://github.com/koory1st/svelte-element-ui/compare/v1.2.3...v1.2.4) (2021-03-31)
 
 
