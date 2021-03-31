@@ -23,8 +23,8 @@
   "module": "./dist/svelte-element-ui.es.js",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.es.js",
-      "require": "./dist/my-lib.umd.js"
+      "import": "./dist/svelte-element-ui.es.js",
+      "require": "./dist/svelte-element-ui.umd.js"
     }
   },
   "typings": "types/index.d.ts",
