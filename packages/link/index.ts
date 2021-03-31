@@ -1,2 +1,2 @@
-import 'theme-chalk/src/main.scss'
+import 'theme-chalk/src/link.scss'
 export { default } from './SeuLink.svelte'
