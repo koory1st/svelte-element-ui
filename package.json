@@ -21,12 +21,6 @@
   ],
   "main": "./dist/svelte-element-ui.umd.js",
   "module": "./dist/svelte-element-ui.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/svelte-element-ui.es.js",
-      "require": "./dist/svelte-element-ui.umd.js"
-    }
-  },
   "typings": "types/index.d.ts",
   "repository": {
     "type": "git",
