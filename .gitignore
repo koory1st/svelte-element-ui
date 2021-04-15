@@ -6,3 +6,4 @@ node_modules
 /demo/public/lib/
 /lib/
 public/dist/
+site/.svelte/
