@@ -16,9 +16,9 @@ jobs:
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
       - name: Build and Deploy
-          uses: JamesIves/github-pages-deploy-action@master
-          env:
-            ACCESS_TOKEN: ${{ secrets.PAGE_TOKKEN }}
-            BRANCH: git_page
-            FOLDER: docs
-            BUILD_SCRIPT: npm install && npm run build-site
+        uses: JamesIves/github-pages-deploy-action@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.PAGE_TOKKEN }}
+          BRANCH: git_page
+          FOLDER: docs
+          BUILD_SCRIPT: npm install && npm run build-site
