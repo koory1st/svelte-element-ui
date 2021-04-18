@@ -14,7 +14,8 @@
     "c": "git-cz",
     "release": "standard-version",
     "prepublishOnly": "npm run test && npm run build",
-    "clear": "rimraf node_modules"
+    "clear": "rimraf node_modules",
+    "build-site": "cd site && npm run build"
   },
   "files": [
     "dist"

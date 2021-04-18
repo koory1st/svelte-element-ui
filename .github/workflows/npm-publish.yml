@@ -15,3 +15,12 @@ jobs:
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
+      - name: build site
+        run: npm run build-site
+      - name: push
+        uses: github-actions-x/commit@v2.8
+        with:
+          github-token: ${{ secrets.NPM_AUTH_TOKEN }}
+          push-branch: git_page
+          commit-message: 'update site'
+          rebase: 'true' # pull and rebase before commit
