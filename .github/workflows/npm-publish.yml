@@ -20,9 +20,10 @@ jobs:
       - name: push
         uses: github-actions-x/commit@v2.8
         with:
-          github-token: ${{ secrets.NPM_AUTH_TOKEN }}
+          github-token: ${{ secrets.PAGE_TOKKEN }}
           push-branch: git_page
           commit-message: 'update site'
-          rebase: 'true' # pull and rebase before commit
+          force-add: 'true'
+          force-push: 'true'
           name: koory1st
           email: liguenator@gmail.com
