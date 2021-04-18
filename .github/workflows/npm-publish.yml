@@ -13,7 +13,7 @@ jobs:
           node-version: 14
       - run: npm install
       - name: build site
-        run: cd site && npm i && npm run build-site
+        run: cd site && npm i && npm run build
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
