@@ -12,11 +12,11 @@ jobs:
         with:
           node-version: 14
       - run: npm install
+      - name: build
+        run: npm run build-site
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
-      - name: build
-        run: npm run build-site
       - name: push
         uses: github-actions-x/commit@v2.8
         with:
