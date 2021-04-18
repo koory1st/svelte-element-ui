@@ -17,9 +17,9 @@ jobs:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
       - name: build
         run: npm run build-site
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+      - name: push
+        uses: github-actions-x/commit@v2.8
         with:
-          branch: git_page # The branch the action should deploy to.
-          folder: docs # The folder the action should deploy.
-          token: ${{ secrets.PAGE_TOKKEN }}
+          github-token: ${{ secrets.PAGE_TOKEN }}
+          push-branch: git_page
+          files: docs/
