@@ -24,3 +24,5 @@ jobs:
           push-branch: git_page
           commit-message: 'update site'
           rebase: 'true' # pull and rebase before commit
+          name: koory1st
+          email: liguenator@gmail.com
