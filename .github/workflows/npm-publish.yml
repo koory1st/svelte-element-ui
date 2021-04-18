@@ -15,10 +15,11 @@ jobs:
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
-      - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@master
-        env:
-          ACCESS_TOKEN: ${{ secrets.PAGE_TOKKEN }}
-          BRANCH: git_page
-          FOLDER: docs
-          BUILD_SCRIPT: npm install && npm run build-site
+      - name: build
+        run: npm run build-site
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: git_page # The branch the action should deploy to.
+          folder: docs # The folder the action should deploy.
+          token: ${{ secrets.PAGE_TOKKEN }}
