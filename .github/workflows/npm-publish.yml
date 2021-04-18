@@ -15,15 +15,10 @@ jobs:
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
-      - name: build site
-        run: npm run build-site
-      - name: push
-        uses: github-actions-x/commit@v2.8
-        with:
-          github-token: ${{ secrets.PAGE_TOKKEN }}
-          push-branch: git_page
-          commit-message: 'update site'
-          force-add: 'true'
-          force-push: 'true'
-          name: koory1st
-          email: liguenator@gmail.com
+      - name: Build and Deploy
+          uses: JamesIves/github-pages-deploy-action@master
+          env:
+            ACCESS_TOKEN: ${{ secrets.PAGE_TOKKEN }}
+            BRANCH: git_page
+            FOLDER: docs
+            BUILD_SCRIPT: npm install && npm run build-site
