@@ -5,7 +5,7 @@
 
 {#each routes as route}
   <nav>
-    <SeuLink href={`/#/${route.key}`}>{route.displayName}</SeuLink>
+    <SeuLink href={`#/${route.key}`}>{route.displayName}</SeuLink>
   </nav>
 {/each}
 <nav>
