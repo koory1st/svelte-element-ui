@@ -28,8 +28,8 @@ jobs:
         run: |
           git config --global user.name 'koory1st'
           git config --global user.email 'liguenator@gmail.com'
-          git fetch origin master
-          git merge -m "update page" origin/master
+          git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +refs/heads/master:refs/remotes/origin/master
+          git merge -m "update page" refs/remotes/origin/master
       - name: build site
         run: npm i && cd site && npm i && npm run build && cd ..
       - name: commit branch git_page
