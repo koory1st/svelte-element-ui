@@ -19,15 +19,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: git_page
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-      - run: npm install
-      - name: pull branch git_page
+      - name: merge master to branch git_page
         run: |
           git config --global user.name 'koory1st'
           git config --global user.email 'liguenator@gmail.com'
-          git checkout origin/git_page -B git_page
           git merge -m "update page" origin/master
       - name: build site
         run: npm i && cd site && npm i && npm run build && cd ..
