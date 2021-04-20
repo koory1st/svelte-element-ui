@@ -27,6 +27,8 @@ jobs:
         run: |
           git config --global user.name 'koory1st'
           git config --global user.email 'liguenator@gmail.com'
+          git pull origin git_page:git_page
+          git checkout git_page
           git merge -m "update page" origin/master
       - name: build site
         run: npm i && cd site && npm i && npm run build && cd ..
