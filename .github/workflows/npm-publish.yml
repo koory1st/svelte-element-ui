@@ -28,7 +28,8 @@ jobs:
         run: |
           git config --global user.name 'koory1st'
           git config --global user.email 'liguenator@gmail.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/git_page
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git fetch origin master
           git merge -m "update page" origin/master
       - name: build site
         run: npm i && cd site && npm i && npm run build && cd ..
