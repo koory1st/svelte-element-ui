@@ -29,7 +29,7 @@ jobs:
         run: |
           git config --global user.name 'koory1st'
           git config --global user.email 'liguenator@gmail.com'
-          git merge -m "update page" master
+          git merge -m "update page" origin/master
       - name: build site
         run: npm i && cd site && npm i && npm run build && cd ..
       - name: commit branch git_page
