@@ -19,7 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        branch: git_page
       - uses: actions/setup-node@v1
         with:
           node-version: 14
@@ -28,12 +27,15 @@ jobs:
         run: |
           git config --global user.name 'koory1st'
           git config --global user.email 'liguenator@gmail.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git merge -m "update page" origin/master
       - name: build site
         run: npm i && cd site && npm i && npm run build && cd ..
-      - name: push branch git_page
+      - name: commit branch git_page
         run: |
           git add docs/
           git commit -am "update page"
-          git push --set-upstream origin git_page
+      - name: push branch git_page
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: git_page
