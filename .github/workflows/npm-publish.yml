@@ -4,7 +4,7 @@ on:
     branches:
       - master # Change this to your default branch
 jobs:
-  publish:
+  publish-npm:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -15,6 +15,13 @@ jobs:
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
+  publish-site:
+    runs-on: ubuntu-latest
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: npm install
       - name: pull branch git_page
         run: |
           git config --global user.name 'koory1st'
@@ -24,7 +31,7 @@ jobs:
           git checkout git_page
           git merge -m "update page" origin/master
       - name: build site
-        run: cd site && npm i && npm run build && cd ..
+        run: npm i && cd site && npm i && npm run build && cd ..
       - name: push branch git_page
         run: |
           git add docs/
