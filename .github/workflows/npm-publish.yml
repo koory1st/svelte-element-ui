@@ -22,7 +22,7 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.PAGE_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git pull origin git_page:git_page
           git checkout git_page
-          git merge -m "update page" master
+          git merge -m "update page" origin/master
       - name: build site
         run: cd site && npm i && npm run build && cd ..
       - name: push branch git_page
