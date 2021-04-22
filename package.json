@@ -1,6 +1,6 @@
 {
   "name": "svelte-element-ui",
-  "version": "1.2.6",
+  "version": "1.3.0",
   "description": "svelte-element-ui is a element-ui component library base on Svelte.",
   "scripts": {
     "dev": "vite",
@@ -31,10 +31,6 @@
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.12",
     "@popperjs/core": "^2.9.1",
-    "@storybook/addon-actions": "^6.1.21",
-    "@storybook/addon-knobs": "^6.1.21",
-    "@storybook/addons": "^6.1.21",
-    "@storybook/svelte": "^6.1.21",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/svelte": "^3.0.3",
     "@tsconfig/svelte": "^1.0.10",
@@ -102,5 +98,5 @@
   ],
   "author": "koory1st",
   "license": "MIT",
-  "homepage": "https://github.com/koory1st/svelte-element-ui"
+  "homepage": "https://koory1st.github.io/svelte-element-ui"
 }
