@@ -9,8 +9,6 @@
     "test:watch": "npm run test -- --watch",
     "test": "jest __test__",
     "validate": "svelte-check",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o docs",
     "c": "git-cz",
     "release": "standard-version",
     "prepublishOnly": "npm run test && npm run build",
@@ -18,10 +16,11 @@
     "build-site": "cd site && npm run build"
   },
   "files": [
-    "dist"
+    "src/components.ts",
+    "packages",
+    "static"
   ],
-  "main": "./dist/svelte-element-ui.umd.js",
-  "module": "./dist/svelte-element-ui.es.js",
+  "main": "src/components.ts",
   "typings": "types/index.d.ts",
   "repository": {
     "type": "git",
