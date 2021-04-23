@@ -1,6 +1,6 @@
 import '../static/theme-chalk/src/icon.scss'
-import '../static/font-folder/element-icons.ttf'
-import '../static/font-folder/element-icons.woff'
+import '../static/fonts/element-icons.ttf'
+import '../static/fonts/element-icons.woff'
 
 export { default as SeuContainer } from '../packages/container'
 export { default as SeuMain } from '../packages/main'
