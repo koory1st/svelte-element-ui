@@ -1,2 +1,2 @@
-import 'theme-chalk/src/footer.scss'
+import '../../static/theme-chalk/src/footer.scss'
 export { default } from './SeuFooter.svelte'
