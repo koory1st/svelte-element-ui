@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.3](https://github.com/koory1st/svelte-element-ui/compare/v1.3.2...v1.3.3) (2021-04-23)
+
+
+### Bug Fixes
+
+* **npm:** fix font path ([97a055a](https://github.com/koory1st/svelte-element-ui/commit/97a055ae47f586bd743b26cc98323390a59970b5))
+
 ### [1.3.2](https://github.com/koory1st/svelte-element-ui/compare/v1.3.1...v1.3.2) (2021-04-23)
 
 
