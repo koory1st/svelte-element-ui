@@ -11,8 +11,8 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/components.ts'),
-      name: 'SvelteElementUI',
-    },
+      entry: path.resolve(__dirname, 'src/index.ts'),
+      name: 'svelte-element-ui',
+    }
   },
 })
