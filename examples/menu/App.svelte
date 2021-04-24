@@ -9,7 +9,7 @@
     SeuRadioGroup,
     SeuRadioButton,
     SeuRadio,
-  } from '../../src/components'
+  } from '../../src/index'
   export let name: string
   let isCollapse = false
 

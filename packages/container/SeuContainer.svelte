@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { array2string as a2s } from 'array2string'
   /**
    * layout direction for child elements

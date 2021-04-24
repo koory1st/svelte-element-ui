@@ -1,5 +1,5 @@
-import 'theme-chalk/src/menu.scss'
-import 'theme-chalk/src/common/transition.scss'
+import '../../static/theme-chalk/src/menu.scss'
+import '../../static/theme-chalk/src/common/transition.scss'
 
 export { default as SeuMenu } from './SeuMenu.svelte'
 export { default as SeuSubmenu } from './SeuSubmenu.svelte'

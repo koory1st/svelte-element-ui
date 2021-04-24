@@ -2,7 +2,9 @@ import { defineConfig } from 'vite'
 import svelte from '@sveltejs/vite-plugin-svelte'
 const path = require('path')
 export default defineConfig({
-  plugins: [svelte()],
+  plugins: [svelte({
+    include: ['src/**/*.svelte', 'examples/**/*.svelte', 'packages/**/*.svelte', 'node_modules/**/*.svelte'],
+  })],
   resolve: {
     alias: {
       'theme-chalk': path.resolve(__dirname, 'static/theme-chalk'),
@@ -11,8 +13,16 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/components.ts'),
-      name: 'SvelteElementUI',
+      entry: path.resolve(__dirname, 'src/index.ts'),
+      name: 'seu',
+      formats: ['iife']
     },
+    // rollupOptions: {
+    //   input: 'src/index.ts',
+    //   output: {
+    //       // file: path.resolve(__dirname, `public/components.js`),
+    //       format: 'iife'
+    //   }
+    // }
   },
 })

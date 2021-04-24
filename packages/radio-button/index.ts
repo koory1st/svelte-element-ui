@@ -1,2 +1,2 @@
-import 'theme-chalk/src/radio-button.scss'
+import '../../static/theme-chalk/src/radio-button.scss'
 export { default } from './SeuRadioButton.svelte'

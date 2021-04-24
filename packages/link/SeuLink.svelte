@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { array2string as a2s } from 'array2string'
   import { createEventDispatcher } from 'svelte'
   export let type = 'default'

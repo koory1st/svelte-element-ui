@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.6](https://github.com/koory1st/svelte-element-ui/compare/v1.3.5...v1.3.6) (2021-04-24)
+
+
+### Bug Fixes
+
+* **npm:** update npm release ([b4aa7db](https://github.com/koory1st/svelte-element-ui/commit/b4aa7dbc8cd7a8ab566a2a36e5d80c25d9753f9f))
+
+### [1.3.5](https://github.com/koory1st/svelte-element-ui/compare/v1.3.4...v1.3.5) (2021-04-24)
+
+
+### Bug Fixes
+
+* **npm:** fix the svelte package ([9b64eb7](https://github.com/koory1st/svelte-element-ui/commit/9b64eb7df13e553173c286c9d6d27fcf729249bc))
+
+### [1.3.4](https://github.com/koory1st/svelte-element-ui/compare/v1.3.3...v1.3.4) (2021-04-23)
+
+
+### Bug Fixes
+
+* **npm:** update packages ([5df5964](https://github.com/koory1st/svelte-element-ui/commit/5df5964cab578bda6af7f4d12acf0a68cc5e7576))
+
+### [1.3.3](https://github.com/koory1st/svelte-element-ui/compare/v1.3.2...v1.3.3) (2021-04-23)
+
+
+### Bug Fixes
+
+* **npm:** fix font path ([97a055a](https://github.com/koory1st/svelte-element-ui/commit/97a055ae47f586bd743b26cc98323390a59970b5))
+
+### [1.3.2](https://github.com/koory1st/svelte-element-ui/compare/v1.3.1...v1.3.2) (2021-04-23)
+
+
+### Bug Fixes
+
+* **npm:** update static import ([b636103](https://github.com/koory1st/svelte-element-ui/commit/b63610391fa975da6a679a17bd800cfb41125602))
+
 ### [1.3.1](https://github.com/koory1st/svelte-element-ui/compare/v1.3.0...v1.3.1) (2021-04-23)
 
 
