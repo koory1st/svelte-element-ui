@@ -5,7 +5,7 @@
   import { ActualMenuTrigger as ActualMenuTriggerType, Menu } from './obj/Menu'
   import { Submenu, MenuDirectionType } from './obj/Submenu'
   import collapse from '../util/Collapse'
-  import Portal from 'svelte-portal'
+  import Portal from '../util/Portal.svelte'
   import { createPopperActions } from '../util/SveltePopperJs'
   import { getPadding } from './obj/MenuUtil'
 
