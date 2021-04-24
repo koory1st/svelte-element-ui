@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   export let height = '60px'
 </script>
 

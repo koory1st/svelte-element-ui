@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { boolNull } from '../util/BooleanUtil'
   import { array2string as a2s } from 'array2string'
   import { createEventDispatcher } from 'svelte'
@@ -86,7 +86,8 @@
   class={classString}
   aria-controls={boolNull(indeterminate)}
   aria-disabled={boolNull(isDisabled)}
-  on:keydown={handleKeydown}>
+  on:keydown={handleKeydown}
+>
   <span
     class="seu-checkbox__input"
     class:is-checked={innerChecked}
@@ -95,7 +96,8 @@
     class:is-focus={isFocus}
     {role}
     {tabindex}
-    aria-checked={ariaChecked}>
+    aria-checked={ariaChecked}
+  >
     <span class="seu-checkbox__inner" />
   </span>
   <input

@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import SeuRadio from '../radio/SeuRadio.svelte'
   import SeuRadioButton from '../radio-button/SeuRadioButton.svelte'
   import { setContext, createEventDispatcher } from 'svelte'

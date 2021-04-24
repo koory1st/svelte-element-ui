@@ -22,8 +22,7 @@
     "dist"
   ],
   "svelte": "src/index.ts",
-  "main": "dist/svelte-element-ui.umd.js",
-  "module": "dist/svelte-element-ui.es.js",
+  "main": "src/index.ts",
   "typings": "types/index.d.ts",
   "repository": {
     "type": "git",

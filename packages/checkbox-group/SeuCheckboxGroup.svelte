@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import SeuCheckbox from '../checkbox/SeuCheckbox.svelte'
   import SeuCheckboxButton from '../checkbox-button/SeuCheckboxButton.svelte'
   import { setContext } from 'svelte'

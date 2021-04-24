@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { setContext } from 'svelte'
   import { array2string as a2s, array2StyleString as a2st } from 'array2string'
   export let gutter = 0

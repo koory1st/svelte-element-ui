@@ -2,7 +2,8 @@
   "extends": "@tsconfig/svelte/tsconfig.json",
   "include": [
     "src/**/*",
-    "packages/**/*"
+    "packages/**/*",
+    "examples/**/*"
   ],
   "exclude": [
     "node_modules/*",

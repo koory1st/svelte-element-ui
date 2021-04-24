@@ -1,10 +1,10 @@
-<script type="ts">
+<script lang="ts">
   import { getContext, setContext, createEventDispatcher } from 'svelte'
   import type { Writable } from 'svelte/store'
   import { array2string as a2s, array2StyleString as a2st } from 'array2string'
   import { ActualMenuTrigger as ActualMenuTriggerType, Menu } from './obj/Menu'
   import { Submenu, MenuDirectionType } from './obj/Submenu'
-  import collapse from 'svelte-collapse'
+  import collapse from '../util/Collapse'
   import Portal from 'svelte-portal'
   import { createPopperActions } from '../util/SveltePopperJs'
   import { getPadding } from './obj/MenuUtil'

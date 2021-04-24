@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { array2string as a2s, array2StyleString as a2st } from 'array2string'
   import { setContext, createEventDispatcher } from 'svelte'
   import { writable } from 'svelte/store'
