@@ -21,7 +21,7 @@
     "static",
     "dist"
   ],
-  "svelte": "src/components.ts",
+  "svelte": "src/index.ts",
   "main": "dist/svelte-element-ui.umd.js",
   "module": "dist/svelte-element-ui.es.js",
   "typings": "types/index.d.ts",
