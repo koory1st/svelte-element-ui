@@ -2,7 +2,7 @@
  * origin code
  * https://github.com/bryanmylee/svelte-popperjs
  */
-import { createPopper } from '@popperjs/core/dist/esm'
+import { createPopper } from '@popperjs/core'
 
 function createPopperActions(initOptions: any) {
   var popperInstance = null
