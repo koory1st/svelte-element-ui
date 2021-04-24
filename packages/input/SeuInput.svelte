@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { array2string as a2s } from 'array2string'
+  import a2s from '../util/array2string/Array2String'
   import { createEventDispatcher, tick } from 'svelte'
   import { isKorean } from '../util/shared'
   import merge from '../util/merge'
