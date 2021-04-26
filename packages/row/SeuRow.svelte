@@ -1,6 +1,7 @@
 <script lang="ts">
   import { setContext } from 'svelte'
-  import { array2string as a2s, array2StyleString as a2st } from 'array2string'
+  import a2s from '../util/array2string/Array2String'
+  import a2st from '../util/array2string/Array2StyleString'
   export let gutter = 0
   export let type = ''
   export let justify = 'start'

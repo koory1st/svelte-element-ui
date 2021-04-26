@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.12](https://github.com/koory1st/svelte-element-ui/compare/v1.3.11...v1.3.12) (2021-04-26)
+
+
+### Bug Fixes
+
+* **popperjs:** modify the import ([811b6f5](https://github.com/koory1st/svelte-element-ui/commit/811b6f503bd5c9822a1e766bf214be63ade2843e))
+
+### [1.3.11](https://github.com/koory1st/svelte-element-ui/compare/v1.3.10...v1.3.11) (2021-04-24)
+
+
+### Bug Fixes
+
+* **array2string:** move code in ([47429ab](https://github.com/koory1st/svelte-element-ui/commit/47429ab24bf13ade20de9dff856257da02b370a0))
+
+### [1.3.10](https://github.com/koory1st/svelte-element-ui/compare/v1.3.9...v1.3.10) (2021-04-24)
+
+
+### Bug Fixes
+
+* **popperjs:** change import ([2d56903](https://github.com/koory1st/svelte-element-ui/commit/2d56903bb26ab4c4a205d9991fc74feb68cd752c))
+
+### [1.3.9](https://github.com/koory1st/svelte-element-ui/compare/v1.3.8...v1.3.9) (2021-04-24)
+
+
+### Bug Fixes
+
+* **popperjs:** change import popperjs ([553180a](https://github.com/koory1st/svelte-element-ui/commit/553180ae471ba5aa9e1068fd96a871948f60d8ff))
+
 ### [1.3.8](https://github.com/koory1st/svelte-element-ui/compare/v1.3.7...v1.3.8) (2021-04-24)
 
 

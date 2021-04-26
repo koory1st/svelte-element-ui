@@ -1,6 +1,6 @@
 <script lang="ts">
   import { getContext } from 'svelte'
-  import { array2StyleString as a2st } from 'array2string'
+  import a2st from '../util/array2string/Array2StyleString'
   import type { Menu } from './obj/Menu'
   import type { Submenu } from './obj/Submenu'
   import { getPadding } from './obj/MenuUtil'
