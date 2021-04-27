@@ -99,7 +99,6 @@
   "license": "MIT",
   "homepage": "https://koory1st.github.io/svelte-element-ui",
   "dependencies": {
-    "@popperjs/core": "^2.9.2",
-    "array2string": "^1.2.4"
+    "@popperjs/core": "^2.9.2"
   }
 }
