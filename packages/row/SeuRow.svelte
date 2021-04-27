@@ -7,6 +7,8 @@
   export let justify = 'start'
   export let align = 'top'
 
+  $$props
+  console.log('🚀 ~ file: SeuRow.svelte ~ line 11 ~ $$props', $$props)
   setContext('seuRowGutter', gutter)
 
   $: classString = a2s([
@@ -14,6 +16,7 @@
     [`is-justify-${justify}`, justify && justify !== 'start'],
     [`is-align-${align}`, align && align !== 'top'],
     ['seu-row--flex', type === 'flex'],
+    $$props.class,
   ])
 
   $: style = a2st([
