@@ -1,7 +1,6 @@
 <script lang="ts">
   import { getContext } from 'svelte'
-  import a2s from '../util/array2string/Array2String'
-  import a2st from '../util/array2string/Array2StyleString'
+  import { array2string as a2s, array2StyleString as a2st } from 'array2string'
 
   export let span = 24
   export let offset = 0

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import a2s from '../util/array2string/Array2String'
+  import { array2string as a2s } from 'array2string'
   import {
     getDisabled,
     getInnerCheckedValue,

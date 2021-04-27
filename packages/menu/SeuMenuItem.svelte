@@ -1,8 +1,7 @@
 <script lang="ts">
   import { getContext, createEventDispatcher, onMount } from 'svelte'
   import type { Writable } from 'svelte/store'
-  import a2s from '../util/array2string/Array2String'
-  import a2st from '../util/array2string/Array2StyleString'
+  import { array2string as a2s, array2StyleString as a2st } from 'array2string'
   import type { Menu } from './obj/Menu'
   import { MenuItem } from './obj/MenuItem'
   import { Submenu } from './obj/Submenu'

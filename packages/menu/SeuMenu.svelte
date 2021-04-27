@@ -1,6 +1,5 @@
 <script lang="ts">
-  import a2s from '../util/array2string/Array2String'
-  import a2st from '../util/array2string/Array2StyleString'
+  import { array2string as a2s, array2StyleString as a2st } from 'array2string'
   import { setContext, createEventDispatcher } from 'svelte'
   import { writable } from 'svelte/store'
   import { Menu } from './obj/Menu'
