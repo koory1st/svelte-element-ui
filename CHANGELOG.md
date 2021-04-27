@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.17](https://github.com/koory1st/svelte-element-ui/compare/v1.3.16...v1.3.17) (2021-04-27)
+
+### [1.3.16](https://github.com/koory1st/svelte-element-ui/compare/v1.3.15...v1.3.16) (2021-04-27)
+
+
+### Bug Fixes
+
+* **row col:** add props.class ([96438aa](https://github.com/koory1st/svelte-element-ui/commit/96438aa6ac7eedcd85a1a1893fccf9d94ecd9d71))
+
 ### [1.3.15](https://github.com/koory1st/svelte-element-ui/compare/v1.3.14...v1.3.15) (2021-04-27)
 
 ### [1.3.14](https://github.com/koory1st/svelte-element-ui/compare/v1.3.13...v1.3.14) (2021-04-27)

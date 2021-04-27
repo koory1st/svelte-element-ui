@@ -26,6 +26,7 @@
     [`seu-col-md-${md}`, Boolean(md)],
     [`seu-col-lg-${lg}`, Boolean(lg)],
     [`seu-col-xl-${xl}`, Boolean(xl)],
+    $$props.class,
   ])
 
   $: style = a2st([

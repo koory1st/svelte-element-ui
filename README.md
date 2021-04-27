@@ -4,6 +4,8 @@
 
 svelte-element-ui is a element-ui component library base on Svelte.
 
+[Documentation](https://koory1st.github.io/svelte-element-ui)
+
 ## Install
 
 1. Install from npm.
