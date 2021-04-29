@@ -7,8 +7,6 @@
   export let justify = 'start'
   export let align = 'top'
 
-  $$props
-  console.log('🚀 ~ file: SeuRow.svelte ~ line 11 ~ $$props', $$props)
   setContext('seuRowGutter', gutter)
 
   $: classString = a2s([
