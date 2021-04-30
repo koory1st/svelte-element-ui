@@ -20,29 +20,29 @@
 <p>With row and col, we can easily manipulate the layout using the span attribute.</p>
 <pre>{BasicCode}</pre>
 
-<h2>Column spacing</h2>
+<h3>Column spacing</h3>
 <p>Column spacing is supported.</p>
 <ColumnSpacing/>
 <p>Row provides gutter attribute to specify spacings between columns, and its default value is 0.</p>
 <pre>{ColumnSpacingCode}</pre>
 
-<h2>Hybrid layout</h2>
+<h3>Hybrid layout</h3>
 <p>Form a more complex hybrid layout by combining the basic 1/24 columns.</p>
 <HybridLayout/>
 <pre>{HybridLayoutCode}</pre>
 
-<h2>Alignment</h2>
+<h3>Alignment</h3>
 <p>Use the flex layout to make flexible alignment of columns.</p>
 <Alignment/>
 <p>You can enable flex layout by setting type attribute to 'flex', and define the layout of child elements by setting justify attribute with start, center, end, space-between or space-around.</p>
 <pre>{AlignmentCode}</pre>
 
-<h2>Responsive Layout</h2>
+<h3>Responsive Layout</h3>
 <p>Taking example by Bootstrap's responsive design, five breakpoints are preset: xs, sm, md, lg and xl.</p>
 <ResponsiveLayout/>
 <pre>{AlignmentCode}</pre>
 
-<h2>Row Attributes</h2>
+<h3>Row Attributes</h3>
 <div class="attribute">
   <table>
     <tr>
