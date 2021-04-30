@@ -19,13 +19,14 @@
 
 <p>These components use flex for layout, so please make sure your browser supports it. Besides, el-container's direct child elements have to be one or more of the latter four components. And father element of the latter four components must be a el-container.</p>
 
+<h3>Common layouts</h3>
 <CommonLayouts/>
 <pre>{CommonLayoutsCode}</pre>
 
-<h2>Example TODO</h2>
+<h3>Example TODO</h3>
 
 
-<h2>Container Attributes</h2>
+<h3>Container Attributes</h3>
 <div class="attribute">
   <table>
     <tr>
@@ -44,7 +45,7 @@
     </tr>
   </table>
 </div>
-<h2>Header Attributes</h2>
+<h3>Header Attributes</h3>
 <div class="attribute">
   <table>
     <tr>
@@ -63,7 +64,7 @@
     </tr>
   </table>
 </div>
-<h2>Aside Attributes</h2>
+<h3>Aside Attributes</h3>
 <div class="attribute">
   <table>
     <tr>
@@ -82,7 +83,7 @@
     </tr>
   </table>
 </div>
-<h2>Footer Attributes</h2>
+<h3>Footer Attributes</h3>
 <div class="attribute">
   <table>
     <tr>
