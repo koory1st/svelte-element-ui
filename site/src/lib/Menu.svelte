@@ -8,6 +8,3 @@
     <SeuLink href={`#/${route.key}`}>{route.displayName}</SeuLink>
   </nav>
 {/each}
-<nav>
-  <SeuLink>111</SeuLink>
-</nav>
