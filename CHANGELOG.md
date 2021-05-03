@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.21](https://github.com/koory1st/svelte-element-ui/compare/v1.3.20...v1.3.21) (2021-05-03)
+
+
+### Bug Fixes
+
+* **radio group:** add value in props string ([c1549de](https://github.com/koory1st/svelte-element-ui/commit/c1549debf3e0d1ba7e10618249395c44b74df30a))
+
 ### [1.3.20](https://github.com/koory1st/svelte-element-ui/compare/v1.3.19...v1.3.20) (2021-05-01)
 
 ### [1.3.19](https://github.com/koory1st/svelte-element-ui/compare/v1.3.18...v1.3.19) (2021-04-30)
