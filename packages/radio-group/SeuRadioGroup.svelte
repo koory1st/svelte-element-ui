@@ -23,6 +23,7 @@
 
     if (typeof option === 'string') {
       prop.label = option
+      prop.value = option
       propList.push(prop)
       continue
     }

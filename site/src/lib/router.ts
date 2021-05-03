@@ -2,6 +2,7 @@ import Layout from '../view/Layout.svelte'
 import Container from '../view/Container.svelte'
 import Button from '../view/Button.svelte'
 import Link from '../view/Link.svelte'
+import Radio from '../view/Radio.svelte'
 let routes: Array<{ key: string; displayName: string; component: Function }> = [
   {
     key: 'Layout',
@@ -22,6 +23,11 @@ let routes: Array<{ key: string; displayName: string; component: Function }> = [
     key: 'Link',
     displayName: 'Link 文字链接',
     component: Link,
+  },
+  {
+    key: 'Radio',
+    displayName: 'Radio 单选框',
+    component: Radio,
   },
 ]
 
