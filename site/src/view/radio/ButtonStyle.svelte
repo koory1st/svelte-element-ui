@@ -21,7 +21,7 @@
   <SeuRadioGroup
     type="button"
     size="small"
-    bind:value={radio2}
+    bind:value={radio3}
     options={['New York', 'Washington', 'Los Angeles', 'Chicago']}
   />
 </div>
@@ -30,7 +30,7 @@
     type="button"
     disabled
     size="mini"
-    bind:value={radio2}
+    bind:value={radio4}
     options={['New York', 'Washington', 'Los Angeles', 'Chicago']}
   />
 </div>
