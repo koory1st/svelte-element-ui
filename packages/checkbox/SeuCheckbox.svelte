@@ -88,6 +88,17 @@
   aria-disabled={boolNull(isDisabled)}
   on:keydown={handleKeydown}
 >
+  <input
+    class="seu-checkbox__original"
+    type="checkbox"
+    checked={innerChecked}
+    aria-hidden={indeterminate ? 'true' : 'false'}
+    {name}
+    disabled={isDisabled}
+    on:focus={() => (isFocus = true)}
+    on:blur={() => (isFocus = false)}
+    on:change={handleChange}
+  />
   <span
     class="seu-checkbox__input"
     class:is-checked={innerChecked}
@@ -100,17 +111,6 @@
   >
     <span class="seu-checkbox__inner" />
   </span>
-  <input
-    class="seu-checkbox__original"
-    type="checkbox"
-    checked={innerChecked}
-    aria-hidden={indeterminate ? 'true' : 'false'}
-    {name}
-    disabled={isDisabled}
-    on:focus={() => (isFocus = true)}
-    on:blur={() => (isFocus = false)}
-    on:change={handleChange}
-  />
   <span class="seu-checkbox__label" on:keydown|stopPropagation>
     {#if $$slots.default}
       <slot />

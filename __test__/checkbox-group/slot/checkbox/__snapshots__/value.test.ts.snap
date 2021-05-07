@@ -21,6 +21,12 @@ exports[`value 1`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -28,12 +34,6 @@ exports[`value 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -46,6 +46,12 @@ exports[`value 1`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -53,12 +59,6 @@ exports[`value 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -71,6 +71,12 @@ exports[`value 1`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -78,12 +84,6 @@ exports[`value 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -96,6 +96,12 @@ exports[`value 1`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -103,12 +109,6 @@ exports[`value 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -141,6 +141,12 @@ exports[`value 2`] = `
       class="seu-checkbox is-checked"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -148,12 +154,6 @@ exports[`value 2`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -166,6 +166,12 @@ exports[`value 2`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -173,12 +179,6 @@ exports[`value 2`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -191,6 +191,12 @@ exports[`value 2`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -198,12 +204,6 @@ exports[`value 2`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -216,6 +216,12 @@ exports[`value 2`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -223,12 +229,6 @@ exports[`value 2`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -261,6 +261,12 @@ exports[`value 3`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -268,12 +274,6 @@ exports[`value 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -286,6 +286,12 @@ exports[`value 3`] = `
       class="seu-checkbox is-checked"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -293,12 +299,6 @@ exports[`value 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -311,6 +311,12 @@ exports[`value 3`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -318,12 +324,6 @@ exports[`value 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -336,6 +336,12 @@ exports[`value 3`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -343,12 +349,6 @@ exports[`value 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -381,6 +381,12 @@ exports[`value 4`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -388,12 +394,6 @@ exports[`value 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -406,6 +406,12 @@ exports[`value 4`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -413,12 +419,6 @@ exports[`value 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -431,6 +431,12 @@ exports[`value 4`] = `
       class="seu-checkbox is-checked"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -438,12 +444,6 @@ exports[`value 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -456,6 +456,12 @@ exports[`value 4`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -463,12 +469,6 @@ exports[`value 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -501,6 +501,12 @@ exports[`value 5`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -508,12 +514,6 @@ exports[`value 5`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -526,6 +526,12 @@ exports[`value 5`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -533,12 +539,6 @@ exports[`value 5`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -551,6 +551,12 @@ exports[`value 5`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -558,12 +564,6 @@ exports[`value 5`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -576,6 +576,12 @@ exports[`value 5`] = `
       class="seu-checkbox is-checked"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -583,12 +589,6 @@ exports[`value 5`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -621,6 +621,12 @@ exports[`value 6`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -628,12 +634,6 @@ exports[`value 6`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -646,6 +646,12 @@ exports[`value 6`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -653,12 +659,6 @@ exports[`value 6`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -671,6 +671,12 @@ exports[`value 6`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -678,12 +684,6 @@ exports[`value 6`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -696,6 +696,12 @@ exports[`value 6`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -703,12 +709,6 @@ exports[`value 6`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"

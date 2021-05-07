@@ -6,6 +6,12 @@ exports[`default props 1`] = `
   class="seu-checkbox is-indeterminate"
   role="checkbox"
 >
+  <input
+    aria-hidden="true"
+    class="seu-checkbox__original"
+    type="checkbox"
+  />
+   
   <span
     aria-checked="mixed"
     class="seu-checkbox__input is-indeterminate"
@@ -16,12 +22,6 @@ exports[`default props 1`] = `
       class="seu-checkbox__inner"
     />
   </span>
-   
-  <input
-    aria-hidden="true"
-    class="seu-checkbox__original"
-    type="checkbox"
-  />
    
   <span
     class="seu-checkbox__label"

@@ -5,6 +5,12 @@ exports[`toggle the disabled prop by change prop 1`] = `
   class="seu-checkbox"
   role="checkbox"
 >
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+  />
+   
   <span
     class="seu-checkbox__input"
   >
@@ -12,12 +18,6 @@ exports[`toggle the disabled prop by change prop 1`] = `
       class="seu-checkbox__inner"
     />
   </span>
-   
-  <input
-    aria-hidden="false"
-    class="seu-checkbox__original"
-    type="checkbox"
-  />
    
   <span
     class="seu-checkbox__label"
@@ -33,6 +33,13 @@ exports[`toggle the disabled prop by change prop 2`] = `
   class="seu-checkbox is-disabled"
   role="checkbox"
 >
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    disabled=""
+    type="checkbox"
+  />
+   
   <span
     class="seu-checkbox__input is-disabled"
   >
@@ -40,13 +47,6 @@ exports[`toggle the disabled prop by change prop 2`] = `
       class="seu-checkbox__inner"
     />
   </span>
-   
-  <input
-    aria-hidden="false"
-    class="seu-checkbox__original"
-    disabled=""
-    type="checkbox"
-  />
    
   <span
     class="seu-checkbox__label"
@@ -61,6 +61,12 @@ exports[`toggle the disabled prop by change prop 3`] = `
   class="seu-checkbox"
   role="checkbox"
 >
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+  />
+   
   <span
     class="seu-checkbox__input"
   >
@@ -68,12 +74,6 @@ exports[`toggle the disabled prop by change prop 3`] = `
       class="seu-checkbox__inner"
     />
   </span>
-   
-  <input
-    aria-hidden="false"
-    class="seu-checkbox__original"
-    type="checkbox"
-  />
    
   <span
     class="seu-checkbox__label"
