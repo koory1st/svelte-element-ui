@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.23](https://github.com/koory1st/svelte-element-ui/compare/v1.3.22...v1.3.23) (2021-05-07)
+
+
+### Bug Fixes
+
+* **checkbox:** modify the input dom ([7d753ca](https://github.com/koory1st/svelte-element-ui/commit/7d753ca8ba654a9f2b0f47f33e110d9d64b561b2))
+
 ### [1.3.22](https://github.com/koory1st/svelte-element-ui/compare/v1.3.21...v1.3.22) (2021-05-06)
 
 
