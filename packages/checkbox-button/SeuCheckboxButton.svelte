@@ -1,5 +1,8 @@
 <script lang="ts">
+  import { boolNull } from '../util/BooleanUtil'
   import a2s from '../util/array2string/Array2String'
+  import { createEventDispatcher } from 'svelte'
+  import { getContext } from 'svelte'
   import {
     getDisabled,
     getInnerCheckedValue,
@@ -8,9 +11,6 @@
     getGroupByInnerChecked,
     getInnerCheckedByValue,
   } from '../util/CheckboxUtil'
-  import { createEventDispatcher } from 'svelte'
-  const dispatch = createEventDispatcher()
-  import { getContext } from 'svelte'
   export let group: Array<string | number | boolean> = []
   export let value: boolean | string | number = false
   export let label: string | number | boolean | null | undefined
@@ -19,6 +19,7 @@
   export let size: string
   export let checkedValue: string | number | boolean | null | undefined
   export let uncheckedValue: string | number | boolean | null | undefined
+  const dispatch = createEventDispatcher()
 
   validateCheckedValue(checkedValue, uncheckedValue)
 
@@ -77,7 +78,7 @@
   <input
     class="seu-checkbox-button__original"
     type="checkbox"
-    bind:checked={innerChecked}
+    checked={innerChecked}
     {name}
     disabled={isDisabled}
     on:focus={() => (isFocus = true)}
