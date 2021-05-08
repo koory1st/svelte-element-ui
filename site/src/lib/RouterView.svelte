@@ -7,7 +7,8 @@
   }
 
   function handleLoad() {
-    component = router[0].component
+    window.location.hash
+    component = router.find(v => v.key === window.location.hash.slice(2)).component
   }
 </script>
 
