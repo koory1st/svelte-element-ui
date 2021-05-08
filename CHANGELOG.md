@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.25](https://github.com/koory1st/svelte-element-ui/compare/v1.3.24...v1.3.25) (2021-05-08)
+
+
+### Bug Fixes
+
+* **site:** fix router hash bug ([1bf8fa0](https://github.com/koory1st/svelte-element-ui/commit/1bf8fa063b9fae1b7e3172da66d61928452f517d))
+
 ### [1.3.24](https://github.com/koory1st/svelte-element-ui/compare/v1.3.23...v1.3.24) (2021-05-08)
 
 
