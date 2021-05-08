@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.24](https://github.com/koory1st/svelte-element-ui/compare/v1.3.23...v1.3.24) (2021-05-08)
+
+
+### Bug Fixes
+
+* **checkbox:** add types ([9deb4a1](https://github.com/koory1st/svelte-element-ui/commit/9deb4a1805bb62d0dfefaa47a1b68a4d6c997cbd))
+* **checkbox:** update disabled style ([57bdfc2](https://github.com/koory1st/svelte-element-ui/commit/57bdfc201772c226d4c47f051b67b44ac89ecf68))
+* **checkbox-button:** fix the unable check bug ([e194ac3](https://github.com/koory1st/svelte-element-ui/commit/e194ac3612d3b3ba7e945197e6a704eced3f9665))
+
 ### [1.3.23](https://github.com/koory1st/svelte-element-ui/compare/v1.3.22...v1.3.23) (2021-05-07)
 
 
