@@ -211,3 +211,11 @@ export interface IPopperAppendToBodyProp {
 export interface ITitleProp {
   title?: String
 }
+
+export interface IMaxProp {
+  max?: string | number
+}
+
+export interface IMinProp {
+  min?: string | number
+}

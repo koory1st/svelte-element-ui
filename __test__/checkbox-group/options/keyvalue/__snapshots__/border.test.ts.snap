@@ -11,6 +11,12 @@ exports[`border 1`] = `
       class="seu-checkbox is-bordered"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -18,12 +24,6 @@ exports[`border 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -36,6 +36,12 @@ exports[`border 1`] = `
       class="seu-checkbox is-bordered"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -43,12 +49,6 @@ exports[`border 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -61,6 +61,12 @@ exports[`border 1`] = `
       class="seu-checkbox is-bordered"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -68,12 +74,6 @@ exports[`border 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"

@@ -15,6 +15,12 @@ exports[`minMax 1`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -22,12 +28,6 @@ exports[`minMax 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -40,6 +40,12 @@ exports[`minMax 1`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -47,12 +53,6 @@ exports[`minMax 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -65,6 +65,12 @@ exports[`minMax 1`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -72,12 +78,6 @@ exports[`minMax 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -90,6 +90,12 @@ exports[`minMax 1`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -97,12 +103,6 @@ exports[`minMax 1`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -132,6 +132,13 @@ exports[`minMax 2`] = `
       class="seu-checkbox is-checked is-disabled"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        disabled=""
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input is-checked is-disabled"
       >
@@ -139,13 +146,6 @@ exports[`minMax 2`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        disabled=""
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -158,6 +158,12 @@ exports[`minMax 2`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -165,12 +171,6 @@ exports[`minMax 2`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -183,6 +183,12 @@ exports[`minMax 2`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -190,12 +196,6 @@ exports[`minMax 2`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -208,6 +208,12 @@ exports[`minMax 2`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -215,12 +221,6 @@ exports[`minMax 2`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -249,6 +249,12 @@ exports[`minMax 3`] = `
       class="seu-checkbox is-checked"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -256,12 +262,6 @@ exports[`minMax 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -274,6 +274,12 @@ exports[`minMax 3`] = `
       class="seu-checkbox is-checked"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -281,12 +287,6 @@ exports[`minMax 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -299,6 +299,12 @@ exports[`minMax 3`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -306,12 +312,6 @@ exports[`minMax 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -324,6 +324,12 @@ exports[`minMax 3`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -331,12 +337,6 @@ exports[`minMax 3`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -365,6 +365,12 @@ exports[`minMax 4`] = `
       class="seu-checkbox is-checked"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -372,12 +378,6 @@ exports[`minMax 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -390,6 +390,12 @@ exports[`minMax 4`] = `
       class="seu-checkbox is-checked"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -397,12 +403,6 @@ exports[`minMax 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -415,6 +415,12 @@ exports[`minMax 4`] = `
       class="seu-checkbox is-checked"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input is-checked"
       >
@@ -422,12 +428,6 @@ exports[`minMax 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -441,6 +441,13 @@ exports[`minMax 4`] = `
       class="seu-checkbox is-disabled"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        disabled=""
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input is-disabled"
       >
@@ -448,13 +455,6 @@ exports[`minMax 4`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        disabled=""
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -483,6 +483,12 @@ exports[`minMax 5`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -490,12 +496,6 @@ exports[`minMax 5`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -508,6 +508,12 @@ exports[`minMax 5`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -515,12 +521,6 @@ exports[`minMax 5`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -534,6 +534,13 @@ exports[`minMax 5`] = `
       class="seu-checkbox is-checked is-disabled"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        disabled=""
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input is-checked is-disabled"
       >
@@ -541,13 +548,6 @@ exports[`minMax 5`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        disabled=""
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"
@@ -560,6 +560,12 @@ exports[`minMax 5`] = `
       class="seu-checkbox"
       role="checkbox"
     >
+      <input
+        aria-hidden="false"
+        class="seu-checkbox__original"
+        type="checkbox"
+      />
+       
       <span
         class="seu-checkbox__input"
       >
@@ -567,12 +573,6 @@ exports[`minMax 5`] = `
           class="seu-checkbox__inner"
         />
       </span>
-       
-      <input
-        aria-hidden="false"
-        class="seu-checkbox__original"
-        type="checkbox"
-      />
        
       <span
         class="seu-checkbox__label"

@@ -15,6 +15,9 @@
   user-select: none;
   margin-right: 30px;
 
+  &.is-disabled {
+    cursor: not-allowed;
+  }
   @include when(bordered) {
     padding: $--checkbox-bordered-padding;
     border-radius: $--border-radius-base;
@@ -104,6 +107,7 @@
     vertical-align: middle;
 
     @include when(disabled) {
+      cursor: not-allowed;
       .seu-checkbox__inner {
         background-color: $--checkbox-disabled-input-fill;
         border-color: $--checkbox-disabled-border-color;

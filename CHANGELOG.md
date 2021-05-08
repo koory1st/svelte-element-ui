@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.25](https://github.com/koory1st/svelte-element-ui/compare/v1.3.24...v1.3.25) (2021-05-08)
+
+
+### Bug Fixes
+
+* **site:** fix router hash bug ([1bf8fa0](https://github.com/koory1st/svelte-element-ui/commit/1bf8fa063b9fae1b7e3172da66d61928452f517d))
+
+### [1.3.24](https://github.com/koory1st/svelte-element-ui/compare/v1.3.23...v1.3.24) (2021-05-08)
+
+
+### Bug Fixes
+
+* **checkbox:** add types ([9deb4a1](https://github.com/koory1st/svelte-element-ui/commit/9deb4a1805bb62d0dfefaa47a1b68a4d6c997cbd))
+* **checkbox:** update disabled style ([57bdfc2](https://github.com/koory1st/svelte-element-ui/commit/57bdfc201772c226d4c47f051b67b44ac89ecf68))
+* **checkbox-button:** fix the unable check bug ([e194ac3](https://github.com/koory1st/svelte-element-ui/commit/e194ac3612d3b3ba7e945197e6a704eced3f9665))
+
+### [1.3.23](https://github.com/koory1st/svelte-element-ui/compare/v1.3.22...v1.3.23) (2021-05-07)
+
+
+### Bug Fixes
+
+* **checkbox:** modify the input dom ([7d753ca](https://github.com/koory1st/svelte-element-ui/commit/7d753ca8ba654a9f2b0f47f33e110d9d64b561b2))
+
 ### [1.3.22](https://github.com/koory1st/svelte-element-ui/compare/v1.3.21...v1.3.22) (2021-05-06)
 
 

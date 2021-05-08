@@ -3,6 +3,7 @@ import Container from '../view/Container.svelte'
 import Button from '../view/Button.svelte'
 import Link from '../view/Link.svelte'
 import Radio from '../view/Radio.svelte'
+import Checkbox from '../view/Checkbox.svelte'
 let routes: Array<{ key: string; displayName: string; component: Function }> = [
   {
     key: 'Layout',
@@ -28,6 +29,11 @@ let routes: Array<{ key: string; displayName: string; component: Function }> = [
     key: 'Radio',
     displayName: 'Radio 单选框',
     component: Radio,
+  },
+  {
+    key: 'Checkbox',
+    displayName: 'Checkbox 多选框',
+    component: Checkbox,
   },
 ]
 

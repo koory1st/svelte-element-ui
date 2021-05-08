@@ -5,6 +5,12 @@ exports[`change the value by click checkbox 1`] = `
   class="seu-checkbox"
   role="checkbox"
 >
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+  />
+   
   <span
     class="seu-checkbox__input"
   >
@@ -12,12 +18,6 @@ exports[`change the value by click checkbox 1`] = `
       class="seu-checkbox__inner"
     />
   </span>
-   
-  <input
-    aria-hidden="false"
-    class="seu-checkbox__original"
-    type="checkbox"
-  />
    
   <span
     class="seu-checkbox__label"
@@ -32,6 +32,12 @@ exports[`change the value by click checkbox 2`] = `
   class="seu-checkbox is-checked"
   role="checkbox"
 >
+  <input
+    aria-hidden="false"
+    class="seu-checkbox__original"
+    type="checkbox"
+  />
+   
   <span
     class="seu-checkbox__input is-checked"
   >
@@ -39,12 +45,6 @@ exports[`change the value by click checkbox 2`] = `
       class="seu-checkbox__inner"
     />
   </span>
-   
-  <input
-    aria-hidden="false"
-    class="seu-checkbox__original"
-    type="checkbox"
-  />
    
   <span
     class="seu-checkbox__label"
