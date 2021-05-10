@@ -39,7 +39,18 @@
   </div>
 
   <h1>文本域</h1>
-  <SeuInput type="textarea" :rows="2" placeholder="请输入内容" v-model="textarea" />
+  <SeuInput type="textarea" autosize={{ minRows: 2, maxRows: 4 }} placeholder="请输入内容" v-model="textarea" />
+
+  <h1>复合型输入框</h1>
+
+  <SeuInput placeholder="请输入内容">
+    <span slot="prepend">Http://</span>
+  </SeuInput>
+  <div style="margin-top: 15px;">
+    <SeuInput placeholder="请输入内容">
+      <span slot="append">.com</span>
+    </SeuInput>
+  </div>
 </div>
 
 <style>
@@ -47,6 +58,5 @@
     margin-right: 15px;
   }
   :global(.demo-input .seu-input) {
-    width: 180px;
   }
 </style>

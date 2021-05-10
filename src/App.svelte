@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Menu from '../examples/checkboxGroup/App.svelte'
+  import Menu from '../examples/input/App.svelte'
 </script>
 
 <Menu />
