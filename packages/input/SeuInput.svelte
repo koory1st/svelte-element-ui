@@ -24,7 +24,6 @@
   export let showWordLimit: boolean = false
   export let tabindex: number
   const dispatch = createEventDispatcher()
-
   let textareaCalcStyle: {}
   let hovering: boolean = false
   let focused: boolean = false
@@ -53,6 +52,7 @@
 
   let isComposing: boolean = false
 
+  $: inputSize = size
   $: inputDisabled = disabled // TODO:
   $: showClear = clearable && !inputDisabled && !readonly && (focused || hovering)
   $: isWordLimitVisible =
@@ -77,6 +77,7 @@
 
   $: classString = a2s([
     type === 'textarea' ? 'seu-textarea' : 'seu-input',
+    [`seu-input--${inputSize}`, inputSize],
     ['is-disabled', disabled],
     ['is-exceed', inputExceed],
     ['seu-input-group', $$slots.prepend || $$slots.append],
@@ -173,7 +174,7 @@
 
   //#region resize
   function resizeTextarea() {
-    if (type !== 'textarea') return
+    if (type !== 'textarea' || !elTextAreaInput) return
     if (!autosize) {
       textareaCalcStyle = {
         minHeight: calcTextareaHeight(elTextAreaInput).minHeight,
@@ -211,7 +212,6 @@
       type="password"
       disabled={inputDisabled}
       {readonly}
-      {...$$props}
       aria-label={label}
       on:focus={handleFocus}
       on:blur={handleBlur}
@@ -229,7 +229,6 @@
       type="text"
       disabled={inputDisabled}
       {readonly}
-      {...$$props}
       aria-label={label}
       on:focus={handleFocus}
       on:blur={handleBlur}
@@ -295,7 +294,6 @@
       {tabindex}
       class="seu-textarea__inner"
       bind:this={elTextAreaInput}
-      {...$$props}
       disabled={inputDisabled}
       {readonly}
       {autocomplete}

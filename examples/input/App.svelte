@@ -51,6 +51,12 @@
       <span slot="append">.com</span>
     </SeuInput>
   </div>
+
+  <h1>尺寸</h1>
+  <SeuInput suffixIcon="seu-icon-date" />
+  <SeuInput suffixIcon="seu-icon-date" size="medium" />
+  <SeuInput suffixIcon="seu-icon-date" size="small" />
+  <SeuInput suffixIcon="seu-icon-date" size="mini" />
 </div>
 
 <style>
@@ -58,5 +64,6 @@
     margin-right: 15px;
   }
   :global(.demo-input .seu-input) {
+    width: 100px;
   }
 </style>
