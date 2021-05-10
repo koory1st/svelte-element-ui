@@ -23,6 +23,8 @@
   export let showPassword: boolean = false
   export let showWordLimit: boolean = false
   export let tabindex: number
+  export let maxlength: number
+  export let placeholder: string
   const dispatch = createEventDispatcher()
   let textareaCalcStyle: {}
   let hovering: boolean = false
@@ -57,7 +59,7 @@
   $: showClear = clearable && !inputDisabled && !readonly && (focused || hovering)
   $: isWordLimitVisible =
     showWordLimit &&
-    $$slots['maxlength'] &&
+    maxlength &&
     (type === 'text' || type === 'textarea') &&
     !inputDisabled &&
     !readonly &&
@@ -111,7 +113,7 @@
     return (input || '').length
   }
 
-  $: upperLimit = $$props['maxlength']
+  $: upperLimit = maxlength
 
   $: realType = showPassword ? (passwordVisible ? 'text' : 'password') : type
 
@@ -212,6 +214,8 @@
       type="password"
       disabled={inputDisabled}
       {readonly}
+      {placeholder}
+      {maxlength}
       aria-label={label}
       on:focus={handleFocus}
       on:blur={handleBlur}
@@ -229,6 +233,8 @@
       type="text"
       disabled={inputDisabled}
       {readonly}
+      {maxlength}
+      {placeholder}
       aria-label={label}
       on:focus={handleFocus}
       on:blur={handleBlur}
@@ -296,6 +302,8 @@
       bind:this={elTextAreaInput}
       disabled={inputDisabled}
       {readonly}
+      {maxlength}
+      {placeholder}
       {autocomplete}
       style={textareaStyle}
       aria-label={label}

@@ -57,6 +57,11 @@
   <SeuInput suffixIcon="seu-icon-date" size="medium" />
   <SeuInput suffixIcon="seu-icon-date" size="small" />
   <SeuInput suffixIcon="seu-icon-date" size="mini" />
+
+  <h1>输入长度限制</h1>
+  <SeuInput type="text" placeholder="请输入内容" maxlength={10} showWordLimit />
+  <div style="margin: 20px 0;" />
+  <SeuInput type="textarea" placeholder="请输入内容" maxlength={10} showWordLimit />
 </div>
 
 <style>
