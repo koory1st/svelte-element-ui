@@ -219,3 +219,59 @@ export interface IMaxProp {
 export interface IMinProp {
   min?: string | number
 }
+
+export interface IResizeProp {
+  resize?: string
+}
+
+export interface IReadonlyProp {
+  readonly?: boolean
+}
+
+export interface IAutosizeProp {
+  autosize?: boolean | { minRows?: number; maxRows?: number }
+}
+
+export interface IAutocompleteProp {
+  autocomplete?: string
+}
+
+export interface IValidateEventProp {
+  validateEvent?: boolean
+}
+
+export interface ISuffixIconProp {
+  suffixIcon?: string
+}
+
+export interface IprefixIconProp {
+  prefixIcon?: string
+}
+
+export interface IinputLabelProp {
+  label?: string
+}
+
+export interface IclearableProp {
+  clearable?: boolean
+}
+
+export interface IshowPasswordProp {
+  showPassword?: boolean
+}
+
+export interface IshowWordLimitProp {
+  showWordLimit?: boolean
+}
+
+export interface ItabindexProp {
+  tabindex?: number
+}
+
+export interface ImaxlengthProp {
+  maxlength?: string
+}
+
+export interface IplaceholderProp {
+  placeholder?: string
+}

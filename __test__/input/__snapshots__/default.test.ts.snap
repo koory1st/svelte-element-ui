@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default 1`] = `
+<div>
+  test component
+  
+  <div
+    class="seu-input"
+  >
+     
+    <input
+      class="seu-input__inner"
+      type="text"
+    />
+     
+     
+     
+     
+  </div>
+</div>
+`;

@@ -8,7 +8,7 @@
   import { string as object2StyleString } from 'to-style'
   export let value: string | number
   export let size: string
-  export let resize: ['none', 'both', 'horizontal', 'vertical']
+  export let resize: string
   export let form: string
   export let disabled: boolean
   export let readonly: boolean
