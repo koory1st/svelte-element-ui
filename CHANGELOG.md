@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.26](https://github.com/koory1st/svelte-element-ui/compare/v1.3.25...v1.3.26) (2021-05-11)
+
+
+### Bug Fixes
+
+* **input:** add composition logic ([69f642a](https://github.com/koory1st/svelte-element-ui/commit/69f642a1f6649b5e207acf9f5da66ed1756764b4))
+* **input:** add d.ts and a simple test ([e3f62e7](https://github.com/koory1st/svelte-element-ui/commit/e3f62e7ebe7767ce3893050e5d1cf43f4e6c4dd1))
+* **input:** add maxlength ([2a73c5d](https://github.com/koory1st/svelte-element-ui/commit/2a73c5d0541d1e64fca4c52976af403b9d908de3))
+* **input:** add size ([c35c82b](https://github.com/koory1st/svelte-element-ui/commit/c35c82bc19b7f8b623fd8f513910434ba80e98e2))
+* **types:** add types ([82fb290](https://github.com/koory1st/svelte-element-ui/commit/82fb29092d36e3377febc6652550ff8fef1becc9))
+
 ### [1.3.25](https://github.com/koory1st/svelte-element-ui/compare/v1.3.24...v1.3.25) (2021-05-08)
 
 
