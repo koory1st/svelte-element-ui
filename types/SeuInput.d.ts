@@ -41,4 +41,6 @@ interface IProps
     ImaxlengthProp,
     IplaceholderProp {}
 
-export class SeuInput extends SvelteComponentTyped<IProps, IChangeEvent> {}
+interface Ievent extends IChangeEvent {}
+
+export class SeuInput extends SvelteComponentTyped<IProps, Ievent> {}

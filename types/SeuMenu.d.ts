@@ -14,16 +14,17 @@ import {
   IPopperZIndexProp,
 } from './Types'
 
-export class SeuMain extends SvelteComponentTyped<
-  IModeProp,
-  IDefaultActiveProp,
-  IDefaultOpenedsProp,
-  IUniqueOpenedProp,
-  IMenuTriggerProp,
-  ICollapseProp,
-  IBackgroundColorProp,
-  ITextColorProp,
-  IActiveTextColorProp,
-  ICollapseTransitionProp,
-  IPopperZIndexProp
-> {}
+interface IProps
+  extends IModeProp,
+    IDefaultActiveProp,
+    IDefaultOpenedsProp,
+    IUniqueOpenedProp,
+    IMenuTriggerProp,
+    ICollapseProp,
+    IBackgroundColorProp,
+    ITextColorProp,
+    IActiveTextColorProp,
+    ICollapseTransitionProp,
+    IPopperZIndexProp {}
+
+export class SeuMenu extends SvelteComponentTyped<IProps> {}

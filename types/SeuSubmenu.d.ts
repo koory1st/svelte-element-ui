@@ -9,11 +9,12 @@ import {
   IPopperAppendToBodyProp,
 } from './Types'
 
-export class SeuSubmenu extends SvelteComponentTyped<
-  IIndexProp,
-  IShowTimeoutProp,
-  IHideTimeoutProp,
-  IPopperClassProp,
-  IDisabledProp,
-  IPopperAppendToBodyProp
-> {}
+interface IProps
+  extends IIndexProp,
+    IShowTimeoutProp,
+    IHideTimeoutProp,
+    IPopperClassProp,
+    IDisabledProp,
+    IPopperAppendToBodyProp {}
+
+export class SeuSubmenu extends SvelteComponentTyped<IProps> {}
