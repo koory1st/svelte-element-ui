@@ -1,5 +1,5 @@
 export default function (target, ...rest) {
-  for (let i = 1, j = rest.length; i < j; i++) {
+  for (let i = 0, j = rest.length; i < j; i++) {
     let source = rest[i] || {}
     for (let prop in source) {
       if (source.hasOwnProperty(prop)) {

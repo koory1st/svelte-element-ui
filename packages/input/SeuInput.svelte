@@ -2,7 +2,10 @@
   import a2s from '../util/array2string/Array2String'
   import { createEventDispatcher, tick } from 'svelte'
   import { isKorean } from '../util/shared'
+  import { onMount } from 'svelte'
   import merge from '../util/merge'
+  import calcTextareaHeight from './calcTextareaHeight'
+  import { string as object2StyleString } from 'to-style'
   export let value: string | number
   export let size: string
   export let resize: string
@@ -10,7 +13,7 @@
   export let disabled: boolean
   export let readonly: boolean
   export let type: string = 'text'
-  export let autosize: boolean | {} = false
+  export let autosize: boolean | { minRows?: number; maxRows?: number } = false
   export let autocomplete: string = 'off'
   export let validateEvent: boolean = true
   export let suffixIcon: string
@@ -20,8 +23,9 @@
   export let showPassword: boolean = false
   export let showWordLimit: boolean = false
   export let tabindex: number
+  export let maxlength: number
+  export let placeholder: string
   const dispatch = createEventDispatcher()
-
   let textareaCalcStyle: {}
   let hovering: boolean = false
   let focused: boolean = false
@@ -33,12 +37,29 @@
 
   let elTextInput: HTMLInputElement
   let elPasswordInput: HTMLInputElement
+  let elTextAreaInput: HTMLTextAreaElement
 
+  onMount(() => {})
+
+  function getInput() {
+    if (realType === 'password') {
+      return elPasswordInput
+    }
+
+    if (realType === 'textarea') {
+      return elTextAreaInput
+    }
+    return elTextInput
+  }
+
+  let isComposing: boolean = false
+
+  $: inputSize = size
   $: inputDisabled = disabled // TODO:
   $: showClear = clearable && !inputDisabled && !readonly && (focused || hovering)
   $: isWordLimitVisible =
     showWordLimit &&
-    $$slots['maxlength'] &&
+    maxlength &&
     (type === 'text' || type === 'textarea') &&
     !inputDisabled &&
     !readonly &&
@@ -58,6 +79,7 @@
 
   $: classString = a2s([
     type === 'textarea' ? 'seu-textarea' : 'seu-input',
+    [`seu-input--${inputSize}`, inputSize],
     ['is-disabled', disabled],
     ['is-exceed', inputExceed],
     ['seu-input-group', $$slots.prepend || $$slots.append],
@@ -91,11 +113,10 @@
     return (input || '').length
   }
 
-  $: upperLimit = $$props['maxlength']
+  $: upperLimit = maxlength
 
   $: realType = showPassword ? (passwordVisible ? 'text' : 'password') : type
 
-  $: textareaStyle = merge({}, textareaCalcStyle, { resize })
   function clear() {
     value = ''
     dispatch('input', '')
@@ -109,11 +130,9 @@
     tick().then(() => {
       if (passwordVisible) {
         elTextInput.focus()
-        console.log('🚀 ~ file: SeuInput.svelte ~ line 113 ~ tick ~ elTextInput', elTextInput)
         return
       }
       elPasswordInput.focus()
-      console.log('🚀 ~ file: SeuInput.svelte ~ line 117 ~ tick ~ elPasswordInput', elPasswordInput)
     })
   }
   function handleFocus(event: FocusEvent) {
@@ -130,6 +149,54 @@
   function handleChange(event: Event) {
     dispatch('change', (event.target as HTMLTextAreaElement).value)
   }
+  //#region composition
+  function handleCompositionStart() {
+    isComposing = true
+  }
+  function handleCompositionUpdate(event) {
+    const text = event.target.value
+    const lastCharacter = text[text.length - 1] || ''
+    isComposing = !isKorean(lastCharacter)
+  }
+  function handleCompositionEnd(event) {
+    if (isComposing) {
+      isComposing = false
+      handleInput(event)
+    }
+  }
+  function handleInput(event) {
+    if (isComposing) return
+
+    dispatch('input', event.target.value)
+    value = event.target.value
+    getInput().value = String(value)
+    console.log('🚀 ~ file: SeuInput.svelte ~ line 167 ~ handleInput ~ value', value)
+  }
+  //#endregion
+
+  //#region resize
+  function resizeTextarea() {
+    if (type !== 'textarea' || !elTextAreaInput) return
+    if (!autosize) {
+      textareaCalcStyle = {
+        minHeight: calcTextareaHeight(elTextAreaInput).minHeight,
+      }
+      return
+    }
+    const minRows = autosize instanceof Object ? autosize.minRows : 1
+    const maxRows = autosize instanceof Object ? autosize.maxRows : null
+
+    textareaCalcStyle = calcTextareaHeight(elTextAreaInput, minRows, maxRows)
+    console.log('🚀 ~ file: SeuInput.svelte ~ line 186 ~ resizeTextarea ~ textareaCalcStyle', textareaCalcStyle)
+  }
+  $: valueChangedEvent(value)
+
+  $: textareaStyle = object2StyleString(merge({}, textareaCalcStyle, { resize: resize }))
+
+  function valueChangedEvent(value: string | number) {
+    tick().then(resizeTextarea)
+  }
+  //#endregion
 </script>
 
 <div class={classString} on:mouseenter={() => (hovering = true)} on:mouseleave={() => (hovering = false)}>
@@ -147,12 +214,16 @@
       type="password"
       disabled={inputDisabled}
       {readonly}
-      bind:value
-      {...$$props}
+      {placeholder}
+      {maxlength}
       aria-label={label}
       on:focus={handleFocus}
       on:blur={handleBlur}
       on:change={handleChange}
+      on:input={handleInput}
+      on:compositionstart={handleCompositionStart}
+      on:compositionupdate={handleCompositionUpdate}
+      on:compositionend={handleCompositionEnd}
     />
   {:else if realType === 'text'}
     <input
@@ -162,12 +233,16 @@
       type="text"
       disabled={inputDisabled}
       {readonly}
-      {...$$props}
+      {maxlength}
+      {placeholder}
       aria-label={label}
-      bind:value
       on:focus={handleFocus}
       on:blur={handleBlur}
       on:change={handleChange}
+      on:input={handleInput}
+      on:compositionstart={handleCompositionStart}
+      on:compositionupdate={handleCompositionUpdate}
+      on:compositionend={handleCompositionEnd}
     />
   {/if}
   <!-- 前置内容 -->
@@ -224,16 +299,21 @@
     <textarea
       {tabindex}
       class="seu-textarea__inner"
-      bind:value
-      {...$$props}
+      bind:this={elTextAreaInput}
       disabled={inputDisabled}
       {readonly}
+      {maxlength}
+      {placeholder}
       {autocomplete}
       style={textareaStyle}
       aria-label={label}
       on:focus={handleFocus}
       on:blur={handleBlur}
       on:change={handleChange}
+      on:input={handleInput}
+      on:compositionstart={handleCompositionStart}
+      on:compositionupdate={handleCompositionUpdate}
+      on:compositionend={handleCompositionEnd}
     />
   {/if}
 </div>
