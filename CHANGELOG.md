@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.27](https://github.com/koory1st/svelte-element-ui/compare/v1.3.26...v1.3.27) (2021-05-12)
+
+
+### Bug Fixes
+
+* **input:** fix clearable ([7412fb3](https://github.com/koory1st/svelte-element-ui/commit/7412fb378480580f622c2021063dad0ab1341f46))
+
 ### [1.3.26](https://github.com/koory1st/svelte-element-ui/compare/v1.3.25...v1.3.26) (2021-05-11)
 
 
