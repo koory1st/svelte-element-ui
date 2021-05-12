@@ -56,7 +56,7 @@
 
   $: inputSize = size
   $: inputDisabled = disabled // TODO:
-  $: showClear = clearable && !inputDisabled && !readonly && (focused || hovering)
+  $: showClear = clearable && !inputDisabled && !readonly && value && (focused || hovering)
   $: isWordLimitVisible =
     showWordLimit &&
     maxlength &&
@@ -119,6 +119,7 @@
 
   function clear() {
     value = ''
+    getInput().value = ''
     dispatch('input', '')
     dispatch('change', '')
     dispatch('clear')
@@ -170,7 +171,6 @@
     dispatch('input', event.target.value)
     value = event.target.value
     getInput().value = String(value)
-    console.log('🚀 ~ file: SeuInput.svelte ~ line 167 ~ handleInput ~ value', value)
   }
   //#endregion
 
@@ -187,7 +187,6 @@
     const maxRows = autosize instanceof Object ? autosize.maxRows : null
 
     textareaCalcStyle = calcTextareaHeight(elTextAreaInput, minRows, maxRows)
-    console.log('🚀 ~ file: SeuInput.svelte ~ line 186 ~ resizeTextarea ~ textareaCalcStyle', textareaCalcStyle)
   }
   $: valueChangedEvent(value)
 
