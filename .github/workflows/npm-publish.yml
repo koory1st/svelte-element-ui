@@ -34,7 +34,7 @@ jobs:
         run: npm i && cd site && npm i && npm run build && cd ..
       - name: commit branch git_page
         run: |
-          git add docs/
+          git add -A
           git commit -am "update page"
       - name: push branch git_page
         uses: ad-m/github-push-action@master
